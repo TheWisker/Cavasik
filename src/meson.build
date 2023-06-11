@@ -35,7 +35,8 @@ cavalier_sources = [
   'settings.py',
   'settings_import_export.py',
   'preferences_window.py',
-  'shortcuts.py'
+  'shortcuts.py',
+  'dbus.py'
 ]
 
 install_data(cavalier_sources, install_dir: moduledir)

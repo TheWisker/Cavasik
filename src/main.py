@@ -39,6 +39,7 @@ from .window import CavalierWindow
 from .preferences_window import CavalierPreferencesWindow
 from .translator_credits import get_translator_credits
 
+from .dbus import BusInterface
 
 class CavalierApplication(Adw.Application):
     """The main application singleton class."""
@@ -56,6 +57,7 @@ class CavalierApplication(Adw.Application):
             ['<primary>question'])
         self.create_action('close', self.on_close_action, ['<primary>w'])
         self.create_action('quit', self.on_quit_action, ['<primary>q'])
+        self.bus_interface = BusInterface()
 
     def do_activate(self):
         """Called when the application is activated.

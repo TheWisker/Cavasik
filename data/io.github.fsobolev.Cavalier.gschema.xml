@@ -25,6 +25,17 @@
 			<description>Whether to hide headerbar when main window is not focused.</description>
 			<default>false</default>
 		</key>
+	  <key name="dbus-colors" type="b">
+			<summary>DBus colors</summary>
+			<description>Whether to use colors received through DBus (overwrites default profile).</description>
+			<default>false</default>
+		</key>
+	  <key name="dbus-opacity" type="i">
+			<summary>DBus opacity</summary>
+			<description>Opacity for the colors received through DBus.</description>
+			<range min="0" max="100"/>
+			<default>100</default>
+		</key>
 		<key name="mode" type="s">
 			<summary>Drawing mode</summary>
 			<description>Defines what the visualizer looks like.</description>

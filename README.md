@@ -14,8 +14,33 @@ Audio visualizer based on CAVA</p>
 * 4 drawing modes!
 * Set single color or up to 10 colors gradient for background and foreground.
 * Configure smoothing, noise reduction and a few other CAVA settings.
+* Change background and foreground colors through a DBus interface.
 
 ![](https://raw.githubusercontent.com/fsobolev/cavalier/master/data/screenshots/main.png)
+
+## DBus Interface
+
+The application publishes the *io.github.fsobolev.Cavalier* DBus interface with the following methods:
+- set_fg_colors(path: str) => bool: Sets the foreground colors sourcing them from the specified file
+- set_bg_colors(path: str) => bool: Sets the background colors sourcing them from the specified file
+Both methods return a booleand indicating the success of the operation.
+
+The files must have the following format:
+r,g,b
+r,g,b,a 
+10,10,10
+10,10,10,0.1
+
+This interface provides the ability to change colors dynamically from a bash file:
+
+interface=io.github.fsobolev.Cavalier
+object=/io/github/fsobolev/Cavalier
+method=set_fg_colors
+argument="~/colors-rgb"
+
+dbus-send --session --dest=$interface --type=method_call --print-reply $object $interface.$method string:$argument
+
+Thus, it can be integrated with tools like Pywal letting you change the colors of Cavalier dynamically to match the wallpaper.
 
 ## Building
 

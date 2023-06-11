@@ -162,6 +162,32 @@ class CavalierPreferencesWindow(Adw.PreferencesWindow):
         self.pref_thickness.add_suffix(self.pref_thickness_scale)
         self.cavalier_group.add(self.pref_thickness)
 
+        self.dbus_group = Adw.PreferencesGroup.new()
+        self.cavalier_page.add(self.dbus_group)
+
+        self.pref_use_dbus_colors = Adw.ActionRow.new()
+        self.pref_use_dbus_colors.set_title(_('DBus colors'))
+        self.pref_use_dbus_colors.set_subtitle( \
+            _('Whether to use colors received through DBus (overwrites default profile).'))
+        self.pref_use_dbus_colors_switch = Gtk.Switch.new()
+        self.pref_use_dbus_colors_switch.set_valign(Gtk.Align.CENTER)
+        self.pref_use_dbus_colors.add_suffix(self.pref_use_dbus_colors_switch)
+        self.pref_use_dbus_colors.set_activatable_widget(self.pref_use_dbus_colors_switch)
+        self.dbus_group.add(self.pref_use_dbus_colors)
+
+        self.pref_dbus_opacity = Adw.ActionRow.new()
+        self.pref_dbus_opacity.set_title(_('DBus opacity'))
+        self.pref_dbus_opacity.set_subtitle( \
+            _('Opacity for the colors received through DBus.'))
+        self.pref_dbus_opacity_scale = Gtk.Scale.new_with_range( \
+            Gtk.Orientation.HORIZONTAL, 0.0, 100.0, 2.0)
+        self.pref_dbus_opacity_scale.set_size_request(180, -1)
+        self.pref_dbus_opacity_scale.set_draw_value(True)
+        self.pref_dbus_opacity_scale.set_value_pos(Gtk.PositionType.LEFT)
+        self.pref_dbus_opacity_scale.set_increments(1.0, 1.0)
+        self.pref_dbus_opacity.add_suffix(self.pref_dbus_opacity_scale)
+        self.dbus_group.add(self.pref_dbus_opacity)
+
         self.window_group = Adw.PreferencesGroup.new()
         self.cavalier_page.add(self.window_group)
 
@@ -418,6 +444,10 @@ class CavalierPreferencesWindow(Adw.PreferencesWindow):
             round(self.settings['items-roundness'] / 50.0, 2))
         self.pref_thickness_scale.set_value(self.settings['line-thickness'])
         self.pref_fill_switch.set_active(self.settings['fill'])
+
+        self.pref_use_dbus_colors_switch.set_active(self.settings['dbus-colors'])
+        self.pref_dbus_opacity_scale.set_value(self.settings['dbus-opacity'])
+
         self.pref_borderless_switch.set_active( \
             self.settings['borderless-window'])
         self.pref_sharp_corners_switch.set_active( \
@@ -485,6 +515,12 @@ class CavalierPreferencesWindow(Adw.PreferencesWindow):
         self.pref_fill_switch.connect('notify::state', \
             lambda *args : self.save_setting(self.pref_fill_switch, \
                 'fill', self.pref_fill_switch.get_state()))
+        # `notify::state` signal returns additional parameter that
+        # we don't need, that's why lambda is used.
+        self.pref_use_dbus_colors_switch.connect('notify::state', \
+            lambda *args : self.save_setting(self.pref_use_dbus_colors_switch, \
+                'dbus-colors', self.pref_use_dbus_colors_switch.get_state()))
+        self.pref_dbus_opacity_scale.connect('value-changed', self.change_dbus_opacity)
         # `notify::state` signal returns additional parameter that
         # we don't need, that's why lambda is used.
         self.pref_borderless_switch.connect('notify::state', \
@@ -721,6 +757,9 @@ class CavalierPreferencesWindow(Adw.PreferencesWindow):
     def change_mode(self, obj, mode):
         if(obj.get_active()):
             self.save_setting(obj, 'mode', mode)
+
+    def change_dbus_opacity(self, obj):
+        self.save_setting(obj, 'dbus-opacity', self.pref_dbus_opacity_scale.get_value())
 
     def change_bars_count(self, obj):
         value = self.cava_bars_scale.get_value()

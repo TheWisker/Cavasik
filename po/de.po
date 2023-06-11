@@ -490,6 +490,22 @@ msgstr "Farbprofil wechseln"
 msgid "Toggle Widgets Style"
 msgstr "Stil umschalten"
 
+#: src/preferences_window.py:169
+msgid "DBus colors"
+msgstr "DBus-Farben"
+
+#: src/preferences_window.py:171
+msgid "Whether to use colors received through DBus (overwrites default profile)."
+msgstr "Ob über DBus empfangene Farben verwendet werden sollen (überschreibt das Standardprofil)."
+
+#: src/preferences_window.py:179
+msgid "DBus opacity"
+msgstr "DBus-Deckkraft"
+
+#: src/preferences_window.py:181
+msgid "Opacity for the colors received through DBus."
+msgstr "Deckkraft für die über DBus empfangenen Farben."
+
 #~ msgid ""
 #~ "3 drawing modes: weird Wave, retro-ish Levels and classic CAVA look - "
 #~ "Bars!"

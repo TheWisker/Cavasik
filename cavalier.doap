@@ -12,10 +12,14 @@
   <category rdf:resource="http://api.gnome.org/doap-extensions#apps" />
   <programming-language>Python</programming-language>
 
-  <maintainer>
+  <maintainers>
     <foaf:Person>
       <foaf:name>Fyodor Sobolev</foaf:name>
       <gnome:userid>fsobolev</gnome:userid>
     </foaf:Person>
-  </maintainer>
+    <foaf:Person>
+      <foaf:name>TheWisker</foaf:name>
+      <gnome:userid>thewisker</gnome:userid>
+    </foaf:Person>
+  </maintainers>
 </Project>
