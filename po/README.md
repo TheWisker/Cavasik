@@ -2,7 +2,7 @@
 
 If you want to make a translation, thank you, you're awesome! 😍 Here are some instructions.
 
-Creating a translation starts by adding `<locale_code>.po` file. There is `cavalier.pot` file which is a template you can copy to begin with.<br/>
+Creating a translation starts by adding `<locale_code>.po` file. There is `cavasik.pot` file which is a template you can copy to begin with.<br/>
 If you have never worked with `.po` files before, you can find some help in [gettext manual](https://www.gnu.org/software/gettext/manual/html_node/PO-Files.html). You can also use special apps ([GTranslator](https://flathub.org/apps/details/org.gnome.Gtranslator), for example) instead of text editor.
 
 After editing a file with translation, add language code to `LINGUAS` file. Please keep it alphabetically sorted!

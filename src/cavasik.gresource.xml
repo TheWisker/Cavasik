@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
-  <gresource prefix="/io/github/fsobolev/Cavalier">
-    <file alias="style.css">../data/css/cavalier.css</file>
+  <gresource prefix="/io/github/TheWisker/Cavasik">
+    <file alias="style.css">../assets/css/cavasik.css</file>
     <file>shortcuts_dialog.ui</file>
   </gresource>
 </gresources>

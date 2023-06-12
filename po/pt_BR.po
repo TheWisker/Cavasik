@@ -1,11 +1,16 @@
-# Brazilian Portuguese translation for Cavalier
-# Copyright (C) 2022 Fyodor Sobolev
-# This file is distributed under the same license as the cavalier package.
+# Brazilian Portuguese translation for Cavasik
+#
+# Copyright (c) 2023, TheWisker
+# All rights reserved.
+#
+# This source code is licensed under the BSD-style license found in the
+# LICENSE file in the root directory of this source tree.
+#
 # Wagner Costa Gottschald <Wagnercostag@gmail.com>, 2023.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: cavalier\n"
+"Project-Id-Version: cavasik\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-29 12:46+0300\n"
 "PO-Revision-Date: 2023-03-27 20:28-0300\n"
@@ -18,54 +23,54 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1)\n"
 "X-Generator: Gtranslator 42.0\n"
 
-#: data/io.github.fsobolev.Cavalier.desktop.in:3
-#: data/io.github.fsobolev.Cavalier.metainfo.xml.in:6
-msgid "Cavalier"
-msgstr "Cavalier"
+#: data/io.github.TheWisker.Cavasik.desktop.in:3
+#: data/io.github.TheWisker.Cavasik.metainfo.xml.in:6
+msgid "Cavasik"
+msgstr "Cavasik"
 
-#: data/io.github.fsobolev.Cavalier.desktop.in:4
+#: data/io.github.TheWisker.Cavasik.desktop.in:4
 msgid "Audio Visualizer"
 msgstr "Visualizador de Áudio"
 
-#: data/io.github.fsobolev.Cavalier.metainfo.xml.in:7
+#: data/io.github.TheWisker.Cavasik.metainfo.xml.in:7
 msgid "Audio visualizer based on CAVA."
 msgstr "Visualizador de Áudio baseado no CAVA."
 
-#: data/io.github.fsobolev.Cavalier.metainfo.xml.in:9
+#: data/io.github.TheWisker.Cavasik.metainfo.xml.in:9
 msgid ""
-"Cavalier is an audio visualizer based on CAVA with customizable LibAdwaita "
+"Cavasik is an audio visualizer based on CAVA with customizable LibAdwaita "
 "interface."
 msgstr ""
-"Cavalier é um Visualizador de áudio baseado no CAVA com LibAdwaita "
+"Cavasik é um Visualizador de áudio baseado no CAVA com LibAdwaita "
 "customizável."
 
-#: data/io.github.fsobolev.Cavalier.metainfo.xml.in:11
+#: data/io.github.TheWisker.Cavasik.metainfo.xml.in:11
 msgid "4 drawing modes!"
 msgstr "4 desenhos de ondas!"
 
-#: data/io.github.fsobolev.Cavalier.metainfo.xml.in:12
+#: data/io.github.TheWisker.Cavasik.metainfo.xml.in:12
 msgid ""
 "Set single color or up to 10 colors gradient for background and foreground."
 msgstr ""
 
-#: data/io.github.fsobolev.Cavalier.metainfo.xml.in:13
+#: data/io.github.TheWisker.Cavasik.metainfo.xml.in:13
 msgid "Configure smoothing, noise reduction and a few other CAVA settings."
 msgstr ""
 
-#: data/io.github.fsobolev.Cavalier.metainfo.xml.in:19 src/main.py:72
+#: data/io.github.TheWisker.Cavasik.metainfo.xml.in:19 src/main.py:72
 #: src/main.py:74
 msgid "Fyodor Sobolev"
 msgstr ""
 
-#: data/io.github.fsobolev.Cavalier.metainfo.xml.in:41
-msgid "Second release of Cavalier."
+#: data/io.github.TheWisker.Cavasik.metainfo.xml.in:41
+msgid "Second release of Cavasik."
 msgstr ""
 
-#: data/io.github.fsobolev.Cavalier.metainfo.xml.in:43
+#: data/io.github.TheWisker.Cavasik.metainfo.xml.in:43
 msgid "New drawing mode — Particles!"
 msgstr ""
 
-#: data/io.github.fsobolev.Cavalier.metainfo.xml.in:44
+#: data/io.github.TheWisker.Cavasik.metainfo.xml.in:44
 msgid ""
 "Color profiles! Create as many as you want and change between them "
 "instantly. Unfortunately, this new feature required to change how the "
@@ -73,185 +78,185 @@ msgid ""
 "will be lost after installing this update."
 msgstr ""
 
-#: data/io.github.fsobolev.Cavalier.metainfo.xml.in:45
+#: data/io.github.TheWisker.Cavasik.metainfo.xml.in:45
 msgid "Added keyboard shortcuts to change most of the settings on the fly."
 msgstr ""
 
-#: data/io.github.fsobolev.Cavalier.metainfo.xml.in:46
+#: data/io.github.TheWisker.Cavasik.metainfo.xml.in:46
 msgid "Added option to show/hide window controls."
 msgstr ""
 
-#: data/io.github.fsobolev.Cavalier.metainfo.xml.in:47
+#: data/io.github.TheWisker.Cavasik.metainfo.xml.in:47
 msgid "Added option to autohide headerbar when the main window is not focused."
 msgstr ""
 
-#: data/io.github.fsobolev.Cavalier.metainfo.xml.in:48
+#: data/io.github.TheWisker.Cavasik.metainfo.xml.in:48
 msgid ""
 "Added option to change roundness of items in \"levels\" and \"particles\" "
 "modes."
 msgstr ""
 
-#: data/io.github.fsobolev.Cavalier.metainfo.xml.in:49
+#: data/io.github.TheWisker.Cavasik.metainfo.xml.in:49
 msgid "Added option to reverse the order of bars."
 msgstr ""
 
-#: data/io.github.fsobolev.Cavalier.metainfo.xml.in:50
+#: data/io.github.TheWisker.Cavasik.metainfo.xml.in:50
 msgid "Import/Export Settings"
 msgstr ""
 
-#: data/io.github.fsobolev.Cavalier.gschema.xml:5
+#: data/io.github.TheWisker.Cavasik.gschema.xml:5
 msgid "Window size"
 msgstr "Tamanho da janela"
 
-#: data/io.github.fsobolev.Cavalier.gschema.xml:9
+#: data/io.github.TheWisker.Cavasik.gschema.xml:9
 msgid "Window maximized state"
 msgstr "Janela no estado maximizado"
 
-#: data/io.github.fsobolev.Cavalier.gschema.xml:10
+#: data/io.github.TheWisker.Cavasik.gschema.xml:10
 msgid "Whether main window is maximized or not"
 msgstr ""
 
-#: data/io.github.fsobolev.Cavalier.gschema.xml:14
+#: data/io.github.TheWisker.Cavasik.gschema.xml:14
 #: src/preferences_window.py:147
 msgid "Window controls"
 msgstr "Controle de janela"
 
-#: data/io.github.fsobolev.Cavalier.gschema.xml:15
+#: data/io.github.TheWisker.Cavasik.gschema.xml:15
 #: src/preferences_window.py:149
 msgid "Whether to show window control buttons."
 msgstr ""
 
-#: data/io.github.fsobolev.Cavalier.gschema.xml:19
+#: data/io.github.TheWisker.Cavasik.gschema.xml:19
 #: src/preferences_window.py:158
 msgid "Autohide headerbar"
 msgstr ""
 
-#: data/io.github.fsobolev.Cavalier.gschema.xml:20
+#: data/io.github.TheWisker.Cavasik.gschema.xml:20
 #: src/preferences_window.py:160
 msgid "Whether to hide headerbar when main window is not focused."
 msgstr ""
 
-#: data/io.github.fsobolev.Cavalier.gschema.xml:24
+#: data/io.github.TheWisker.Cavasik.gschema.xml:24
 msgid "Drawing mode"
 msgstr "Ondas"
 
-#: data/io.github.fsobolev.Cavalier.gschema.xml:25
+#: data/io.github.TheWisker.Cavasik.gschema.xml:25
 msgid "Defines what the visualizer looks like."
 msgstr ""
 
-#: data/io.github.fsobolev.Cavalier.gschema.xml:35 src/preferences_window.py:97
+#: data/io.github.TheWisker.Cavasik.gschema.xml:35 src/preferences_window.py:97
 msgid "Drawing area margin"
 msgstr "Marge da onda"
 
-#: data/io.github.fsobolev.Cavalier.gschema.xml:36 src/preferences_window.py:99
+#: data/io.github.TheWisker.Cavasik.gschema.xml:36 src/preferences_window.py:99
 msgid "Size of gaps around drawing area (in pixels)."
 msgstr ""
 
-#: data/io.github.fsobolev.Cavalier.gschema.xml:41
+#: data/io.github.TheWisker.Cavasik.gschema.xml:41
 #: src/preferences_window.py:109
 msgid "Offset between items"
 msgstr ""
 
-#: data/io.github.fsobolev.Cavalier.gschema.xml:42
+#: data/io.github.TheWisker.Cavasik.gschema.xml:42
 #: src/preferences_window.py:111
 msgid ""
 "The size of spaces between elements in \"levels\", \"particles\" and \"bars"
 "\" modes (in percent)."
 msgstr ""
 
-#: data/io.github.fsobolev.Cavalier.gschema.xml:47
+#: data/io.github.TheWisker.Cavasik.gschema.xml:47
 #: src/preferences_window.py:121
 msgid "Roundness of items"
 msgstr ""
 
-#: data/io.github.fsobolev.Cavalier.gschema.xml:48
+#: data/io.github.TheWisker.Cavasik.gschema.xml:48
 msgid "This setting only affects \"levels\" and \"particles\" modes."
 msgstr ""
 
-#: data/io.github.fsobolev.Cavalier.gschema.xml:53
+#: data/io.github.TheWisker.Cavasik.gschema.xml:53
 msgid "Number of bars"
 msgstr ""
 
-#: data/io.github.fsobolev.Cavalier.gschema.xml:54
+#: data/io.github.TheWisker.Cavasik.gschema.xml:54
 msgid "Number of bars in CAVA config"
 msgstr ""
 
-#: data/io.github.fsobolev.Cavalier.gschema.xml:59
+#: data/io.github.TheWisker.Cavasik.gschema.xml:59
 #: src/preferences_window.py:204
 msgid "Automatic sensitivity"
 msgstr "Sensibilidade automática"
 
-#: data/io.github.fsobolev.Cavalier.gschema.xml:60
+#: data/io.github.TheWisker.Cavasik.gschema.xml:60
 #: src/preferences_window.py:206
 msgid "Attempt to decrease sensitivity if the bars peak."
 msgstr ""
 
-#: data/io.github.fsobolev.Cavalier.gschema.xml:64
+#: data/io.github.TheWisker.Cavasik.gschema.xml:64
 #: src/preferences_window.py:214
 msgid "Sensitivity"
 msgstr "Sensibilidade"
 
-#: data/io.github.fsobolev.Cavalier.gschema.xml:65
+#: data/io.github.TheWisker.Cavasik.gschema.xml:65
 #: src/preferences_window.py:216
 msgid ""
 "Manual sensitivity. If automatic sensitivity is enabled, this will only be "
 "the initial value."
 msgstr ""
 
-#: data/io.github.fsobolev.Cavalier.gschema.xml:70
+#: data/io.github.TheWisker.Cavasik.gschema.xml:70
 #: src/preferences_window.py:225
 msgid "Channels"
 msgstr "Canais"
 
-#: data/io.github.fsobolev.Cavalier.gschema.xml:71
+#: data/io.github.TheWisker.Cavasik.gschema.xml:71
 msgid "Mono or stereo"
 msgstr "Mono ou stereo"
 
-#: data/io.github.fsobolev.Cavalier.gschema.xml:79
+#: data/io.github.TheWisker.Cavasik.gschema.xml:79
 #: src/preferences_window.py:237
 msgid "Smoothing"
 msgstr "Suavidade na animação"
 
-#: data/io.github.fsobolev.Cavalier.gschema.xml:87
+#: data/io.github.TheWisker.Cavasik.gschema.xml:87
 msgid "Noise reduction"
 msgstr ""
 
-#: data/io.github.fsobolev.Cavalier.gschema.xml:88
+#: data/io.github.TheWisker.Cavasik.gschema.xml:88
 msgid ""
 "This factor adjusts the integral and gravity filters to keep the signal "
 "smooth. 1 will be very slow and smooth, 0 will be fast but noisy."
 msgstr ""
 
-#: data/io.github.fsobolev.Cavalier.gschema.xml:93
+#: data/io.github.TheWisker.Cavasik.gschema.xml:93
 #: src/preferences_window.py:255
 msgid "Reverse order"
 msgstr ""
 
-#: data/io.github.fsobolev.Cavalier.gschema.xml:97
+#: data/io.github.TheWisker.Cavasik.gschema.xml:97
 #: src/preferences_window.py:272
 msgid "Widgets style"
 msgstr ""
 
-#: data/io.github.fsobolev.Cavalier.gschema.xml:98
+#: data/io.github.TheWisker.Cavasik.gschema.xml:98
 #: src/preferences_window.py:273
 msgid "Style used by Adwaita widgets."
 msgstr ""
 
-#: data/io.github.fsobolev.Cavalier.gschema.xml:106
+#: data/io.github.TheWisker.Cavasik.gschema.xml:106
 #: src/preferences_window.py:136
 msgid "Sharp corners"
 msgstr ""
 
-#: data/io.github.fsobolev.Cavalier.gschema.xml:107
+#: data/io.github.TheWisker.Cavasik.gschema.xml:107
 #: src/preferences_window.py:138
 msgid "Whether the main window corners should be sharp."
 msgstr ""
 
-#: data/io.github.fsobolev.Cavalier.gschema.xml:111
+#: data/io.github.TheWisker.Cavasik.gschema.xml:111
 msgid "Color Profiles"
 msgstr ""
 
-#: data/io.github.fsobolev.Cavalier.gschema.xml:115
+#: data/io.github.TheWisker.Cavasik.gschema.xml:115
 msgid "Index of active color profile"
 msgstr ""
 
@@ -394,8 +399,8 @@ msgid "Open"
 msgstr "Abrir"
 
 #: src/preferences_window.py:698 src/preferences_window.py:717
-msgid "Cavalier Settings File (*.cavalier)"
-msgstr "Arquivo de configurações (*cavalier)"
+msgid "Cavasik Settings File (*.cavasik)"
+msgstr "Arquivo de configurações (*cavasik)"
 
 #: src/preferences_window.py:702
 msgid "All Files"

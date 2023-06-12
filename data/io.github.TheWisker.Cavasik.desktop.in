@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Cavasik
+Comment=Audio Visualizer
+Exec=cavasik
+Icon=io.github.TheWisker.Cavasik
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true

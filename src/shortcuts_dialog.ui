@@ -9,7 +9,7 @@
             <object class='GtkShortcutsSection'>
                 <child>
                     <object class='GtkShortcutsGroup'>
-                        <property name='title'>Cavalier</property>
+                        <property name='title'>Cavasik</property>
                         <child>
                             <object class='GtkShortcutsShortcut'>
                                 <property name='title' translatable='yes'>Change Drawing Mode</property>

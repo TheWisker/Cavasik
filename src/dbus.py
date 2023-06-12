@@ -1,41 +1,19 @@
 # dbus.py
 #
-# Copyright 2022 TheWisker
+# Copyright (c) 2023, TheWisker
+# All rights reserved.
 #
-# Permission is hereby granted, free of charge, to any person obtaining
-# a copy of this software and associated documentation files (the
-# "Software"), to deal in the Software without restriction, including
-# without limitation the rights to use, copy, modify, merge, publish,
-# distribute, sublicense, and/or sell copies of the Software, and to
-# permit persons to whom the Software is furnished to do so, subject to
-# the following conditions:
-#
-# The above copyright notice and this permission notice shall be
-# included in all copies or substantial portions of the Software.
-#
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-# EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-# NONINFRINGEMENT. IN NO EVENT SHALL THE X CONSORTIUM BE LIABLE FOR ANY
-# CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
-# TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-# SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-#
-# Except as contained in this notice, the name(s) of the above copyright
-# holders shall not be used in advertising or otherwise to promote the sale,
-# use or other dealings in this Software without prior written
-# authorization.
-#
-# SPDX-License-Identifier: MIT
+# This source code is licensed under the BSD-style license found in the
+# LICENSE file in the root directory of this source tree.
 
 from pydbus import SessionBus
 from gi.repository import Adw
-from cavalier.settings import CavalierSettings
+from cavasik.settings import CavasikSettings
 
 class BusInterface(object):
     """
         <node>
-          <interface name='io.github.fsobolev.Cavalier'>
+          <interface name='io.github.TheWisker.Cavasik'>
             <method name='set_fg_colors'>
               <arg type='s' name='path' direction='in'/>
               <arg type='b' name='state' direction='out'/>
@@ -51,8 +29,8 @@ class BusInterface(object):
     def __init__(self):
         self.window = None
         self.bus = SessionBus()
-        self.bus.publish('io.github.fsobolev.Cavalier', self)
-        self.settings = CavalierSettings.new(self.on_settings_changed)
+        self.bus.publish('io.github.TheWisker.Cavasik', self)
+        self.settings = CavasikSettings.new(self.on_settings_changed)
         self.active = self.settings['dbus-colors']
 
     def set_fg_colors(self, path):
@@ -82,13 +60,11 @@ class BusInterface(object):
             return True
         except FileNotFoundError:
             print(f"File not found: {path}")
-            return False
         except IOError as e:
             print(f"An error occurred while reading the file: {e}")
-            return False
         except Exception as e:
             print(f"An unexpected error occurred: {e}")
-            return False
+        return False
 
     def on_settings_changed(self):
         self.active = self.settings['dbus-colors']

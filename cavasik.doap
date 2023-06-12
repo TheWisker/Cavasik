@@ -4,22 +4,18 @@
          xmlns:gnome="http://api.gnome.org/doap-extensions#"
          xmlns="http://usefulinc.com/ns/doap#">
 
-  <name xml:lang="en">Cavalier</name>
+  <name xml:lang="en">Cavasik</name>
   <shortdesc xml:lang="en">Audio visualizer based on CAVA</shortdesc>
-  <homepage rdf:resource="https://github.com/fsobolev/cavalier" />
-  <bug-database rdf:resource="https://github.com/fsobolev/cavalier/issues" />
-  <download-page rdf:resource="https://flathub.org/apps/details/io.github.fsobolev.Cavalier" />
+  <homepage rdf:resource="https://github.com/TheWisker/Cavasik" />
+  <bug-database rdf:resource="https://github.com/TheWisker/Cavasik/issues" />
+  <download-page rdf:resource="https://flathub.org/apps/details/io.github.TheWisker.Cavasik" />
   <category rdf:resource="http://api.gnome.org/doap-extensions#apps" />
   <programming-language>Python</programming-language>
 
-  <maintainers>
-    <foaf:Person>
-      <foaf:name>Fyodor Sobolev</foaf:name>
-      <gnome:userid>fsobolev</gnome:userid>
-    </foaf:Person>
+  <maintainer>
     <foaf:Person>
       <foaf:name>TheWisker</foaf:name>
       <gnome:userid>thewisker</gnome:userid>
     </foaf:Person>
-  </maintainers>
+  </maintainer>
 </Project>

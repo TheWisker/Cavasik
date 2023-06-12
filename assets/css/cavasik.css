@@ -1,0 +1,21 @@
+/*
+ cavasik.css
+
+ Copyright (c) 2023, TheWisker
+ All rights reserved.
+
+ This source code is licensed under the BSD-style license found in the
+ LICENSE file in the root directory of this source tree.
+*/
+
+.sharp-corners {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.borderless-window {
+  outline-width: 0px;
+  box-shadow: none;
+}

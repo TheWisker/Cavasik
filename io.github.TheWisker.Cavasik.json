@@ -1,9 +1,9 @@
 {
-    "app-id" : "io.github.fsobolev.Cavalier",
+    "app-id" : "io.github.TheWisker.Cavasik",
     "runtime" : "org.gnome.Platform",
     "runtime-version" : "44",
     "sdk" : "org.gnome.Sdk",
-    "command" : "cavalier",
+    "command" : "cavasik",
     "finish-args" : [
         "--share=ipc",
         "--socket=wayland",
@@ -69,7 +69,7 @@
 	    ]
 	},
         {
-            "name" : "cavalier",
+            "name" : "cavasik",
             "builddir" : true,
             "buildsystem" : "meson",
             "sources" : [

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schemalist gettext-domain="cavalier">
-	<schema id="io.github.fsobolev.Cavalier" path="/io/github/fsobolev/Cavalier/">
+<schemalist gettext-domain="cavasik">
+	<schema id="io.github.TheWisker.Cavasik" path="/io/github/TheWisker/Cavasik/">
 		<key name="size" type="(ii)">
 			<summary>Window size</summary>
 			<default>(400,200)</default>

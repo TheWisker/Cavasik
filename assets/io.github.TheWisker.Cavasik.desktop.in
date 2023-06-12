@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=Cavalier
+Name=Cavasik
 Comment=Audio Visualizer
-Exec=cavalier
-Icon=io.github.fsobolev.Cavalier
+Exec=cavasik
+Icon=io.github.TheWisker.Cavasik
 Terminal=false
 Type=Application
 Categories=GTK;

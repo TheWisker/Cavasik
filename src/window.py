@@ -1,47 +1,25 @@
 # window.py
 #
-# Copyright 2022 Fyodor Sobolev
+# Copyright (c) 2023, TheWisker
+# All rights reserved.
 #
-# Permission is hereby granted, free of charge, to any person obtaining
-# a copy of this software and associated documentation files (the
-# "Software"), to deal in the Software without restriction, including
-# without limitation the rights to use, copy, modify, merge, publish,
-# distribute, sublicense, and/or sell copies of the Software, and to
-# permit persons to whom the Software is furnished to do so, subject to
-# the following conditions:
-#
-# The above copyright notice and this permission notice shall be
-# included in all copies or substantial portions of the Software.
-#
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-# EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-# NONINFRINGEMENT. IN NO EVENT SHALL THE X CONSORTIUM BE LIABLE FOR ANY
-# CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
-# TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-# SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-#
-# Except as contained in this notice, the name(s) of the above copyright
-# holders shall not be used in advertising or otherwise to promote the sale,
-# use or other dealings in this Software without prior written
-# authorization.
-#
-# SPDX-License-Identifier: MIT
+# This source code is licensed under the BSD-style license found in the
+# LICENSE file in the root directory of this source tree.
 
 from gi.repository import Adw, Gtk, Gio, GObject
 
-from cavalier.settings import CavalierSettings
-from cavalier.drawing_area import CavalierDrawingArea
-from cavalier.shortcuts import add_shortcuts
+from cavasik.settings import CavasikSettings
+from cavasik.drawing_area import CavasikDrawingArea
+from cavasik.shortcuts import add_shortcuts
 
 
-class CavalierWindow(Adw.ApplicationWindow):
-    __gtype_name__ = 'CavalierWindow'
+class CavasikWindow(Adw.ApplicationWindow):
+    __gtype_name__ = 'CavasikWindow'
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.settings = CavalierSettings.new(self.on_settings_changed)
+        self.settings = CavasikSettings.new(self.on_settings_changed)
         self.cava_sample = []
 
         self.build_ui()
@@ -50,14 +28,14 @@ class CavalierWindow(Adw.ApplicationWindow):
         self.connect('notify::is-active', self.on_active_state_changed)
 
     def build_ui(self):
-        self.set_title('Cavalier')
+        self.set_title('Cavasik')
         self.set_size_request(170, 170)
         (width, height) = self.settings['size']
         self.set_default_size(width, height)
         if self.settings['maximized']:
             self.maximize()
 
-        self.set_name('cavalier-window')
+        self.set_name('cavasik-window')
         self.toggle_sharp_corners()
         self.set_style()
         self.css_provider = Gtk.CssProvider.new()
@@ -96,7 +74,7 @@ class CavalierWindow(Adw.ApplicationWindow):
         self.spinner.set_margin_bottom(46) # headerbar height
         self.bin_spinner.set_child(self.spinner)
 
-        self.drawing_area = CavalierDrawingArea.new()
+        self.drawing_area = CavasikDrawingArea.new()
         self.drawing_area.spinner = self.spinner
         self.drawing_area.run()
         self.overlay.set_child(self.drawing_area)
@@ -135,14 +113,14 @@ class CavalierWindow(Adw.ApplicationWindow):
         if len(colors) == 0:
             self.get_style_context().remove_provider(self.css_provider)
         elif len(colors) == 1:
-            self.css_data = '''#cavalier-window {
+            self.css_data = '''#cavasik-window {
                 background-color: rgba(%d, %d, %d, %f);
             }''' % colors[0]
             self.css_provider.load_from_data(self.css_data, -1)
             self.get_style_context().add_provider(self.css_provider, \
                 Gtk.STYLE_PROVIDER_PRIORITY_USER)
         elif len(colors) > 1:
-            self.css_data = '''#cavalier-window {
+            self.css_data = '''#cavasik-window {
                 background: linear-gradient(to bottom, '''
             for c in colors:
                 self.css_data += 'rgba(%d, %d, %d, %f), ' % c

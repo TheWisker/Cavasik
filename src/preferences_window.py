@@ -1,72 +1,50 @@
 # preferences_window.py
 #
-# Copyright 2022 Fyodor Sobolev
+# Copyright (c) 2023, TheWisker
+# All rights reserved.
 #
-# Permission is hereby granted, free of charge, to any person obtaining
-# a copy of this software and associated documentation files (the
-# "Software"), to deal in the Software without restriction, including
-# without limitation the rights to use, copy, modify, merge, publish,
-# distribute, sublicense, and/or sell copies of the Software, and to
-# permit persons to whom the Software is furnished to do so, subject to
-# the following conditions:
-#
-# The above copyright notice and this permission notice shall be
-# included in all copies or substantial portions of the Software.
-#
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-# EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-# MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-# NONINFRINGEMENT. IN NO EVENT SHALL THE X CONSORTIUM BE LIABLE FOR ANY
-# CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
-# TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-# SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-#
-# Except as contained in this notice, the name(s) of the above copyright
-# holders shall not be used in advertising or otherwise to promote the sale,
-# use or other dealings in this Software without prior written
-# authorization.
-#
-# SPDX-License-Identifier: MIT
+# This source code is licensed under the BSD-style license found in the
+# LICENSE file in the root directory of this source tree.
 
 import os
 from gi.repository import Adw, Gtk, GObject, Gdk, Gio, GLib
-from cavalier.settings import CavalierSettings
-from cavalier.settings_import_export import import_settings, export_settings
+from cavasik.settings import CavasikSettings
+from cavasik.settings_import_export import import_settings, export_settings
 
 
-class CavalierPreferencesWindow(Adw.PreferencesWindow):
-    __gtype_name__ = 'CavalierPreferencesWindow'
+class CavasikPreferencesWindow(Adw.PreferencesWindow):
+    __gtype_name__ = 'CavasikPreferencesWindow'
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.set_modal(False)
-        self.settings = CavalierSettings.new(self.on_settings_changed)
+        self.settings = CavasikSettings.new(self.on_settings_changed)
         self.flatpak = os.path.exists('/.flatpak-info')
 
         self.set_default_size(572, 518)
-        self.create_cavalier_page()
+        self.create_cavasik_page()
         self.create_cava_page()
         self.create_colors_page()
         self.settings_bind = False
         self.do_not_change_profile = False
         self.load_settings()
 
-    def create_cavalier_page(self):
-        self.cavalier_page = Adw.PreferencesPage.new()
-        self.cavalier_page.set_title('Cavalier')
-        self.cavalier_page.set_icon_name('io.github.fsobolev.Cavalier-symbolic')
-        self.add(self.cavalier_page)
+    def create_cavasik_page(self):
+        self.cavasik_page = Adw.PreferencesPage.new()
+        self.cavasik_page.set_title('Cavasik')
+        self.cavasik_page.set_icon_name('io.github.TheWisker.Cavasik-symbolic')
+        self.add(self.cavasik_page)
 
-        self.cavalier_mode_group = Adw.PreferencesGroup.new()
-        self.cavalier_mode_group.set_title(_('Drawing Mode'))
-        self.cavalier_page.add(self.cavalier_mode_group)
+        self.cavasik_mode_group = Adw.PreferencesGroup.new()
+        self.cavasik_mode_group.set_title(_('Drawing Mode'))
+        self.cavasik_page.add(self.cavasik_mode_group)
 
         self.wave_row = Adw.ActionRow.new()
         self.wave_row.set_title(_('Wave'))
         self.wave_check_btn = Gtk.CheckButton.new()
         self.wave_row.add_prefix(self.wave_check_btn)
         self.wave_row.set_activatable_widget(self.wave_check_btn)
-        self.cavalier_mode_group.add(self.wave_row)
+        self.cavasik_mode_group.add(self.wave_row)
 
         self.levels_row = Adw.ActionRow.new()
         self.levels_row.set_title(_('Levels'))
@@ -74,7 +52,7 @@ class CavalierPreferencesWindow(Adw.PreferencesWindow):
         self.levels_check_btn.set_group(self.wave_check_btn)
         self.levels_row.add_prefix(self.levels_check_btn)
         self.levels_row.set_activatable_widget(self.levels_check_btn)
-        self.cavalier_mode_group.add(self.levels_row)
+        self.cavasik_mode_group.add(self.levels_row)
 
         self.particles_row = Adw.ActionRow.new()
         self.particles_row.set_title(_('Particles'))
@@ -82,7 +60,7 @@ class CavalierPreferencesWindow(Adw.PreferencesWindow):
         self.particles_check_btn.set_group(self.wave_check_btn)
         self.particles_row.add_prefix(self.particles_check_btn)
         self.particles_row.set_activatable_widget(self.particles_check_btn)
-        self.cavalier_mode_group.add(self.particles_row)
+        self.cavasik_mode_group.add(self.particles_row)
 
         self.spine_row = Adw.ActionRow.new()
         self.spine_row.set_title(_('Spine'))
@@ -90,7 +68,7 @@ class CavalierPreferencesWindow(Adw.PreferencesWindow):
         self.spine_check_btn.set_group(self.wave_check_btn)
         self.spine_row.add_prefix(self.spine_check_btn)
         self.spine_row.set_activatable_widget(self.spine_check_btn)
-        self.cavalier_mode_group.add(self.spine_row)
+        self.cavasik_mode_group.add(self.spine_row)
 
         self.bars_row = Adw.ActionRow.new()
         self.bars_row.set_title(_('Bars'))
@@ -98,10 +76,10 @@ class CavalierPreferencesWindow(Adw.PreferencesWindow):
         self.bars_check_btn.set_group(self.wave_check_btn)
         self.bars_row.add_prefix(self.bars_check_btn)
         self.bars_row.set_activatable_widget(self.bars_check_btn)
-        self.cavalier_mode_group.add(self.bars_row)
+        self.cavasik_mode_group.add(self.bars_row)
 
-        self.cavalier_group = Adw.PreferencesGroup.new()
-        self.cavalier_page.add(self.cavalier_group)
+        self.cavasik_group = Adw.PreferencesGroup.new()
+        self.cavasik_page.add(self.cavasik_group)
 
         self.pref_margin = Adw.ActionRow.new()
         self.pref_margin.set_title(_('Drawing area margin'))
@@ -113,7 +91,7 @@ class CavalierPreferencesWindow(Adw.PreferencesWindow):
         self.pref_margin_scale.set_draw_value(True)
         self.pref_margin_scale.set_value_pos(Gtk.PositionType.LEFT)
         self.pref_margin.add_suffix(self.pref_margin_scale)
-        self.cavalier_group.add(self.pref_margin)
+        self.cavasik_group.add(self.pref_margin)
 
         self.pref_offset = Adw.ActionRow.new()
         self.pref_offset.set_title(_('Offset between items'))
@@ -125,7 +103,7 @@ class CavalierPreferencesWindow(Adw.PreferencesWindow):
         self.pref_offset_scale.set_draw_value(True)
         self.pref_offset_scale.set_value_pos(Gtk.PositionType.LEFT)
         self.pref_offset.add_suffix(self.pref_offset_scale)
-        self.cavalier_group.add(self.pref_offset)
+        self.cavasik_group.add(self.pref_offset)
 
         self.pref_roundness = Adw.ActionRow.new()
         self.pref_roundness.set_title(_('Roundness of items'))
@@ -137,7 +115,7 @@ class CavalierPreferencesWindow(Adw.PreferencesWindow):
         self.pref_roundness_scale.set_draw_value(True)
         self.pref_roundness_scale.set_value_pos(Gtk.PositionType.LEFT)
         self.pref_roundness.add_suffix(self.pref_roundness_scale)
-        self.cavalier_group.add(self.pref_roundness)
+        self.cavasik_group.add(self.pref_roundness)
 
         self.pref_fill = Adw.ActionRow.new()
         self.pref_fill.set_title(_('Filling'))
@@ -148,7 +126,7 @@ class CavalierPreferencesWindow(Adw.PreferencesWindow):
         self.pref_fill.add_suffix(self.pref_fill_switch)
         self.pref_fill.set_activatable_widget( \
             self.pref_fill_switch)
-        self.cavalier_group.add(self.pref_fill)
+        self.cavasik_group.add(self.pref_fill)
 
         self.pref_thickness = Adw.ActionRow.new()
         self.pref_thickness.set_title(_('Thickness of lines'))
@@ -160,10 +138,10 @@ class CavalierPreferencesWindow(Adw.PreferencesWindow):
         self.pref_thickness_scale.set_draw_value(True)
         self.pref_thickness_scale.set_value_pos(Gtk.PositionType.LEFT)
         self.pref_thickness.add_suffix(self.pref_thickness_scale)
-        self.cavalier_group.add(self.pref_thickness)
+        self.cavasik_group.add(self.pref_thickness)
 
         self.dbus_group = Adw.PreferencesGroup.new()
-        self.cavalier_page.add(self.dbus_group)
+        self.cavasik_page.add(self.dbus_group)
 
         self.pref_use_dbus_colors = Adw.ActionRow.new()
         self.pref_use_dbus_colors.set_title(_('DBus colors'))
@@ -189,7 +167,7 @@ class CavalierPreferencesWindow(Adw.PreferencesWindow):
         self.dbus_group.add(self.pref_dbus_opacity)
 
         self.window_group = Adw.PreferencesGroup.new()
-        self.cavalier_page.add(self.window_group)
+        self.cavasik_page.add(self.window_group)
 
         self.pref_borderless = Adw.ActionRow.new()
         self.pref_borderless.set_title(_('Borderless window'))
@@ -798,8 +776,8 @@ class CavalierPreferencesWindow(Adw.PreferencesWindow):
         file_dialog.set_initial_folder( \
             Gio.File.new_for_path(os.environ['HOME']))
         file_filter = Gtk.FileFilter.new()
-        file_filter.set_name(_('Cavalier Settings File (*.cavalier)'))
-        file_filter.add_pattern('*.cavalier')
+        file_filter.set_name(_('Cavasik Settings File (*.cavasik)'))
+        file_filter.add_pattern('*.cavasik')
         file_filter_all = Gtk.FileFilter.new()
         file_filter_all.set_name(_('All Files'))
         file_filter_all.add_pattern('*')
@@ -823,8 +801,8 @@ class CavalierPreferencesWindow(Adw.PreferencesWindow):
         file_dialog.set_initial_folder( \
             Gio.File.new_for_path(os.environ['HOME']))
         file_filter = Gtk.FileFilter.new()
-        file_filter.set_name(_('Cavalier Settings File (*.cavalier)'))
-        file_filter.add_pattern('*.cavalier')
+        file_filter.set_name(_('Cavasik Settings File (*.cavasik)'))
+        file_filter.add_pattern('*.cavasik')
         file_filter_list = Gio.ListStore.new(Gtk.FileFilter);
         file_filter_list.append(file_filter)
         file_dialog.set_filters(file_filter_list)

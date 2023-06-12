@@ -1,0 +1,37 @@
+# translation_credits.py
+#
+# Copyright (c) 2023, TheWisker
+# All rights reserved.
+#
+# This source code is licensed under the BSD-style license found in the
+# LICENSE file in the root directory of this source tree.
+
+import json
+
+pkgdatadir= '@pkgdatadir@'
+
+def get_translation_credits():
+    translation_credits=''
+    try:
+        with open(f'{pkgdatadir}/CREDITS.json', 'r') as f:
+            credits_json = json.load(f)
+            for translator in sorted(credits_json.keys()):
+                data = credits_json[translator]
+                translation_credits += f'{translator} ('
+                if type(data['lang']) == list:
+                    data['lang'].sort()
+                    translation_credits += ', '.join(data['lang'])
+                else:
+                    translation_credits += data['lang']
+                translation_credits += ')'
+                if 'url' in data.keys():
+                    translation_credits += f" {data['url']}"
+                elif 'email' in data.keys():
+                    translation_credits += f" <{data['email']}>"
+                translation_credits += '\n'
+            translation_credits = translation_credits.rstrip('\n')
+            return translation_credits
+    except Exception as e:
+        print('[Error] Something went wrong when opening translator credits.')
+        print(e)
+        return ''

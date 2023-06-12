@@ -1,7 +1,0 @@
-data/io.github.fsobolev.Cavalier.desktop.in
-data/io.github.fsobolev.Cavalier.metainfo.xml.in
-data/io.github.fsobolev.Cavalier.gschema.xml
-src/main.py
-src/preferences_window.py
-src/window.py
-src/shortcuts_dialog.ui
