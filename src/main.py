@@ -30,9 +30,9 @@ class CavasikApplication(Adw.Application):
         self.create_action('open-menu', self.on_menu_action, ['F10'])
         self.create_action('toggle-fullscreen', self.on_fullscreen_action, ['F11'])
         self.create_action('preferences', self.on_preferences_action,
-            ['<primary>comma'])
+            ['P'])
         self.create_action('shortcuts', self.on_shortcuts_action, \
-            ['<primary>question'])
+            ['H'])
         self.create_action('close', self.on_close_action, ['<primary>w'])
         self.create_action('quit', self.on_quit_action, ['<primary>q'])
         self.bus_interface = BusInterface()

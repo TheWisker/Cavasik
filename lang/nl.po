@@ -1,0 +1,886 @@
+# DUTCH TRANSLATION FOR CAVASIK
+#
+# Copyright (c) 2023, TheWisker
+# All rights reserved.
+#
+# This source code is licensed under the BSD-style license found in the
+# LICENSE file in the root directory of this source tree.
+#
+# Heimen Stoffels <vistausss@fastmail.com>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: cavasik\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-17 15:13+0200\n"
+"PO-Revision-Date: 2023-06-17 20:03+0200\n"
+"Last-Translator: TheWisker <TheWisker@protonmail.com>\n"
+"Language-Team: Dutch\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.3.1\n"
+
+#: assets/io.github.TheWisker.Cavasik.desktop.in:3
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:6
+msgid "Cavasik"
+msgstr "Cavasik"
+
+#: assets/io.github.TheWisker.Cavasik.desktop.in:4
+msgid "Audio Visualizer"
+msgstr "Audiovisualisatie"
+
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:7
+msgid "Audio visualizer based on CAVA"
+msgstr "Audiovisualisatie, gebaseerd op CAVA"
+
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:9
+msgid "Cavasik is an audio visualizer based on CAVA"
+msgstr "Cavasik is een audiovisualizer gebaseerd op CAVA"
+
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:10
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:69
+msgid "Cavasik is a fork of Cavalier."
+msgstr "Cavasik is een vork van Cavalier."
+
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:12
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:71
+msgid "Five normal drawing modes!"
+msgstr "Vijf normale tekenmodi!"
+
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:13
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:72
+msgid "Two circle drawing modes!"
+msgstr "Twee cirkeltekenmodi!"
+
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:14
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:73
+msgid "Three mirror drawing modes!"
+msgstr "Drie spiegeltekenmodi!"
+
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:15
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:74
+msgid "Four drawing directions!"
+msgstr "Vier tekenrichtingen!"
+
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:16
+msgid "Customizable LibAdwaita interface!"
+msgstr "Aanpasbare LibAdwaita-interface!"
+
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:17
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:75
+msgid ""
+"Set a single color or up to a 10 color linear gradient for background and "
+"foreground!"
+msgstr ""
+"Stel een enkele kleur in of een lineair verloop van maximaal 10 kleuren voor "
+"achtergrond en voorgrond!"
+
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:18
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:76
+msgid ""
+"Select different foreground colors for the mirrored images in mirror mode!"
+msgstr ""
+"Selecteer verschillende voorgrondkleuren voor de gespiegelde afbeeldingen in "
+"spiegelmodus!"
+
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:19
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:77
+msgid "Set up a color animation that changes the colors gradually in a loop!"
+msgstr ""
+"Stel een kleurenanimatie in die de kleuren geleidelijk in een lus verandert!"
+
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:20
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:78
+msgid "Configure smoothing, noise reduction and a few other CAVA settings!"
+msgstr ""
+"Configureer afvlakking, ruisonderdrukking en een paar andere CAVA-"
+"instellingen!"
+
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:21
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:79
+msgid "Change background and foreground colors through a DBus interface!"
+msgstr "Verander achtergrond- en voorgrondkleuren via een DBus-interface!"
+
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:27 src/main.py:56
+#: src/main.py:58
+msgid "TheWisker"
+msgstr "TheWisker"
+
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:67
+msgid "First release of Cavasik"
+msgstr "Eerste uitgave van Cavasik"
+
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:68
+msgid ""
+"Cavasik is an audio visualizer based on CAVA with customizable LibAdwaita "
+"interface."
+msgstr ""
+"Cavasik is een audiovisualizer gebaseerd op CAVA met aanpasbare LibAdwaita-"
+"interface."
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:5
+msgid "Window size"
+msgstr "Vensterafmetingen"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:9
+msgid "Window maximized state"
+msgstr "Venstermaximalisatie"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:10
+msgid "Whether main window is maximized or not"
+msgstr "Of het venster gemaximaliseerd moet worden"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:14
+#: src/preferences_window.py:259
+msgid "Borderless window"
+msgstr "Randloos venster"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:15
+#: src/preferences_window.py:261
+msgid "Whether to disable window shadow and borders."
+msgstr "Of vensterschaduw en randen moeten worden uitgeschakeld."
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:19
+#: src/preferences_window.py:280
+msgid "Window controls"
+msgstr "Titelbalkknoppen"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:20
+#: src/preferences_window.py:282
+msgid "Whether to show window control buttons."
+msgstr "Of de titelbalkknoppen getoond dienen te worden."
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:24
+#: src/preferences_window.py:291
+msgid "Autohide headerbar"
+msgstr "Kopbalk automatisch verbergen"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:25
+#: src/preferences_window.py:293
+msgid "Whether to hide headerbar when main window is not focused."
+msgstr ""
+"Of de kopbalk automatisch moet worden verborgen als het hoofdvenster niet "
+"gefocust is."
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:29
+#: src/preferences_window.py:233
+msgid "DBus colors"
+msgstr "DBus-kleuren"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:30
+#: src/preferences_window.py:235
+msgid ""
+"Whether to use colors received through DBus (overwrites default profile)."
+msgstr ""
+"Of kleuren ontvangen via DBus moeten worden gebruikt (overschrijft "
+"standaardprofiel)."
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:34
+#: src/preferences_window.py:243
+msgid "DBus opacity"
+msgstr "DBus-dekking"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:35
+#: src/preferences_window.py:245
+msgid "Opacity for the colors received through DBus."
+msgstr "Dekking voor de kleuren ontvangen via DBus."
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:40
+msgid "Drawing mode"
+msgstr "Weergavemodus"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:41
+msgid "Defines what the visualizer looks like."
+msgstr "Geef aan hoe de visualisatie er uit moet zien."
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:52
+#: src/preferences_window.py:164
+msgid "Drawing direction"
+msgstr "Richting tekenen"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:62
+msgid "Mirror mode"
+msgstr "Spiegelmodus"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:72
+msgid "Mirror offset"
+msgstr "Spiegel offset"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:73
+#: src/preferences_window.py:103
+msgid "Offset between mirrored images in normal mode"
+msgstr "Offset tussen gespiegelde beelden in normale modus"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:78
+msgid "Mirror opacity"
+msgstr "Spiegel dekking"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:79
+#: src/preferences_window.py:113
+msgid "Opacity of the mirrored image in normal mode"
+msgstr "Dekking van het gespiegelde beeld in normale modus"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:84
+msgid "Mirror colors"
+msgstr "Spiegel kleuren"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:85
+#: src/preferences_window.py:515
+msgid "Color profile for mirrored images"
+msgstr "Kleurprofiel voor gespiegelde afbeeldingen"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:89
+msgid "Mirror clones"
+msgstr "Spiegel klonen"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:90
+#: src/preferences_window.py:123
+msgid "Clones to make in the overlapping mode"
+msgstr "Klonen om te maken in de overlappende modus"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:95
+msgid "Mirror ratio"
+msgstr "Spiegelverhouding"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:96
+#: src/preferences_window.py:133
+msgid "Scale ratio between overlapping clones"
+msgstr "Schaalverhouding tussen overlappende klonen"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:101
+#: src/preferences_window.py:144
+msgid "Circle"
+msgstr "Cirkel"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:102
+msgid "Whether to modify drawing modes to draw in circle"
+msgstr "Of tekenmodi moeten worden gewijzigd om in een cirkel te tekenen"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:106
+msgid "Wave - Show Inner Circle"
+msgstr "Wave - Toon binnenste cirkel"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:107
+msgid "Whether to show the inner circle when using Wave mode Circle variant."
+msgstr ""
+"Of de binnenste cirkel moet worden weergegeven bij gebruik van de "
+"cirkelvariant Wave-modus."
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:111
+#: src/preferences_window.py:146
+msgid "Radius"
+msgstr "Straal"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:112
+#: src/preferences_window.py:147
+msgid "Radius of base circle (in percent)"
+msgstr "Straal van basiscirkel (in procenten)"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:117
+#: src/preferences_window.py:171
+msgid "Drawing area margin"
+msgstr "Weergavemodusmarge"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:118
+#: src/preferences_window.py:173
+msgid "Size of gaps around drawing area (in pixels)."
+msgstr "De grootte van ruimtes om het weergavegebied heen (in pixels)."
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:123
+#: src/preferences_window.py:183
+msgid "Offset between items"
+msgstr "Verschuiving tussen items"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:124
+#: src/preferences_window.py:185
+msgid ""
+"The size of spaces between elements in \"levels\", \"particles\" and "
+"\"bars\" modes (in percent)."
+msgstr ""
+"De ruimte tussen elementen in niveau-, balk- en deeltjesmodi (in procenten)."
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:129
+#: src/preferences_window.py:195
+msgid "Roundness of items"
+msgstr "Rondheid van items"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:130
+msgid "This setting affects \"levels\", \"particles\" and \"spine\" modes."
+msgstr ""
+"Deze instelling is van invloed op de modi \"niveaus\", \"deeltjes\" en "
+"\"ruggengraat\"."
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:135
+#: src/preferences_window.py:218
+msgid "Thickness of lines"
+msgstr "Dikte van lijnen"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:136
+#: src/preferences_window.py:220
+msgid "Thickness of lines when filling is off (in pixels)."
+msgstr "Dikte van lijnen bij vulling is uitgeschakeld (in pixels)."
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:141
+#: src/preferences_window.py:207
+msgid "Filling"
+msgstr "Vulling"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:142
+#: src/preferences_window.py:209
+msgid "Whether shapes should be filled or outlined."
+msgstr "Of vormen gevuld of omlijnd moeten worden."
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:146
+msgid "Number of bars"
+msgstr "Aantal balken"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:147
+msgid "Number of bars in CAVA config"
+msgstr "Het aantal CAVA-balken"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:152
+#: src/preferences_window.py:337
+msgid "Automatic sensitivity"
+msgstr "Automatische gevoeligheid"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:153
+#: src/preferences_window.py:339
+msgid "Attempt to decrease sensitivity if the bars peak."
+msgstr ""
+"Probeer de gevoeligheid te verlagen zodra het maximale aantal balken bereikt "
+"is."
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:157
+#: src/preferences_window.py:347
+msgid "Sensitivity"
+msgstr "Gevoeligheidsgraad"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:158
+#: src/preferences_window.py:349
+msgid ""
+"Manual sensitivity. If automatic sensitivity is enabled, this will only be "
+"the initial value."
+msgstr ""
+"De handmatige gevoeligheidsgraad. Als de automatische modus is ingeschakeld, "
+"dan wordt dit als startwaarde gebruikt."
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:163
+#: src/preferences_window.py:358
+msgid "Channels"
+msgstr "Kanalen"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:164
+msgid "Mono or stereo"
+msgstr "Mono of stereo"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:172
+#: src/preferences_window.py:370
+msgid "Smoothing"
+msgstr "Vloeiendheid"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:180
+msgid "Noise reduction"
+msgstr "Ruisonderdrukking"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:181
+msgid ""
+"This factor adjusts the integral and gravity filters to keep the signal "
+"smooth. 1 will be very slow and smooth, 0 will be fast but noisy."
+msgstr ""
+"Deze factor bepaalt de zwaarte van de filters om het signaal vloeiend door "
+"te laten komen. 1 = erg zwaar, maar vloeiend - 0 = licht, maar met ruis."
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:186
+#: src/preferences_window.py:388
+msgid "Reverse order"
+msgstr "Volgorde omdraaien"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:190
+#: src/preferences_window.py:396
+msgid "Frames per Second"
+msgstr "Beelden per seconde"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:195
+#: src/preferences_window.py:416
+msgid "Widgets style"
+msgstr "Itemstijl"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:196
+#: src/preferences_window.py:417
+msgid "Style used by Adwaita widgets."
+msgstr "De door Adwaita gebruikte itemstijl."
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:204
+#: src/preferences_window.py:269
+msgid "Sharp corners"
+msgstr "Scherpe hoeken"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:205
+#: src/preferences_window.py:271
+msgid "Whether the main window corners should be sharp."
+msgstr "Of het hoofdvenster scherpe hoeken dient te hebben."
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:209
+msgid "Color Profiles"
+msgstr "Kleurenprofielen"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:213
+msgid "Index of active color profile"
+msgstr "Index van actief profiel"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:217
+#: src/preferences_window.py:522
+msgid "Color animation"
+msgstr "Animatie in kleur"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:218
+msgid "Whether the color animation is active"
+msgstr "Of de kleurenanimatie actief is"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:222
+msgid "Color animation target"
+msgstr "Kleur animatie doel"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:223
+#: src/preferences_window.py:530
+msgid "The target color profile to fade in and out of"
+msgstr "Het doelkleurprofiel om in en uit te faden"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:227
+msgid "Color animation mirror target"
+msgstr "Spiegeldoel in kleuranimatie"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:228
+#: src/preferences_window.py:535
+msgid "The target color profile to fade in and out of for the mirrored image"
+msgstr ""
+"Het doelkleurprofiel om in en uit te faden voor de gespiegelde afbeelding"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:232
+msgid "Color animation length"
+msgstr "Kleur animatie lengte"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:233
+#: src/preferences_window.py:540
+msgid "The length in seconds of the color animation"
+msgstr "De lengte in seconden van de kleurenanimatie"
+
+#: src/window.py:87 src/shortcuts_dialog.ui:138
+msgid "Preferences"
+msgstr "Voorkeuren"
+
+#: src/window.py:88
+msgid "Keyboard Shortcuts"
+msgstr "Sneltoetsen"
+
+#: src/window.py:89
+msgid "About"
+msgstr "Over"
+
+#: src/window.py:90 src/shortcuts_dialog.ui:156
+msgid "Quit"
+msgstr "Afsluiten"
+
+#: src/preferences_window.py:40
+msgid "Drawing Mode"
+msgstr "Weergavemodus"
+
+#: src/preferences_window.py:44
+msgid "Wave"
+msgstr "Golf"
+
+#: src/preferences_window.py:50
+msgid "Show inner circle"
+msgstr "Toon binnenste cirkel"
+
+#: src/preferences_window.py:58
+msgid "Levels"
+msgstr "Niveaus"
+
+#: src/preferences_window.py:66
+msgid "Particles"
+msgstr "Deeltjes"
+
+#: src/preferences_window.py:74
+msgid "Spine"
+msgstr "Ruggengraat"
+
+#: src/preferences_window.py:82 src/preferences_window.py:326
+msgid "Bars"
+msgstr "Balken"
+
+#: src/preferences_window.py:94
+msgid "Linear"
+msgstr "Lineair"
+
+#: src/preferences_window.py:96
+msgid "Mirror Mode"
+msgstr "Spiegelmodus"
+
+#: src/preferences_window.py:98
+msgid "None"
+msgstr "Geen"
+
+#: src/preferences_window.py:98
+msgid "Normal"
+msgstr "Normaal"
+
+#: src/preferences_window.py:99
+msgid "Inverse"
+msgstr "Omgekeerd"
+
+#: src/preferences_window.py:99
+msgid "Overlapping"
+msgstr "Overlappend"
+
+#: src/preferences_window.py:102
+msgid "Mirror Offset"
+msgstr "Spiegel offset"
+
+#: src/preferences_window.py:112
+msgid "Mirror Opacity"
+msgstr "Spiegeldekking"
+
+#: src/preferences_window.py:122
+msgid "Mirror Clones"
+msgstr "Spiegel klonen"
+
+#: src/preferences_window.py:132
+msgid "Mirror Ratio"
+msgstr "Spiegel verhouding"
+
+#: src/preferences_window.py:166
+msgid "Bottom to Top"
+msgstr "Van onder tot boven"
+
+#: src/preferences_window.py:166
+msgid "Top to Bottom"
+msgstr "Boven naar beneden"
+
+#: src/preferences_window.py:167
+msgid "Left to Right"
+msgstr "Van links naar rechts"
+
+#: src/preferences_window.py:167
+msgid "Right to Left"
+msgstr "Rechts naar links"
+
+#: src/preferences_window.py:197
+msgid ""
+"This setting affects \"levels\", \"particles\" and \"spine\" modes.\n"
+"0 - square, 1 - round"
+msgstr ""
+"Deze instelling is van invloed op de modi \"niveaus\", \"deeltjes\" en "
+"\"ruggengraat\".\n"
+"0 - vierkant, 1 - rond"
+
+#: src/preferences_window.py:306
+msgid "Import"
+msgstr "Importeren"
+
+#: src/preferences_window.py:311
+msgid "Export"
+msgstr "Exporteren"
+
+#: src/preferences_window.py:364
+msgid "Mono"
+msgstr "Mono"
+
+#: src/preferences_window.py:366
+msgid "Stereo"
+msgstr "Stereo"
+
+#: src/preferences_window.py:372
+msgid "Off"
+msgstr "Uit"
+
+#: src/preferences_window.py:372
+msgid "Monstercat"
+msgstr "Monstercat"
+
+#: src/preferences_window.py:375
+msgid "Noise Reduction"
+msgstr "Ruisonderdrukking"
+
+#: src/preferences_window.py:376
+msgid "0 - noisy, 1 - smooth"
+msgstr "0 - ruis - 1 - vloeiend"
+
+#: src/preferences_window.py:397
+msgid ""
+"Frames per Second for the visualizer (requires app restart to take effect)."
+msgstr ""
+"Frames per seconde voor de visualizer (herstart van de app is vereist om van "
+"kracht te worden)."
+
+#: src/preferences_window.py:408 src/preferences_window.py:429
+#: src/shortcuts_dialog.ui:82
+msgid "Colors"
+msgstr "Kleuren"
+
+#: src/preferences_window.py:422
+msgid "Light"
+msgstr "Licht"
+
+#: src/preferences_window.py:424
+msgid "Dark"
+msgstr "Donker"
+
+#: src/preferences_window.py:435
+msgid "Profile:"
+msgstr "Profiel:"
+
+#: src/preferences_window.py:443
+msgid "Add new profile"
+msgstr "Profiel toevoegen"
+
+#: src/preferences_window.py:455
+msgid "Type a name for a new profile"
+msgstr "Geef het nieuwe profiel een naam"
+
+#: src/preferences_window.py:457 src/preferences_window.py:787
+#: src/preferences_window.py:830
+msgid "Add"
+msgstr "Toevoegen"
+
+#: src/preferences_window.py:462 src/preferences_window.py:874
+msgid "The new profile will be a copy of the active profile."
+msgstr "Het nieuwe profiel is een kopie van het actieve profiel."
+
+#: src/preferences_window.py:467
+msgid "Remove profile"
+msgstr "Profiel verwijderen"
+
+#: src/preferences_window.py:474
+msgid "Are you sure you want to remove this profile?"
+msgstr "Weet u zeker dat u dit profiel wilt verwijderen?"
+
+#: src/preferences_window.py:481
+msgid "Remove"
+msgstr "Verwijderen"
+
+#: src/preferences_window.py:488
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: src/preferences_window.py:498
+msgid "<b>Foreground</b>"
+msgstr "<b>Voorgrond</b>"
+
+#: src/preferences_window.py:503
+msgid "<b>Background</b>"
+msgstr "<b>Achtergrond</b>"
+
+#: src/preferences_window.py:514
+msgid "Mirror Color"
+msgstr "Spiegel kleur"
+
+#: src/preferences_window.py:529
+msgid "Color Animation Target"
+msgstr "Kleur animatie doel"
+
+#: src/preferences_window.py:534
+msgid "Color Animation Mirror Target"
+msgstr "Kleur Animatie Spiegel Doel"
+
+#: src/preferences_window.py:539
+msgid "Color Animation Length"
+msgstr "Lengte animatie in kleur"
+
+#: src/preferences_window.py:769 src/preferences_window.py:794
+#: src/preferences_window.py:814 src/preferences_window.py:837
+msgid "Select color"
+msgstr "Kies een kleur"
+
+#: src/preferences_window.py:775 src/preferences_window.py:820
+msgid "Remove color"
+msgstr "Kleur verwijderen"
+
+#: src/preferences_window.py:798 src/preferences_window.py:841
+msgid "Add color"
+msgstr "Kleur toevoegen"
+
+#: src/preferences_window.py:867
+msgid "This name is already in use."
+msgstr "Deze naam is al in gebruik."
+
+#: src/preferences_window.py:972
+msgid "Import Settings"
+msgstr "Voorkeuren importeren"
+
+#: src/preferences_window.py:976 src/preferences_window.py:1001
+msgid "Cavasik Settings File (*.cavasik)"
+msgstr "Cavasik-voorkeurenbestand (*.cavasik)"
+
+#: src/preferences_window.py:979
+msgid "All Files"
+msgstr "Alle bestanden"
+
+#: src/preferences_window.py:997
+msgid "Export Settings"
+msgstr "Voorkeuren exporteren"
+
+#: src/shortcuts_dialog.ui:15
+msgid "Change Shape Mode"
+msgstr "Verander de vormmodus"
+
+#: src/shortcuts_dialog.ui:21
+msgid "Change Drawing Mode"
+msgstr "Weergavemodus aanpassen"
+
+#: src/shortcuts_dialog.ui:27
+msgid "Change Mirror Mode"
+msgstr "Wijzig de spiegelmodus"
+
+#: src/shortcuts_dialog.ui:33
+msgid "Change Direction"
+msgstr "Verander richting"
+
+#: src/shortcuts_dialog.ui:39
+msgid "Toggle Filling"
+msgstr "Vullen wisselen"
+
+#: src/shortcuts_dialog.ui:45
+msgid "Toggle DBus Colors"
+msgstr "Schakel DBus-kleuren in"
+
+#: src/shortcuts_dialog.ui:51
+msgid "Toggle Window Controls"
+msgstr "Titelbalkknoppen tonen/verbergen"
+
+#: src/shortcuts_dialog.ui:62
+msgid "Change Number of Bars"
+msgstr "Aantal balken aanpassen"
+
+#: src/shortcuts_dialog.ui:68
+msgid "Increase/Decrease Sensitivity"
+msgstr "Gevoeligheid verhogen/verlagen"
+
+#: src/shortcuts_dialog.ui:74
+msgid "Toggle Reverse Order"
+msgstr "Volgorde omdraaien aan/uit"
+
+#: src/shortcuts_dialog.ui:85
+msgid "Toggle Widgets Style"
+msgstr "Itemstijl aanpassen"
+
+#: src/shortcuts_dialog.ui:91
+msgid "Change Colors Profile"
+msgstr "Ander kleurenprofiel kiezen"
+
+#: src/shortcuts_dialog.ui:97
+msgid "Change Mirror Profile"
+msgstr "Spiegelprofiel wijzigen"
+
+#: src/shortcuts_dialog.ui:103
+msgid "Toggle Color Animation"
+msgstr "Schakel kleuranimatie in"
+
+#: src/shortcuts_dialog.ui:109
+msgid "Change Target Profile"
+msgstr "Doelprofiel wijzigen"
+
+#: src/shortcuts_dialog.ui:115
+msgid "Change Mirror Target Profile"
+msgstr "Wijzig Mirror Target-profiel"
+
+#: src/shortcuts_dialog.ui:123
+msgid "Window"
+msgstr "Raam"
+
+#: src/shortcuts_dialog.ui:126
+msgid "Open Menu"
+msgstr "Menu openen"
+
+#: src/shortcuts_dialog.ui:132
+msgid "Toggle Fullscreen"
+msgstr "Volledig scherm activeren"
+
+#: src/shortcuts_dialog.ui:144
+msgid "Show Shortcuts"
+msgstr "Toon snelkoppelingen"
+
+#: src/shortcuts_dialog.ui:150
+msgid "Close Active Window"
+msgstr "Sluit actief venster"
+
+#~ msgid "Fyodor Sobolev"
+#~ msgstr "Fyodor Sobolev"
+
+#~ msgid "New drawing mode — Particles!"
+#~ msgstr "Nieuwe weergavemodus: deeltjes!"
+
+#~ msgid ""
+#~ "Color profiles! Create as many as you want and change between them "
+#~ "instantly. Unfortunately, this new feature required to change how the "
+#~ "application saves colors, and because of this your previous colors "
+#~ "settings will be lost after installing this update."
+#~ msgstr ""
+#~ "Kleurenprofielen! Maak zo veel profielen als u wilt en wissel met één "
+#~ "muisklik van profiel. Helaas moest hiervoor code worden aangepast, dus uw "
+#~ "huidige kleurvoorkeuren worden door deze update gewist."
+
+#~ msgid "Added keyboard shortcuts to change most of the settings on the fly."
+#~ msgstr "Nieuw: sneltoetsen om de meeste voorkeuren aan te passen."
+
+#~ msgid "Added option to show/hide window controls."
+#~ msgstr "Nieuw: optie om de titelbalkknoppen te tonen/verbergen."
+
+#~ msgid ""
+#~ "Added option to autohide headerbar when the main window is not focused."
+#~ msgstr ""
+#~ "Nieuw: optie om de kopbalk te verbergen als het hoofdvenster niet "
+#~ "gefocust is."
+
+#~ msgid ""
+#~ "Added option to change roundness of items in \"levels\" and \"particles\" "
+#~ "modes."
+#~ msgstr ""
+#~ "Nieuw: optie om de rondheid van items aan te passen in de niveau- en "
+#~ "deeltjesmodi."
+
+#~ msgid "Added option to reverse the order of bars."
+#~ msgstr "Nieuw: optie om de volgorde van balken aan te passen."
+
+#~ msgid "Import/Export Settings"
+#~ msgstr "Voorkeuren ex-/importeren"
+
+#~ msgid "Save"
+#~ msgstr "Opslaan"
+
+#~ msgid "Change Drawing Area Margin"
+#~ msgstr "Weergavemodusmarge aanpassen"
+
+#~ msgid "Change Offset Between Items"
+#~ msgstr "Verschuiving tussen items aanpassen"
+
+#~ msgid "Change Roundness of Items"
+#~ msgstr "Rondheid van items aanpassen"
+
+#~ msgid "Toggle Sharp Corners"
+#~ msgstr "Scherpe hoeken aan/uit"
+
+#~ msgid "Toggle Autohide Headerbar"
+#~ msgstr "Kopbalk automatisch verbergen aan/uit"
+
+#~ msgid "Toggle Channels"
+#~ msgstr "Aantal kanalen aanpassen"
+
+#~ msgid ""
+#~ "3 drawing modes: weird Wave, retro-ish Levels and classic CAVA look - "
+#~ "Bars!"
+#~ msgstr ""
+#~ "Er zijn drie weergavemodi beschikbaar: dansende golf, retro-achtige "
+#~ "volumeniveaubalken en klassieke CAVA-balken."
+
+#~ msgid "The array of foregound colors (RGBA)."
+#~ msgstr "Het voorgrondkleurbereik (rgba)."
+
+#~ msgid "Background colors"
+#~ msgstr "Achtergrondkleuren"
+
+#~ msgid "The array of background colors (RGBA)."
+#~ msgstr "Het achtergrondkleurbereik (rgba)."

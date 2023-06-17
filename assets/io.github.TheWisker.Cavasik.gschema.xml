@@ -48,6 +48,71 @@
 			</choices>
 			<default>"wave"</default>
 		</key>
+	  <key name="direction" type="s">
+			<summary>Drawing direction</summary>
+			<choices>
+				<choice value="bottom-top"/>
+				<choice value="top-bottom"/>
+				<choice value="left-right"/>
+				<choice value="right-left"/>
+			</choices>
+			<default>"bottom-top"</default>
+		</key>
+	  <key name="mirror" type="s">
+			<summary>Mirror mode</summary>
+			<choices>
+				<choice value="none"/>
+				<choice value="normal"/>
+				<choice value="inverted"/>
+			  <choice value="overlapping"/>
+			</choices>
+			<default>"none"</default>
+		</key>
+	  <key name="mirror-offset" type="d">
+			<summary>Mirror offset</summary>
+			<description>Offset between mirrored images in normal mode</description>
+			<range min="0" max="0.4"/>
+			<default>0</default>
+		</key>
+	  <key name="mirror-opacity" type="i">
+			<summary>Mirror opacity</summary>
+			<description>Opacity of the mirrored image in normal mode</description>
+			<range min="0" max="100"/>
+			<default>100</default>
+		</key>
+	  <key name="mirror-colors" type="i">
+			<summary>Mirror colors</summary>
+			<description>Color profile for mirrored images</description>
+			<default>0</default>
+		</key>
+	  <key name="mirror-clones" type="i">
+			<summary>Mirror clones</summary>
+			<description>Clones to make in the overlapping mode</description>
+	    <range min="1" max="10"/>
+			<default>1</default>
+		</key>
+	  <key name="mirror-ratio" type="d">
+			<summary>Mirror ratio</summary>
+			<description>Scale ratio between overlapping clones</description>
+	    <range min="0.2" max="1"/>
+			<default>0.8</default>
+		</key>
+	  <key name="circle" type="b">
+			<summary>Circle</summary>
+			<description>Whether to modify drawing modes to draw in circle</description>
+			<default>false</default>
+		</key>
+	  <key name="wave-inner-circle" type="b">
+			<summary>Wave - Show Inner Circle</summary>
+			<description>Whether to show the inner circle when using Wave mode Circle variant.</description>
+			<default>false</default>
+		</key>
+		<key name="radius" type="i">
+			<summary>Radius</summary>
+			<description>Radius of base circle (in percent)</description>
+			<range min="0" max="100"/>
+			<default>40</default>
+		</key>
 		<key name="margin" type="i">
 			<summary>Drawing area margin</summary>
 			<description>Size of gaps around drawing area (in pixels).</description>
@@ -80,7 +145,7 @@
 		<key name="bars" type="i">
 			<summary>Number of bars</summary>
 			<description>Number of bars in CAVA config</description>
-			<range min="6" max="50"/>
+			<range min="6" max="100"/>
 			<default>12</default>
 		</key>
 		<key name="autosens" type="b">
@@ -121,6 +186,11 @@
 			<summary>Reverse order</summary>
 			<default>true</default>
 		</key>
+	  <key name="fps" type="i">
+			<summary>Frames per Second</summary>
+	    <range min="1" max="144"/>
+			<default>60</default>
+		</key>
 		<key name="widgets-style" type="s">
 			<summary>Widgets style</summary>
 			<description>Style used by Adwaita widgets.</description>
@@ -142,6 +212,27 @@
 		<key name="active-color-profile" type="i">
 			<summary>Index of active color profile</summary>
 			<default>0</default>
+		</key>
+	  <key name="color-animation" type="b">
+			<summary>Color animation</summary>
+	    <description>Whether the color animation is active</description>
+			<default>false</default>
+		</key>
+	  <key name="color-animation-target" type="i">
+			<summary>Color animation target</summary>
+	    <description>The target color profile to fade in and out of</description>
+			<default>0</default>
+		</key>
+	  <key name="color-animation-mirror-target" type="i">
+			<summary>Color animation mirror target</summary>
+	    <description>The target color profile to fade in and out of for the mirrored image</description>
+			<default>0</default>
+		</key>
+	  <key name="color-animation-length" type="i">
+			<summary>Color animation length</summary>
+	    <description>The length in seconds of the color animation</description>
+	    <range min="1" max="3600"/>
+			<default>5</default>
 		</key>
 	</schema>
 </schemalist>

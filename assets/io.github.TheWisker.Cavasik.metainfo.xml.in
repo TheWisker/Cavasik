@@ -1,17 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
-  <id>io.github.TheWisker.Cavasik.desktop</id>
+  <id>io.github.TheWisker.Cavasik</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GNUv3</project_license>
   <name>Cavasik</name>
-  <summary>Audio visualizer based on CAVA.</summary>
+  <summary>Audio visualizer based on CAVA</summary>
   <description>
-    <p>Cavasik is an audio visualizer based on CAVA with customizable LibAdwaita interface.</p>
+    <p>Cavasik is an audio visualizer based on CAVA</p>
+    <p>Cavasik is a fork of Cavalier.</p>
     <ul>
-      <li>Has 4 drawing modes!</li>
-      <li>Set a single color or up to 10 colors for a linear gradient for the background and the foreground.</li>
-      <li>Configure smoothing, noise reduction and a few other CAVA settings.</li>
-      <li>Change colors dynamically from other applications using a DBus interface.</li>
+      <li>Five normal drawing modes!</li>
+      <li>Two circle drawing modes!</li>
+      <li>Three mirror drawing modes!</li>
+      <li>Four drawing directions!</li>
+      <li>Customizable LibAdwaita interface!</li>
+      <li>Set a single color or up to a 10 color linear gradient for background and foreground!</li>
+      <li>Select different foreground colors for the mirrored images in mirror mode!</li>
+      <li>Set up a color animation that changes the colors gradually in a loop!</li>
+      <li>Configure smoothing, noise reduction and a few other CAVA settings!</li>
+      <li>Change background and foreground colors through a DBus interface!</li>
     </ul>
   </description>
   <launchable type="desktop-id">io.github.TheWisker.Cavasik.desktop</launchable>
@@ -30,25 +37,46 @@
       <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/levels.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/none.png</image>
+      <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/particles.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/spine.png</image>
     </screenshot>
     <screenshot>
       <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/bars.png</image>
     </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/mirror_normal.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/mirror_inverted.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/mirror_overlapping.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/direction_top.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/mirror_column.png</image>
+    </screenshot>
   </screenshots>
   <releases>
-    <release type="stable" date="2023-01-29" version="2023.01.29">
+    <release type="stable" date="2023-06-16" version="2023.06.16">
       <description>
-        <p>First release of Cavasik.</p>
+        <p>First release of Cavasik</p>
+        <p>Cavasik is an audio visualizer based on CAVA with customizable LibAdwaita interface.</p>
+        <p>Cavasik is a fork of Cavalier.</p>
         <ul>
-          <li>New drawing mode — Particles!</li>
-          <li>Color profiles! Create as many as you want and change between them instantly.</li>
-          <li>Added keyboard shortcuts to change most of the settings on the fly.</li>
-          <li>Added option to show/hide window controls.</li>
-          <li>Added option to autohide headerbar when the main window is not focused.</li>
-          <li>Added option to change roundness of items in "levels" and "particles" modes.</li>
-          <li>Added option to reverse the order of bars.</li>
-          <li>Import/Export Settings</li>
+          <li>Five normal drawing modes!</li>
+          <li>Two circle drawing modes!</li>
+          <li>Three mirror drawing modes!</li>
+          <li>Four drawing directions!</li>
+          <li>Set a single color or up to a 10 color linear gradient for background and foreground!</li>
+          <li>Select different foreground colors for the mirrored images in mirror mode!</li>
+          <li>Set up a color animation that changes the colors gradually in a loop!</li>
+          <li>Configure smoothing, noise reduction and a few other CAVA settings!</li>
+          <li>Change background and foreground colors through a DBus interface!</li>
         </ul>
       </description>
     </release>

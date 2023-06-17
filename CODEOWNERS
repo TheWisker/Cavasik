@@ -1,0 +1,7 @@
+# CODEOWNERS
+
+# Specifies the owner of each file in this branch using a structure similar to .gitignore files
+
+# This owner will be the default owner for everything in the repo. 
+# Unless a later match takes precedence, @TheWisker will be requested for review when someone opens a pull request.
+* @TheWisker

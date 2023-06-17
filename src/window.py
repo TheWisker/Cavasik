@@ -34,7 +34,6 @@ class CavasikWindow(Adw.ApplicationWindow):
         self.set_default_size(width, height)
         if self.settings['maximized']:
             self.maximize()
-
         self.set_name('cavasik-window')
         self.toggle_sharp_corners()
         self.set_style()
@@ -71,7 +70,7 @@ class CavasikWindow(Adw.ApplicationWindow):
         self.spinner.set_spinning(True)
         self.spinner.set_size_request(50, -1)
         self.spinner.set_halign(Gtk.Align.CENTER)
-        self.spinner.set_margin_bottom(46) # headerbar height
+        self.spinner.set_margin_bottom(40) # headerbar height
         self.bin_spinner.set_child(self.spinner)
 
         self.drawing_area = CavasikDrawingArea.new()

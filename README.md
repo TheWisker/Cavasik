@@ -1,11 +1,87 @@
-<p><img src="https://github.com/TheWisker/cavasik/raw/master/data/icons/hicolor/scalable/apps/io.github.TheWisker.Cavasik.svg" width=128px align="left"><h1>Cavasik</h1>
+<h1 align="center">Cavasik</h1>
+<div align="center">
+    <img width="400" src="./assets/icons/io.github.TheWisker.Cavasik.png">
+</div>
+<p align="center">Audio visualizer based on CAVA</p>
 
-#Cavasik
-#INVERTED DRAWING MODE
+<h2 align="center">Description</h2>
 
-Audio visualizer based on CAVA</p>
+<p align="center">This is an audio visualizer based on CAVA with expanded capabilities.</p>
 
-<br/>
+<h2 align="center">Details</h2>
+
+The visualizer features:
+
+- Five normal drawing modes!
+- Two circle drawing modes!
+- Three mirror drawing modes!
+- Four drawing directions!
+- Customizable LibAdwaita interface!
+- Set a single color or up to a 10 color linear gradient for background and foreground!
+- Select different foreground colors for the mirrored images in mirror mode!
+- Set up a color animation that changes the colors gradually in a loop!
+- Configure smoothing, noise reduction and a few other CAVA settings!
+- Change background and foreground colors through a DBus interface!
+
+<h2 align="center">Screenshots</h2>
+
+![Main screenshot](./assets/screenshots/main.png)
+
+<h3 align="left">Waves mode</h2>
+
+![Waves screenshot](./assets/screenshots/waves.png)
+
+<h3 align="left">Levels mode</h2>
+
+![Levels screenshot](./assets/screenshots/levels.png)
+
+<h3 align="left">Particles mode</h2>
+
+![Particles screenshot](./assets/screenshots/particles.png)
+
+<h3 align="left">Spine mode</h2>
+
+![Spine screenshot](./assets/screenshots/spine.png)
+
+<h3 align="left">Bars mode</h2>
+
+![Bars screenshot](./assets/screenshots/bars.png)
+
+<h3 align="left">Normal mirror + Waves mode</h2>
+
+![Normal mirror screenshot](./assets/screenshots/mirror_normal.png)
+
+<h3 align="left">Inverted mirror + Waves mode</h2>
+
+![Reverted mirror screenshot](./assets/screenshots/mirror_inverted.png)
+
+<h3 align="left">Overlapping mirror + Waves mode</h2>
+
+![Overlapping mirror screenshot](./assets/screenshots/mirror_overlapping.png)
+
+<h3 align="left">Direction top-bottom + Waves mode</h2>
+
+![Direction top screenshot](./assets/screenshots/direction_top.png)
+
+<h3 align="left">Normal mirror + Direction left-right + Waves mode</h2>
+
+![Mirror column screenshot](./assets/screenshots/mirror_column.png)
+
+<h2 align="center">Installation</h2>
+
+
+<h2 align="center">Forked</h2>
+<div align="center">
+    <img width="200" height="200" src="./assets/profile.png"></img>
+</div>
+<h4 align="center">Fsobolev</h4>
+
+<h2 align="center">Author</h2>
+<div align="center">
+    <img width="200" height="200" src="./assets/profile.png"></img>
+</div>
+<h4 align="center">TheWisker</h4>
+
 
 <a href="https://flathub.org/apps/details/io.github.TheWisker.Cavasik"><img src="https://flathub.org/assets/badges/flathub-badge-en.png" height=48px></a>
 <a href="https://aur.archlinux.org/packages/cavasik-git"><img src="https://camo.githubusercontent.com/f4b1ed57afad4fc0cc6f7acbfdf76be7bebaa104563e1e756ba7b91095eec461/68747470733a2f2f692e696d6775722e636f6d2f3958416a6330482e706e67" height=48px></a>

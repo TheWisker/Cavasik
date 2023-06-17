@@ -26,6 +26,7 @@ class CavasikPreferencesWindow(Adw.PreferencesWindow):
         self.create_cava_page()
         self.create_colors_page()
         self.settings_bind = False
+        self.do_not_update = False
         self.do_not_change_profile = False
         self.load_settings()
 
@@ -44,6 +45,13 @@ class CavasikPreferencesWindow(Adw.PreferencesWindow):
         self.wave_check_btn = Gtk.CheckButton.new()
         self.wave_row.add_prefix(self.wave_check_btn)
         self.wave_row.set_activatable_widget(self.wave_check_btn)
+        self.wave_inner_circle_box = Gtk.Box.new(Gtk.Orientation.HORIZONTAL, 10)
+        self.wave_row.add_suffix(self.wave_inner_circle_box)
+        self.wave_inner_circle_label = Gtk.Label.new(_('Show inner circle'))
+        self.wave_inner_circle_box.append(self.wave_inner_circle_label)
+        self.wave_inner_circle_switch = Gtk.Switch.new()
+        self.wave_inner_circle_switch.set_valign(Gtk.Align.CENTER)
+        self.wave_inner_circle_box.append(self.wave_inner_circle_switch)
         self.cavasik_mode_group.add(self.wave_row)
 
         self.levels_row = Adw.ActionRow.new()
@@ -78,8 +86,86 @@ class CavasikPreferencesWindow(Adw.PreferencesWindow):
         self.bars_row.set_activatable_widget(self.bars_check_btn)
         self.cavasik_mode_group.add(self.bars_row)
 
+        self.mode_variant_stack = Gtk.Stack.new()
+        self.mode_variant_stack.set_margin_top(24)
+        self.cavasik_mode_group.add(self.mode_variant_stack)
+
+        self.mirror_group = Adw.PreferencesGroup.new()
+        self.mode_variant_stack.add_titled(self.mirror_group, 'linear', _('Linear'))
+        self.pref_mirror = Adw.ComboRow.new()
+        self.pref_mirror.set_title(_('Mirror Mode'));
+        self.pref_mirror.set_model(Gtk.StringList.new( \
+            [_('None'), _('Normal'), \
+            _('Inverse'), _('Overlapping')]))
+        self.mirror_group.add(self.pref_mirror)
+        self.pref_mirror_offset = Adw.ActionRow.new()
+        self.pref_mirror_offset.set_title(_('Mirror Offset'))
+        self.pref_mirror_offset.set_subtitle(_('Offset between mirrored images in normal mode'))
+        self.pref_mirror_offset_scale = Gtk.Scale.new_with_range( \
+            Gtk.Orientation.HORIZONTAL, 0.0, 0.4, 0.02)
+        self.pref_mirror_offset_scale.set_size_request(180, -1)
+        self.pref_mirror_offset_scale.set_draw_value(True)
+        self.pref_mirror_offset_scale.set_value_pos(Gtk.PositionType.LEFT)
+        self.pref_mirror_offset.add_suffix(self.pref_mirror_offset_scale)
+        self.mirror_group.add(self.pref_mirror_offset)
+        self.pref_mirror_opacity = Adw.ActionRow.new()
+        self.pref_mirror_opacity.set_title(_('Mirror Opacity'))
+        self.pref_mirror_opacity.set_subtitle(_('Opacity of the mirrored image in normal mode'))
+        self.pref_mirror_opacity_scale = Gtk.Scale.new_with_range( \
+            Gtk.Orientation.HORIZONTAL, 0.0, 100.0, 1.0)
+        self.pref_mirror_opacity_scale.set_size_request(180, -1)
+        self.pref_mirror_opacity_scale.set_draw_value(True)
+        self.pref_mirror_opacity_scale.set_value_pos(Gtk.PositionType.LEFT)
+        self.pref_mirror_opacity.add_suffix(self.pref_mirror_opacity_scale)
+        self.mirror_group.add(self.pref_mirror_opacity)
+        self.pref_mirror_clones = Adw.ActionRow.new()
+        self.pref_mirror_clones.set_title(_('Mirror Clones'))
+        self.pref_mirror_clones.set_subtitle(_('Clones to make in the overlapping mode'))
+        self.pref_mirror_clones_scale = Gtk.Scale.new_with_range( \
+            Gtk.Orientation.HORIZONTAL, 1.0, 10.0, 1.0)
+        self.pref_mirror_clones_scale.set_size_request(180, -1)
+        self.pref_mirror_clones_scale.set_draw_value(True)
+        self.pref_mirror_clones_scale.set_value_pos(Gtk.PositionType.LEFT)
+        self.pref_mirror_clones.add_suffix(self.pref_mirror_clones_scale)
+        self.mirror_group.add(self.pref_mirror_clones)
+        self.pref_mirror_ratio = Adw.ActionRow.new()
+        self.pref_mirror_ratio.set_title(_('Mirror Ratio'))
+        self.pref_mirror_ratio.set_subtitle(_('Scale ratio between overlapping clones'))
+        self.pref_mirror_ratio_scale = Gtk.Scale.new_with_range( \
+            Gtk.Orientation.HORIZONTAL, 0.2, 1.0, 0.05)
+        self.pref_mirror_ratio_scale.set_size_request(180, -1)
+        self.pref_mirror_ratio_scale.set_draw_value(True)
+        self.pref_mirror_ratio_scale.set_value_pos(Gtk.PositionType.LEFT)
+        self.pref_mirror_ratio.add_suffix(self.pref_mirror_ratio_scale)
+        self.mirror_group.add(self.pref_mirror_ratio)
+
+        self.circle_group = Adw.PreferencesGroup.new()
+        self.mode_variant_stack.add_titled(self.circle_group, 'circle', \
+            _('Circle'))
+        self.pref_radius = Adw.ActionRow.new()
+        self.pref_radius.set_title(_('Radius'))
+        self.pref_radius.set_subtitle(_('Radius of base circle (in percent)'))
+        self.pref_radius_scale = Gtk.Scale.new_with_range( \
+            Gtk.Orientation.HORIZONTAL, 0.0, 100.0, 1.0)
+        self.pref_radius_scale.set_size_request(180, -1)
+        self.pref_radius_scale.set_draw_value(True)
+        self.pref_radius_scale.set_value_pos(Gtk.PositionType.LEFT)
+        self.pref_radius.add_suffix(self.pref_radius_scale)
+        self.circle_group.add(self.pref_radius)
+
+        self.circle_switcher = Gtk.StackSwitcher.new()
+        self.circle_switcher.set_stack(self.mode_variant_stack)
+        self.cavasik_mode_group.set_header_suffix(self.circle_switcher)
+
         self.cavasik_group = Adw.PreferencesGroup.new()
         self.cavasik_page.add(self.cavasik_group)
+
+        self.pref_direction_row = Adw.ComboRow.new()
+        self.pref_direction_row.set_title(_('Drawing direction'));
+        self.pref_direction_row.set_model(Gtk.StringList.new( \
+            [_('Bottom to Top'), _('Top to Bottom'), \
+            _('Left to Right'), _('Right to Left')]))
+        self.cavasik_group.add(self.pref_direction_row)
 
         self.pref_margin = Adw.ActionRow.new()
         self.pref_margin.set_title(_('Drawing area margin'))
@@ -240,7 +326,7 @@ class CavasikPreferencesWindow(Adw.PreferencesWindow):
         self.cava_bars_row.set_title(_('Bars'))
         self.cava_group.add(self.cava_bars_row)
         self.cava_bars_scale = Gtk.Scale.new_with_range( \
-            Gtk.Orientation.HORIZONTAL, 6.0, 50.0, 2.0)
+            Gtk.Orientation.HORIZONTAL, 6.0, 100.0, 2.0)
         self.cava_bars_scale.set_size_request(180, -1)
         self.cava_bars_scale.set_draw_value(True)
         self.cava_bars_scale.set_value_pos(Gtk.PositionType.LEFT)
@@ -305,6 +391,17 @@ class CavasikPreferencesWindow(Adw.PreferencesWindow):
         self.reverse_order_row.add_suffix(self.reverse_order_switch)
         self.reverse_order_row.set_activatable_widget(self.reverse_order_switch)
         self.cava_group.add(self.reverse_order_row)
+
+        self.fps_row = Adw.ActionRow.new()
+        self.fps_row.set_title(_('Frames per Second'))
+        self.fps_row.set_subtitle( _('Frames per Second for the visualizer (requires app restart to take effect).'))
+        self.pref_fps_scale = Gtk.Scale.new_with_range( \
+            Gtk.Orientation.HORIZONTAL, 1.0, 144.0, 1.0)
+        self.pref_fps_scale.set_size_request(180, -1)
+        self.pref_fps_scale.set_draw_value(True)
+        self.pref_fps_scale.set_value_pos(Gtk.PositionType.LEFT)
+        self.fps_row.add_suffix(self.pref_fps_scale)
+        self.cava_group.add(self.fps_row)
 
     def create_colors_page(self):
         self.colors_page = Adw.PreferencesPage.new()
@@ -411,11 +508,68 @@ class CavasikPreferencesWindow(Adw.PreferencesWindow):
         self.fg_color_btns = []
         self.bg_color_btns = []
 
+        self.mirror_colors_group = Adw.PreferencesGroup.new()
+        self.colors_page.add(self.mirror_colors_group)
+        self.pref_mirror_colors = Adw.ComboRow.new()
+        self.pref_mirror_colors.set_title(_('Mirror Color'))
+        self.pref_mirror_colors.set_subtitle(_('Color profile for mirrored images'))
+        self.pref_mirror_colors.set_model(self.profiles_list)
+        self.mirror_colors_group.add(self.pref_mirror_colors)
+
+        self.color_animation_group = Adw.PreferencesGroup.new()
+        self.colors_page.add(self.color_animation_group)
+        self.pref_color_animation = Adw.ActionRow.new()
+        self.pref_color_animation.set_title(_('Color animation'))
+        self.pref_color_animation_switch = Gtk.Switch.new()
+        self.pref_color_animation_switch.set_valign(Gtk.Align.CENTER)
+        self.pref_color_animation.add_suffix(self.pref_color_animation_switch)
+        self.pref_color_animation.set_activatable_widget(self.pref_color_animation_switch)
+        self.color_animation_group.add(self.pref_color_animation)
+        self.pref_color_animation_target = Adw.ComboRow.new()
+        self.pref_color_animation_target.set_title(_('Color Animation Target'))
+        self.pref_color_animation_target.set_subtitle(_('The target color profile to fade in and out of'))
+        self.pref_color_animation_target.set_model(self.profiles_list)
+        self.color_animation_group.add(self.pref_color_animation_target)
+        self.pref_color_animation_mirror_target = Adw.ComboRow.new()
+        self.pref_color_animation_mirror_target.set_title(_('Color Animation Mirror Target'))
+        self.pref_color_animation_mirror_target.set_subtitle(_('The target color profile to fade in and out of for the mirrored image'))
+        self.pref_color_animation_mirror_target.set_model(self.profiles_list)
+        self.color_animation_group.add(self.pref_color_animation_mirror_target)
+        self.pref_color_animation_length = Adw.ActionRow.new()
+        self.pref_color_animation_length.set_title(_('Color Animation Length'))
+        self.pref_color_animation_length.set_subtitle(_('The length in seconds of the color animation'))
+        self.pref_color_animation_length_spin = Gtk.SpinButton()
+        self.pref_color_animation_length_spin.set_numeric(True)
+        self.pref_color_animation_length_spin.set_range(1, 3600)
+        self.pref_color_animation_length_spin.set_increments(1, 30)
+        self.pref_color_animation_length.add_suffix(self.pref_color_animation_length_spin)
+        self.pref_color_animation_length.set_activatable_widget(self.pref_color_animation_length_spin)
+        self.color_animation_group.add(self.pref_color_animation_length)
+
     def load_settings(self):
+        self.do_not_update = True
         (self.wave_check_btn, self.levels_check_btn, \
             self.particles_check_btn, self.spine_check_btn, self.bars_check_btn)[ \
             self.settings.get_range('mode')[1].index(self.settings['mode']) \
             ].set_active(True)
+        self.mode_variant_stack.set_visible_child_name( \
+            'circle' if self.settings['circle'] else 'linear')
+        self.mirror_group.set_visible(not self.settings['circle'])
+        self.pref_mirror.set_selected( \
+            ['none', 'normal', 'inverted', 'overlapping'].index( \
+            self.settings['mirror']))
+        self.pref_mirror_offset_scale.set_value(self.settings['mirror-offset'])
+        self.pref_mirror_opacity_scale.set_value(self.settings['mirror-opacity'])
+        self.pref_mirror_clones_scale.set_value(self.settings['mirror-clones'])
+        self.pref_mirror_ratio_scale.set_value(self.settings['mirror-ratio'])
+        self.circle_group.set_visible(self.settings['circle'])
+        self.wave_inner_circle_box.set_visible(self.settings['circle'])
+        self.wave_inner_circle_switch.set_active( \
+            self.settings['wave-inner-circle'])
+        self.pref_radius_scale.set_value(self.settings['radius'])
+        self.pref_direction_row.set_selected( \
+            ['bottom-top', 'top-bottom', 'left-right', 'right-left'].index( \
+            self.settings['direction']))
         self.pref_margin_scale.set_value(self.settings['margin'])
         self.pref_offset_scale.set_value(self.settings['items-offset'])
         self.pref_roundness_scale.set_value( \
@@ -446,6 +600,7 @@ class CavasikPreferencesWindow(Adw.PreferencesWindow):
             ['off', 'monstercat'].index(self.settings['smoothing']))
         self.nr_scale.set_value(self.settings['noise-reduction'])
         self.reverse_order_switch.set_active(self.settings['reverse-order'])
+        self.pref_fps_scale.set_value(self.settings['fps'])
 
         if self.settings['widgets-style'] == 'light':
             self.btn_light.set_active(True)
@@ -453,6 +608,7 @@ class CavasikPreferencesWindow(Adw.PreferencesWindow):
             self.btn_dark.set_active(True)
         if not self.settings_bind:
             self.bind_settings()
+
         profiles = self.settings['color-profiles']
         active_profile = self.settings['active-color-profile']
         self.do_not_change_profile = True
@@ -471,14 +627,48 @@ class CavasikPreferencesWindow(Adw.PreferencesWindow):
         self.profile_remove_button.set_sensitive(active_profile != 0)
         self.clear_colors_grid()
         self.fill_colors_grid()
+        self.pref_mirror_colors.set_selected(self.settings['mirror-colors'])
+        self.pref_color_animation_switch.set_active(self.settings['color-animation'])
+        self.pref_color_animation_target.set_selected(self.settings['color-animation-target'])
+        self.pref_color_animation_mirror_target.set_selected(self.settings['color-animation-mirror-target'])
+        self.pref_color_animation_length_spin.set_value(self.settings['color-animation-length'])
+        self.do_not_update = False
 
     def bind_settings(self):
         self.wave_check_btn.connect('toggled', self.change_mode, 'wave')
+        self.wave_inner_circle_switch.connect('notify::state', \
+            lambda *args : self.save_setting(self.wave_inner_circle_switch, \
+                'wave-inner-circle', self.wave_inner_circle_switch.get_state()))
         self.levels_check_btn.connect('toggled', self.change_mode, 'levels')
         self.particles_check_btn.connect('toggled', self.change_mode, \
             'particles')
         self.spine_check_btn.connect('toggled', self.change_mode, 'spine')
         self.bars_check_btn.connect('toggled', self.change_mode, 'bars')
+        # `notify::selected-item` signal returns additional parameter that
+        # we don't need, that's why lambda is used.
+        self.pref_mirror.connect('notify::selected-item', \
+            lambda *args: self.save_setting(self.pref_mirror, \
+                'mirror', ['none', 'normal', 'inverted', \
+                'overlapping'][self.pref_mirror.get_selected()]))
+        self.pref_mirror_offset_scale.connect('value-changed', self.save_setting, \
+            'mirror-offset', self.pref_mirror_offset_scale.get_value)
+        self.pref_mirror_opacity_scale.connect('value-changed', self.save_setting, \
+            'mirror-opacity', self.pref_mirror_opacity_scale.get_value)
+        self.pref_mirror_clones_scale.connect('value-changed', self.save_setting, \
+            'mirror-clones', self.pref_mirror_clones_scale.get_value)
+        self.pref_mirror_ratio_scale.connect('value-changed', self.save_setting, \
+            'mirror-ratio', self.pref_mirror_ratio_scale.get_value)
+        # `notify::visible-child` signal returns additional parameter that
+        # we don't need, that's why lambda is used.
+        self.mode_variant_stack.connect('notify::visible-child', \
+            lambda *args: self.save_setting(self.mode_variant_stack, 'circle', \
+                self.mode_variant_stack.get_visible_child_name() == 'circle'))
+        self.pref_radius_scale.connect('value-changed', self.save_setting, \
+            'radius', self.pref_radius_scale.get_value)
+        self.pref_direction_row.connect('notify::selected-item', \
+            lambda *args: self.save_setting(self.pref_direction_row, \
+                'direction', ['bottom-top', 'top-bottom', 'left-right', \
+                'right-left'][self.pref_direction_row.get_selected()]))
         self.pref_margin_scale.connect('value-changed', self.save_setting, \
             'margin', self.pref_margin_scale.get_value)
         self.pref_offset_scale.connect('value-changed', self.save_setting, \
@@ -498,7 +688,8 @@ class CavasikPreferencesWindow(Adw.PreferencesWindow):
         self.pref_use_dbus_colors_switch.connect('notify::state', \
             lambda *args : self.save_setting(self.pref_use_dbus_colors_switch, \
                 'dbus-colors', self.pref_use_dbus_colors_switch.get_state()))
-        self.pref_dbus_opacity_scale.connect('value-changed', self.change_dbus_opacity)
+        self.pref_dbus_opacity_scale.connect('value-changed', self.save_setting, \
+            'dbus-opacity', self.pref_dbus_opacity_scale.get_value)
         # `notify::state` signal returns additional parameter that
         # we don't need, that's why lambda is used.
         self.pref_borderless_switch.connect('notify::state', \
@@ -538,6 +729,8 @@ class CavasikPreferencesWindow(Adw.PreferencesWindow):
         self.reverse_order_switch.connect('notify::state', \
             lambda *args : self.save_setting(self.reverse_order_switch, \
                 'reverse-order', self.reverse_order_switch.get_state()))
+        self.pref_fps_scale.connect('value-changed', self.save_setting, \
+            'fps', self.pref_fps_scale.get_value)
 
         self.btn_dark.bind_property('active', self.btn_light, 'active', \
             (GObject.BindingFlags.BIDIRECTIONAL | \
@@ -547,8 +740,17 @@ class CavasikPreferencesWindow(Adw.PreferencesWindow):
         self.btn_dark.connect('toggled', self.apply_style)
 
         self.profiles_dropdown.connect('notify::selected', \
-            self.select_color_profile)
+            self.select_color_profile, self.profiles_dropdown, 'active-color-profile')
 
+        self.pref_mirror_colors.connect('notify::selected-item', self.select_color_profile, self.pref_mirror_colors, 'mirror-colors')
+        self.pref_color_animation_switch.connect('notify::state', \
+            lambda *args : self.save_setting(self.pref_color_animation_switch, \
+                'color-animation', self.pref_color_animation_switch.get_state()))
+        self.pref_color_animation_target.connect('notify::selected-item', self.select_color_profile, self.pref_color_animation_target, 'color-animation-target')
+        self.pref_color_animation_mirror_target.connect('notify::selected-item', self.select_color_profile, self.pref_color_animation_mirror_target, 'color-animation-mirror-target')
+        self.pref_color_animation_length_spin.connect("value-changed", \
+            lambda *args: self.save_setting(self.pref_color_animation_length_spin, \
+            'color-animation-length', self.pref_color_animation_length_spin.get_value()))
         self.settings_bind = True
 
     def fill_colors_grid(self):
@@ -649,13 +851,11 @@ class CavasikPreferencesWindow(Adw.PreferencesWindow):
             else:
                 break
 
-    def select_color_profile(self, obj, pos):
-        if self.do_not_change_profile:
+    def select_color_profile(self, _, __, widget, key):
+        if self.do_not_update:
             return
-        if self.profiles_dropdown.get_selected() != \
-                self.settings['active-color-profile']:
-            self.settings['active-color-profile'] = \
-                self.profiles_dropdown.get_selected()
+        if widget.get_selected() != self.settings[key]:
+            self.settings[key] = widget.get_selected()
 
     def create_color_profile(self, obj):
         if self.profile_add_entry.get_text() == '':
@@ -735,9 +935,6 @@ class CavasikPreferencesWindow(Adw.PreferencesWindow):
     def change_mode(self, obj, mode):
         if(obj.get_active()):
             self.save_setting(obj, 'mode', mode)
-
-    def change_dbus_opacity(self, obj):
-        self.save_setting(obj, 'dbus-opacity', self.pref_dbus_opacity_scale.get_value())
 
     def change_bars_count(self, obj):
         value = self.cava_bars_scale.get_value()

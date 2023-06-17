@@ -1,0 +1,863 @@
+# Russian translation for Cavasik
+#
+# Copyright (c) 2023, TheWisker
+# All rights reserved.
+#
+# This source code is licensed under the BSD-style license found in the
+# LICENSE file in the root directory of this source tree.
+#
+# Fyodor Sobolev, 2022
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: cavasik\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-17 15:13+0200\n"
+"PO-Revision-Date: 2023-06-17 21:26+0200\n"
+"Last-Translator: TheWisker <TheWisker@protonmail.com>\n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.3.1\n"
+
+#: assets/io.github.TheWisker.Cavasik.desktop.in:3
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:6
+msgid "Cavasik"
+msgstr "Cavasik"
+
+#: assets/io.github.TheWisker.Cavasik.desktop.in:4
+msgid "Audio Visualizer"
+msgstr "Аудио визуализатор"
+
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:7
+msgid "Audio visualizer based on CAVA"
+msgstr "Аудио визуализатор, основанный на CAVA"
+
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:9
+msgid "Cavasik is an audio visualizer based on CAVA"
+msgstr "Cavasik — аудиовизуализатор на базе CAVA"
+
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:10
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:69
+msgid "Cavasik is a fork of Cavalier."
+msgstr "Кавасик — это форк Кавалера."
+
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:12
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:71
+msgid "Five normal drawing modes!"
+msgstr "Пять нормальных режимов рисования!"
+
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:13
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:72
+msgid "Two circle drawing modes!"
+msgstr "Два режима рисования кругов!"
+
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:14
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:73
+msgid "Three mirror drawing modes!"
+msgstr "Три режима зеркального рисования!"
+
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:15
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:74
+msgid "Four drawing directions!"
+msgstr "Четыре направления рисования!"
+
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:16
+msgid "Customizable LibAdwaita interface!"
+msgstr "Настраиваемый интерфейс LibAdwaita!"
+
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:17
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:75
+msgid ""
+"Set a single color or up to a 10 color linear gradient for background and "
+"foreground!"
+msgstr ""
+"Установите один цвет или линейный градиент до 10 цветов для фона и переднего "
+"плана!"
+
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:18
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:76
+msgid ""
+"Select different foreground colors for the mirrored images in mirror mode!"
+msgstr ""
+"Выберите разные цвета переднего плана для зеркальных изображений в "
+"зеркальном режиме!"
+
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:19
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:77
+msgid "Set up a color animation that changes the colors gradually in a loop!"
+msgstr "Настройте цветную анимацию, которая постепенно меняет цвета в цикле!"
+
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:20
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:78
+msgid "Configure smoothing, noise reduction and a few other CAVA settings!"
+msgstr ""
+"Настройте сглаживание, шумоподавление и некоторые другие параметры CAVA!"
+
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:21
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:79
+msgid "Change background and foreground colors through a DBus interface!"
+msgstr "Измените цвета фона и переднего плана через интерфейс DBus!"
+
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:27 src/main.py:56
+#: src/main.py:58
+msgid "TheWisker"
+msgstr "TheWisker"
+
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:67
+msgid "First release of Cavasik"
+msgstr "Первый выпуск Кавасика"
+
+#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:68
+msgid ""
+"Cavasik is an audio visualizer based on CAVA with customizable LibAdwaita "
+"interface."
+msgstr ""
+"Cavasik - аудио визуализатор, использующий CAVA, с настраиваемым интерфейсом "
+"на основе LibAdwaita."
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:5
+msgid "Window size"
+msgstr "Размер окна"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:9
+msgid "Window maximized state"
+msgstr "Развёрнутое состояние окна"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:10
+msgid "Whether main window is maximized or not"
+msgstr "Является ли окно развёрнутым или нет"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:14
+#: src/preferences_window.py:259
+msgid "Borderless window"
+msgstr "Окно без полей"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:15
+#: src/preferences_window.py:261
+msgid "Whether to disable window shadow and borders."
+msgstr "Отключить ли тень окна и границы."
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:19
+#: src/preferences_window.py:280
+msgid "Window controls"
+msgstr "Кнопки управления окном"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:20
+#: src/preferences_window.py:282
+msgid "Whether to show window control buttons."
+msgstr "Должны ли отображаться кнопки управления окном."
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:24
+#: src/preferences_window.py:291
+msgid "Autohide headerbar"
+msgstr "Автоскрытие заголовка"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:25
+#: src/preferences_window.py:293
+msgid "Whether to hide headerbar when main window is not focused."
+msgstr "Должен ли отображаться заголовок главного окна, когда оно не в фокусе."
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:29
+#: src/preferences_window.py:233
+msgid "DBus colors"
+msgstr "Цвета DBus"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:30
+#: src/preferences_window.py:235
+msgid ""
+"Whether to use colors received through DBus (overwrites default profile)."
+msgstr ""
+"Использовать ли цвета, полученные через DBus (перезаписывает профиль по "
+"умолчанию)."
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:34
+#: src/preferences_window.py:243
+msgid "DBus opacity"
+msgstr "Непрозрачность DBus"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:35
+#: src/preferences_window.py:245
+msgid "Opacity for the colors received through DBus."
+msgstr "Непрозрачность для цветов, полученных через DBus."
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:40
+msgid "Drawing mode"
+msgstr "Режим отрисовки"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:41
+msgid "Defines what the visualizer looks like."
+msgstr "Определяет, как выглядит визуализатор."
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:52
+#: src/preferences_window.py:164
+msgid "Drawing direction"
+msgstr "Направление рисования"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:62
+msgid "Mirror mode"
+msgstr "Зеркальный режим"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:72
+msgid "Mirror offset"
+msgstr "Смещение зеркала"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:73
+#: src/preferences_window.py:103
+msgid "Offset between mirrored images in normal mode"
+msgstr "Смещение между зеркальными изображениями в обычном режиме"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:78
+msgid "Mirror opacity"
+msgstr "Непрозрачность зеркала"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:79
+#: src/preferences_window.py:113
+msgid "Opacity of the mirrored image in normal mode"
+msgstr "Непрозрачность зеркального изображения в обычном режиме"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:84
+msgid "Mirror colors"
+msgstr "Зеркальные цвета"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:85
+#: src/preferences_window.py:515
+msgid "Color profile for mirrored images"
+msgstr "Цветовой профиль для зеркальных изображений"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:89
+msgid "Mirror clones"
+msgstr "Зеркальные клоны"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:90
+#: src/preferences_window.py:123
+msgid "Clones to make in the overlapping mode"
+msgstr "Клоны делать в режиме перекрытия"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:95
+msgid "Mirror ratio"
+msgstr "Коэффициент зеркала"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:96
+#: src/preferences_window.py:133
+msgid "Scale ratio between overlapping clones"
+msgstr "Соотношение масштабов между перекрывающимися клонами"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:101
+#: src/preferences_window.py:144
+msgid "Circle"
+msgstr "Круг"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:102
+msgid "Whether to modify drawing modes to draw in circle"
+msgstr "Нужно ли изменять режимы рисования, чтобы рисовать по кругу"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:106
+msgid "Wave - Show Inner Circle"
+msgstr "Волна - показать внутренний круг"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:107
+msgid "Whether to show the inner circle when using Wave mode Circle variant."
+msgstr ""
+"Показывать ли внутренний круг при использовании варианта круга в режиме "
+"волны."
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:111
+#: src/preferences_window.py:146
+msgid "Radius"
+msgstr "Радиус"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:112
+#: src/preferences_window.py:147
+msgid "Radius of base circle (in percent)"
+msgstr "Радиус базовой окружности (в процентах)"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:117
+#: src/preferences_window.py:171
+msgid "Drawing area margin"
+msgstr "Отступ области отрисовки"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:118
+#: src/preferences_window.py:173
+msgid "Size of gaps around drawing area (in pixels)."
+msgstr "Размер отступа вокруг области отрисовки (в пикселях)."
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:123
+#: src/preferences_window.py:183
+msgid "Offset between items"
+msgstr "Расстояние между элементами"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:124
+#: src/preferences_window.py:185
+msgid ""
+"The size of spaces between elements in \"levels\", \"particles\" and "
+"\"bars\" modes (in percent)."
+msgstr ""
+"Размер пространства между элементами в режимах Уровни, Частицы и Шкалы (в "
+"процентах)."
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:129
+#: src/preferences_window.py:195
+msgid "Roundness of items"
+msgstr "Округлость элементов"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:130
+msgid "This setting affects \"levels\", \"particles\" and \"spine\" modes."
+msgstr "Этот параметр влияет на режимы «уровни», «частицы» и «позвоночник»."
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:135
+#: src/preferences_window.py:218
+msgid "Thickness of lines"
+msgstr "Толщина линий"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:136
+#: src/preferences_window.py:220
+msgid "Thickness of lines when filling is off (in pixels)."
+msgstr "Толщина линий при выключенной заливке (в пикселях)."
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:141
+#: src/preferences_window.py:207
+msgid "Filling"
+msgstr "Заполнение"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:142
+#: src/preferences_window.py:209
+msgid "Whether shapes should be filled or outlined."
+msgstr "Должны ли фигуры быть заполнены или обведены."
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:146
+msgid "Number of bars"
+msgstr "Количество шкал"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:147
+msgid "Number of bars in CAVA config"
+msgstr "Количество шкал в конфигурации CAVA"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:152
+#: src/preferences_window.py:337
+msgid "Automatic sensitivity"
+msgstr "Автоматическая чувствительность"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:153
+#: src/preferences_window.py:339
+msgid "Attempt to decrease sensitivity if the bars peak."
+msgstr ""
+"Пытаться снижать чувствительность, если показатели достигают максимума."
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:157
+#: src/preferences_window.py:347
+msgid "Sensitivity"
+msgstr "Чувствительность"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:158
+#: src/preferences_window.py:349
+msgid ""
+"Manual sensitivity. If automatic sensitivity is enabled, this will only be "
+"the initial value."
+msgstr ""
+"Ручная настройка чувствительности. Если автоматическая чувствительность "
+"включена, этот параметр задаёт только начальное значение."
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:163
+#: src/preferences_window.py:358
+msgid "Channels"
+msgstr "Каналы"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:164
+msgid "Mono or stereo"
+msgstr "Моно или стерео"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:172
+#: src/preferences_window.py:370
+msgid "Smoothing"
+msgstr "Сглаживание"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:180
+msgid "Noise reduction"
+msgstr "Шумоподавление"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:181
+msgid ""
+"This factor adjusts the integral and gravity filters to keep the signal "
+"smooth. 1 will be very slow and smooth, 0 will be fast but noisy."
+msgstr ""
+"Этот параметр регулирует интегральные и гравитационные фильтры, делающие "
+"сигнал гладким. 1 - медленно и гладко, 0 - быстро, но шумно."
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:186
+#: src/preferences_window.py:388
+msgid "Reverse order"
+msgstr "Обратный порядок"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:190
+#: src/preferences_window.py:396
+msgid "Frames per Second"
+msgstr "Кадров в секунду"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:195
+#: src/preferences_window.py:416
+msgid "Widgets style"
+msgstr "Стиль виджетов"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:196
+#: src/preferences_window.py:417
+msgid "Style used by Adwaita widgets."
+msgstr "Стиль, используемый виджетами Adwaita."
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:204
+#: src/preferences_window.py:269
+msgid "Sharp corners"
+msgstr "Острые углы"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:205
+#: src/preferences_window.py:271
+msgid "Whether the main window corners should be sharp."
+msgstr "Должны ли углы главного окна быть острыми."
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:209
+msgid "Color Profiles"
+msgstr "Профили цветов"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:213
+msgid "Index of active color profile"
+msgstr "Номер активного профиля цветов"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:217
+#: src/preferences_window.py:522
+msgid "Color animation"
+msgstr "Цветная анимация"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:218
+msgid "Whether the color animation is active"
+msgstr "Активна ли цветная анимация"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:222
+msgid "Color animation target"
+msgstr "Цель цветной анимации"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:223
+#: src/preferences_window.py:530
+msgid "The target color profile to fade in and out of"
+msgstr "Целевой цветовой профиль для плавного появления и исчезновения"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:227
+msgid "Color animation mirror target"
+msgstr "Цветная анимационная зеркальная мишень"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:228
+#: src/preferences_window.py:535
+msgid "The target color profile to fade in and out of for the mirrored image"
+msgstr ""
+"Целевой цветовой профиль для постепенного появления и исчезновения "
+"зеркального изображения"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:232
+msgid "Color animation length"
+msgstr "Длина цветной анимации"
+
+#: assets/io.github.TheWisker.Cavasik.gschema.xml:233
+#: src/preferences_window.py:540
+msgid "The length in seconds of the color animation"
+msgstr "Длина в секундах цветной анимации"
+
+#: src/window.py:87 src/shortcuts_dialog.ui:138
+msgid "Preferences"
+msgstr "Настройки"
+
+#: src/window.py:88
+msgid "Keyboard Shortcuts"
+msgstr "Комбинации клавиш"
+
+#: src/window.py:89
+msgid "About"
+msgstr "О приложении"
+
+#: src/window.py:90 src/shortcuts_dialog.ui:156
+msgid "Quit"
+msgstr "Выход"
+
+#: src/preferences_window.py:40
+msgid "Drawing Mode"
+msgstr "Режим отрисовки"
+
+#: src/preferences_window.py:44
+msgid "Wave"
+msgstr "Волна"
+
+#: src/preferences_window.py:50
+msgid "Show inner circle"
+msgstr "Показать внутренний круг"
+
+#: src/preferences_window.py:58
+msgid "Levels"
+msgstr "Уровни"
+
+#: src/preferences_window.py:66
+msgid "Particles"
+msgstr "Частицы"
+
+#: src/preferences_window.py:74
+msgid "Spine"
+msgstr "Позвоночник"
+
+#: src/preferences_window.py:82 src/preferences_window.py:326
+msgid "Bars"
+msgstr "Шкалы"
+
+#: src/preferences_window.py:94
+msgid "Linear"
+msgstr "Линейный"
+
+#: src/preferences_window.py:96
+msgid "Mirror Mode"
+msgstr "Зеркальный режим"
+
+#: src/preferences_window.py:98
+msgid "None"
+msgstr "Никто"
+
+#: src/preferences_window.py:98
+msgid "Normal"
+msgstr "Нормальный"
+
+#: src/preferences_window.py:99
+msgid "Inverse"
+msgstr "Обратный"
+
+#: src/preferences_window.py:99
+msgid "Overlapping"
+msgstr "Перекрытие"
+
+#: src/preferences_window.py:102
+msgid "Mirror Offset"
+msgstr "Смещение зеркала"
+
+#: src/preferences_window.py:112
+msgid "Mirror Opacity"
+msgstr "Непрозрачность зеркала"
+
+#: src/preferences_window.py:122
+msgid "Mirror Clones"
+msgstr "Зеркальные клоны"
+
+#: src/preferences_window.py:132
+msgid "Mirror Ratio"
+msgstr "Зеркальное соотношение"
+
+#: src/preferences_window.py:166
+msgid "Bottom to Top"
+msgstr "Снизу вверх"
+
+#: src/preferences_window.py:166
+msgid "Top to Bottom"
+msgstr "Сверху вниз"
+
+#: src/preferences_window.py:167
+msgid "Left to Right"
+msgstr "Слева направо"
+
+#: src/preferences_window.py:167
+msgid "Right to Left"
+msgstr "Right to Left"
+
+#: src/preferences_window.py:197
+msgid ""
+"This setting affects \"levels\", \"particles\" and \"spine\" modes.\n"
+"0 - square, 1 - round"
+msgstr ""
+"Этот параметр влияет на режимы «уровни», «частицы» и «позвоночник».\n"
+"0 - квадрат, 1 - круг"
+
+#: src/preferences_window.py:306
+msgid "Import"
+msgstr "Импорт"
+
+#: src/preferences_window.py:311
+msgid "Export"
+msgstr "Экспорт"
+
+#: src/preferences_window.py:364
+msgid "Mono"
+msgstr "Моно"
+
+#: src/preferences_window.py:366
+msgid "Stereo"
+msgstr "Стерео"
+
+#: src/preferences_window.py:372
+msgid "Off"
+msgstr "Выключено"
+
+#: src/preferences_window.py:372
+msgid "Monstercat"
+msgstr "Monstercat"
+
+#: src/preferences_window.py:375
+msgid "Noise Reduction"
+msgstr "Шумоподавление"
+
+#: src/preferences_window.py:376
+msgid "0 - noisy, 1 - smooth"
+msgstr "0 - шумно, 1 - гладко"
+
+#: src/preferences_window.py:397
+msgid ""
+"Frames per Second for the visualizer (requires app restart to take effect)."
+msgstr ""
+"Кадров в секунду для визуализатора (для вступления в силу требуется "
+"перезапуск приложения)."
+
+#: src/preferences_window.py:408 src/preferences_window.py:429
+#: src/shortcuts_dialog.ui:82
+msgid "Colors"
+msgstr "Цвета"
+
+#: src/preferences_window.py:422
+msgid "Light"
+msgstr "Светлый"
+
+#: src/preferences_window.py:424
+msgid "Dark"
+msgstr "Тёмный"
+
+#: src/preferences_window.py:435
+msgid "Profile:"
+msgstr "Профиль:"
+
+#: src/preferences_window.py:443
+msgid "Add new profile"
+msgstr "Добавить новый профиль"
+
+#: src/preferences_window.py:455
+msgid "Type a name for a new profile"
+msgstr "Введите имя нового профиля"
+
+#: src/preferences_window.py:457 src/preferences_window.py:787
+#: src/preferences_window.py:830
+msgid "Add"
+msgstr "Добавить"
+
+#: src/preferences_window.py:462 src/preferences_window.py:874
+msgid "The new profile will be a copy of the active profile."
+msgstr "Новый профиль будет копией активного профиля."
+
+#: src/preferences_window.py:467
+msgid "Remove profile"
+msgstr "Удалить профиль"
+
+#: src/preferences_window.py:474
+msgid "Are you sure you want to remove this profile?"
+msgstr "Вы уверены, что хотите удалить этот профиль?"
+
+#: src/preferences_window.py:481
+msgid "Remove"
+msgstr "Удалить"
+
+#: src/preferences_window.py:488
+msgid "Cancel"
+msgstr "Отмена"
+
+#: src/preferences_window.py:498
+msgid "<b>Foreground</b>"
+msgstr "<b>Передний план</b>"
+
+#: src/preferences_window.py:503
+msgid "<b>Background</b>"
+msgstr "<b>Фон</b>"
+
+#: src/preferences_window.py:514
+msgid "Mirror Color"
+msgstr "Зеркальный цвет"
+
+#: src/preferences_window.py:529
+msgid "Color Animation Target"
+msgstr "Цель цветной анимации"
+
+#: src/preferences_window.py:534
+msgid "Color Animation Mirror Target"
+msgstr "Зеркальная мишень с цветной анимацией"
+
+#: src/preferences_window.py:539
+msgid "Color Animation Length"
+msgstr "Зеркальная мишень с цветной анимацией"
+
+#: src/preferences_window.py:769 src/preferences_window.py:794
+#: src/preferences_window.py:814 src/preferences_window.py:837
+msgid "Select color"
+msgstr "Выбрать цвет"
+
+#: src/preferences_window.py:775 src/preferences_window.py:820
+msgid "Remove color"
+msgstr "Удалить цвет"
+
+#: src/preferences_window.py:798 src/preferences_window.py:841
+msgid "Add color"
+msgstr "Добавить цвет"
+
+#: src/preferences_window.py:867
+msgid "This name is already in use."
+msgstr "Это имя уже используется."
+
+#: src/preferences_window.py:972
+msgid "Import Settings"
+msgstr "Импорт Настроек"
+
+#: src/preferences_window.py:976 src/preferences_window.py:1001
+msgid "Cavasik Settings File (*.cavasik)"
+msgstr "Файл настроек Cavasik (*.cavasik)"
+
+#: src/preferences_window.py:979
+msgid "All Files"
+msgstr "Все файлы"
+
+#: src/preferences_window.py:997
+msgid "Export Settings"
+msgstr "Экспорт Настроек"
+
+#: src/shortcuts_dialog.ui:15
+msgid "Change Shape Mode"
+msgstr "Изменить режим формы"
+
+#: src/shortcuts_dialog.ui:21
+msgid "Change Drawing Mode"
+msgstr "Изменить режим отрисовки"
+
+#: src/shortcuts_dialog.ui:27
+msgid "Change Mirror Mode"
+msgstr "Изменить режим зеркала"
+
+#: src/shortcuts_dialog.ui:33
+msgid "Change Direction"
+msgstr "Изменить направление"
+
+#: src/shortcuts_dialog.ui:39
+msgid "Toggle Filling"
+msgstr "Переключить заполнение"
+
+#: src/shortcuts_dialog.ui:45
+msgid "Toggle DBus Colors"
+msgstr "Переключить цвета DBus"
+
+#: src/shortcuts_dialog.ui:51
+msgid "Toggle Window Controls"
+msgstr "Переключить кнопки управления окном"
+
+#: src/shortcuts_dialog.ui:62
+msgid "Change Number of Bars"
+msgstr "Изменить количество шкал"
+
+#: src/shortcuts_dialog.ui:68
+msgid "Increase/Decrease Sensitivity"
+msgstr "Увеличение/уменьшение чувствительности"
+
+#: src/shortcuts_dialog.ui:74
+msgid "Toggle Reverse Order"
+msgstr "Переключить обратный порядок"
+
+#: src/shortcuts_dialog.ui:85
+msgid "Toggle Widgets Style"
+msgstr "Переключить стиль виджетов"
+
+#: src/shortcuts_dialog.ui:91
+msgid "Change Colors Profile"
+msgstr "Изменить профиль цветов"
+
+#: src/shortcuts_dialog.ui:97
+msgid "Change Mirror Profile"
+msgstr "Изменить профиль зеркала"
+
+#: src/shortcuts_dialog.ui:103
+msgid "Toggle Color Animation"
+msgstr "Переключить цветную анимацию"
+
+#: src/shortcuts_dialog.ui:109
+msgid "Change Target Profile"
+msgstr "Изменить целевой профиль"
+
+#: src/shortcuts_dialog.ui:115
+msgid "Change Mirror Target Profile"
+msgstr "Изменить целевой профиль зеркала"
+
+#: src/shortcuts_dialog.ui:123
+msgid "Window"
+msgstr "Окно"
+
+#: src/shortcuts_dialog.ui:126
+msgid "Open Menu"
+msgstr "Открыть меню"
+
+#: src/shortcuts_dialog.ui:132
+msgid "Toggle Fullscreen"
+msgstr "Включить полноэкранный режим"
+
+#: src/shortcuts_dialog.ui:144
+msgid "Show Shortcuts"
+msgstr "Показать ярлыки"
+
+#: src/shortcuts_dialog.ui:150
+msgid "Close Active Window"
+msgstr "Закрыть активное окно"
+
+#~ msgid "Fyodor Sobolev"
+#~ msgstr "Фёдор Соболев"
+
+#~ msgid "New drawing mode — Particles!"
+#~ msgstr "Новый режим отрисовки — Частицы!"
+
+#~ msgid ""
+#~ "Color profiles! Create as many as you want and change between them "
+#~ "instantly. Unfortunately, this new feature required to change how the "
+#~ "application saves colors, and because of this your previous colors "
+#~ "settings will be lost after installing this update."
+#~ msgstr ""
+#~ "Профили цветов! Создайте столько профилей, сколько захотите, и "
+#~ "переключайтесь между ними мгновенно! К сожалению, эта функция потребовала "
+#~ "изменить, как приложение сохраняет цвета, поэтому после установки этого "
+#~ "обновления ваши предыдущие настройки цветов будут утеряны."
+
+#~ msgid "Added keyboard shortcuts to change most of the settings on the fly."
+#~ msgstr ""
+#~ "Добавлены сочетания клавиш для изменения большинства настроек на лету."
+
+#~ msgid "Added option to show/hide window controls."
+#~ msgstr "Добавлена опция для скрытия/отображения кнопок управления окном."
+
+#~ msgid ""
+#~ "Added option to autohide headerbar when the main window is not focused."
+#~ msgstr ""
+#~ "Добавлена опция автоматического скрытия заголовка, когда окно не в фокусе."
+
+#~ msgid ""
+#~ "Added option to change roundness of items in \"levels\" and \"particles\" "
+#~ "modes."
+#~ msgstr ""
+#~ "Добавлена опция изменения округлости элементов в режимах Уровни и Частицы."
+
+#~ msgid "Added option to reverse the order of bars."
+#~ msgstr "Добавлена опция обратного порядка шкал."
+
+#~ msgid "Import/Export Settings"
+#~ msgstr "Импорт/Экспорт настроек"
+
+#~ msgid "Save"
+#~ msgstr "Сохранить"
+
+#~ msgid "Change Drawing Area Margin"
+#~ msgstr "Изменить отступ области отрисовки"
+
+#~ msgid "Change Offset Between Items"
+#~ msgstr "Изменить расстояние между элементами"
+
+#~ msgid "Change Roundness of Items"
+#~ msgstr "Изменить округлость элементов"
+
+#~ msgid "Toggle Sharp Corners"
+#~ msgstr "Переключить острые углы"
+
+#~ msgid "Toggle Autohide Headerbar"
+#~ msgstr "Переключить автоскрытие заголовка"
+
+#~ msgid "Toggle Channels"
+#~ msgstr "Переключить каналы"

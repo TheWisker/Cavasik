@@ -1,0 +1,19 @@
+# POTFILES.in
+#
+# Copyright (c) 2023, TheWisker
+# All rights reserved.
+#
+# This source code is licensed under the BSD-style license found in the
+# LICENSE file in the root directory of this source tree.
+#
+
+# Data files
+assets/io.github.TheWisker.Cavasik.desktop.in
+assets/io.github.TheWisker.Cavasik.metainfo.xml.in
+assets/io.github.TheWisker.Cavasik.gschema.xml
+
+# Source files
+src/main.py
+src/window.py
+src/preferences_window.py
+src/shortcuts_dialog.ui

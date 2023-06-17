@@ -19,6 +19,7 @@ class Cava:
         self.restarting = False
 
         self.settings = CavasikSettings.new()
+        self.fps = self.settings['fps']
 
         self.sample = []
 
@@ -68,7 +69,7 @@ class Cava:
                 f'bars = {self.bars}',
                 f'autosens = {self.autosens}',
                 f'sensitivity = {self.sensitivity ** 2}',
-                'framerate = 60',
+                f'framerate = {self.fps}',
                 '[input]',
                 'method = pulse',
                 '[output]',

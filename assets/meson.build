@@ -2,7 +2,7 @@ desktop_file = i18n.merge_file(
         input: 'io.github.TheWisker.Cavasik.desktop.in',
        output: 'io.github.TheWisker.Cavasik.desktop',
          type: 'desktop',
-       po_dir: '../po',
+       po_dir: '../lang',
       install: true,
   install_dir: join_paths(get_option('datadir'), 'applications')
 )
@@ -15,7 +15,7 @@ endif
 appstream_file = i18n.merge_file(
         input: 'io.github.TheWisker.Cavasik.metainfo.xml.in',
        output: 'io.github.TheWisker.Cavasik.metainfo.xml',
-       po_dir: '../po',
+       po_dir: '../lang',
       install: true,
   install_dir: join_paths(get_option('datadir'), 'metainfo')
 )

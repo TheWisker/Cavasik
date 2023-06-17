@@ -12,26 +12,26 @@
                         <property name='title'>Cavasik</property>
                         <child>
                             <object class='GtkShortcutsShortcut'>
+                                <property name='title' translatable='yes'>Change Shape Mode</property>
+                                <property name='accelerator'>S</property>
+                            </object>
+                        </child>
+                        <child>
+                            <object class='GtkShortcutsShortcut'>
                                 <property name='title' translatable='yes'>Change Drawing Mode</property>
                                 <property name='accelerator'>D &lt;Shift&gt;D</property>
                             </object>
                         </child>
                         <child>
                             <object class='GtkShortcutsShortcut'>
-                                <property name='title' translatable='yes'>Change Drawing Area Margin</property>
-                                <property name='accelerator'>N &lt;Shift&gt;N</property>
+                                <property name='title' translatable='yes'>Change Mirror Mode</property>
+                                <property name='accelerator'>M &lt;Shift&gt;M</property>
                             </object>
                         </child>
                         <child>
                             <object class='GtkShortcutsShortcut'>
-                                <property name='title' translatable='yes'>Change Offset Between Items</property>
-                                <property name='accelerator'>O &lt;Shift&gt;O</property>
-                            </object>
-                        </child>
-                        <child>
-                            <object class='GtkShortcutsShortcut'>
-                                <property name='title' translatable='yes'>Change Roundness of Items</property>
-                                <property name='accelerator'>R &lt;Shift&gt;R</property>
+                                <property name='title' translatable='yes'>Change Direction</property>
+                                <property name='accelerator'>A &lt;Shift&gt;A</property>
                             </object>
                         </child>
                         <child>
@@ -42,20 +42,14 @@
                         </child>
                         <child>
                             <object class='GtkShortcutsShortcut'>
-                                <property name='title' translatable='yes'>Toggle Sharp Corners</property>
-                                <property name='accelerator'>S</property>
+                                <property name='title' translatable='yes'>Toggle DBus Colors</property>
+                                <property name='accelerator'>T</property>
                             </object>
                         </child>
                         <child>
                             <object class='GtkShortcutsShortcut'>
                                 <property name='title' translatable='yes'>Toggle Window Controls</property>
-                                <property name='accelerator'>H</property>
-                            </object>
-                        </child>
-                        <child>
-                            <object class='GtkShortcutsShortcut'>
-                                <property name='title' translatable='yes'>Toggle Autohide Headerbar</property>
-                                <property name='accelerator'>A</property>
+                                <property name='accelerator'>O</property>
                             </object>
                         </child>
                     </object>
@@ -71,8 +65,8 @@
                         </child>
                         <child>
                             <object class='GtkShortcutsShortcut'>
-                                <property name='title' translatable='yes'>Toggle Channels</property>
-                                <property name='accelerator'>C</property>
+                                <property name='title' translatable='yes'>Increase/Decrease Sensitivity</property>
+                                <property name='accelerator'>V &lt;Shift&gt;V</property>
                             </object>
                         </child>
                         <child>
@@ -88,14 +82,38 @@
                         <property name='title' translatable='yes'>Colors</property>
                         <child>
                             <object class='GtkShortcutsShortcut'>
-                                <property name='title' translatable='yes'>Change Colors Profile</property>
-                                <property name='accelerator'>P &lt;Shift&gt;P</property>
+                                <property name='title' translatable='yes'>Toggle Widgets Style</property>
+                                <property name='accelerator'>W</property>
                             </object>
                         </child>
                         <child>
                             <object class='GtkShortcutsShortcut'>
-                                <property name='title' translatable='yes'>Toggle Widgets Style</property>
-                                <property name='accelerator'>W</property>
+                                <property name='title' translatable='yes'>Change Colors Profile</property>
+                                <property name='accelerator'>C &lt;Shift&gt;C</property>
+                            </object>
+                        </child>
+                        <child>
+                            <object class='GtkShortcutsShortcut'>
+                                <property name='title' translatable='yes'>Change Mirror Profile</property>
+                                <property name='accelerator'>N &lt;Shift&gt;N</property>
+                            </object>
+                        </child>
+                        <child>
+                            <object class='GtkShortcutsShortcut'>
+                                <property name='title' translatable='yes'>Toggle Color Animation</property>
+                                <property name='accelerator'>G</property>
+                            </object>
+                        </child>
+                        <child>
+                            <object class='GtkShortcutsShortcut'>
+                                <property name='title' translatable='yes'>Change Target Profile</property>
+                                <property name='accelerator'>J &lt;Shift&gt;J</property>
+                            </object>
+                        </child>
+                        <child>
+                            <object class='GtkShortcutsShortcut'>
+                                <property name='title' translatable='yes'>Change Mirror Target Profile</property>
+                                <property name='accelerator'>K &lt;Shift&gt;K</property>
                             </object>
                         </child>
                     </object>
@@ -118,13 +136,13 @@
                         <child>
                             <object class='GtkShortcutsShortcut'>
                                 <property name='title' translatable='yes'>Preferences</property>
-                                <property name='accelerator'>&lt;Ctrl&gt;comma</property>
+                                <property name='accelerator'>P</property>
                             </object>
                         </child>
                         <child>
                             <object class='GtkShortcutsShortcut'>
                                 <property name='title' translatable='yes'>Show Shortcuts</property>
-                                <property name='accelerator'>&lt;Ctrl&gt;question</property>
+                                <property name='accelerator'>H</property>
                             </object>
                         </child>
                         <child>

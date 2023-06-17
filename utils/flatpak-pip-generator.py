@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-#Utility for generating flatpak module entries from a pip package
+# Utility for generating flatpak module entries from a pip package
+# External to the Cavasik project
 
 __license__ = 'MIT'
 
