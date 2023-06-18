@@ -204,7 +204,18 @@ We look forward to your translations!
 
 <h2 align="center">Code of Conduct [<a href="https://github.com/TheWisker/Cavasik#index">↑</a>]</h2>
 
-<p align="center"> This project follows the <a href="./.github/CODE_OF_CONDUCT.md"><b>Covenant Code of Conduct</b></a>.</p>
+<p align="center"> This project follows the <a href="./.github/CODE_OF_CONDUCT.md"><b>Contributor Covenant Code of Conduct</b></a>.</p>
+
+<h2 align="center">Credits [<a href="https://github.com/TheWisker/Cavasik#index">↑</a>]</h2>
+
+<div align="center">
+    
+| Author | Forked From |
+| ------------- | ------------- |
+| <a href="https://github.com/TheWisker"><img width="200" height="200" src="./assets/profile.png"></img></a>  | <a href="https://github.com/fsobolev"><img width="200" height="200" src="./assets/fork_profile.png"></img></a>  |
+| TheWisker | Fsobolev |
+
+</div>
 
 [description]: https://github.com/TheWisker/Cavasik#description-
 [features]: https://github.com/TheWisker/Cavasik#features-
@@ -231,14 +242,3 @@ We look forward to your translations!
 [contributing]: ./CONTRIBUTING.md
 [lang-contributing]: ./lang/CONTRIBUTING.md
 [translator-credits]: ./lang/CREDITS.json
-
-<h2 align="center">Credits [<a href="https://github.com/TheWisker/Cavasik#index">↑</a>]</h2>
-
-<div align="center">
-    
-| Author | Forked From |
-| ------------- | ------------- |
-| <a href="https://github.com/TheWisker"><img width="200" height="200" src="./assets/profile.png"></img></a>  | <a href="https://github.com/fsobolev"><img width="200" height="200" src="./assets/fork_profile.png"></img></a>  |
-| TheWisker | Fsobolev |
-
-</div>
