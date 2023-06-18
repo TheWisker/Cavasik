@@ -8,7 +8,7 @@
 
 <p align="center">This is an audio visualizer based on CAVA with extended capabilities.</p>
 
-<h2 align="center">Details</h2>
+<h2 align="center">Features</h2>
 
 The visualizer features:
 
@@ -132,20 +132,42 @@ install -Dm644 Cavasik/LICENSE -t "/usr/share/licenses/cavasik"
 
 <h2 align="center">Dependencies</h2>
 
-<h2 align="center">Contributing</h2>
+<h3 align="left">Buildtime</h3>
 
-All contributions are welcome!
-The steps involved when making a contribution are listed in the [CONTRIBUTING.md][contributing] file.
+The Cavasik application has the following buildtime dependencies:
+
+- [meson][meson]
+
+<h3 align="left">Runtime</h3>
+
+The Cavasik application has the following runtime dependencies:
+
+- [cava][cava]
+- [libadwaita][libadwaita]
+- [python-gobject][python-gobject]
+- [python-cairo][python-cairo]
+- [python-pydbus][python-pydbus]
+
+<h2 align="center">Contributions</h2>
+
+First and foremost, all contributions are welcome!
+The steps involved when making a contribution are explained in the [CONTRIBUTING.md][contributing] file.
+We look fowrward to your contributions!
+
+- The contributors are located [here][contributors].
 
 <h2 align="center">Translations</h2>
 
-All translations are welcome!
-The steps involved when making a translation are listed in the [CONTRIBUTING.md][contributing] file.
+Secondly, all translations are also welcome!
+The steps involved when making a translation are explained in the [CONTRIBUTING.md][contributing] file.
 More specific steps can be found in the [CONTRIBUTING.md][lang-contributing] file in the `/lang` folder.
+We look fowrward to your translations!
+
+- The credits of the translators are located [here][translator-credits].
 
 <h2 align="center">Code of Conduct</h2>
 
-<p align="center">This project follows the Covenant Code of Conduct which can be found [here][coc].</p>
+<p align="center"> This project follows the <a href="./.github/CODE_OF_CONDUCT.md">Covenant Code of Conduct</a>.</p>
 
 [flathub]: https://flathub.org/
 [flathub-cavasik]: x
@@ -154,9 +176,16 @@ More specific steps can be found in the [CONTRIBUTING.md][lang-contributing] fil
 [aur-wiki]: https://wiki.archlinux.org/title/Arch_User_Repository
 [releases]: x
 [dependencies]: x
+[meson]: https://mesonbuild.com/
+[cava]: x
+[libadwaita]: x
+[python-gobject]: x
+[python-cairo]: x
+[python-pydbus]: x
+[contributors]: ./CONTRIBUTORS.md
 [contributing]: ./CONTRIBUTING.md
 [lang-contributing]: ./lang/CONTRIBUTING.md
-[coc]: ./.github/CODE_OF_CONDUCT.md
+[translator-credits]: ./lang/CREDITS.json
 
 <h2 align="center">Forked</h2>
 <div align="center">
