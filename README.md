@@ -4,6 +4,30 @@
 </div>
 <p align="center">Audio visualizer based on CAVA</p>
 
+<h2 align="center">Index</h2>
+
+<div align="center">
+    
+  [Description][description]
+  
+  [Features][features]
+  
+  [Screenshots][screenshots]
+  
+  [Installation][installation]
+  
+  [Dependencies][dependencies]
+  
+  [Contributions][contributions]
+
+  [Translations][translations]
+  
+  [Code of Conduct][coc]
+  
+  [Credits][credits]
+
+</div>
+
 <h2 align="center">Description</h2>
 
 <p align="center">This is an audio visualizer based on <b>CAVA</b> with extended capabilities.</p>
@@ -182,13 +206,21 @@ We look forward to your translations!
 
 <p align="center"> This project follows the <a href="./.github/CODE_OF_CONDUCT.md"><b>Covenant Code of Conduct</b></a>.</p>
 
+[description]: https://github.com/TheWisker/Cavasik#description
+[features]: https://github.com/TheWisker/Cavasik#features
+[screenshots]: https://github.com/TheWisker/Cavasik#screenshots
+[installation]: https://github.com/TheWisker/Cavasik#installation
+[dependencies]: https://github.com/TheWisker/Cavasik#dependencies
+[Contributions]: https://github.com/TheWisker/Cavasik#contributions
+[translations]: https://github.com/TheWisker/Cavasik#translations
+[coc]: https://github.com/TheWisker/Cavasik#code-of-conduct
+[credits]: https://github.com/TheWisker/Cavasik#credits
 [flathub]: https://flathub.org/
 [flathub-cavasik]: x
 [flatpak-setup]: https://flatpak.org/setup/
 [aur]: https://aur.archlinux.org/
 [aur-wiki]: https://wiki.archlinux.org/title/Arch_User_Repository
 [releases]: x
-[dependencies]: https://github.com/TheWisker/Cavasik#dependencies
 [meson]: https://mesonbuild.com/
 [cava]: https://github.com/karlstav/cava
 [libadwaita]: https://gitlab.gnome.org/GNOME/libadwaita
