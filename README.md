@@ -95,17 +95,42 @@ The visualizer features:
 
 You can install the **Cavasik** app from [Flathub][flathub] in its [app page][flathub-cavasik].
 
+<a href="https://flathub.org/apps/details/io.github.TheWisker.Cavasik">
+<img src="https://flathub.org/assets/badges/flathub-badge-en.png" height=48px/>
+</a>
+
+For information on how to setup flatpak on any distro read [this][flatpak-setup].
+
 <h3>Arch Linux</h3>
 
 You can install **Cavasik** from the [AUR][aur] repository:
 
-- Release version:
-<a href="https://aur.archlinux.org/packages/cavasik"><img src="https://camo.githubusercontent.com/f4b1ed57afad4fc0cc6f7acbfdf76be7bebaa104563e1e756ba7b91095eec461/68747470733a2f2f692e696d6775722e636f6d2f3958416a6330482e706e67" height=48px></a>
+<a href="https://aur.archlinux.org/packages/cavasik">
+<img src="https://camo.githubusercontent.com/f4b1ed57afad4fc0cc6f7acbfdf76be7bebaa104563e1e756ba7b91095eec461/68747470733a2f2f692e696d6775722e636f6d2f3958416a6330482e706e67" height=48px/>
+</a>
 
-- Development version:
-<a href="https://aur.archlinux.org/packages/cavasik-git"><img src="https://camo.githubusercontent.com/f4b1ed57afad4fc0cc6f7acbfdf76be7bebaa104563e1e756ba7b91095eec461/68747470733a2f2f692e696d6775722e636f6d2f3958416a6330482e706e67" height=48px></a>
+For information on how to install an [AUR][aur] package read [this][aur-wiki] wiki.
 
 <h3>Manually</h3>
+
+To manually install Cavasik start by downloading a [release][releases].
+Then, uncompress the downloaded release into a resulting folder.
+Make sure you have all the [dependencies][dependencies] needed and proceed to run the following commands:
+
+```
+#BUILD
+arch-meson Cavasik build
+meson compile -C build
+
+#TEST
+meson test -C build --print-errorlog
+
+#INSTALL
+meson install -C build
+install -Dm644 Cavasik/LICENSE -t "/usr/share/licenses/cavasik"
+```
+
+<h2 align="center">Dependencies</h2>
 
 <h2 align="center">Contributing</h2>
 
@@ -124,7 +149,11 @@ More specific steps can be found in the [CONTRIBUTING.md][lang-contributing] fil
 
 [flathub]: https://flathub.org/
 [flathub-cavasik]: x
+[flatpak-setup]: https://flatpak.org/setup/
 [aur]: https://aur.archlinux.org/
+[aur-wiki]: https://wiki.archlinux.org/title/Arch_User_Repository
+[releases]: x
+[dependencies]: x
 [contributing]: ./CONTRIBUTING.md
 [lang-contributing]: ./lang/CONTRIBUTING.md
 [coc]: ./.github/CODE_OF_CONDUCT.md
@@ -142,9 +171,6 @@ More specific steps can be found in the [CONTRIBUTING.md][lang-contributing] fil
 <h4 align="center">TheWisker</h4>
 
 
-<a href="https://flathub.org/apps/details/io.github.TheWisker.Cavasik"><img src="https://flathub.org/assets/badges/flathub-badge-en.png" height=48px></a>
-
-<a href="https://matrix.to/#/#sable-burrow:matrix.org"><img src="https://camo.githubusercontent.com/870f80ce7fd32ac263ec68010d5ee1439e66ee11433858601680debf7f916d47/68747470733a2f2f692e696d6775722e636f6d2f6373496f72374f2e706e67" height=48px></a>
 
 **Cavasik** is an audio visualizer based on [CAVA](https://github.com/karlstav/cava) with customizable LibAdwaita interface.
 * 4 drawing modes!
