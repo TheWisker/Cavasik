@@ -229,11 +229,11 @@ We look forward to your translations!
 [coc]: https://github.com/TheWisker/Cavasik#code-of-conduct-
 [credits]: https://github.com/TheWisker/Cavasik#credits-
 [flathub]: https://flathub.org/
-[flathub-cavasik]: x
+[flathub-cavasik]: https://flathub.org/
 [flatpak-setup]: https://flatpak.org/setup/
 [aur]: https://aur.archlinux.org/
 [aur-wiki]: https://wiki.archlinux.org/title/Arch_User_Repository
-[releases]: x
+[releases]: https://github.com/TheWisker/Cavasik/releases/
 [meson]: https://mesonbuild.com/
 [cava]: https://github.com/karlstav/cava
 [libadwaita]: https://gitlab.gnome.org/GNOME/libadwaita
