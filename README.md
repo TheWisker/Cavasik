@@ -193,7 +193,7 @@ First and foremost, all contributions are welcome!
 The **steps** involved when making a contribution are **explained** in the [CONTRIBUTING.md][contributing] file.
 We look forward to your contributions!
 
-- The **contributors** are located [here][contributors].
+- The **contributors** list is located [here][contributors].
 
 <h2 align="center">Translations [<a href="https://github.com/TheWisker/Cavasik#index">↑</a>]</h2>
 
