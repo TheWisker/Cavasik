@@ -6,7 +6,7 @@
 
 <h2 align="center">Description</h2>
 
-<p align="center">This is an audio visualizer based on CAVA with expanded capabilities.</p>
+<p align="center">This is an audio visualizer based on CAVA with extended capabilities.</p>
 
 <h2 align="center">Details</h2>
 
@@ -25,45 +25,65 @@ The visualizer features:
 
 <h2 align="center">Screenshots</h2>
 
-![Main screenshot](./assets/screenshots/main.png)
+<div align="center">
+    <img src="./assets/screenshots/main.png"></img>
+</div>
 
-<h3 align="left">Waves mode</h2>
+<h3 align="center">Waves mode</h2>
 
-![Waves screenshot](./assets/screenshots/waves.png)
+<div align="center">
+    <img src="./assets/screenshots/waves.png"></img>
+</div>
 
-<h3 align="left">Levels mode</h2>
+<h3 align="center">Levels mode</h2>
 
-![Levels screenshot](./assets/screenshots/levels.png)
+<div align="center">
+    <img src="./assets/screenshots/levels.png"></img>
+</div>
 
-<h3 align="left">Particles mode</h2>
+<h3 align="center">Particles mode</h2>
 
-![Particles screenshot](./assets/screenshots/particles.png)
+<div align="center">
+    <img src="./assets/screenshots/particles.png"></img>
+</div>
 
-<h3 align="left">Spine mode</h2>
+<h3 align="center">Spine mode</h2>
 
-![Spine screenshot](./assets/screenshots/spine.png)
+<div align="center">
+    <img src="./assets/screenshots/spine.png"></img>
+</div>
 
-<h3 align="left">Bars mode</h2>
+<h3 align="center">Bars mode</h2>
 
-![Bars screenshot](./assets/screenshots/bars.png)
+<div align="center">
+    <img src="./assets/screenshots/bars.png"></img>
+</div>
 
-<h3 align="left">Normal mirror + Waves mode</h2>
+<h3 align="center">Normal mirror + Waves mode</h2>
 
-![Normal mirror screenshot](./assets/screenshots/mirror_normal.png)
+<div align="center">
+    <img src="./assets/screenshots/mirror_normal.png"></img>
+</div>
 
-<h3 align="left">Inverted mirror + Waves mode</h2>
+<h3 align="center">Inverted mirror + Waves mode</h2>
 
-![Reverted mirror screenshot](./assets/screenshots/mirror_inverted.png)
+<div align="center">
+    <img src="./assets/screenshots/mirror_inverted.png"></img>
+</div>
 
-<h3 align="left">Overlapping mirror + Waves mode</h2>
+<h3 align="center">Overlapping mirror + Waves mode</h2>
 
-![Overlapping mirror screenshot](./assets/screenshots/mirror_overlapping.png)
+<div align="center">
+    <img src="./assets/screenshots/mirror_overlapping.png"></img>
+</div>
 
-<h3 align="left">Direction top-bottom + Waves mode</h2>
+<h3 align="center">Direction top-bottom + Waves mode</h2>
 
-![Direction top screenshot](./assets/screenshots/direction_top.png)
+<div align="center">
+    <img src="./assets/screenshots/direction_top.png"></img>
+</div>
 
-<h3 align="left">Normal mirror + Direction left-right + Waves mode</h2>
+<h3 align="center">Normal mirror + Direction left-right + Waves mode</h2>
 
 <div align="center">
     <img src="./assets/screenshots/mirror_column.png"></img>
@@ -71,18 +91,21 @@ The visualizer features:
 
 <h2 align="center">Installation</h2>
 
-<h3>Flathub<h3>
+<h3>Flathub</h3>
 
-You can install the Cavasik app from [Flathub][flathub] in its [app page][flathub-cavasik].
+You can install the **Cavasik** app from [Flathub][flathub] in its [app page][flathub-cavasik].
 
-<h3>Arch Linux<h3>
+<h3>Arch Linux</h3>
 
-You can install Cavasik from the [AUR][aur] repository:
+You can install **Cavasik** from the [AUR][aur] repository:
 
-- Release versions
-- Development version
+- Release version:
+<a href="https://aur.archlinux.org/packages/cavasik"><img src="https://camo.githubusercontent.com/f4b1ed57afad4fc0cc6f7acbfdf76be7bebaa104563e1e756ba7b91095eec461/68747470733a2f2f692e696d6775722e636f6d2f3958416a6330482e706e67" height=48px></a>
 
-<h3>Manually<h3>
+- Development version:
+<a href="https://aur.archlinux.org/packages/cavasik-git"><img src="https://camo.githubusercontent.com/f4b1ed57afad4fc0cc6f7acbfdf76be7bebaa104563e1e756ba7b91095eec461/68747470733a2f2f692e696d6775722e636f6d2f3958416a6330482e706e67" height=48px></a>
+
+<h3>Manually</h3>
 
 <h2 align="center">Contributing</h2>
 
@@ -97,7 +120,7 @@ More specific steps can be found in the [CONTRIBUTING.md][lang-contributing] fil
 
 <h2 align="center">Code of Conduct</h2>
 
-This project follows the Covenant Code of Conduct which can be found [here][coc].
+<p align="center">This project follows the Covenant Code of Conduct which can be found [here][coc].</p>
 
 [flathub]: https://flathub.org/
 [flathub-cavasik]: x
@@ -120,7 +143,7 @@ This project follows the Covenant Code of Conduct which can be found [here][coc]
 
 
 <a href="https://flathub.org/apps/details/io.github.TheWisker.Cavasik"><img src="https://flathub.org/assets/badges/flathub-badge-en.png" height=48px></a>
-<a href="https://aur.archlinux.org/packages/cavasik-git"><img src="https://camo.githubusercontent.com/f4b1ed57afad4fc0cc6f7acbfdf76be7bebaa104563e1e756ba7b91095eec461/68747470733a2f2f692e696d6775722e636f6d2f3958416a6330482e706e67" height=48px></a>
+
 <a href="https://matrix.to/#/#sable-burrow:matrix.org"><img src="https://camo.githubusercontent.com/870f80ce7fd32ac263ec68010d5ee1439e66ee11433858601680debf7f916d47/68747470733a2f2f692e696d6775722e636f6d2f6373496f72374f2e706e67" height=48px></a>
 
 **Cavasik** is an audio visualizer based on [CAVA](https://github.com/karlstav/cava) with customizable LibAdwaita interface.
