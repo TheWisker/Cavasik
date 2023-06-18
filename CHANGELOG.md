@@ -1,6 +1,8 @@
 <h1 align="center">Cavasik</h1>
 <div align="center">
-    <img width="400" src="./assets/icons/io.github.TheWisker.Cavasik.png">
+    <a href="https://github.com/TheWisker/Cavasik">
+        <img width="400" src="./assets/icons/io.github.TheWisker.Cavasik.png">
+    </a>
 </div>
 <p align="center">Audio visualizer based on CAVA</p>
 
@@ -13,17 +15,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [2.0.0] - 2023-06-17
  
-First oficial version of Cavasik.
+**First** oficial version of **Cavasik**.
  
 ### Added
 
-- Circle related settings.
-- Circle version of Waves and Bars.
-- All mirror modes and settings.
-- All direction modes and settings.
-- Color animation and it's settings.
-- DBus interface to allow changing colors externally.
-- FPS configuration option.
+- **Circle** related settings.
+- **Circle** version of **Waves** and **Bars**.
+- All **mirror modes** and settings.
+- All **irection modes** and settings.
+- **Color animation** and it's settings.
+- **DBus interface** to allow changing colors externally.
+- **FPS** configuration option.
  
 ### Changed
 - Keyboard shorcuts (some removed, some added)
@@ -33,7 +35,7 @@ First oficial version of Cavasik.
 
 ## [1.0.0] - 2023-01-29
  
-Latest release of Cavalier.
+Latest release of **Cavalier**.
  
 ### Added
 
@@ -54,6 +56,8 @@ Latest release of Cavalier.
 
 <h2 align="center">Author</h2>
 <div align="center">
-    <img width="200" height="200" src="./assets/profile.png"></img>
+    <a href="https://github.com/TheWisker">
+        <img width="200" height="200" src="./assets/profile.png"></img>
+    </a>
 </div>
 <h4 align="center">TheWisker</h4>
