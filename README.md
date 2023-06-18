@@ -188,14 +188,13 @@ We look forward to your translations!
 [lang-contributing]: ./lang/CONTRIBUTING.md
 [translator-credits]: ./lang/CREDITS.json
 
-<h2 align="center">Forked</h2>
-<div align="center">
-    <img width="200" height="200" src="./assets/fork_profile.png"></img>
-</div>
-<h4 align="center">Fsobolev</h4>
+<h2 align="center">Credits</h2>
 
-<h2 align="center">Author</h2>
 <div align="center">
-    <img width="200" height="200" src="./assets/profile.png"></img>
+    
+| Author | Forked From |
+| ------------- | ------------- |
+| <a href="https://github.com/TheWisker"><img width="200" height="200" src="./assets/profile.png"></img></a>  | <a href="https://github.com/fsobolev"><img width="200" height="200" src="./assets/fork_profile.png"></img></a>  |
+| TheWisker | Fsobolev |
+
 </div>
-<h4 align="center">TheWisker</h4>
