@@ -14,7 +14,8 @@ It is great to have you here. Here are a few ways you can help make this project
 
 ## Contributing Index
 
-- [Adding new features]()
+- [Adding new features][new-features-hook]
+- [Adding a translation][translation-hook]
 
 ## Adding new features
 
@@ -29,7 +30,7 @@ Here are the steps involved when making a contribution:
 - Add the following header to newly added code files:
 
 ```
-# window.py
+# filename.ext
 #
 # Copyright (c) 2023, TheWisker
 # All rights reserved.
@@ -61,46 +62,26 @@ This sections explains how bug triaging is done for your project. Help beginners
 * You can update our changelog here:
 * You can remove duplicate bug reports by:
 
+## Adding a translation
 
-# Beta testing
+First of all, thanks for taking the time to contribute to this project!
+Usually, the process of making a translation is quite similar to a any contribution so follow the steps [here][new-features-hook].
+The main difference is following the steps in the [/lang/CONTRIBUTING.md][lang-contributing] file which explains how to tamper with the translation files and add a new translation.
 
-This section explains if your project needs beta testing. Explain why early releases require heavy testing and how they can help with specially across browsers and on different hardware. 
+## Other contributions 
 
-* For our project you can find the roadmap and features that require
-testing from here: 
-
-# Translations
-
-This section includes any instructions or translation needs your project has. 
-
-* You can help us translate our project here: 
-
-# Documentation
-
-This section includes any help you need with the documentation and where it can be found. Code needs explanation, and sometimes those who know the code well have trouble explaining it to someone just getting into it. 
-
-* Help us with documentation here
-
-# Community 
-This section includes ideas on how non-developers can help with the project. Here's a few examples:
-
-* You can help us answer questions our users have here: 
-* You can help build and design our website here:
-* You can help write blog posts about the project by: 
-* You can help with newsletters and internal communications by: 
-
-* Create an example of the project in real world by building something or
-showing what others have built. 
-* Write about other people’s projects based on this project. Show how
-it’s used in daily life. Take screenshots and make videos!
-
-
-# Your first bugfix
-This section should help a person get started with their very first bug fix and thinking through the problem.
-
-* If you have further questions, contact: 
-
+You can even contribute by adding new enhancement and improvement ideas to the [ideas discussion][ideas-discussion] or lending someone a hand in the repository!
 
 [changelog]: ./CHANGELOG.md
 [meson]: ./meson.build
 [contributors]: ./CONTRIBUTORS.md
+[new-features-hook]: https://github.com/TheWisker/Cavasik/blob/master/CONTRIBUTING.md#adding-new-features
+[translation-hook]: https://github.com/TheWisker/Cavasik/blob/master/CONTRIBUTING.md#adding-a-translation
+[lang-contributing]: ./lang/CONTRIBUTING.md
+[ideas-discussion]: https://github.com/TheWisker/Cavasik/discussions/new?category=ideas
+
+<h2 align="center">Author</h2>
+<div align="center">
+    <img width="200" height="200" src="./assets/profile.png"></img>
+</div>
+<h4 align="center">TheWisker</h4>

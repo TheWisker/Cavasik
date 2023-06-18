@@ -65,14 +65,50 @@ The visualizer features:
 
 <h3 align="left">Normal mirror + Direction left-right + Waves mode</h2>
 
-![Mirror column screenshot](./assets/screenshots/mirror_column.png)
+<div align="center">
+    <img src="./assets/screenshots/mirror_column.png"></img>
+</div>
 
 <h2 align="center">Installation</h2>
 
+<h3>Flathub<h3>
+
+You can install the Cavasik app from [Flathub][flathub] in its [app page][flathub-cavasik].
+
+<h3>Arch Linux<h3>
+
+You can install Cavasik from the [AUR][aur] repository:
+
+- Release versions
+- Development version
+
+<h3>Manually<h3>
+
+<h2 align="center">Contributing</h2>
+
+All contributions are welcome!
+The steps involved when making a contribution are listed in the [CONTRIBUTING.md][contributing] file.
+
+<h2 align="center">Translations</h2>
+
+All translations are welcome!
+The steps involved when making a translation are listed in the [CONTRIBUTING.md][contributing] file.
+More specific steps can be found in the [CONTRIBUTING.md][lang-contributing] file in the `/lang` folder.
+
+<h2 align="center">Code of Conduct</h2>
+
+This project follows the Covenant Code of Conduct which can be found [here][coc].
+
+[flathub]: https://flathub.org/
+[flathub-cavasik]: x
+[aur]: https://aur.archlinux.org/
+[contributing]: ./CONTRIBUTING.md
+[lang-contributing]: ./lang/CONTRIBUTING.md
+[coc]: ./.github/CODE_OF_CONDUCT.md
 
 <h2 align="center">Forked</h2>
 <div align="center">
-    <img width="200" height="200" src="./assets/profile.png"></img>
+    <img width="200" height="200" src="./assets/fork_profile.png"></img>
 </div>
 <h4 align="center">Fsobolev</h4>
 
