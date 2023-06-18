@@ -1,6 +1,8 @@
 <h1 align="center">Cavasik</h1>
 <div align="center">
-    <img width="400" src="./assets/icons/io.github.TheWisker.Cavasik.png">
+    <a href="https://github.com/TheWisker/Cavasik">
+        <img width="400" src="./assets/icons/io.github.TheWisker.Cavasik.png">
+    </a>
 </div>
 <p align="center">Audio visualizer based on CAVA</p>
 
