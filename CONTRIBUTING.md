@@ -1,6 +1,8 @@
 <h1 align="center">Cavasik</h1>
 <div align="center">
-    <img width="400" src="./assets/icons/io.github.TheWisker.Cavasik.png">
+    <a href="https://github.com/TheWisker/Cavasik"> 
+        <img width="400" src="./assets/icons/io.github.TheWisker.Cavasik.png">
+    <a>
 </div>
 <p align="center">Audio visualizer based on CAVA</p>
 
@@ -16,8 +18,9 @@ It is great to have you here. Here are a few ways you can help make this project
 
 - [Adding new features][new-features-hook]
 - [Adding a translation][translation-hook]
+- [Other contributions][other-contributions-hook]
 
-## Adding new features
+## Adding new features [[↑][index]]
 
 First of all, thank you for taking the time to contribute to this project!
 Here are the **steps** involved when making a contribution:
@@ -43,26 +46,30 @@ Here are the **steps** involved when making a contribution:
 - Git **add**, **commit**, and **push** those changes.
 - Open a new pull request which will be usually reviewed in less than three days.
 
-## Adding a translation
+## Adding a translation [[↑][index]]
 
 First of all, thanks for taking the time to contribute to this project!
 Usually, the process of making a translation is quite **similar** to any other contribution, so follow the steps explained [here][new-features-hook].
 The main **difference** are the steps in the [/lang/CONTRIBUTING.md][lang-contributing] file which explains how to tamper with the translation files and **add** a new **translation**.
 
-## Other contributions 
+## Other contributions [[↑][index]]
 
 You can even contribute by adding new enhancement and improvement **ideas** to the [ideas discussion][ideas-discussion] or lending someone a hand in the repository!
 
+[index]: https://github.com/TheWisker/Cavasik/blob/master/CONTRIBUTING.md#contributing-index
 [changelog]: ./CHANGELOG.md
 [meson]: ./meson.build
 [contributors]: ./CONTRIBUTORS.md
-[new-features-hook]: https://github.com/TheWisker/Cavasik/blob/master/CONTRIBUTING.md#adding-new-features
-[translation-hook]: https://github.com/TheWisker/Cavasik/blob/master/CONTRIBUTING.md#adding-a-translation
+[new-features-hook]: https://github.com/TheWisker/Cavasik/blob/master/CONTRIBUTING.md#adding-new-features-
+[translation-hook]: https://github.com/TheWisker/Cavasik/blob/master/CONTRIBUTING.md#adding-a-translation-
+[other-contributions-hook]: https://github.com/TheWisker/Cavasik/blob/master/CONTRIBUTING.md#other-contributions-
 [lang-contributing]: ./lang/CONTRIBUTING.md
 [ideas-discussion]: https://github.com/TheWisker/Cavasik/discussions/new?category=ideas
 
 <h2 align="center">Author</h2>
 <div align="center">
-    <img width="200" height="200" src="./assets/profile.png"></img>
+    <a href="https://github.com/TheWisker">
+        <img width="200" height="200" src="./assets/profile.png"></img>
+    </a>
 </div>
 <h4 align="center">TheWisker</h4>
