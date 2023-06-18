@@ -22,7 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Circle** related settings.
 - **Circle** version of **Waves** and **Bars**.
 - All **mirror modes** and settings.
-- All **irection modes** and settings.
+- All **direction modes** and settings.
 - **Color animation** and it's settings.
 - **DBus interface** to allow changing colors externally.
 - **FPS** configuration option.
