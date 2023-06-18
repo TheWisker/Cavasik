@@ -28,11 +28,11 @@
 
 </div>
 
-<h2 align="center">Description</h2>
+<h2 align="center">Description [<a href="https://github.com/TheWisker/Cavasik#index">↑</a>]</h2>
 
 <p align="center">This is an audio visualizer based on <b>CAVA</b> with extended capabilities.</p>
 
-<h2 align="center">Features</h2>
+<h2 align="center">Features [<a href="https://github.com/TheWisker/Cavasik#index">↑</a>]</h2>
 
 The visualizer features:
 
@@ -47,7 +47,7 @@ The visualizer features:
 - Configure *smoothing*, *noise reduction* and a few other **CAVA** settings!
 - Change **background** and **foreground** colors through a **DBus interface**!
 
-<h2 align="center">Screenshots</h2>
+<h2 align="center">Screenshots [<a href="https://github.com/TheWisker/Cavasik#index">↑</a>]</h2>
 
 <div align="center">
     <img src="./assets/screenshots/main.png"></img>
@@ -125,7 +125,7 @@ The visualizer features:
     <img src="./assets/screenshots/mirror_column.png"></img>
 </div>
 
-<h2 align="center">Installation</h2>
+<h2 align="center">Installation [<a href="https://github.com/TheWisker/Cavasik#index">↑</a>]</h2>
 
 <h3>Flathub</h3>
 
@@ -167,7 +167,7 @@ meson install -C build
 install -Dm644 Cavasik/LICENSE -t "/usr/share/licenses/cavasik"
 ```
 
-<h2 align="center">Dependencies</h2>
+<h2 align="center">Dependencies [<a href="https://github.com/TheWisker/Cavasik#index">↑</a>]</h2>
 
 <h3 align="left">Buildtime</h3>
 
@@ -185,7 +185,7 @@ The **Cavasik** application has the following *runtime* dependencies:
 - [python-cairo][python-cairo]
 - [python-pydbus][python-pydbus]
 
-<h2 align="center">Contributions</h2>
+<h2 align="center">Contributions [<a href="https://github.com/TheWisker/Cavasik#index">↑</a>]</h2>
 
 First and foremost, all contributions are welcome!
 The **steps** involved when making a contribution are **explained** in the [CONTRIBUTING.md][contributing] file.
@@ -193,7 +193,7 @@ We look forward to your contributions!
 
 - The **contributors** are located [here][contributors].
 
-<h2 align="center">Translations</h2>
+<h2 align="center">Translations [<a href="https://github.com/TheWisker/Cavasik#index">↑</a>]</h2>
 
 Secondly, all translations are also welcome!
 The **steps** involved when making a translation are **explained** in the [CONTRIBUTING.md][contributing] file.
@@ -202,7 +202,7 @@ We look forward to your translations!
 
 - The **credits** of the translators are located [here][translator-credits].
 
-<h2 align="center">Code of Conduct</h2>
+<h2 align="center">Code of Conduct [<a href="https://github.com/TheWisker/Cavasik#index">↑</a>]</h2>
 
 <p align="center"> This project follows the <a href="./.github/CODE_OF_CONDUCT.md"><b>Covenant Code of Conduct</b></a>.</p>
 
@@ -232,7 +232,7 @@ We look forward to your translations!
 [lang-contributing]: ./lang/CONTRIBUTING.md
 [translator-credits]: ./lang/CREDITS.json
 
-<h2 align="center">Credits</h2>
+<h2 align="center">Credits [<a href="https://github.com/TheWisker/Cavasik#index">↑</a>]</h2>
 
 <div align="center">
     
