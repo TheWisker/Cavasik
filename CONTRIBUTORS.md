@@ -8,9 +8,9 @@
 
 <h2 align="center">Contributors</h2>
 
-**Main**: [TheWisker](https://github.com/TheWisker) => TheWisker@protonmail.com
+- **Main**: [TheWisker](https://github.com/TheWisker) => TheWisker@protonmail.com
 
-**Fork Source**: [Fyodor Sobolev](https://github.com/fsobolev)
+- **Fork Source**: [Fyodor Sobolev](https://github.com/fsobolev)
 
 These are the **Cavasik** project **contributors**, ordered from most recent to least recent:
 
