@@ -1,6 +1,8 @@
 <h1 align="center">Cavasik</h1>
 <div align="center">
-    <img width="400" src="./assets/icons/io.github.TheWisker.Cavasik.png">
+    <a href="https://github.com/TheWisker/Cavasik">
+        <img width="400" src="../assets/icons/io.github.TheWisker.Cavasik.png">
+    </a>
 </div>
 <p align="center">Audio visualizer based on CAVA</p>
 
@@ -135,6 +137,8 @@ https://www.contributor-covenant.org/translations.
 
 <h2 align="center">Author</h2>
 <div align="center">
-    <img width="200" height="200" src="./assets/profile.png"></img>
+    <a href="https://github.com/TheWisker">
+        <img width="200" height="200" src="../assets/profile.png"></img>
+    </a>
 </div>
 <h4 align="center">TheWisker</h4>
