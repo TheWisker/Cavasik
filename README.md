@@ -206,15 +206,15 @@ We look forward to your translations!
 
 <p align="center"> This project follows the <a href="./.github/CODE_OF_CONDUCT.md"><b>Covenant Code of Conduct</b></a>.</p>
 
-[description]: https://github.com/TheWisker/Cavasik#description
-[features]: https://github.com/TheWisker/Cavasik#features
-[screenshots]: https://github.com/TheWisker/Cavasik#screenshots
-[installation]: https://github.com/TheWisker/Cavasik#installation
-[dependencies]: https://github.com/TheWisker/Cavasik#dependencies
-[Contributions]: https://github.com/TheWisker/Cavasik#contributions
-[translations]: https://github.com/TheWisker/Cavasik#translations
-[coc]: https://github.com/TheWisker/Cavasik#code-of-conduct
-[credits]: https://github.com/TheWisker/Cavasik#credits
+[description]: https://github.com/TheWisker/Cavasik#description-
+[features]: https://github.com/TheWisker/Cavasik#features-
+[screenshots]: https://github.com/TheWisker/Cavasik#screenshots-
+[installation]: https://github.com/TheWisker/Cavasik#installation-
+[dependencies]: https://github.com/TheWisker/Cavasik#dependencies-
+[Contributions]: https://github.com/TheWisker/Cavasik#contributions-
+[translations]: https://github.com/TheWisker/Cavasik#translations-
+[coc]: https://github.com/TheWisker/Cavasik#code-of-conduct-
+[credits]: https://github.com/TheWisker/Cavasik#credits-
 [flathub]: https://flathub.org/
 [flathub-cavasik]: x
 [flatpak-setup]: https://flatpak.org/setup/
