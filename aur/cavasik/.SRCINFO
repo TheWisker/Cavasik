@@ -1,4 +1,4 @@
-pkgbase = cavasik-git
+pkgbase = cavasik
 	pkgdesc = Audio visualizer based on CAVA
 	pkgver = v2.0.0
 	pkgrel = 1
@@ -10,11 +10,11 @@ pkgbase = cavasik-git
 	makedepends = meson
 	depends = cava
 	depends = libadwaita
-	depends = python-cairo
 	depends = python-gobject
+	depends = python-cairo
 	depends = python-pydbus
-	conflicts = cavasik
-	source = git+https://github.com/TheWisker/Cavasik.git
+	conflicts = cavasik-git
+	source = git+https://github.com/TheWisker/Cavasik#tag=v2.0.0
 	b2sums = SKIP
 
-pkgname = cavasik-git
+pkgname = cavasik
