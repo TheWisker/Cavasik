@@ -19,15 +19,15 @@ It is great to have you here. Here are a few ways you can help make this project
 
 ## Adding new features
 
-First of all, thanks for taking the time to contribute to this project!
-Here are the steps involved when making a contribution:
+First of all, thank you for taking the time to contribute to this project!
+Here are the **steps** involved when making a contribution:
 
-- Make a fork of this repository
-- Clone the fork locally
-- Make the changes and additions desired to the cloned fork
-- Modify the [CHANGELOG.md][changelog] file, following its structure.
-- Modify the [meson.build][meson] file, updating its version number using [Semantic Versioning](https://semver.org/spec/v2.0.0.html)
-- Add the following header to newly added code files:
+- Make a **fork** of this repository
+- **Clone** the fork locally
+- Make the **changes and additions** desired to the cloned fork
+- **Modify** the [CHANGELOG.md][changelog] file, following its structure.
+- **Modify** the [meson.build][meson] file, updating its **version number** using [Semantic Versioning](https://semver.org/spec/v2.0.0.html)
+- Add the following **header** to newly added code files:
 
 ```
 # filename.ext
@@ -39,38 +39,19 @@ Here are the steps involved when making a contribution:
 # LICENSE file in the root directory of this source tree.
 ```
 
-- Add yourself or your organization to the [CONTRIBUTORS.md][contributors] file, following its structure.
-- Git add, commit, and push those changes.
+- **Add** yourself or your organization to the [CONTRIBUTORS.md][contributors] file, following its structure.
+- Git **add**, **commit**, and **push** those changes.
 - Open a new pull request which will be usually reviewed in less than three days.
-
-# Bug triage
-
-This sections explains how bug triaging is done for your project. Help beginners by including examples to good bug reports and providing them questions they should look to answer. 
-
-* You can help report bugs by filing them here: 
-* You can look through the existing bugs here: 
-
-* You can help us diagnose and fix existing bugs by asking and providing answers for the following:
-
-  * Is the bug reproducible as explained?   
-  * Is it reproducible in other environments (for instance, on different browsers or devices)?   
-  * Are the steps to reproduce the bug clear? If not, can you describe how you might reproduce it?  
-  * What tags should the bug have?  
-  * Is this bug something you have run into? Would you appreciate it being looked into faster?  
-
-* You can close fixed bugs by testing old tickets to see if they are still happening.
-* You can update our changelog here:
-* You can remove duplicate bug reports by:
 
 ## Adding a translation
 
 First of all, thanks for taking the time to contribute to this project!
-Usually, the process of making a translation is quite similar to a any contribution so follow the steps [here][new-features-hook].
-The main difference is following the steps in the [/lang/CONTRIBUTING.md][lang-contributing] file which explains how to tamper with the translation files and add a new translation.
+Usually, the process of making a translation is quite **similar** to any other contribution, so follow the steps explained [here][new-features-hook].
+The main **difference** are the steps in the [/lang/CONTRIBUTING.md][lang-contributing] file which explains how to tamper with the translation files and **add** a new **translation**.
 
 ## Other contributions 
 
-You can even contribute by adding new enhancement and improvement ideas to the [ideas discussion][ideas-discussion] or lending someone a hand in the repository!
+You can even contribute by adding new enhancement and improvement **ideas** to the [ideas discussion][ideas-discussion] or lending someone a hand in the repository!
 
 [changelog]: ./CHANGELOG.md
 [meson]: ./meson.build
