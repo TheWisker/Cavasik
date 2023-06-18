@@ -1,60 +1,49 @@
 <h1 align="center">Cavasik</h1>
 <div align="center">
-    <img width="400" src="./assets/icons/io.github.TheWisker.Cavasik.png">
+    <a href="https://github.com/TheWisker/Cavasik">
+        <img width="400" src="./assets/icons/io.github.TheWisker.Cavasik.png">
+    </a>
 </div>
 <p align="center">Audio visualizer based on CAVA</p>
 
 <h2 align="center">Support</h2>
 
-This article explains where to get help with Cavasik.
-Please read through the following guidelines.
+This page explains where and how to get help with **Cavasik**.
+Please **read** through the following **guidelines**.
 
-> 👉 **Note**: before participating in this community, please read our
-> [code of conduct][coc].
-> By interacting with this repository, or community you agree to
-> abide by its terms.
+## Support Index
 
-## Asking quality questions
+- [Issues][issues-hook]
+- [Discussions][discussions-hook]
+- [Contact][contact-hook]
 
-Questions can go to [GitHub discussions][chat].
+## Issues [[↑][index]]
 
-Help us help you!
-Spend time framing questions, add links and resources.
-Spending the extra time up front can help save everyone time in the long run.
-Here are some tips:
+If you are facing a **issue** or bug with the **Cavasik** application, you can **report it** through the [issues page][issues].
+In said page you can report from **bugs** to possible **enhacements**, so feel free to do so!
 
-*   Don’t fall for the [XY problem][xy]
-*   Search to find out if a similar question has been asked
-*   Try to define what you need help with:
-    *   Is there something in particular you want to do?
-    *   What problem are you encountering and what steps have you taken to try
-        and fix it?
-    *   Is there a concept you don’t understand?
-*   Screenshots can help, but if there’s important text such as code or error
-    messages in them, please also provide those as text
+## Discussions [[↑][index]]
 
-## Contributions
+If you want to share a **new idea** for the **Cavasik** project, have some **questions** or just something more **general** to discuss, you can do so in the [discussions page][discussions].
 
-See [`contributing.md`][contributing] on how to contribute.
+## Contact [[↑][index]]
 
-## License
+If you have been treated in a way that violates our [Code of Conduct][coc] you can contact me with this email:
 
-[CC-BY-4.0][license] © [Titus Wormer][author]
+- TheWisker@protonmail.com
 
-<!-- Definitions -->
+<h2 align="center">Author</h2>
+<div align="center">
+    <a href="https://github.com/TheWisker">
+        <img width="200" height="200" src="./assets/profile.png"></img>
+    </a>
+</div>
+<h4 align="center">TheWisker</h4>
 
-[license]: https://creativecommons.org/licenses/by/4.0/
-
-[author]: https://wooorm.com
-
-[coc]: https://github.com/remarkjs/.github/blob/main/code-of-conduct.md
-
-[rubberduck]: https://rubberduckdebugging.com
-
-[xy]: https://meta.stackexchange.com/questions/66377/what-is-the-xy-problem/66378#66378
-
-[chat]: https://github.com/remarkjs/remark/discussions
-
-[cs]: https://codesandbox.io
-
-[contributing]: contributing.md
+[index]: https://github.com/TheWisker/Cavasik/edit/master/SUPPORT.md#support-index
+[issues-hook]: https://github.com/TheWisker/Cavasik/edit/master/SUPPORT.md#issues-
+[discussions-hook]: https://github.com/TheWisker/Cavasik/edit/master/SUPPORT.md#discussions-
+[contact-hook]: https://github.com/TheWisker/Cavasik/edit/master/SUPPORT.md#contact-
+[issues]: https://github.com/TheWisker/Cavasik/issues
+[discussions]: https://github.com/TheWisker/Cavasik/discussions
+[coc]: ./.github/CODE_OF_CONDUCT.md
