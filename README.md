@@ -59,6 +59,18 @@ The visualizer features:
     <img src="./assets/screenshots/bars.png"></img>
 </div>
 
+<h3 align="center">Waves mode + Circle shape</h2>
+
+<div align="center">
+    <img src="./assets/screenshots/wave_circle.png"></img>
+</div>
+
+<h3 align="center">Bars mode + Circle shape</h2>
+
+<div align="center">
+    <img src="./assets/screenshots/bars_circle.png"></img>
+</div>
+
 <h3 align="center">Normal mirror + Waves mode</h2>
 
 <div align="center">
