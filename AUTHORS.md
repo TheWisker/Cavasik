@@ -18,8 +18,6 @@
 
 **Other contributors** are listed in the [CONTRIBUTORS.md][contributors] file.
 
-[contributors]: ./CONTRIBUTORS.md
-
 <h2 align="center">Author</h2>
 <div align="center">
     <a href="https://github.com/TheWisker">
@@ -27,3 +25,5 @@
     </a>
 </div>
 <h4 align="center">TheWisker</h4>
+
+[contributors]: ./CONTRIBUTORS.md

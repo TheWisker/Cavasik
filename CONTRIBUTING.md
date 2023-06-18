@@ -56,6 +56,14 @@ The main **difference** are the steps in the [/lang/CONTRIBUTING.md][lang-contri
 
 You can even contribute by adding new enhancement and improvement **ideas** to the [ideas discussion][ideas-discussion] or lending someone a hand in the repository!
 
+<h2 align="center">Author</h2>
+<div align="center">
+    <a href="https://github.com/TheWisker">
+        <img width="200" height="200" src="./assets/profile.png"></img>
+    </a>
+</div>
+<h4 align="center">TheWisker</h4>
+
 [index]: https://github.com/TheWisker/Cavasik/blob/master/CONTRIBUTING.md#contributing-index
 [changelog]: ./CHANGELOG.md
 [meson]: ./meson.build
@@ -65,11 +73,3 @@ You can even contribute by adding new enhancement and improvement **ideas** to t
 [other-contributions-hook]: https://github.com/TheWisker/Cavasik/blob/master/CONTRIBUTING.md#other-contributions-
 [lang-contributing]: ./lang/CONTRIBUTING.md
 [ideas-discussion]: https://github.com/TheWisker/Cavasik/discussions/new?category=ideas
-
-<h2 align="center">Author</h2>
-<div align="center">
-    <a href="https://github.com/TheWisker">
-        <img width="200" height="200" src="./assets/profile.png"></img>
-    </a>
-</div>
-<h4 align="center">TheWisker</h4>

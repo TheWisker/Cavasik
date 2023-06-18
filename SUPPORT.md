@@ -40,10 +40,10 @@ If you have been treated in a way that violates our [Code of Conduct][coc] you c
 </div>
 <h4 align="center">TheWisker</h4>
 
-[index]: https://github.com/TheWisker/Cavasik/blob/master/SUPPORT.md#support-index
-[issues-hook]: https://github.com/TheWisker/Cavasik/blob/master/SUPPORT.md#issues-
-[discussions-hook]: https://github.com/TheWisker/Cavasik/blob/master/SUPPORT.md#discussions-
-[contact-hook]: https://github.com/TheWisker/Cavasik/blob/master/SUPPORT.md#contact-
+[index]: https://github.com/TheWisker/Cavasik/edit/master/SUPPORT.md#support-index
+[issues-hook]: https://github.com/TheWisker/Cavasik/edit/master/SUPPORT.md#issues-
+[discussions-hook]: https://github.com/TheWisker/Cavasik/edit/master/SUPPORT.md#discussions-
+[contact-hook]: https://github.com/TheWisker/Cavasik/edit/master/SUPPORT.md#contact-
 [issues]: https://github.com/TheWisker/Cavasik/issues
 [discussions]: https://github.com/TheWisker/Cavasik/discussions
 [coc]: ./.github/CODE_OF_CONDUCT.md

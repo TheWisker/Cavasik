@@ -32,22 +32,3 @@ Thank you for being willing to sacrifice your time to help this project grow!
     </a>
 </div>
 <h4 align="center">TheWisker</h4>
-
-This is the first release of **Cavasik** a fork of **Cavalier**.
-
-The visualizer features:
-
-- Five **normal** drawing modes!
-- Two **circle** drawing modes!
-- Three **mirror** drawing modes!
-- Four drawing **directions**!
-- Customizable **LibAdwaita** interface!
-- Set a single color or up to a 10 color linear gradient for **background** and **foreground**!
-- Select different **foreground** colors for the mirrored images in **mirror** mode!
-- Set up a **color animation** that changes the colors gradually in a loop!
-- Configure *smoothing*, *noise reduction* and a few other **CAVA** settings!
-- Change **background** and **foreground** colors through a **DBus interface**!
-
-We hope you like the new release!
-
-**Full Changelog**: https://github.com/TheWisker/Cavasik/commits/v2.0.0
