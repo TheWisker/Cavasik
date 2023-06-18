@@ -229,7 +229,7 @@ We look forward to your translations!
 [coc]: https://github.com/TheWisker/Cavasik#code-of-conduct-
 [credits]: https://github.com/TheWisker/Cavasik#credits-
 [flathub]: https://flathub.org/
-[flathub-cavasik]: https://flathub.org/
+[flathub-cavasik]: https://flathub.org/apps/io.github.TheWisker.Cavasik
 [flatpak-setup]: https://flatpak.org/setup/
 [aur]: https://aur.archlinux.org/
 [aur-wiki]: https://wiki.archlinux.org/title/Arch_User_Repository
