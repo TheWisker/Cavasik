@@ -57,9 +57,6 @@
     <screenshot>
       <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/direction_top.png</image>
     </screenshot>
-    <screenshot>
-      <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/mirror_column.png</image>
-    </screenshot>
   </screenshots>
   <releases>
     <release type="stable" date="2023-06-16" version="2023.06.16">
