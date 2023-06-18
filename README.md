@@ -6,22 +6,22 @@
 
 <h2 align="center">Description</h2>
 
-<p align="center">This is an audio visualizer based on CAVA with extended capabilities.</p>
+<p align="center">This is an audio visualizer based on <b>CAVA</b> with extended capabilities.</p>
 
 <h2 align="center">Features</h2>
 
 The visualizer features:
 
-- Five normal drawing modes!
-- Two circle drawing modes!
-- Three mirror drawing modes!
-- Four drawing directions!
-- Customizable LibAdwaita interface!
-- Set a single color or up to a 10 color linear gradient for background and foreground!
-- Select different foreground colors for the mirrored images in mirror mode!
-- Set up a color animation that changes the colors gradually in a loop!
-- Configure smoothing, noise reduction and a few other CAVA settings!
-- Change background and foreground colors through a DBus interface!
+- Five **normal** drawing modes!
+- Two **circle** drawing modes!
+- Three **mirror** drawing modes!
+- Four drawing **directions**!
+- Customizable **LibAdwaita** interface!
+- Set a single color or up to a 10 color linear gradient for **background** and **foreground**!
+- Select different **foreground** colors for the mirrored images in **mirror** mode!
+- Set up a **color animation** that changes the colors gradually in a loop!
+- Configure *smoothing*, *noise reduction* and a few other **CAVA** settings!
+- Change **background** and **foreground** colors through a **DBus interface**!
 
 <h2 align="center">Screenshots</h2>
 
@@ -99,7 +99,7 @@ You can install the **Cavasik** app from [Flathub][flathub] in its [app page][fl
 <img src="https://flathub.org/assets/badges/flathub-badge-en.png" height=48px/>
 </a>
 
-For information on how to setup flatpak on any distro read [this][flatpak-setup].
+- For information on how to setup *flatpak* on any distro read [this][flatpak-setup].
 
 <h3>Arch Linux</h3>
 
@@ -109,13 +109,14 @@ You can install **Cavasik** from the [AUR][aur] repository:
 <img src="https://camo.githubusercontent.com/f4b1ed57afad4fc0cc6f7acbfdf76be7bebaa104563e1e756ba7b91095eec461/68747470733a2f2f692e696d6775722e636f6d2f3958416a6330482e706e67" height=48px/>
 </a>
 
-For information on how to install an [AUR][aur] package read [this][aur-wiki] wiki.
+- For information on how to install an [AUR][aur] package read [this][aur-wiki] wiki.
 
 <h3>Manually</h3>
 
-To manually install Cavasik start by downloading a [release][releases].
-Then, uncompress the downloaded release into a resulting folder.
-Make sure you have all the [dependencies][dependencies] needed and proceed to run the following commands:
+To manually install **Cavasik** start by **downloading** a [release][releases].
+Then, **uncompress** the downloaded release into a resulting folder.
+Make sure you have all the [dependencies][dependencies] needed.
+Then, proceed to **run** the following commands:
 
 ```
 #BUILD
@@ -134,13 +135,13 @@ install -Dm644 Cavasik/LICENSE -t "/usr/share/licenses/cavasik"
 
 <h3 align="left">Buildtime</h3>
 
-The Cavasik application has the following buildtime dependencies:
+The **Cavasik** application has the following *buildtime* dependencies:
 
 - [meson][meson]
 
 <h3 align="left">Runtime</h3>
 
-The Cavasik application has the following runtime dependencies:
+The **Cavasik** application has the following *runtime* dependencies:
 
 - [cava][cava]
 - [libadwaita][libadwaita]
@@ -151,23 +152,23 @@ The Cavasik application has the following runtime dependencies:
 <h2 align="center">Contributions</h2>
 
 First and foremost, all contributions are welcome!
-The steps involved when making a contribution are explained in the [CONTRIBUTING.md][contributing] file.
-We look fowrward to your contributions!
+The **steps** involved when making a contribution are **explained** in the [CONTRIBUTING.md][contributing] file.
+We look forward to your contributions!
 
-- The contributors are located [here][contributors].
+- The **contributors** are located [here][contributors].
 
 <h2 align="center">Translations</h2>
 
 Secondly, all translations are also welcome!
-The steps involved when making a translation are explained in the [CONTRIBUTING.md][contributing] file.
-More specific steps can be found in the [CONTRIBUTING.md][lang-contributing] file in the `/lang` folder.
-We look fowrward to your translations!
+The **steps** involved when making a translation are **explained** in the [CONTRIBUTING.md][contributing] file.
+More **specific steps** can be found in the [CONTRIBUTING.md][lang-contributing] file in the `/lang` folder.
+We look forward to your translations!
 
-- The credits of the translators are located [here][translator-credits].
+- The **credits** of the translators are located [here][translator-credits].
 
 <h2 align="center">Code of Conduct</h2>
 
-<p align="center"> This project follows the <a href="./.github/CODE_OF_CONDUCT.md">Covenant Code of Conduct</a>.</p>
+<p align="center"> This project follows the <a href="./.github/CODE_OF_CONDUCT.md"><b>Covenant Code of Conduct</b></a>.</p>
 
 [flathub]: https://flathub.org/
 [flathub-cavasik]: x
