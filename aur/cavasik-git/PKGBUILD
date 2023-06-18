@@ -1,12 +1,12 @@
 # Maintainer: TheWisker <TheWisker@protonmail.com>
 
-pkgname=cavasik-git
+pkgname=cavasik
 pkgbase=cavasik-git
-pkgver=v2.0
+pkgver=v2.0.0
 pkgrel=1
 pkgdesc='Audio visualizer based on CAVA'
 arch=(any)
-url=https://github.com/TheWisker/${pkgname^%-git}
+url=https://github.com/TheWisker/${pkgname^}
 license=('GPL3')
 depends=(cava libadwaita python-cairo python-gobject python-pydbus)
 makedepends=(git meson)
@@ -23,12 +23,11 @@ source=("git+$url.git")
 b2sums=('SKIP')
 
 pkgver() {
-	cd ${pkgname%-git}
-	git describe --long --tags | sed 's/^v//;s/\([^-]*-g\)/r\1/;s/-/./g'
+	echo "dev"
 }
 
 build() {
-	arch-meson ${pkgname%-git} build
+	arch-meson ${pkgname^} build
 	meson compile -C build
 }
 
@@ -38,5 +37,5 @@ check() {
 
 package() {
 	DESTDIR="$pkgdir" meson install -C build
-	install -Dm644 ${pkgname%-git}/COPYING -t "$pkgdir/usr/share/licenses/$pkgname"
+	install -Dm644 ${pkgname^}/LICENSE -t "$pkgdir/usr/share/licenses/$pkgname"
 }
