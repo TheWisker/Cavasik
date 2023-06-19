@@ -112,8 +112,8 @@ jobs:
                   
                   git add PKGBUILD .SRCINFO
                   git commit -m "Github Automated: ${commit_hash}"
-                  git pull --set-upstream label master
-                  git push --set-upstream label master
+                  #git pull --force --set-upstream label master
+                  git push --force --set-upstream label master
 
                   rm -fr .git
 
