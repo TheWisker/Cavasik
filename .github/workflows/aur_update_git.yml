@@ -42,31 +42,31 @@ jobs:
               if [[ $folder_name == *-git ]]; then
                 
                 #Check if PKGBUILD file exists in the folder
-                if [[ -f "$folder/PKGBUILD" ]]; then
-                  pkgrel_line=$(grep -e '^pkgrel=' "$folder/PKGBUILD")
+                if [[ -f "$folderPKGBUILD" ]]; then
+                  pkgrel_line=$(grep -e '^pkgrel=' "$folderPKGBUILD")
 
                   # Extract the current pkgrel value
                   current_pkgrel=$(echo "$pkgrel_line" | cut -d '=' -f2)
                   new_pkgrel=$((current_pkgrel + 1))
 
                   # Replace the pkgrel value with the updated one
-                  sed -i "s/^pkgrel=.*/pkgrel=$new_pkgrel/" "$folder/PKGBUILD"
+                  sed -i "s/^pkgrel=.*/pkgrel=$new_pkgrel/" "$folderPKGBUILD"
 
-                  echo "Updated pkgrel to $new_pkgrel in $folder/PKGBUILD"
+                  echo "Updated pkgrel to $new_pkgrel in $folderPKGBUILD"
                 fi
                 
                 #Check if .SRCINFO file exists in the folder
-                if [[ -f "$folder/.SRCINFO" ]]; then
-                  pkgrel_line=$(grep -e '^pkgrel=' "$folder/.SRCINFO")
+                if [[ -f "$folder.SRCINFO" ]]; then
+                  pkgrel_line=$(grep -e '^pkgrel=' "$folder.SRCINFO")
 
                   # Extract the current pkgrel value
                   current_pkgrel=$(echo "$pkgrel_line" | cut -d '=' -f2)
                   new_pkgrel=$((current_pkgrel + 1))
 
                   # Replace the pkgrel value with the updated one
-                  sed -i "s/^pkgrel=.*/pkgrel=$new_pkgrel/" "$folder/.SRCINFO"
+                  sed -i "s/^pkgrel=.*/pkgrel=$new_pkgrel/" "$folder.SRCINFO"
 
-                  echo "Updated pkgrel to $new_pkgrel in $folder/.SRCINFO"
+                  echo "Updated pkgrel to $new_pkgrel in $folder.SRCINFO"
                 fi
               fi
           done
@@ -83,9 +83,9 @@ jobs:
             # Only run if it is a pkgbase-git aur package
             if [[ $folder_name == *-git ]]; then
               # Only run if it has a PKGBUILD file
-              if [[ -f "$folder/PKGBUILD" ]]; then
+              if [[ -f "$folderPKGBUILD" ]]; then
                 # Only run if it has a .SRCINFO file
-                if [[ -f "$folder/.SRCINFO" ]]; then
+                if [[ -f "$folder.SRCINFO" ]]; then
                   pushd $folder
 
                   git init
