@@ -18,8 +18,8 @@ jobs:
           aur_key: ${{ secrets.AUR_KEY }}
         run: |
           pacman -Syy --noconfirm --needed base-devel git openssh
-          
-	  mkdir -p ~/.ssh/
+
+          mkdir -p ~/.ssh/
 
           echo "Host aur.archlinux.org
           IdentityFile ~/.ssh/aur
