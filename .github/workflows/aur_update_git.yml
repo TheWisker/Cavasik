@@ -60,7 +60,7 @@ jobs:
                   pkgrel_line=$(grep -e '^[[:space:]]*pkgrel =' "${folder}.SRCINFO")
 
                   # Extract the current pkgrel value
-                  current_pkgrel=$(echo "$pkgrel_line" | cut -d ' = ' -f2)
+                  current_pkgrel=$(echo "$pkgrel_line" | awk -F ' = ' '{print $2}')
                   new_pkgrel=$((current_pkgrel + 1))
 
                   # Replace the pkgrel value with the updated one
