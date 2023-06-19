@@ -18,6 +18,8 @@ jobs:
         run: |
           pacman -Syy --noconfirm --needed base-devel git openssh
           
+	  mkdir -p ~/.ssh/
+
           echo "Host aur.archlinux.org
           IdentityFile ~/.ssh/aur
           User root" >> ~/.ssh/config
