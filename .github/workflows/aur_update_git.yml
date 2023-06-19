@@ -86,6 +86,8 @@ jobs:
         run: |
           git config --global user.name '$username'
           git config --global user.email '$email'
+          git config --global pull.ff only
+
 
       - name: Update AUR
         shell: bash
