@@ -57,7 +57,7 @@ jobs:
                 
                 #Check if .SRCINFO file exists in the folder
                 if [[ -f "${folder}.SRCINFO" ]]; then
-                  pkgrel_line=$(grep -e '^pkgrel =' "${folder}.SRCINFO")
+                  pkgrel_line=$(grep -e '^[[:space:]]*pkgrel =' "${folder}.SRCINFO")
 
                   # Extract the current pkgrel value
                   current_pkgrel=$(echo "$pkgrel_line" | cut -d ' = ' -f2)
