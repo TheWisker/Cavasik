@@ -17,7 +17,7 @@ jobs:
         env:
           aur_key: ${{ secrets.AUR_KEY }}
 	  aur_public_key: ${{ secrets.AUR_PKEY }}
-        run: |
+	run: |
           pacman -Syy --noconfirm --needed base-devel git openssh
 
           mkdir -p ~/.ssh/
@@ -28,7 +28,7 @@ jobs:
           
           echo "${aur_key}" > ~/.ssh/aur
 	  echo "${aur_public_key} $USER@$(cat /etc/hostname)" > ~/.ssh/aur.pub
-        
+
       - name: Checkout
         uses: actions/checkout@v3
         
