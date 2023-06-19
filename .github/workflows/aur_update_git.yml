@@ -19,6 +19,10 @@ jobs:
           aur_public_key: ${{ secrets.AUR_PKEY }}
         run: |
           pacman -Syy --noconfirm --needed base-devel git openssh
+          
+          echo X > ~/x
+          ls /root
+          echo $USER:$user:$User
 
           mkdir -p ~/.ssh/
 
