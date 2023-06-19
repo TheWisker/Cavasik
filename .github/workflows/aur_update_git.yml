@@ -16,16 +16,18 @@ jobs:
       - name: Setup Runtime
         env:
           aur_key: ${{ secrets.AUR_KEY }}
+	  aur_public_key: ${{ secrets.AUR_PKEY }}
         run: |
           pacman -Syy --noconfirm --needed base-devel git openssh
 
           mkdir -p ~/.ssh/
 
           echo "Host aur.archlinux.org
-          IdentityFile ~/.ssh/aur
-          User $USER" >> ~/.ssh/config
+          		IdentityFile ~/.ssh/aur
+          		User $USER" >> ~/.ssh/config
           
           echo "${aur_key}" > ~/.ssh/aur
+	  echo "${aur_public_key}" > ~/.ssh/aur.pub
         
       - name: Checkout
         uses: actions/checkout@v3
