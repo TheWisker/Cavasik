@@ -83,7 +83,7 @@ jobs:
           aur_folder: "./aur"
           commit_hash: ${{ github.event.push.after }}
         run: |
-          ls ~/.ssh
+          #ls ~/.ssh
           
           for folder in $aur_folder/*/; do
           
