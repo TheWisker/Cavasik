@@ -23,8 +23,9 @@ jobs:
           mkdir -p ~/.ssh/
 
           echo "Host aur.archlinux.org
-                   IdentityFile ~/.ssh/aur
-                   User $USER" >> ~/.ssh/config
+            IdentityFile ~/.ssh/aur
+            User ${USER}
+           " > ~/.ssh/config
 
           echo "${aur_key}" > ~/.ssh/aur
           echo "${aur_public_key} $USER@$(cat /etc/hostname)" > ~/.ssh/aur.pub
