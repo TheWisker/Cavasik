@@ -15,8 +15,8 @@ jobs:
     steps:
       - name: Setup Runtime
         env:
-	  aur_key: ${{ secrets.AUR_KEY }}
-	  aur_public_key: ${{ secrets.AUR_PKEY }}
+          aur_key: ${{ secrets.AUR_KEY }}
+          aur_public_key: ${{ secrets.AUR_PKEY }}
 	run: |
           pacman -Syy --noconfirm --needed base-devel git openssh
 
