@@ -5,5 +5,5 @@ Exec=cavasik
 Icon=io.github.TheWisker.Cavasik
 Terminal=false
 Type=Application
-Categories=Audio;
+Categories=AudioVideo;Audio;GTK;Amusement;
 StartupNotify=true

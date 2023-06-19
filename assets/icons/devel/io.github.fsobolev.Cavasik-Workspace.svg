@@ -7,6 +7,9 @@
    id="svg2633"
    sodipodi:docname="io.github.fsobolev.Cavasik-Workspace.svg"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   inkscape:export-filename="../io.github.TheWisker.Cavasik.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -99,7 +102,7 @@
      showgrid="false"
      inkscape:zoom="8"
      inkscape:cx="50.25"
-     inkscape:cy="91.0625"
+     inkscape:cy="61.1875"
      inkscape:window-width="1920"
      inkscape:window-height="1018"
      inkscape:window-x="0"
@@ -141,7 +144,7 @@
   </linearGradient>
   <g
      id="g424"
-     transform="translate(11.36216,19.094135)">
+     transform="translate(11.769136,25.278321)">
     <path
        d="m 62.277562,12.893115 h 32.555073 c 1.49819,0 2.71292,1.212221 2.71292,2.707341 v 20.305053 c 0,1.495126 -1.21473,2.707346 -2.71292,2.707346 H 62.277562 c -1.498202,0 -2.712924,-1.21222 -2.712924,-2.707346 V 15.600456 c 0,-1.49512 1.214722,-2.707341 2.712924,-2.707341 z m 0,0"
        fill="url(#a)"
