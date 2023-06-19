@@ -19,26 +19,19 @@ jobs:
           aur_public_key: ${{ secrets.AUR_PKEY }}
         run: |
           pacman -Syy --noconfirm --needed base-devel git openssh
-          
-          cd ~
-          cd ..
-          ls
-          echo $(whoami)
 
-          mkdir -p ~/.ssh/
+          mkdir -p /root/.ssh/
 
           echo "Host aur.archlinux.org
             IdentityFile ~/.ssh/aur
-            User $(whoami)
-           " > ~/.ssh/config
+            User root
+           " > /root/.ssh/config
            
+          echo "${aur_key}" > /root/.ssh/aur
+          echo "${aur_public_key} $USER@$(cat /etc/hostname)" > /root/.ssh/aur.pub
           
-
-          echo "${aur_key}" > ~/.ssh/aur
-          echo "${aur_public_key} $USER@$(cat /etc/hostname)" > ~/.ssh/aur.pub
-          
-          cat ~/.ssh/config
-          ls ~/.ssh
+          cat /root/.ssh/config
+          ls /root/.ssh
 
       - name: Checkout
         uses: actions/checkout@v3
