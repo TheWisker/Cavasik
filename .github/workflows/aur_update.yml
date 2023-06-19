@@ -7,7 +7,7 @@ permissions:
   contents: write
 jobs:
   aur-update:
-    runs-on: linux
+    runs-on: ubuntu-latest
     container:
       image: archlinux
       options: --privileged
