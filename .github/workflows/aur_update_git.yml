@@ -23,13 +23,13 @@ jobs:
           cd ~
           cd ..
           ls
-          echo "LS"
+          echo $(whoami)
 
           mkdir -p ~/.ssh/
 
           echo "Host aur.archlinux.org
             IdentityFile ~/.ssh/aur
-            User root
+            User $(whoami)
            " > ~/.ssh/config
            
           
