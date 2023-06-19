@@ -109,7 +109,7 @@ jobs:
                   git fetch
                   git add PKGBUILD .SRCINFO
                   git commit -m "Github Automated: ${commit_hash}"
-                  git push
+                  git push --set-upstream label master
 
                   rm -fr .git
 
