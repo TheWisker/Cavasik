@@ -107,8 +107,10 @@ jobs:
                   git init
                   git remote add label ssh://aur@aur.archlinux.org/$folder_name.git
                   git fetch
+                  
                   git add PKGBUILD .SRCINFO
                   git commit -m "Github Automated: ${commit_hash}"
+                  git pull --set-upstream label master
                   git push --set-upstream label master
 
                   rm -fr .git
