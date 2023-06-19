@@ -23,7 +23,7 @@ jobs:
 
           echo "Host aur.archlinux.org
           IdentityFile ~/.ssh/aur
-          User github" >> ~/.ssh/config
+          User $USER" >> ~/.ssh/config
           
           echo "${aur_key}" > ~/.ssh/aur
         
