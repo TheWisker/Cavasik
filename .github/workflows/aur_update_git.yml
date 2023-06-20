@@ -19,6 +19,8 @@ jobs:
           aur_public_key: ${{ secrets.AUR_PKEY }}
         run: |
           pacman -Syy --noconfirm --needed base-devel git openssh
+          
+          echo "Installed Runtime Packages"
 
           mkdir -p /root/.ssh/
 
@@ -33,9 +35,67 @@ jobs:
           
           chmod 0700 /root/.ssh/aur
           chmod 0700 /root/.ssh/aur.pub
+          
+          echo "Configured SSH Credentials"
+      
+      - name: Configure Git Credentials
+        shell: bash
+        env:
+          username: ${{ github.actor }}
+          email: ${{ github.event.push.pusher.email }}
+        run: |
+          git config --global user.name '$username'
+          git config --global user.email '$email'
+          
+          echo "Configured Git Credentials"
 
       - name: Checkout
         uses: actions/checkout@v3
+        
+      - name: Update local from AUR
+        shell: bash
+        env:
+          aur_folder: ./aur
+        run: |
+          for folder in $aur_folder/*/; do
+            
+            folder_name=$(basename "${folder}")
+            # Only run if it is a pkgbase-git aur package
+            if [[ $folder_name == *-git ]]; then
+              pushd $folder
+              
+              git init
+              git remote add label ssh://aur@aur.archlinux.org/$folder_name.git
+              git fetch
+              
+              mkdir ./_tmp
+              
+              if [[ -f "./PKGBUILD" ]]; then
+                mv ./PKGBUILD ./_tmp
+              fi
+              
+              if [[ -f "./.SCRINFO" ]]; then
+                mv ./.SCRINFO ./_tmp
+              fi
+              
+              git pull label master
+              
+              if ! [[ -f "./PKGBUILD" ]]; then
+                mv ./_tmp/PKGBUILD ./PKGBUILD 
+              fi
+              
+              if ! [[ -f "./.SCRINFO" ]]; then
+                mv ./_tmp/.SCRINFO ./.SCRINFO 
+              fi
+              
+              rm -fr ./_tmp
+              
+              echo "Updated local $folder_name from AUR"
+              
+              popd
+            fi
+          done
+          
         
       - name: Update PKGBUILDs and .SRCINFOs
         shell: bash
@@ -78,17 +138,6 @@ jobs:
               fi
           done
 
-      - name: Set Git Credentials
-        shell: bash
-        env:
-          username: ${{ github.actor }}
-          email: ${{ github.event.push.pusher.email }}
-        run: |
-          git config --global user.name '$username'
-          git config --global user.email '$email'
-          git config --global pull.rebase true
-
-
       - name: Update AUR
         shell: bash
         env:
@@ -96,7 +145,7 @@ jobs:
           commit_hash: ${{ github.event.push.after }}
         run: |          
           for folder in $aur_folder/*/; do
-          
+
             folder_name=$(basename "${folder}")
             # Only run if it is a pkgbase-git aur package
             if [[ $folder_name == *-git ]]; then
@@ -106,18 +155,16 @@ jobs:
                 if [[ -f "${folder}.SRCINFO" ]]; then
                   pushd $folder
 
-                  git init
-                  git remote add label ssh://aur@aur.archlinux.org/$folder_name.git
-                  git fetch
-                  
-                  git add PKGBUILD .SRCINFO
-                  git commit -m "Github Automated: ${commit_hash}"
-                  #git pull --force --set-upstream label master
-                  git push --force --set-upstream label master
+                  if [[ -d "./.git" ]]; then
+                    git add PKGBUILD .SRCINFO
+                    git commit -m "Github Automated: ${commit_hash}"
+                    git push --set-upstream label master
 
-                  rm -fr .git
+                    rm -fr .git
 
-                  echo $folder_name package was updated!
+                    echo $folder_name package was updated!
+                  fi
+
                   popd
                 else
                   echo $folder_name package lacks a .SRCINFO file
@@ -135,3 +182,5 @@ jobs:
         run: |
           git commit -am "Automatic AUR Update"
           git push
+          
+          echo "Updated Repository"
