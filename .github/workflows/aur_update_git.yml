@@ -74,8 +74,8 @@ jobs:
                 mv ./PKGBUILD ./_tmp
               fi
               
-              if [[ -f "./.SCRINFO" ]]; then
-                mv ./.SCRINFO ./_tmp
+              if [[ -f "./.SRCINFO" ]]; then
+                mv ./.SRCINFO ./_tmp
               fi
               
               git pull label master
@@ -84,8 +84,8 @@ jobs:
                 mv ./_tmp/PKGBUILD ./PKGBUILD 
               fi
               
-              if ! [[ -f "./.SCRINFO" ]]; then
-                mv ./_tmp/.SCRINFO ./.SCRINFO 
+              if ! [[ -f "./.SRCINFO" ]]; then
+                mv ./_tmp/.SRCINFO ./.SRCINFO 
               fi
               
               rm -fr ./_tmp
