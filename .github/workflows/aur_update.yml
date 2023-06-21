@@ -70,17 +70,17 @@ jobs:
               
               mkdir ./_tmp
 
-	      for file in $(find . -mindepth 1 -maxdepth 1 -not -name "_tmp") do
-	      	mv "$file" ./_tmp
-	      done
+              for file in $(find . -mindepth 1 -maxdepth 1 -not -name "_tmp") do
+                 mv "$file" ./_tmp
+              done
               
               git pull label master
 
-	      for file in $(find ./_tmp -mindepth 1 -maxdepth 1) do
-		if ! [[ -f "./$(basename "$file")" ]]; then
-		  mv "$file" .
-		fi
-	      done
+              for file in $(find ./_tmp -mindepth 1 -maxdepth 1) do
+                if ! [[ -f "./$(basename "$file")" ]]; then
+                  mv "$file" .
+                fi
+              done
               
               rm -fr ./_tmp
               
@@ -95,7 +95,7 @@ jobs:
         shell: bash
         env:
           aur_folder: ./aur
-	  tag_name: ${{ github.event.release.tag_name }}
+          tag_name: ${{ github.event.release.tag_name }}
         run: |
           for folder in $aur_folder/*/; do
           
@@ -116,7 +116,8 @@ jobs:
 
                   echo "Updated pkgrel to $new_pkgrel in ${folder}PKGBUILD"
 
-		  sed -i "s/^pkgver=.*/pkgver=$tag_name/" "${folder}PKGBUILD"
+                  # Replace the pkgver value with the updated one
+                  sed -i "s/^pkgver=.*/pkgver=$tag_name/" "${folder}PKGBUILD"
                   
                   echo "Updated pkgver to $tag_name in ${folder}PKGBUILD"
                 fi
@@ -124,20 +125,20 @@ jobs:
                 #Check if .SRCINFO file exists in the folder
                 if [[ -f "${folder}.SRCINFO" ]]; then
 
-		  if ! [ -v new_pkgrel ]; then
-		    pkgrel_line=$(grep -e '^[[:space:]]*pkgrel =' "${folder}.SRCINFO")
+                  if ! [ -v new_pkgrel ]; then
+                    pkgrel_line=$(grep -e '^[[:space:]]*pkgrel =' "${folder}.SRCINFO")
 
-	            # Extract the current pkgrel value
-	            current_pkgrel=$(echo "$pkgrel_line" | awk -F ' = ' '{print $2}')
-	            new_pkgrel=$((current_pkgrel + 1))
-		  fi
+                    # Extract the current pkgrel value
+                    current_pkgrel=$(echo "$pkgrel_line" | awk -F ' = ' '{print $2}')
+                    new_pkgrel=$((current_pkgrel + 1))
+                  fi
 
                   # Replace the pkgrel value with the updated one
                   sed -i "s/^\([[:space:]]*pkgrel =\).*/\1 $new_pkgrel/" "${folder}.SRCINFO"
 
                   echo "Updated pkgrel to $new_pkgrel in ${folder}.SRCINFO"
 
-		  # Replace the pkgver value with the updated one
+                  # Replace the pkgver value with the updated one
                   sed -i "s/^\([[:space:]]*pkgver =\).*/\1 $tag_name/" "${folder}.SRCINFO"
                   
                   echo "Updated pkgver to $tag_name in ${folder}.SRCINFO"
