@@ -30,7 +30,7 @@ jobs:
            " > /root/.ssh/config
            
           echo "${aur_key}" > /root/.ssh/aur
-          echo "${aur_public_key} $USER@$(cat /etc/hostname)" > /root/.ssh/aur.pub
+          echo "${aur_public_key}" > /root/.ssh/aur.pub
           
           chmod 0700 /root/.ssh/aur
           chmod 0700 /root/.ssh/aur.pub
@@ -44,8 +44,8 @@ jobs:
           email: TheWisker@protonmail.com
           repo_name: ${{ github.event.repository.name }}
         run: |
-          git config --global user.name '$username'
-          git config --global user.email '$email'
+          git config --global user.name $username
+          git config --global user.email $email
           git config --global init.defaultBranch master
           git config --global --add safe.directory /__w/$repo_name/$repo_name
           
@@ -142,7 +142,7 @@ jobs:
                 pushd $folder
 
                 if [[ -d "./.git" ]]; then
-                  git add PKGBUILD .SRCINFO
+                  git add .
                   git commit -m "Github Automated: ${tag_name}"
                   git push --set-upstream aur master
 

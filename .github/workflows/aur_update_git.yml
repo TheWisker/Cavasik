@@ -45,8 +45,8 @@ jobs:
           email: ${{ github.event.push.pusher.email }}
           repo_name: ${{ github.event.repository.name }}
         run: |
-          git config --global user.name '$username'
-          git config --global user.email '$email'
+          git config --global user.name $username
+          git config --global user.email $email
           git config --global init.defaultBranch master
           git config --global --add safe.directory /__w/$repo_name/$repo_name
           
@@ -158,7 +158,7 @@ jobs:
                   pushd $folder
 
                   if [[ -d "./.git" ]]; then
-                    git add PKGBUILD .SRCINFO
+                    git add .
                     git commit -m "Github Automated: ${commit_hash}"
                     git push --set-upstream aur master
 
