@@ -70,13 +70,13 @@ jobs:
               
               mkdir ./_tmp
 
-              for file in $(find . -mindepth 1 -maxdepth 1 -not -name "_tmp") do
+              for file in $(find . -mindepth 1 -maxdepth 1 -not -name "_tmp"); do
                  mv "$file" ./_tmp
               done
               
               git pull label master
 
-              for file in $(find ./_tmp -mindepth 1 -maxdepth 1) do
+              for file in $(find ./_tmp -mindepth 1 -maxdepth 1); do
                 if ! [[ -f "./$(basename "$file")" ]]; then
                   mv "$file" .
                 fi
