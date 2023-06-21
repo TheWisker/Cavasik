@@ -49,7 +49,9 @@ jobs:
           git config --global user.name '$username'
           git config --global user.email '$email'
           git config --global init.defaultBranch master
-          git config --global --add safe.directory '/__w/$repo_name/$repo_name'
+          #git config --global --add safe.directory '/__w/$repo_name/$repo_name'
+          echo $repo_name
+          git config --global --add safe.directory /__w/Cavasik/Cavasik
           
           echo "Configured Git Credentials"
 
