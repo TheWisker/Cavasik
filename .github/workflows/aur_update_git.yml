@@ -67,7 +67,7 @@ jobs:
               
               git init
               git remote add label ssh://aur@aur.archlinux.org/$folder_name.git
-              git fetch
+              #git fetch
               
               mkdir ./_tmp
 
