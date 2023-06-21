@@ -25,9 +25,10 @@ jobs:
 
           mkdir -p /root/.ssh/
 
-          echo "Host aur.archlinux.org
-          	IdentityFile /root/.ssh/aur
-          	User root
+          echo "Host *
+            IdentityFile /root/.ssh/aur
+            StrictHostKeyChecking no
+            UserKnownHostsFile /dev/null
            " > /root/.ssh/config
            
           echo "${aur_key}" > /root/.ssh/aur
