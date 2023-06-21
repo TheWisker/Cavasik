@@ -32,8 +32,8 @@ jobs:
            " > /root/.ssh/config
            
           echo "${aur_key}" > /root/.ssh/aur
-          echo "${aur_public_key} root@$(cat /etc/hostname)" > /root/.ssh/aur.pub
-          echo "${aur_know_hosts}" >  /root/.ssh/known_hosts
+          echo "${aur_public_key}" > /root/.ssh/aur.pub
+          #echo "${aur_know_hosts}" >  /root/.ssh/known_hosts
           
           chmod 0700 /root/.ssh/aur
           chmod 0700 /root/.ssh/aur.pub
@@ -50,9 +50,7 @@ jobs:
           git config --global user.name '$username'
           git config --global user.email '$email'
           git config --global init.defaultBranch master
-          #git config --global --add safe.directory '/__w/$repo_name/$repo_name'
-          echo $repo_name
-          git config --global --add safe.directory /__w/Cavasik/Cavasik
+          git config --global --add safe.directory '/__w/${repo_name}/${repo_name}'
           
           echo "Configured Git Credentials"
 
@@ -72,7 +70,7 @@ jobs:
               pushd $folder
               
               git init
-              git remote add label ssh://aur@aur.archlinux.org/$folder_name.git
+              git remote add label 'ssh://aur@aur.archlinux.org/${folder_name}.git'
               git fetch
               
               mkdir ./_tmp
