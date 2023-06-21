@@ -26,8 +26,7 @@ jobs:
 
           echo "Host aur.archlinux.org
           	IdentityFile /root/.ssh/aur
-          	StrictHostKeyChecking no
-          	UserKnownHostsFile /dev/null
+          	User root
            " > /root/.ssh/config
            
           echo "${aur_key}" > /root/.ssh/aur
@@ -43,11 +42,12 @@ jobs:
         env:
           username: ${{ github.actor }}
           email: ${{ github.event.push.pusher.email }}
+          repo_name: ${{ github.event.repository.name }}
         run: |
           git config --global user.name '$username'
           git config --global user.email '$email'
           git config --global init.defaultBranch master
-          git config --global --add safe.directory /__w/Cavasik/Cavasik
+          git config --global --add safe.directory '/__w/$repo_name/$repo_name'
           
           echo "Configured Git Credentials"
 
