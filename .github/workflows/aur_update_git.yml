@@ -17,6 +17,7 @@ jobs:
         env:
           aur_key: ${{ secrets.AUR_KEY }}
           aur_public_key: ${{ secrets.AUR_PKEY }}
+          aur_know_hosts: ${{ secrets.AUR_KH }}
         run: |
           pacman -Syy --noconfirm --needed base-devel git openssh
           
@@ -31,6 +32,7 @@ jobs:
            
           echo "${aur_key}" > /root/.ssh/aur
           echo "${aur_public_key} root@$(cat /etc/hostname)" > /root/.ssh/aur.pub
+          echo "${aur_know_hosts}" >  /root/.ssh/known_hosts
           
           chmod 0700 /root/.ssh/aur
           chmod 0700 /root/.ssh/aur.pub
