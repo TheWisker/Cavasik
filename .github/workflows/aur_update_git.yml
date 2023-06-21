@@ -24,7 +24,7 @@ jobs:
 
           mkdir -p /root/.ssh/
 
-          echo "Host *
+          echo "Host aur.archlinux.org
           	IdentityFile /root/.ssh/aur
           	StrictHostKeyChecking no
           	UserKnownHostsFile /dev/null
@@ -67,7 +67,9 @@ jobs:
               
               git init
               git remote add label ssh://aur@aur.archlinux.org/$folder_name.git
-              echo ssh://aur@aur.archlinux.org/$folder_name.git
+              
+              echo $(whoami)
+              
               #git fetch
               
               mkdir ./_tmp
