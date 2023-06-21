@@ -46,6 +46,7 @@ jobs:
         run: |
           git config --global user.name '$username'
           git config --global user.email '$email'
+          git config --global init.defaultBranch master
           git config --global --add safe.directory /__w/Cavasik/Cavasik
           
           echo "Configured Git Credentials"
@@ -67,10 +68,7 @@ jobs:
               
               git init
               git remote add label ssh://aur@aur.archlinux.org/$folder_name.git
-              
-              echo $(whoami)
-              
-              #git fetch
+              git fetch
               
               mkdir ./_tmp
 
