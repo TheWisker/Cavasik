@@ -70,24 +70,18 @@ jobs:
               git fetch
               
               mkdir ./_tmp
-              
-              if [[ -f "./PKGBUILD" ]]; then
-                mv ./PKGBUILD ./_tmp
-              fi
-              
-              if [[ -f "./.SRCINFO" ]]; then
-                mv ./.SRCINFO ./_tmp
-              fi
+
+	      for file in $(find . -mindepth 1 -maxdepth 1 -not -name "_tmp") do
+	      	mv "$file" ./_tmp
+	      done
               
               git pull label master
-              
-              if ! [[ -f "./PKGBUILD" ]]; then
-                mv ./_tmp/PKGBUILD ./PKGBUILD 
-              fi
-              
-              if ! [[ -f "./.SRCINFO" ]]; then
-                mv ./_tmp/.SRCINFO ./.SRCINFO 
-              fi
+
+	      for file in $(find ./_tmp -mindepth 1 -maxdepth 1) do
+		if ! [[ -f "./$(basename "$file")" ]]; then
+		  mv "$file" .
+		fi
+	      done
               
               rm -fr ./_tmp
               
@@ -125,14 +119,17 @@ jobs:
                 
                 #Check if .SRCINFO file exists in the folder
                 if [[ -f "${folder}.SRCINFO" ]]; then
-                  pkgrel_line=$(grep -e '^[[:space:]]*pkgrel =' "${folder}.SRCINFO")
 
-                  # Extract the current pkgrel value
-                  current_pkgrel=$(echo "$pkgrel_line" | awk -F ' = ' '{print $2}')
-                  new_pkgrel=$((current_pkgrel + 1))
+		  if ! [ -v new_pkgrel ]; then
+		    pkgrel_line=$(grep -e '^[[:space:]]*pkgrel =' "${folder}.SRCINFO")
+
+	            # Extract the current pkgrel value
+	            current_pkgrel=$(echo "$pkgrel_line" | awk -F ' = ' '{print $2}')
+	            new_pkgrel=$((current_pkgrel + 1))
+		  fi
 
                   # Replace the pkgrel value with the updated one
-                  sed -i "s/^pkgrel=.*/pkgrel=$new_pkgrel/" "${folder}.SRCINFO"
+                  sed -i "s/^\([[:space:]]*pkgrel =\).*/\1 $new_pkgrel/" "${folder}.SRCINFO"
 
                   echo "Updated pkgrel to $new_pkgrel in ${folder}.SRCINFO"
                 fi
