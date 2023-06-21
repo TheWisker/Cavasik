@@ -79,9 +79,8 @@ jobs:
                 mv "$file" ./_tmp
               done
               
-              echo "1"
+              echo $PWD
               git pull aur master
-              echo "2"
               
               for file in $(find ./_tmp -mindepth 1 -maxdepth 1); do
                 if ! [[ -f "./$(basename "$file")" ]]; then
