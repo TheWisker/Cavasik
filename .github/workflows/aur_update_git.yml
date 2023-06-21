@@ -60,6 +60,8 @@ jobs:
         env:
           aur_folder: ./aur
         run: |
+          mv ./.git ./.not_git
+          
           for folder in $aur_folder/*/; do
             
             folder_name=$(basename "${folder}")
@@ -182,6 +184,8 @@ jobs:
       - name: Update Repository
         shell: bash
         run: |
+          mv ./.not_git ./.git
+          
           git commit -am "Automatic AUR Update"
           git push
           
