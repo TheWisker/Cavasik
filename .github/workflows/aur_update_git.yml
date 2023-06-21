@@ -68,7 +68,7 @@ jobs:
               pushd $folder
               
               git init
-              git remote add label ssh://aur@aur.archlinux.org/$folder_name.git
+              git remote add origin ssh://aur@aur.archlinux.org/$folder_name.git
               git fetch
               
               mkdir ./_tmp
@@ -77,8 +77,10 @@ jobs:
                 mv "$file" ./_tmp
               done
               
-              git pull label master
-
+              echo "1"
+              git pull origin master
+              echo "2"
+              
               for file in $(find ./_tmp -mindepth 1 -maxdepth 1); do
                 if ! [[ -f "./$(basename "$file")" ]]; then
                   mv "$file" .
@@ -158,7 +160,7 @@ jobs:
                   if [[ -d "./.git" ]]; then
                     git add PKGBUILD .SRCINFO
                     git commit -m "Github Automated: ${commit_hash}"
-                    git push --set-upstream label master
+                    git push --set-upstream origin master
 
                     rm -fr .git
 
