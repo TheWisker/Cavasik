@@ -68,7 +68,7 @@ jobs:
               pushd $folder
               
               git init
-              git remote add label 'ssh://aur@aur.archlinux.org/${folder_name}.git'
+              git remote add label ssh://aur@aur.archlinux.org/$folder_name.git
               git fetch
               
               mkdir ./_tmp
