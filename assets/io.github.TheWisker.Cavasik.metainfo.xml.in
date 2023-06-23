@@ -2,7 +2,7 @@
 <component type="desktop">
   <id>io.github.TheWisker.Cavasik</id>
   <metadata_license>CC0-1.0</metadata_license>
-  <project_license>GNUv3</project_license>
+  <project_license>GPL-3.0</project_license>
   <name>Cavasik</name>
   <summary>Audio visualizer based on CAVA</summary>
   <description>
