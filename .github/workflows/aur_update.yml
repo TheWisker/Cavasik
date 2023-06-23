@@ -122,6 +122,7 @@ jobs:
 
                 # Replace the pkgver value with the updated one
                 sed -i "s/^\([[:space:]]*pkgver =\).*/\1 $tag_name/" "${folder}.SRCINFO"
+                sed -i "s/\(#tag=\).*$/\1$tag_name/" "${folder}.SRCINFO"
                   
                 echo "Updated pkgver to $tag_name in ${folder}.SRCINFO"
               fi

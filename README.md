@@ -224,7 +224,7 @@ We look forward to your translations!
 [screenshots]: https://github.com/TheWisker/Cavasik#screenshots-
 [installation]: https://github.com/TheWisker/Cavasik#installation-
 [dependencies]: https://github.com/TheWisker/Cavasik#dependencies-
-[Contributions]: https://github.com/TheWisker/Cavasik#contributions-
+[contributions]: https://github.com/TheWisker/Cavasik#contributions-
 [translations]: https://github.com/TheWisker/Cavasik#translations-
 [coc]: https://github.com/TheWisker/Cavasik#code-of-conduct-
 [credits]: https://github.com/TheWisker/Cavasik#credits-
@@ -240,7 +240,7 @@ We look forward to your translations!
 [python-gobject]: https://pygobject.readthedocs.io/en/latest/
 [python-cairo]: https://pycairo.readthedocs.io/en/latest/
 [python-pydbus]: https://pydbus.readthedocs.io/en/latest/gettingstarted.html
-[contributors]: ./CONTRIBUTORS.md
 [contributing]: ./CONTRIBUTING.md
+[contributors]: ./CONTRIBUTORS.md
 [lang-contributing]: ./lang/CONTRIBUTING.md
 [translator-credits]: ./lang/CREDITS.json

@@ -17,6 +17,7 @@
 - [Gtk][gtk-hook]
 - [GNOME][gnome-hook]
 - [LibAdwaita][libadwaita-hook]
+- [Meson][meson-hook]
 - [Python][python-hook]
 
 ## Cavalier [[↑][index]]
@@ -38,6 +39,10 @@
 ## LibAdwaita [[↑][index]]
 
 **Cavasik** makes use of **[LibAdwaita][libadwaita]** so we give our acknowledgments.
+
+## Meson [[↑][index]]
+
+**Cavasik** makes use of **[Meson][meson]** so we give our acknowledgments.
 
 ## Python [[↑][index]]
 
@@ -61,12 +66,15 @@
 [gtk-hook]: https://github.com/TheWisker/Cavasik/blob/master/ACKNOWLEDGMENTS.md#gtk-
 [gnome-hook]: https://github.com/TheWisker/Cavasik/blob/master/ACKNOWLEDGMENTS.md#gnome-
 [libadwaita-hook]: https://github.com/TheWisker/Cavasik/blob/master/ACKNOWLEDGMENTS.md#libadwaita-
+[meson-hook]: https://github.com/TheWisker/Cavasik/blob/master/ACKNOWLEDGMENTS.md#meson-
 [python-hook]: https://github.com/TheWisker/Cavasik/blob/master/ACKNOWLEDGMENTS.md#python-
+
 [cavalier]: https://github.com/fsobolev/cavalier
 [cava]: https://github.com/karlstav/cava
 [gtk]: https://www.gtk.org/
 [gnome]: https://www.gnome.org/
 [libadwaita]: https://gitlab.gnome.org/GNOME/libadwaita
+[meson]: https://mesonbuild.com/
 [python]: https://www.python.org/
 [pygobject]: https://pygobject.readthedocs.io/en/latest/
 [pycairo]: https://pycairo.readthedocs.io/en/latest/
