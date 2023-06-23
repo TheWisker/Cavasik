@@ -5,8 +5,13 @@ on:
     types: [published]
 permissions:
   contents: write
+concurrency:
+  group: "aur"
+  cancel-in-progress: true
 jobs:
   aur-update:
+    environment:
+      name: aur-packages
     runs-on: ubuntu-latest
     container:
       image: archlinux

@@ -6,8 +6,13 @@ on:
       - 'master'
 permissions:
   contents: write
+concurrency:
+  group: "aur"
+  cancel-in-progress: false
 jobs:
   aur-update-git:
+    environment:
+      name: aur-packages
     runs-on: ubuntu-latest
     container:
       image: archlinux
