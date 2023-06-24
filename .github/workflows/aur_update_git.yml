@@ -189,7 +189,8 @@ jobs:
         run: |
           mv ./.not_git ./.git
           
-          git commit -am "Automatic AUR Update"
+          git add .
+          git commit -m "Automatic AUR Update"
           git push
           
           echo "Updated Repository"
