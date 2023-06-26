@@ -23,6 +23,10 @@
   [Contributions][contributions]
 
   [Translations][translations]
+
+  [Metrics][metrics]
+
+  [License][license]
   
   [Code of Conduct][coc]
   
@@ -204,6 +208,28 @@ We look forward to your translations!
 
 - The **credits** of the translators are located [here][translator-credits].
 
+<h2 align="center">Metrics [<a href="https://github.com/TheWisker/Cavasik#index">↑</a>]</h2>
+
+<div align="center">
+  <picture>
+    <img src="./assets/metrics/base.svg"/>
+  </picture>
+</div>
+
+<div align="center">
+  <picture>
+    <img src="./assets/metrics/languages.svg"/>
+  </picture>
+</div>
+
+<h2 align="center">License [<a href="https://github.com/TheWisker/Cavasik#index">↑</a>]</h2>
+
+<div align="center">
+  <picture>
+    <img src="./assets/metrics/licenses.svg"/>
+  </picture>
+</div>
+
 <h2 align="center">Code of Conduct [<a href="https://github.com/TheWisker/Cavasik#index">↑</a>]</h2>
 
 <p align="center"> This project follows the <a href="./.github/CODE_OF_CONDUCT.md"><b>Contributor Covenant Code of Conduct</b></a>.</p>
@@ -226,6 +252,8 @@ We look forward to your translations!
 [dependencies]: https://github.com/TheWisker/Cavasik#dependencies-
 [contributions]: https://github.com/TheWisker/Cavasik#contributions-
 [translations]: https://github.com/TheWisker/Cavasik#translations-
+[metrics]: https://github.com/TheWisker/Cavasik#metrics-
+[license]: https://github.com/TheWisker/Cavasik#license-
 [coc]: https://github.com/TheWisker/Cavasik#code-of-conduct-
 [credits]: https://github.com/TheWisker/Cavasik#credits-
 [flathub]: https://flathub.org/

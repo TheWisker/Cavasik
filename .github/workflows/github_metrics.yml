@@ -1,0 +1,318 @@
+name: GitHub Metrics
+run-name: Updating ${{ github.event.repository.name }} metrics
+on:
+  schedule:
+    - cron:  '0 0 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: "metrics"
+  cancel-in-progress: true
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    environment:
+      name: repo-metrics
+    steps:
+      - name: Configure Git Credentials
+        shell: bash
+        env:
+          username: ${{ github.repository_owner }}
+          email: TheWisker@protonmail.com
+          repo_name: ${{ github.event.repository.name }}
+        run: |
+          git config --global user.name $username
+          git config --global user.email $email
+          git config --global init.defaultBranch master
+          git config --global --add safe.directory /__w/$repo_name/$repo_name
+          
+          echo "Configured Git Credentials"
+    
+      - name: Base Metrics
+        uses: TheWisker/GitHubMetrics@master
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: ${{ github.repository_owner }}
+          repo: ${{ github.event.repository.name }}
+          #committer_token:
+          #committer_branch:
+          #committer_message:
+          #committer_gist:
+          filename: base.*
+          #markdown:
+          #markdown_cache:
+          output_action: none
+          output_condition: data-changed
+          optimize: css, xml, svg
+          #setup_community_templates:
+          template: repository
+          #query:
+          #extras_css:
+          #extras_js:
+          #github_api_rest:
+          #github_api_graphql:
+          config_timezone: Europe/Madrid
+          #config_order:
+          #config_twemoji:
+          config_gemoji: yes
+          #config_octicon:
+          config_display: regular
+          config_animations: yes
+          config_base64: yes
+          #config_padding:
+          config_output: auto
+          #config_presets:
+          retries: 5
+          retries_delay: 600
+          retries_output_action: 5
+          retries_delay_output_action: 300
+          clean_workflows: failure
+          #delay:
+          #quota_required_rest:
+          #quota_required_graphql:
+          #quota_required_search:
+          notice_releases: yes
+          use_prebuilt_image: yes
+          #plugins_errors_fatal:
+          debug: no
+          verify: no
+          #debug_flags:
+          #debug_print:
+          #dryrun:
+          experimental_features: --optimize-svg
+          #use_mocked_data
+          base: header, activity, community, repositories
+          base_indepth: yes
+          #base_hireable:
+          #base_skip:
+          repositories: 200
+          repositories_batch: 100
+          repositories_forks: yes
+          repositories_affiliations: owner, collaborator, organization_member
+          #repositories_skipped:
+          #users_ignored:
+          #commits_authoring:
+          plugin_traffic: yes
+          #plugin_traffic_skipped:
+          plugin_lines: yes
+          #plugin_lines_sections:
+          #plugin_lines_repositories_limit:
+          plugin_lines_history_limit: 1
+          
+      - name: Languages Metrics
+        uses: TheWisker/GitHubMetrics@master
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: ${{ github.repository_owner }}
+          repo: ${{ github.event.repository.name }}
+          #committer_token:
+          #committer_branch:
+          #committer_message:
+          #committer_gist:
+          filename: languages.*
+          #markdown:
+          #markdown_cache:
+          output_action: none
+          output_condition: data-changed
+          optimize: css, xml, svg
+          #setup_community_templates:
+          template: repository
+          #query:
+          #extras_css:
+          #extras_js:
+          #github_api_rest:
+          #github_api_graphql:
+          config_timezone: Europe/Madrid
+          #config_order:
+          #config_twemoji:
+          config_gemoji: yes
+          #config_octicon:
+          config_display: regular
+          config_animations: yes
+          config_base64: yes
+          #config_padding:
+          config_output: auto
+          #config_presets:
+          retries: 5
+          retries_delay: 600
+          retries_output_action: 5
+          retries_delay_output_action: 300
+          clean_workflows: failure
+          #delay:
+          #quota_required_rest:
+          #quota_required_graphql:
+          #quota_required_search:
+          notice_releases: yes
+          use_prebuilt_image: yes
+          #plugins_errors_fatal:
+          debug: no
+          verify: no
+          #debug_flags:
+          #debug_print:
+          #dryrun:
+          experimental_features: --optimize-svg
+          #use_mocked_data
+          base: ""
+          plugin_languages: yes
+          #plugin_languages_ignored:
+          #plugin_languages_skipped:
+          plugin_languages_limit: 0
+          #plugin_languages_threshold:
+          #plugin_languages_other:
+          #plugin_languages_colors:
+          #plugin_languages_aliases:
+          plugin_languages_sections: most-used
+          plugin_languages_details: bytes-size, percentage, lines
+          plugin_languages_indepth: yes
+          #plugin_languages_indepth_custom:
+          plugin_languages_analysis_timeout: 60
+          plugin_languages_analysis_timeout_repositories: 15
+          #plugin_languages_categories:
+          #plugin_languages_recent_categories:
+          plugin_languages_recent_load: 1000
+          plugin_languages_recent_days: 365
+      
+      - name: Contributors Metrics
+        uses: TheWisker/GitHubMetrics@master
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: ${{ github.repository_owner }}
+          repo: ${{ github.event.repository.name }}
+          #committer_token:
+          #committer_branch:
+          #committer_message:
+          #committer_gist:
+          filename: contributors.*
+          #markdown:
+          #markdown_cache:
+          output_action: none
+          output_condition: data-changed
+          optimize: css, xml, svg
+          #setup_community_templates:
+          template: repository
+          #query:
+          #extras_css:
+          #extras_js:
+          #github_api_rest:
+          #github_api_graphql:
+          config_timezone: Europe/Madrid
+          #config_order:
+          #config_twemoji:
+          config_gemoji: yes
+          #config_octicon:
+          config_display: regular
+          config_animations: yes
+          config_base64: yes
+          #config_padding:
+          config_output: auto
+          #config_presets:
+          retries: 5
+          retries_delay: 600
+          retries_output_action: 5
+          retries_delay_output_action: 300
+          clean_workflows: failure
+          #delay:
+          #quota_required_rest:
+          #quota_required_graphql:
+          #quota_required_search:
+          notice_releases: yes
+          use_prebuilt_image: yes
+          #plugins_errors_fatal:
+          debug: no
+          verify: no
+          #debug_flags:
+          #debug_print:
+          #dryrun:
+          experimental_features: --optimize-svg
+          #use_mocked_data
+          base: ""
+          plugin_contributors: yes
+          #plugin_contributors_base:
+          #plugin_contributors_head:
+          #plugin_contributors_ignored:
+          plugin_contributors_contributions: yes
+          #plugin_contributors_sections:
+          #plugin_contributors_categories:
+
+      - name: Licenses Metrics
+        uses: TheWisker/GitHubMetrics@master
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: ${{ github.repository_owner }}
+          repo: ${{ github.event.repository.name }}
+          #committer_token:
+          #committer_branch:
+          #committer_message:
+          #committer_gist:
+          filename: licenses.*
+          #markdown:
+          #markdown_cache:
+          output_action: none
+          output_condition: data-changed
+          optimize: css, xml, svg
+          #setup_community_templates:
+          template: repository
+          #query:
+          #extras_css:
+          #extras_js:
+          #github_api_rest:
+          #github_api_graphql:
+          config_timezone: Europe/Madrid
+          #config_order:
+          #config_twemoji:
+          config_gemoji: yes
+          #config_octicon:
+          config_display: regular
+          config_animations: yes
+          config_base64: yes
+          #config_padding:
+          config_output: auto
+          #config_presets:
+          retries: 5
+          retries_delay: 600
+          retries_output_action: 5
+          retries_delay_output_action: 300
+          clean_workflows: failure
+          #delay:
+          #quota_required_rest:
+          #quota_required_graphql:
+          #quota_required_search:
+          notice_releases: yes
+          use_prebuilt_image: yes
+          #plugins_errors_fatal:
+          debug: no
+          verify: no
+          #debug_flags:
+          #debug_print:
+          #dryrun:
+          experimental_features: --optimize-svg
+          #use_mocked_data:
+          base: ""
+          plugin_licenses: yes
+          plugin_licenses_setup: npm install
+          #plugin_licenses_ratio:
+          plugin_licenses_legal: yes
+
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          ref: master
+
+      - name: Flush Metrics
+        shell: bash
+        run: |
+          rm -fr ./assets/metrics
+          mkdir -p ./assets/metrics
+          cp -f /metrics_renders/* ./assets/metrics
+          
+          echo "Flushed Metrics"
+
+      - name: Update Repository
+        shell: bash
+        run: |
+          git add .
+          git commit -m "Metrics Update"
+          git push
+          
+          echo "Updated Repository"

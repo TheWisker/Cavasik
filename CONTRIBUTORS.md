@@ -16,6 +16,15 @@ These are the **Cavasik** project **contributors**, ordered from most recent to 
 
 - No contributors by the moment. **Be the first!**
 
+
+In another format:
+
+<div align="center">
+  <picture>
+    <img src="./assets/metrics/contributors.svg"/>
+  </picture>
+</div>
+
 <h2 align="center">Author</h2>
 <div align="center">
     <a href="https://github.com/TheWisker">

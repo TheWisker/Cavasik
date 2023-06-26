@@ -7,25 +7,36 @@ assignees: TheWisker
 
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+# Cavasik Bug Report
 
-**To Reproduce**
-Steps to reproduce the behavior:
+## Explanation
+
+Clear and concise description of what the bug is.
+
+### Steps to Reproduce
+
+Steps to reproduce the issue:
+
 1. Go to '...'
 2. Click on '....'
 3. Scroll down to '....'
 4. See error
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+### Expected Behavior
 
-**Screenshots**
+Clear and concise description of what you expected to happen.
+
+## Screenshots
+
 If applicable, add screenshots to help explain your problem.
 
-**Desktop (please complete the following information):**
- - OS: [e.g. Arch Linux]
- - Version [e.g. 2.0.0]
+## Context
 
-**Additional context**
+Provide the following information to help diagnose the issue.
+
+- Distro: [e.g. Arch]
+- Cavasik Version
+
+### Additional Context
+
 Add any other context about the problem here.
