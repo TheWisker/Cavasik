@@ -1,5 +1,5 @@
-name: aur-update-git
-run-name: AUR package update by ${{ github.actor }} commit
+name: AUR Update Git
+run-name: AUR package update by ${{ github.actor }} push
 on:
   push:
     branches:
@@ -13,184 +13,14 @@ jobs:
   aur-update-git:
     environment:
       name: aur-packages
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest 
     container:
       image: archlinux
       options: --privileged
     steps:
-      - name: Setup Runtime
-        env:
+      - name: AUR Update Git
+        uses: TheWisker/aur-update-git@master
+        with:
           aur_key: ${{ secrets.AUR_KEY }}
-          aur_public_key: ${{ secrets.AUR_PKEY }}
-        run: |
-          pacman -Syy --noconfirm --needed base-devel git openssh
-          
-          echo "Installed Runtime Packages"
-
-          mkdir -p /root/.ssh/
-
-          echo "Host *
-            IdentityFile /root/.ssh/aur
-            StrictHostKeyChecking no
-            UserKnownHostsFile /dev/null
-           " > /root/.ssh/config
-           
-          echo "${aur_key}" > /root/.ssh/aur
-          echo "${aur_public_key}" > /root/.ssh/aur.pub
-          
-          chmod 0700 /root/.ssh/aur
-          chmod 0700 /root/.ssh/aur.pub
-          
-          echo "Configured SSH Credentials"
-      
-      - name: Configure Git Credentials
-        shell: bash
-        env:
-          username: ${{ github.actor }}
-          email: ${{ github.event.push.pusher.email }}
-          repo_name: ${{ github.event.repository.name }}
-        run: |
-          git config --global user.name $username
-          git config --global user.email ${email:-TheWisker@protonmail.com}
-          git config --global init.defaultBranch master
-          git config --global --add safe.directory /__w/$repo_name/$repo_name
-          
-          echo "Configured Git Credentials"
-
-      - name: Checkout
-        uses: actions/checkout@v3
-        
-      - name: Update local from AUR
-        shell: bash
-        env:
-          aur_folder: ./aur
-        run: |
-          mv ./.git ./.not_git
-          
-          for folder in $aur_folder/*/; do
-            
-            folder_name=$(basename "${folder}")
-            # Only run if it is a pkgbase-git aur package
-            if [[ $folder_name == *-git ]]; then
-              pushd $folder
-              
-              git init
-              git remote add aur ssh://aur@aur.archlinux.org/$folder_name.git
-              git fetch
-              
-              mkdir ./_tmp
-              
-              for file in $(find . -mindepth 1 -maxdepth 1 -not -name ".git" -not -name "_tmp"); do
-                mv "$file" ./_tmp
-              done
-              
-              git pull aur master
-              
-              for file in $(find ./_tmp -mindepth 1 -maxdepth 1); do
-                if ! [[ -f "./$(basename "$file")" ]]; then
-                  mv "$file" .
-                fi
-              done
-              
-              rm -fr ./_tmp
-              
-              echo "Updated local $folder_name from AUR"
-              
-              popd
-            fi
-          done
-          
-        
-      - name: Update PKGBUILDs and .SRCINFOs
-        shell: bash
-        env:
-          aur_folder: ./aur
-        run: |
-          for folder in $aur_folder/*/; do
-          
-              folder_name=$(basename "${folder}")
-              # Only run if it is a pkgbase-git aur package
-              if [[ $folder_name == *-git ]]; then
-                
-                #Check if PKGBUILD file exists in the folder
-                if [[ -f "${folder}PKGBUILD" ]]; then
-                  pkgrel_line=$(grep -e '^pkgrel=' "${folder}PKGBUILD")
-
-                  # Extract the current pkgrel value
-                  current_pkgrel=$(echo "$pkgrel_line" | cut -d '=' -f2)
-                  new_pkgrel=$((current_pkgrel + 1))
-
-                  # Replace the pkgrel value with the updated one
-                  sed -i "s/^pkgrel=.*/pkgrel=$new_pkgrel/" "${folder}PKGBUILD"
-
-                  echo "Updated pkgrel to $new_pkgrel in ${folder}PKGBUILD"
-                fi
-                
-                #Check if .SRCINFO file exists in the folder
-                if [[ -f "${folder}.SRCINFO" ]]; then
-
-                  if ! [ -v new_pkgrel ]; then
-                    pkgrel_line=$(grep -e '^[[:space:]]*pkgrel =' "${folder}.SRCINFO")
-
-                    # Extract the current pkgrel value
-                    current_pkgrel=$(echo "$pkgrel_line" | awk -F ' = ' '{print $2}')
-                    new_pkgrel=$((current_pkgrel + 1))
-                  fi
-
-                  # Replace the pkgrel value with the updated one
-                  sed -i "s/^\([[:space:]]*pkgrel =\).*/\1 $new_pkgrel/" "${folder}.SRCINFO"
-
-                  echo "Updated pkgrel to $new_pkgrel in ${folder}.SRCINFO"
-                fi
-              fi
-          done
-
-      - name: Update AUR
-        shell: bash
-        env:
-          aur_folder: "./aur"
-          commit_hash: ${{ github.event.push.after }}
-        run: |          
-          for folder in $aur_folder/*/; do
-
-            folder_name=$(basename "${folder}")
-            # Only run if it is a pkgbase-git aur package
-            if [[ $folder_name == *-git ]]; then
-              # Only run if it has a PKGBUILD file
-              if [[ -f "${folder}PKGBUILD" ]]; then
-                # Only run if it has a .SRCINFO file
-                if [[ -f "${folder}.SRCINFO" ]]; then
-                  pushd $folder
-
-                  if [[ -d "./.git" ]]; then
-                    git add .
-                    git commit -m "Github Automated: ${commit_hash}"
-                    git push --set-upstream aur master
-
-                    rm -fr .git
-
-                    echo $folder_name package was updated!
-                  fi
-
-                  popd
-                else
-                  echo $folder_name package lacks a .SRCINFO file
-                  exit 1
-                fi
-              else
-                 echo $folder_name package lacks a PKGBUILD file
-                 exit 1
-              fi 
-            fi
-          done
-
-      - name: Update Repository
-        shell: bash
-        run: |
-          mv ./.not_git ./.git
-          
-          git add .
-          git commit -m "Automatic AUR Update"
-          git push
-          
-          echo "Updated Repository"
+          username: TheWisker
+          email: TheWisker@protonmail.com

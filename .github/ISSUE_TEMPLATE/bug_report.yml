@@ -1,0 +1,65 @@
+name: Bug Report
+description: File a bug report
+title: "[BUG] Title"
+labels: ["bug"]
+assignees:
+  - TheWisker
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Cavasik Bug Report
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: explanation
+    attributes:
+      label: Explanation
+      description: Clear and concise description of the bug
+      placeholder: There is a bug in ... when you click ...
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Steps to reproduce the issue
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+  - type: dropdown
+    id: version
+    attributes:
+      label: Cavasik Version
+      description: What version of our software are you running?
+      options:
+        - v1.0.0
+    validations:
+      required: true
+  - type: input
+    id: distro
+    attributes:
+      label: Linux Distro
+      placeholder: ex. Arch
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Add any other context about the problem here
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output.
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/TheWisker/Cavasik/blob/master/.github/CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
