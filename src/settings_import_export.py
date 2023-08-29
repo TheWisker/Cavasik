@@ -18,7 +18,7 @@ def import_settings(window, path):
                     subprocess.run(['gsettings', 'set', \
                         'io.github.TheWisker.Cavasik', line.split(' ')[0], \
                         line.replace(line.split(' ')[0], '').strip()])
-        toast_msg = _('Settings sucessfully imported')
+        toast_msg = _('Settings successfully imported')
 
     except Exception as e:
         print('Can\'t import settings from file: ' + path)
