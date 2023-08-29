@@ -15,7 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [2.0.0] - 2023-06-17
  
-**First** oficial version of **Cavasik**.
+**First** official version of **Cavasik**.
  
 ### Added
 
@@ -28,7 +28,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **FPS** configuration option.
  
 ### Changed
-- Keyboard shorcuts (some removed, some added)
+- Keyboard shortcuts (some removed, some added)
  
 ### Fixed
 - No fixes

@@ -20,7 +20,7 @@ Please **read** through the following **guidelines**.
 ## Issues [[↑][index]]
 
 If you are facing a **issue** or bug with the **Cavasik** application, you can **report it** through the [issues page][issues].
-In said page you can report from **bugs** to possible **enhacements**, so feel free to do so!
+In said page you can report from **bugs** to possible **enhancements**, so feel free to do so!
 
 ## Discussions [[↑][index]]
 
