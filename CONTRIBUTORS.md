@@ -14,8 +14,8 @@
 
 These are the **Cavasik** project **contributors**, ordered from most recent to least recent:
 
-- No contributors by the moment. **Be the first!**
-
+- [Myles](https://github.com/MylesGit) => Opened an [issue](https://github.com/TheWisker/Cavasik/issues/2) resulting in an enhancement.
+- [Kian-Meng Ang](https://github.com/kianmeng) => Made a [pull request](https://github.com/TheWisker/Cavasik/pull/5) resulting in the correction of some typos.
 
 In another format:
 
