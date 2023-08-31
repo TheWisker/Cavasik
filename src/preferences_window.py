@@ -510,6 +510,13 @@ class CavasikPreferencesWindow(Adw.PreferencesWindow):
 
         self.mirror_colors_group = Adw.PreferencesGroup.new()
         self.colors_page.add(self.mirror_colors_group)
+        self.pref_mirror_sync = Adw.ActionRow.new()
+        self.pref_mirror_sync.set_title(_('Sync mirror'))
+        self.pref_mirror_sync_switch = Gtk.Switch.new()
+        self.pref_mirror_sync_switch.set_valign(Gtk.Align.CENTER)
+        self.pref_mirror_sync.add_suffix(self.pref_mirror_sync_switch)
+        self.pref_mirror_sync.set_activatable_widget(self.pref_mirror_sync_switch)
+        self.mirror_colors_group.add(self.pref_mirror_sync)
         self.pref_mirror_colors = Adw.ComboRow.new()
         self.pref_mirror_colors.set_title(_('Mirror Color'))
         self.pref_mirror_colors.set_subtitle(_('Color profile for mirrored images'))
@@ -627,7 +634,9 @@ class CavasikPreferencesWindow(Adw.PreferencesWindow):
         self.profile_remove_button.set_sensitive(active_profile != 0)
         self.clear_colors_grid()
         self.fill_colors_grid()
+        self.pref_mirror_sync_switch.set_active(self.settings['mirror-sync'])
         self.pref_mirror_colors.set_selected(self.settings['mirror-colors'])
+        self.pref_mirror_colors.set_sensitive(not self.settings['mirror-sync'])
         self.pref_color_animation_switch.set_active(self.settings['color-animation'])
         self.pref_color_animation_target.set_selected(self.settings['color-animation-target'])
         self.pref_color_animation_mirror_target.set_selected(self.settings['color-animation-mirror-target'])
@@ -742,6 +751,9 @@ class CavasikPreferencesWindow(Adw.PreferencesWindow):
         self.profiles_dropdown.connect('notify::selected', \
             self.select_color_profile, self.profiles_dropdown, 'active-color-profile')
 
+        self.pref_mirror_sync_switch.connect('notify::state', \
+            lambda *args : self.save_setting(self.pref_mirror_sync_switch, \
+                'mirror-sync', self.pref_mirror_sync_switch.get_state()))
         self.pref_mirror_colors.connect('notify::selected-item', self.select_color_profile, self.pref_mirror_colors, 'mirror-colors')
         self.pref_color_animation_switch.connect('notify::state', \
             lambda *args : self.save_setting(self.pref_color_animation_switch, \

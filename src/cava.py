@@ -60,6 +60,7 @@ class Cava:
         self.monstercat = \
             ['off', 'monstercat'].index(self.settings['smoothing'])
         self.noise_reduction = self.settings['noise-reduction']
+        print(self.noise_reduction)
 
     def write_config(self):
         try:
@@ -82,6 +83,7 @@ class Cava:
                 f'monstercat = {self.monstercat}',
                 f'noise_reduction = {self.noise_reduction}'
             ])
+            print(conf)
             f.write(conf)
             f.close()
         except Exception as e:

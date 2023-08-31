@@ -82,9 +82,12 @@ class CavasikDrawingArea(Gtk.DrawingArea):
             return
 
         try:
-            color_profile = self.settings['color-profiles'][ \
-                self.settings['mirror-colors']]
-            self.mirror_colors = color_profile[1]
+            if self.settings['mirror-sync']:
+                self.mirror_colors = self.colors
+            else:
+                color_profile = self.settings['color-profiles'][ \
+                    self.settings['mirror-colors']]
+                self.mirror_colors = color_profile[1]
         except:
             self.settings['mirror-colors'] = 0
             return

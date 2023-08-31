@@ -84,7 +84,12 @@
 			<summary>Mirror colors</summary>
 			<description>Color profile for mirrored images</description>
 			<default>0</default>
-		</key>
+	  </key>
+	  <key name="mirror-sync" type="b">
+			<summary>Sync mirror</summary>
+			<description>Sync mirror color profile with normal color profile</description>
+			<default>true</default>
+	  </key>
 	  <key name="mirror-clones" type="i">
 			<summary>Mirror clones</summary>
 			<description>Clones to make in the overlapping mode</description>
