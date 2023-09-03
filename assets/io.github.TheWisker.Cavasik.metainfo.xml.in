@@ -65,6 +65,16 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release type="stable" date="2023-09-03" version="2023.09.03">
+      <description>
+        <p>Second release of Cavasik</p>
+        <p>Cavasik is an audio visualizer based on CAVA with customizable LibAdwaita interface.</p>
+        <p>Cavasik is a fork of Cavalier.</p>
+        <ul>
+          <li>Some minor changes!</li>
+        </ul>
+      </description>
+    </release>
     <release type="stable" date="2023-06-16" version="2023.06.16">
       <description>
         <p>First release of Cavasik</p>
