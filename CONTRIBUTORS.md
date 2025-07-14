@@ -14,6 +14,7 @@
 
 These are the **Cavasik** project **contributors**, ordered from most recent to least recent:
 
+- [Mistera91](https://github.com/Mistera91) => Made a [pull request](https://github.com/TheWisker/Cavasik/pull/19) resulting in the increase of the maximum bar count.
 - [Myles](https://github.com/MylesGit) => Opened an [issue](https://github.com/TheWisker/Cavasik/issues/2) resulting in an enhancement.
 - [Kian-Meng Ang](https://github.com/kianmeng) => Made a [pull request](https://github.com/TheWisker/Cavasik/pull/5) resulting in the correction of some typos.
 
