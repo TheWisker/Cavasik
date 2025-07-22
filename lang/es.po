@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: cavasik\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-17 15:13+0200\n"
-"PO-Revision-Date: 2023-06-17 15:42+0200\n"
+"PO-Revision-Date: 2025-07-21 17:29+0200\n"
 "Last-Translator: TheWisker <TheWisker@protonmail.com>\n"
 "Language-Team: sf@santyf.com\n"
 "Language: es\n"
@@ -21,10 +21,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.3.1\n"
+"X-Generator: Poedit 3.6\n"
 
 #: assets/io.github.TheWisker.Cavasik.desktop.in:3
-#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:6
 msgid "Cavasik"
 msgstr "Cavasik"
 
@@ -32,263 +31,223 @@ msgstr "Cavasik"
 msgid "Audio Visualizer"
 msgstr "Visualizador de Audio"
 
-#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:7
-msgid "Audio visualizer based on CAVA"
-msgstr "Visualizador de audio basado en CAVA"
-
-#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:9
-msgid "Cavasik is an audio visualizer based on CAVA"
-msgstr "Cavasik es un visualizador de audio basado en CAVA"
-
-#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:10
-#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:69
-msgid "Cavasik is a fork of Cavalier."
-msgstr "Cavasik es un fork de Cavalier."
-
-#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:12
-#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:71
-msgid "Five normal drawing modes!"
-msgstr "Cinco modos normales de dibujo!"
-
-#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:13
-#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:72
-msgid "Two circle drawing modes!"
-msgstr "Dos modos circulares de dibujo!"
-
-#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:14
-#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:73
-msgid "Three mirror drawing modes!"
-msgstr "Tres modos espejo de dibujo!"
-
-#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:15
-#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:74
-msgid "Four drawing directions!"
-msgstr "Cuatro direcciones de dibujo!"
-
-#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:16
-msgid "Customizable LibAdwaita interface!"
-msgstr "Interfaz LibAdwaita personalizable!"
-
-#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:17
-#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:75
-msgid ""
-"Set a single color or up to a 10 color linear gradient for background and "
-"foreground!"
-msgstr ""
-"Configure un color o hasta 10 colores gradientes para el fondo y el dibujo!"
-
-#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:18
-#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:76
-msgid ""
-"Select different foreground colors for the mirrored images in mirror mode!"
-msgstr "Elige diferentes colores para los clones en el modo espejo!"
-
-#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:19
-#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:77
-msgid "Set up a color animation that changes the colors gradually in a loop!"
-msgstr "Configura una animacion que cambia los colores gradualmentes en bucle!"
-
-#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:20
-#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:78
-msgid "Configure smoothing, noise reduction and a few other CAVA settings!"
-msgstr "Configure el suavizado,la  reducción de ruido y otros ajustes de CAVA!"
-
-#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:21
-#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:79
-msgid "Change background and foreground colors through a DBus interface!"
-msgstr "Cambia los colores de fondo y dibujo a traves de una interfaz DBus!"
-
-#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:27 src/main.py:56
-#: src/main.py:58
-msgid "TheWisker"
-msgstr "TheWisker"
-
-#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:67
-msgid "First release of Cavasik"
-msgstr "Primer lanzamiento de Cavasik"
-
-#: assets/io.github.TheWisker.Cavasik.metainfo.xml.in:68
-msgid ""
-"Cavasik is an audio visualizer based on CAVA with customizable LibAdwaita "
-"interface."
-msgstr ""
-"Cavasik es un visualizador de audio basado en CAVA con una interfaz "
-"LibAdwaita personalizable."
-
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:5
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:1
 msgid "Window size"
 msgstr "Tamaño de ventana"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:9
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:2
 msgid "Window maximized state"
 msgstr "Tamaño máximo de ventana"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:10
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:3
 msgid "Whether main window is maximized or not"
 msgstr "Si la ventana principal está maximizada o no"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:14
-#: src/preferences_window.py:259
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:4
+#: ../src/preferences_window.py:279
 msgid "Borderless window"
 msgstr "Ventana sin bordes"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:15
-#: src/preferences_window.py:261
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:5
+#: ../src/preferences_window.py:281
 msgid "Whether to disable window shadow and borders."
 msgstr "Si se muestran los controles de ventana y sus sombras."
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:19
-#: src/preferences_window.py:280
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:6
+#: ../src/preferences_window.py:300
 msgid "Window controls"
 msgstr "Controles de ventana"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:20
-#: src/preferences_window.py:282
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:7
+#: ../src/preferences_window.py:302
 msgid "Whether to show window control buttons."
 msgstr "Si se muestran los controles de ventana."
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:24
-#: src/preferences_window.py:291
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:8
+#: ../src/preferences_window.py:311
 msgid "Autohide headerbar"
 msgstr "Ocultar la barra de título automáticamente"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:25
-#: src/preferences_window.py:293
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:9
+#: ../src/preferences_window.py:313
 msgid "Whether to hide headerbar when main window is not focused."
 msgstr ""
 "Si se oculta la barra de título cuando la ventana principal no está activa."
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:29
-#: src/preferences_window.py:233
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:10
+#: ../src/preferences_window.py:322
+msgid "Shortcutless mode"
+msgstr "Modo sin atajos"
+
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:11
+msgid "Whether to disable keyboard shortcuts."
+msgstr "Si desea deshabilitar los atajos de teclado."
+
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:12
+#: ../src/preferences_window.py:233
+msgid "Startup colors"
+msgstr "Colores iniciales"
+
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:13
+#: ../src/preferences_window.py:235
+msgid ""
+"Whether to use colors read from a file on startup (overwrites default "
+"profile)."
+msgstr ""
+"Si se deben utilizar colores leídos desde un archivo al iniciar (sobrescribe "
+"el perfil predeterminado)."
+
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:14
+#: ../src/preferences_window.py:243
+msgid "Startup colors file"
+msgstr "Archivo de colores de iniciales"
+
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:15
+#: ../src/preferences_window.py:245
+msgid "Path to the file that contains the startup colors."
+msgstr "Ruta al archivo que contiene los colores iniciales."
+
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:16
+#: ../src/preferences_window.py:253
 msgid "DBus colors"
 msgstr "Colores DBus"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:30
-#: src/preferences_window.py:235
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:17
+#: ../src/preferences_window.py:255
 msgid ""
 "Whether to use colors received through DBus (overwrites default profile)."
 msgstr ""
 "Usar o no colores recibidos a través de DBus (sobrescribe el perfil "
 "predeterminado)."
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:34
-#: src/preferences_window.py:243
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:18
+#: ../src/preferences_window.py:263
 msgid "DBus opacity"
 msgstr "Opacidad DBus"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:35
-#: src/preferences_window.py:245
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:19
+#: ../src/preferences_window.py:265
 msgid "Opacity for the colors received through DBus."
 msgstr "Opacidad de los colores recibidos a través de DBus."
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:40
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:20
 msgid "Drawing mode"
 msgstr "Modo de dibujado"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:41
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:21
 msgid "Defines what the visualizer looks like."
 msgstr "Define como se ve el visualizador."
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:52
-#: src/preferences_window.py:164
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:22
+#: ../src/preferences_window.py:164
 msgid "Drawing direction"
 msgstr "Direccion de dibujado"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:62
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:23
 msgid "Mirror mode"
 msgstr "Modo espejo"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:72
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:24
 msgid "Mirror offset"
 msgstr "Desplazamiento del espejo"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:73
-#: src/preferences_window.py:103
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:25
+#: ../src/preferences_window.py:103
 msgid "Offset between mirrored images in normal mode"
 msgstr "Desplamiento entre las imagenes en el modo espejo normal"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:78
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:26
 msgid "Mirror opacity"
 msgstr "Opacidad del espejo"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:79
-#: src/preferences_window.py:113
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:27
+#: ../src/preferences_window.py:113
 msgid "Opacity of the mirrored image in normal mode"
 msgstr "Opacidad de la imagen clonada en el modo espejo normal"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:84
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:28
 msgid "Mirror colors"
 msgstr "Colores del espejo"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:85
-#: src/preferences_window.py:515
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:29
+#: ../src/preferences_window.py:552
 msgid "Color profile for mirrored images"
 msgstr "Perfil de color para las imagenes clonadas"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:89
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:30
+#: ../src/preferences_window.py:544
+msgid "Sync mirror"
+msgstr "Sincronizar el espejo"
+
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:31
+msgid "Sync mirror color profile with normal color profile"
+msgstr ""
+"Sincronizar el perfil de color del espejo con el perfil de color normal"
+
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:32
 msgid "Mirror clones"
 msgstr "Clones del espejo"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:90
-#: src/preferences_window.py:123
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:33
+#: ../src/preferences_window.py:123
 msgid "Clones to make in the overlapping mode"
 msgstr "Clones a hacer en el modo espejo superpuesto"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:95
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:34
 msgid "Mirror ratio"
 msgstr "Ratio del espejo"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:96
-#: src/preferences_window.py:133
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:35
+#: ../src/preferences_window.py:133
 msgid "Scale ratio between overlapping clones"
 msgstr "Ratio de tamaño entre los clones superpuestos"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:101
-#: src/preferences_window.py:144
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:36
+#: ../src/preferences_window.py:144
 msgid "Circle"
 msgstr "Circulo"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:102
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:37
 msgid "Whether to modify drawing modes to draw in circle"
 msgstr "Si modificar o no los modos de dibujo para dibujar circulos"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:106
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:38
 msgid "Wave - Show Inner Circle"
 msgstr "Onda - Mostrar Circulo Interior"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:107
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:39
 msgid "Whether to show the inner circle when using Wave mode Circle variant."
 msgstr ""
 "Si mostrar o no el circulo interior cuando se usa la variante Circular del "
 "modo Onda."
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:111
-#: src/preferences_window.py:146
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:40
+#: ../src/preferences_window.py:146
 msgid "Radius"
 msgstr "Radio"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:112
-#: src/preferences_window.py:147
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:41
+#: ../src/preferences_window.py:147
 msgid "Radius of base circle (in percent)"
 msgstr "Radio del circulo base (en porcentage)"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:117
-#: src/preferences_window.py:171
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:42
+#: ../src/preferences_window.py:171
 msgid "Drawing area margin"
 msgstr "Márgen del área de dibujado"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:118
-#: src/preferences_window.py:173
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:43
+#: ../src/preferences_window.py:173
 msgid "Size of gaps around drawing area (in pixels)."
 msgstr "Tamaño del espacio alrededor del area de dibujado (en píxeles)."
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:123
-#: src/preferences_window.py:183
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:44
+#: ../src/preferences_window.py:183
 msgid "Offset between items"
 msgstr "Espacio entre elementos"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:124
-#: src/preferences_window.py:185
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:45
+#: ../src/preferences_window.py:185
 msgid ""
 "The size of spaces between elements in \"levels\", \"particles\" and "
 "\"bars\" modes (in percent)."
@@ -296,87 +255,87 @@ msgstr ""
 "El tamaño de los espacios entre elementos de los modos \"niveles\", "
 "\"partículas\" y \"barras\" (en porcentaje)."
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:129
-#: src/preferences_window.py:195
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:46
+#: ../src/preferences_window.py:195
 msgid "Roundness of items"
 msgstr "Redondez de los elementos"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:130
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:47
 msgid "This setting affects \"levels\", \"particles\" and \"spine\" modes."
 msgstr ""
 "Este ajuste solo afecta a los modos \"niveles\" , \"partículas\" y "
 "\"espina\"."
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:135
-#: src/preferences_window.py:218
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:48
+#: ../src/preferences_window.py:218
 msgid "Thickness of lines"
 msgstr "Grosor de las lineas"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:136
-#: src/preferences_window.py:220
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:49
+#: ../src/preferences_window.py:220
 msgid "Thickness of lines when filling is off (in pixels)."
 msgstr "Grosor de las lineas cuando no tienen relleno (en pixeles)"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:141
-#: src/preferences_window.py:207
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:50
+#: ../src/preferences_window.py:207
 msgid "Filling"
 msgstr "Relleno"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:142
-#: src/preferences_window.py:209
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:51
+#: ../src/preferences_window.py:209
 msgid "Whether shapes should be filled or outlined."
 msgstr "Si rellenar o no los elementos."
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:146
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:52
 msgid "Number of bars"
 msgstr "Numero de barras"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:147
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:53
 msgid "Number of bars in CAVA config"
 msgstr "Numero de barras en la configuración de CAVA"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:152
-#: src/preferences_window.py:337
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:54
+#: ../src/preferences_window.py:367
 msgid "Automatic sensitivity"
 msgstr "Sensibilidad automática"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:153
-#: src/preferences_window.py:339
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:55
+#: ../src/preferences_window.py:369
 msgid "Attempt to decrease sensitivity if the bars peak."
 msgstr ""
 "Intento para reducir la sensibilidad si las barras llegan a su punto máximo."
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:157
-#: src/preferences_window.py:347
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:56
+#: ../src/preferences_window.py:377
 msgid "Sensitivity"
 msgstr "Sensibilidad"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:158
-#: src/preferences_window.py:349
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:57
+#: ../src/preferences_window.py:379
 msgid ""
 "Manual sensitivity. If automatic sensitivity is enabled, this will only be "
 "the initial value."
 msgstr "Sensibilidad manual. De ser activado, esto será solo el valor inicial."
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:163
-#: src/preferences_window.py:358
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:58
+#: ../src/preferences_window.py:388
 msgid "Channels"
 msgstr "Canales"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:164
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:59
 msgid "Mono or stereo"
 msgstr "Mono o estéreo"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:172
-#: src/preferences_window.py:370
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:60
+#: ../src/preferences_window.py:400
 msgid "Smoothing"
 msgstr "Suavizado"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:180
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:61
 msgid "Noise reduction"
 msgstr "Reducción de ruido"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:181
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:62
 msgid ""
 "This factor adjusts the integral and gravity filters to keep the signal "
 "smooth. 1 will be very slow and smooth, 0 will be fast but noisy."
@@ -384,181 +343,185 @@ msgstr ""
 "Este factor ajusta la integral y los filtros de gravedad para mantener la "
 "señal suave. 1 será muy lento y suave, 0 será rápido pero ruidoso."
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:186
-#: src/preferences_window.py:388
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:63
+#: ../src/preferences_window.py:418
 msgid "Reverse order"
 msgstr "Orden inverso"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:190
-#: src/preferences_window.py:396
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:64
+#: ../src/preferences_window.py:426
 msgid "Frames per Second"
 msgstr "Fotogramas por Segundo"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:195
-#: src/preferences_window.py:416
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:65
+#: ../src/preferences_window.py:446
 msgid "Widgets style"
 msgstr "Estilo de los widgets"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:196
-#: src/preferences_window.py:417
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:66
+#: ../src/preferences_window.py:447
 msgid "Style used by Adwaita widgets."
 msgstr "Estilo usado por los widgets de Adwaita."
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:204
-#: src/preferences_window.py:269
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:67
+#: ../src/preferences_window.py:289
 msgid "Sharp corners"
 msgstr "Esquinas planas"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:205
-#: src/preferences_window.py:271
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:68
+#: ../src/preferences_window.py:291
 msgid "Whether the main window corners should be sharp."
 msgstr "Si la ventana principal debe ser plana."
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:209
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:69
 msgid "Color Profiles"
 msgstr "Perfiles de Color"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:213
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:70
 msgid "Index of active color profile"
 msgstr "Índice del perfil de color activo"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:217
-#: src/preferences_window.py:522
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:71
+#: ../src/preferences_window.py:559
 msgid "Color animation"
 msgstr "Animacion de color"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:218
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:72
 msgid "Whether the color animation is active"
 msgstr "Si la animacion de color esta activa o no"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:222
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:73
 msgid "Color animation target"
 msgstr "Objetivo de la animacion de color"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:223
-#: src/preferences_window.py:530
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:74
+#: ../src/preferences_window.py:567
 msgid "The target color profile to fade in and out of"
 msgstr "El perfil objetivo de la animacion de color"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:227
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:75
 msgid "Color animation mirror target"
 msgstr "Objetivo de la animacion de color para el espejo"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:228
-#: src/preferences_window.py:535
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:76
+#: ../src/preferences_window.py:572
 msgid "The target color profile to fade in and out of for the mirrored image"
 msgstr "El perfil objetivo de la animacion de color para el espejo"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:232
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:77
 msgid "Color animation length"
 msgstr "Duracion de la animacion de color"
 
-#: assets/io.github.TheWisker.Cavasik.gschema.xml:233
-#: src/preferences_window.py:540
+#: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:78
+#: ../src/preferences_window.py:577
 msgid "The length in seconds of the color animation"
 msgstr "La duracion de la animacion de color en segundos"
 
-#: src/window.py:87 src/shortcuts_dialog.ui:138
+#: ../src/main.py:57 ../src/main.py:59
+msgid "TheWisker"
+msgstr "TheWisker"
+
+#: ../src/window.py:87
 msgid "Preferences"
 msgstr "Preferencias"
 
-#: src/window.py:88
+#: ../src/window.py:88
 msgid "Keyboard Shortcuts"
 msgstr "Atajos de Teclado"
 
-#: src/window.py:89
+#: ../src/window.py:89
 msgid "About"
 msgstr "Acerca de"
 
-#: src/window.py:90 src/shortcuts_dialog.ui:156
+#: ../src/window.py:90
 msgid "Quit"
 msgstr "Salir"
 
-#: src/preferences_window.py:40
+#: ../src/preferences_window.py:40
 msgid "Drawing Mode"
 msgstr "Modo de Dibujado"
 
-#: src/preferences_window.py:44
+#: ../src/preferences_window.py:44
 msgid "Wave"
 msgstr "Onda"
 
-#: src/preferences_window.py:50
+#: ../src/preferences_window.py:50
 msgid "Show inner circle"
 msgstr "Mostrar circulo interior"
 
-#: src/preferences_window.py:58
+#: ../src/preferences_window.py:58
 msgid "Levels"
 msgstr "Niveles"
 
-#: src/preferences_window.py:66
+#: ../src/preferences_window.py:66
 msgid "Particles"
 msgstr "Partículas"
 
-#: src/preferences_window.py:74
+#: ../src/preferences_window.py:74
 msgid "Spine"
 msgstr "Espina"
 
-#: src/preferences_window.py:82 src/preferences_window.py:326
+#: ../src/preferences_window.py:82 ../src/preferences_window.py:356
 msgid "Bars"
 msgstr "Barras"
 
-#: src/preferences_window.py:94
+#: ../src/preferences_window.py:94
 msgid "Linear"
 msgstr "Linear"
 
-#: src/preferences_window.py:96
+#: ../src/preferences_window.py:96
 msgid "Mirror Mode"
 msgstr "Modo Espejo"
 
-#: src/preferences_window.py:98
+#: ../src/preferences_window.py:98
 msgid "None"
 msgstr "Ninguno"
 
-#: src/preferences_window.py:98
+#: ../src/preferences_window.py:98
 msgid "Normal"
 msgstr "Normal"
 
-#: src/preferences_window.py:99
+#: ../src/preferences_window.py:99
 msgid "Inverse"
 msgstr "Inverso"
 
-#: src/preferences_window.py:99
+#: ../src/preferences_window.py:99
 msgid "Overlapping"
 msgstr "Superpuesto"
 
-#: src/preferences_window.py:102
+#: ../src/preferences_window.py:102
 msgid "Mirror Offset"
 msgstr "Desplazamiento del Espejo"
 
-#: src/preferences_window.py:112
+#: ../src/preferences_window.py:112
 msgid "Mirror Opacity"
 msgstr "Opacidad del Espejo"
 
-#: src/preferences_window.py:122
+#: ../src/preferences_window.py:122
 msgid "Mirror Clones"
 msgstr "Clones del Espejo"
 
-#: src/preferences_window.py:132
+#: ../src/preferences_window.py:132
 msgid "Mirror Ratio"
 msgstr "Ratio del Espejo"
 
-#: src/preferences_window.py:166
+#: ../src/preferences_window.py:166
 msgid "Bottom to Top"
 msgstr "De abajo a arriba"
 
-#: src/preferences_window.py:166
+#: ../src/preferences_window.py:166
 msgid "Top to Bottom"
 msgstr "De arriba a abajo"
 
-#: src/preferences_window.py:167
+#: ../src/preferences_window.py:167
 msgid "Left to Right"
 msgstr "De izquierda a derecha"
 
-#: src/preferences_window.py:167
+#: ../src/preferences_window.py:167
 msgid "Right to Left"
 msgstr "De derecha a izquierda"
 
-#: src/preferences_window.py:197
+#: ../src/preferences_window.py:197
 msgid ""
 "This setting affects \"levels\", \"particles\" and \"spine\" modes.\n"
 "0 - square, 1 - round"
@@ -567,149 +530,154 @@ msgstr ""
 "\"espina\".\n"
 "0 - cuadrado, 1 - redondo"
 
-#: src/preferences_window.py:306
+#: ../src/preferences_window.py:324
+msgid "Whether to disable keyboard shortcuts. Restart needed to take effect."
+msgstr ""
+"Si se deshabilitan los atajos de teclado. Es necesario reiniciar para que "
+"surta efecto."
+
+#: ../src/preferences_window.py:336
 msgid "Import"
 msgstr "Importar"
 
-#: src/preferences_window.py:311
+#: ../src/preferences_window.py:341
 msgid "Export"
 msgstr "Exportar"
 
-#: src/preferences_window.py:364
+#: ../src/preferences_window.py:394
 msgid "Mono"
 msgstr "Mono"
 
-#: src/preferences_window.py:366
+#: ../src/preferences_window.py:396
 msgid "Stereo"
 msgstr "Estéreo"
 
-#: src/preferences_window.py:372
+#: ../src/preferences_window.py:402
 msgid "Off"
 msgstr "Apagado"
 
-#: src/preferences_window.py:372
+#: ../src/preferences_window.py:402
 msgid "Monstercat"
 msgstr "Monstercat"
 
-#: src/preferences_window.py:375
+#: ../src/preferences_window.py:405
 msgid "Noise Reduction"
 msgstr "Reducción de Ruido"
 
-#: src/preferences_window.py:376
+#: ../src/preferences_window.py:406
 msgid "0 - noisy, 1 - smooth"
 msgstr "0 - ruidoso, 1 - suave"
 
-#: src/preferences_window.py:397
+#: ../src/preferences_window.py:427
 msgid ""
 "Frames per Second for the visualizer (requires app restart to take effect)."
 msgstr ""
 "Fotogramas por Segundo para el visualizador (requiere reiniciar la app para "
 "tener effecto)"
 
-#: src/preferences_window.py:408 src/preferences_window.py:429
-#: src/shortcuts_dialog.ui:82
+#: ../src/preferences_window.py:438 ../src/preferences_window.py:459
 msgid "Colors"
 msgstr "Colores"
 
-#: src/preferences_window.py:422
+#: ../src/preferences_window.py:452
 msgid "Light"
 msgstr "Claro"
 
-#: src/preferences_window.py:424
+#: ../src/preferences_window.py:454
 msgid "Dark"
 msgstr "Obscuro"
 
-#: src/preferences_window.py:435
+#: ../src/preferences_window.py:465
 msgid "Profile:"
 msgstr "Perfil:"
 
-#: src/preferences_window.py:443
+#: ../src/preferences_window.py:473
 msgid "Add new profile"
 msgstr "Crear nuevo perfil"
 
-#: src/preferences_window.py:455
+#: ../src/preferences_window.py:485
 msgid "Type a name for a new profile"
 msgstr "Escriba un nombre para un nuevo perfil"
 
-#: src/preferences_window.py:457 src/preferences_window.py:787
-#: src/preferences_window.py:830
+#: ../src/preferences_window.py:487 ../src/preferences_window.py:857
+#: ../src/preferences_window.py:900
 msgid "Add"
 msgstr "Añadir"
 
-#: src/preferences_window.py:462 src/preferences_window.py:874
+#: ../src/preferences_window.py:492 ../src/preferences_window.py:944
 msgid "The new profile will be a copy of the active profile."
 msgstr "El nuevo perfil sera una copia del perfil actual."
 
-#: src/preferences_window.py:467
+#: ../src/preferences_window.py:497
 msgid "Remove profile"
 msgstr "Eliminar perfil"
 
-#: src/preferences_window.py:474
+#: ../src/preferences_window.py:504
 msgid "Are you sure you want to remove this profile?"
 msgstr "¿Está seguro de que quiere eliminar este perfil?"
 
-#: src/preferences_window.py:481
+#: ../src/preferences_window.py:511
 msgid "Remove"
 msgstr "Eliminar"
 
-#: src/preferences_window.py:488
+#: ../src/preferences_window.py:518
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: src/preferences_window.py:498
+#: ../src/preferences_window.py:528
 msgid "<b>Foreground</b>"
 msgstr "<b>Énfasis</b>"
 
-#: src/preferences_window.py:503
+#: ../src/preferences_window.py:533
 msgid "<b>Background</b>"
 msgstr "<b>Fondo</b>"
 
-#: src/preferences_window.py:514
+#: ../src/preferences_window.py:551
 msgid "Mirror Color"
 msgstr "Color del espejo"
 
-#: src/preferences_window.py:529
+#: ../src/preferences_window.py:566
 msgid "Color Animation Target"
 msgstr "Objetivo de la Animacion de Color"
 
-#: src/preferences_window.py:534
+#: ../src/preferences_window.py:571
 msgid "Color Animation Mirror Target"
 msgstr "Objetivo de la Animacion de Color del Espejo"
 
-#: src/preferences_window.py:539
+#: ../src/preferences_window.py:576
 msgid "Color Animation Length"
 msgstr "Duracion de la Animacion de Color"
 
-#: src/preferences_window.py:769 src/preferences_window.py:794
-#: src/preferences_window.py:814 src/preferences_window.py:837
+#: ../src/preferences_window.py:839 ../src/preferences_window.py:864
+#: ../src/preferences_window.py:884 ../src/preferences_window.py:907
 msgid "Select color"
 msgstr "Seleccionar color"
 
-#: src/preferences_window.py:775 src/preferences_window.py:820
+#: ../src/preferences_window.py:845 ../src/preferences_window.py:890
 msgid "Remove color"
 msgstr "Eliminar color"
 
-#: src/preferences_window.py:798 src/preferences_window.py:841
+#: ../src/preferences_window.py:868 ../src/preferences_window.py:911
 msgid "Add color"
 msgstr "Añadir color"
 
-#: src/preferences_window.py:867
+#: ../src/preferences_window.py:937
 msgid "This name is already in use."
 msgstr "Este nombre ya está en uso."
 
-#: src/preferences_window.py:972
+#: ../src/preferences_window.py:1054
 msgid "Import Settings"
 msgstr "Importar Ajustes"
 
-#: src/preferences_window.py:976 src/preferences_window.py:1001
+#: ../src/preferences_window.py:1058 ../src/preferences_window.py:1083
 msgid "Cavasik Settings File (*.cavasik)"
 msgstr "Archivo de Ajustes de Cavasik (*.cavasik)"
 
-#: src/preferences_window.py:979
+#: ../src/preferences_window.py:1061
 msgid "All Files"
 msgstr "Todos los Archivos"
 
-#: src/preferences_window.py:997
+#: ../src/preferences_window.py:1079
 msgid "Export Settings"
 msgstr "Exportar Ajustes"
 
@@ -796,6 +764,63 @@ msgstr "Mostrar Atajos de Teclado"
 #: src/shortcuts_dialog.ui:150
 msgid "Close Active Window"
 msgstr "Cerrar Ventana Activa"
+
+#~ msgid "Audio visualizer based on CAVA"
+#~ msgstr "Visualizador de audio basado en CAVA"
+
+#~ msgid "Cavasik is an audio visualizer based on CAVA"
+#~ msgstr "Cavasik es un visualizador de audio basado en CAVA"
+
+#~ msgid "Cavasik is a fork of Cavalier."
+#~ msgstr "Cavasik es un fork de Cavalier."
+
+#~ msgid "Five normal drawing modes!"
+#~ msgstr "Cinco modos normales de dibujo!"
+
+#~ msgid "Two circle drawing modes!"
+#~ msgstr "Dos modos circulares de dibujo!"
+
+#~ msgid "Three mirror drawing modes!"
+#~ msgstr "Tres modos espejo de dibujo!"
+
+#~ msgid "Four drawing directions!"
+#~ msgstr "Cuatro direcciones de dibujo!"
+
+#~ msgid "Customizable LibAdwaita interface!"
+#~ msgstr "Interfaz LibAdwaita personalizable!"
+
+#~ msgid ""
+#~ "Set a single color or up to a 10 color linear gradient for background and "
+#~ "foreground!"
+#~ msgstr ""
+#~ "Configure un color o hasta 10 colores gradientes para el fondo y el "
+#~ "dibujo!"
+
+#~ msgid ""
+#~ "Select different foreground colors for the mirrored images in mirror mode!"
+#~ msgstr "Elige diferentes colores para los clones en el modo espejo!"
+
+#~ msgid ""
+#~ "Set up a color animation that changes the colors gradually in a loop!"
+#~ msgstr ""
+#~ "Configura una animacion que cambia los colores gradualmentes en bucle!"
+
+#~ msgid "Configure smoothing, noise reduction and a few other CAVA settings!"
+#~ msgstr ""
+#~ "Configure el suavizado,la  reducción de ruido y otros ajustes de CAVA!"
+
+#~ msgid "Change background and foreground colors through a DBus interface!"
+#~ msgstr "Cambia los colores de fondo y dibujo a traves de una interfaz DBus!"
+
+#~ msgid "First release of Cavasik"
+#~ msgstr "Primer lanzamiento de Cavasik"
+
+#~ msgid ""
+#~ "Cavasik is an audio visualizer based on CAVA with customizable LibAdwaita "
+#~ "interface."
+#~ msgstr ""
+#~ "Cavasik es un visualizador de audio basado en CAVA con una interfaz "
+#~ "LibAdwaita personalizable."
 
 #~ msgid "New drawing mode — Particles!"
 #~ msgstr "Nuevo modo de dibujado — Partículas!"

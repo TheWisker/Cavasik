@@ -18,23 +18,37 @@ from .preferences_window import CavasikPreferencesWindow
 from .translation_credits import get_translation_credits
 
 from .dbus import BusInterface
+from .settings import CavasikSettings
 
 class CavasikApplication(Adw.Application):
     """The main application singleton class"""
 
-    def __init__(self, version):
-        super().__init__(application_id='io.github.TheWisker.Cavasik',
-                         flags=Gio.ApplicationFlags.FLAGS_NONE)
+    def __init__(self, version, args):
+        super().__init__(flags=Gio.ApplicationFlags.FLAGS_NONE)
         self.version = version
+        self.startup_actions = do_args(version, args)
+        if not self.startup_actions:
+            print('Bad command line input -> Aborting...')
+            self.quit()
+            return
+        if not self.startup_actions[0]:
+            self.quit()
+            return
+        self.startup_actions = self.startup_actions[1]
+        self.settings = CavasikSettings.new() # Must be before self.create_action calls
         self.create_action('about', self.on_about_action)
-        self.create_action('open-menu', self.on_menu_action, ['F10'])
-        self.create_action('toggle-fullscreen', self.on_fullscreen_action, ['F11'])
-        self.create_action('preferences', self.on_preferences_action,
-            ['P'])
-        self.create_action('shortcuts', self.on_shortcuts_action, \
-            ['H'])
-        self.create_action('close', self.on_close_action, ['<primary>w'])
-        self.create_action('quit', self.on_quit_action, ['<primary>q'])
+        self.create_action('open-menu', self.on_menu_action, 'F10')
+        self.create_action('toggle-fullscreen', self.on_fullscreen_action, 'F11')
+        self.create_action('preferences', self.on_preferences_action, '<primary>P')
+        self.create_action('shortcuts', self.on_shortcuts_action, '<primary>H')
+        self.create_action('close', self.on_close_action, '<primary>w')
+        self.create_action('quit', self.on_quit_action, '<primary>q')
+        if self.settings['startup-colors']:
+            self.settings._change_colors(self.settings['startup-colors-file'], True)
+        if 'set-fg' in self.startup_actions:
+            self.settings._change_colors(self.startup_actions['set-fg'], True)
+        if 'set-bg' in self.startup_actions:
+            self.settings._change_colors(self.startup_actions['set-bg'], False)
         self.bus_interface = BusInterface()
 
     def do_activate(self):
@@ -108,16 +122,55 @@ class CavasikApplication(Adw.Application):
             name: the name of the action
             callback: the function to be called when the action is
               activated
-            shortcuts: an optional list of accelerators
+            shortcuts: an optional accelerator
         """
         action = Gio.SimpleAction.new(name, None)
         action.connect("activate", callback)
         self.add_action(action)
-        if shortcuts:
-            self.set_accels_for_action(f"app.{name}", shortcuts)
 
+        if (shortcuts) and not self.settings['shortcutless-app']:
+            self.set_accels_for_action(f"app.{name}", [shortcuts])
+
+def do_args(version, args):
+    index = 1 # Skip script name
+    actions = {}
+    while index < len(args):
+        match args[index]:
+            case '--version':
+                print(f'Cavasik version {version}')
+                return False, 'version'
+            case '--set-fg':
+                index += 1 # Skip over to payload
+                if index >= len(args) or args[index].startswith('--'):
+                    print('--set-fg is missing argument!')
+                    return False # Bad formatted
+                actions['set-fg'] = args[index]
+            case '--set-bg':
+                index += 1 # Skip over to payload
+                if index >= len(args) or args[index].startswith('--'):
+                    print('--set-bg is missing argument!')
+                    return False # Bad formatted
+                actions['set-bg'] = args[index]
+            case '--help':
+                print(
+                    "Help with Cavasik - Audio visualizer based on CAVA\n"
+                    "DISCLAIMER: Cavasik is mostly a GUI application, thus all configuration is done through the GUI.\n"
+                    "\n"
+                    "Usage: cavasik [OPTIONS]\n"
+                    "\n"
+                    "Help with OPTIONS:\n"
+                    "--version: Prints the current version.\n"
+                    "--set-fg [FILE]: Sets the foreground to the colors read from the file. Overwrites default profile. File works like the startup colors file and dbus interface file.\n"
+                    "--set-bg [FILE]: Sets the background to the colors read from the file. Overwrites default profile. File works like the startup colors file and dbus interface file.\n"
+                    "--help: Prints this help.\n"
+                )
+                return False, 'help'
+            case _:
+                print(f'Invalid argument received \'{args[index]}\' -> Ignoring it...')
+        index += 1
+    return True, actions
 
 def main(version):
     """The application's entry point."""
-    app = CavasikApplication(version)
-    return app.run(sys.argv)
+    app = CavasikApplication(version, sys.argv)
+    return app.run([]) # No args for them

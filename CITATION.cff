@@ -3,6 +3,6 @@ message: "If you use this software in your work, or make a fork of it, please ci
 authors:
 - given-names: "TheWisker"
 title: "Cavasik Project"
-version: 2.0.1
+version: 3.0.0
 date-released: 2023-06-18
 url: "https://github.com/TheWisker/Cavasik"

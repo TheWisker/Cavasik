@@ -11,6 +11,8 @@ gi.require_version('Gtk', '4.0')
 from gi.repository import Gio, Gtk
 
 def add_shortcuts(widget, settings):
+    if settings['shortcutless-app']:
+        return
     action_map = Gio.SimpleActionGroup.new()
     widget.insert_action_group("cavasik", action_map)
     shortcut_controller = Gtk.ShortcutController.new()
