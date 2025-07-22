@@ -13,9 +13,9 @@ from cavasik.settings import CavasikSettings
 
 class Cava:
     def __init__(self):
-        self.BYTETYPE = "H"
-        self.BYTESIZE = 2
-        self.BYTENORM = 65535
+        self.BYTETYPE = "B"
+        self.BYTESIZE = 1
+        self.BYTENORM = 255
         self.restarting = False
 
         self.settings = CavasikSettings.new()
@@ -78,7 +78,7 @@ class Cava:
                 'mono_option = average',
                 'method = raw',
                 'raw_target = /dev/stdout',
-                'bit_format = 16bit',
+                'bit_format = 8bit',
                 '[smoothing]',
                 f'monstercat = {self.monstercat}',
                 f'noise_reduction = {self.noise_reduction}'

@@ -165,7 +165,7 @@
 		<key name="bars" type="i">
 			<summary>Number of bars</summary>
 			<description>Number of bars in CAVA config</description>
-			<range min="6" max="100"/>
+			<range min="6" max="512"/>
 			<default>12</default>
 		</key>
 		<key name="autosens" type="b">

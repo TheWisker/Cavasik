@@ -356,7 +356,7 @@ class CavasikPreferencesWindow(Adw.PreferencesWindow):
         self.cava_bars_row.set_title(_('Bars'))
         self.cava_group.add(self.cava_bars_row)
         self.cava_bars_scale = Gtk.Scale.new_with_range( \
-            Gtk.Orientation.HORIZONTAL, 6.0, 100.0, 2.0)
+            Gtk.Orientation.HORIZONTAL, 6.0, 512.0, 2.0)
         self.cava_bars_scale.set_size_request(180, -1)
         self.cava_bars_scale.set_draw_value(True)
         self.cava_bars_scale.set_value_pos(Gtk.PositionType.LEFT)
