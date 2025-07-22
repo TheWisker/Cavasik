@@ -66,6 +66,18 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release type="stable" date="2025-07-22" version="2025.07.22-2">
+      <description>
+        <p>Foruth release of Cavasik</p>
+        <p>Cavasik is an audio visualizer based on CAVA with customizable LibAdwaita interface.</p>
+        <p>Cavasik is a fork of Cavalier.</p>
+        <p>Changed:</p>
+        <ul>
+          <li>Maximum bar count from 100 to 512</li>
+          <li>Bits per sample from 16 to 8</li>
+        </ul>
+      </description>
+    </release>
     <release type="stable" date="2025-07-22" version="2025.07.22">
       <description>
         <p>Third release of Cavasik</p>
