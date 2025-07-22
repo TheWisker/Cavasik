@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<component type="desktop">
+<!-- Copyright 2025 TheWisker -->
+<component type="desktop-application">
   <id>io.github.TheWisker.Cavasik</id>
-  <metadata_license>CC0-1.0</metadata_license>
-  <project_license>GPL-3.0</project_license>
+  <metadata_license>FSFAP</metadata_license>
+  <license>GPL‑3.0‑or‑later</license>
   <name>Cavasik</name>
   <summary>Audio visualizer based on CAVA</summary>
   <description>
     <p>Cavasik is an audio visualizer based on CAVA</p>
-    <p>Cavasik is a fork of Cavalier.</p>
     <ul>
       <li>Five normal drawing modes!</li>
       <li>Two circle drawing modes!</li>
@@ -22,16 +22,47 @@
       <li>Change background and foreground colors on startup by reading them from a file!</li>
     </ul>
   </description>
-  <launchable type="desktop-id">io.github.TheWisker.Cavasik.desktop</launchable>
+  <categories>
+    <category>GTK</category>
+    <category>GNOME</category>
+    <category>Audio</category>
+    <category>Monitor</category>
+    <category>Graphics</category>
+    <category>Amusement</category>
+    <category>2DGraphics</category>
+    <category>DataVisualization</category>
+  </categories>
+  <keywords>
+    <keyword>audio</keyword>
+    <keyword>visualizer</keyword>
+    <keyword>spectrum</keyword>
+    <keyword>realtime</keyword>
+    <keyword>linux</keyword>
+    <keyword>gtk</keyword>
+    <keyword>cava</keyword>
+  </keywords>
   <url type="homepage">https://github.com/TheWisker/Cavasik</url>
   <url type="bugtracker">https://github.com/TheWisker/Cavasik/issues</url>
-  <developer_name>TheWisker</developer_name>
-  <translation type="gettext">Cavasik</translation>
+  <url type="help">https://github.com/TheWisker/Cavasik/blob/master/SUPPORT.md</url>
+  <url type="translate">https://github.com/TheWisker/Cavasik/blob/master/lang/CONTRIBUTING.md</url>
+  <url type="contact">https://github.com/TheWisker/Cavasik/blob/master/SUPPORT.md#contact-</url>
+  <url type="vcs-browser">https://github.com/TheWisker/Cavasik</url>
+  <url type="contribute">https://github.com/TheWisker/Cavasik/blob/master/CONTRIBUTING.md</url>
+  <launchable type="desktop-id">io.github.TheWisker.Cavasik.desktop</launchable>
+  <branding>
+    <color type="primary" scheme_preference="light">#829ebd</color>
+    <color type="primary" scheme_preference="dark">#2b3845</color>
+  </branding>
+  <provides>
+    <binary>cavasik</binary>
+    <dbus type="system">io.github.TheWisker.Cavasik</dbus>
+  </provides>
+  <developer id="io.github.TheWisker">
+    <name>TheWisker</name>
+  </developer>
+  <translation type="gettext" source_locale="en_US">cavasik</translation>
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/main.png</image>
-    </screenshot>
-    <screenshot>
       <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/waves.png</image>
     </screenshot>
     <screenshot>
@@ -70,7 +101,6 @@
       <description>
         <p>Foruth release of Cavasik</p>
         <p>Cavasik is an audio visualizer based on CAVA with customizable LibAdwaita interface.</p>
-        <p>Cavasik is a fork of Cavalier.</p>
         <p>Changed:</p>
         <ul>
           <li>Maximum bar count from 100 to 512</li>
@@ -82,7 +112,6 @@
       <description>
         <p>Third release of Cavasik</p>
         <p>Cavasik is an audio visualizer based on CAVA with customizable LibAdwaita interface.</p>
-        <p>Cavasik is a fork of Cavalier.</p>
         <p>Added:</p>
         <ul>
           <li>Shorcutless mode related setting.</li>
@@ -107,7 +136,6 @@
       <description>
         <p>Second release of Cavasik</p>
         <p>Cavasik is an audio visualizer based on CAVA with customizable LibAdwaita interface.</p>
-        <p>Cavasik is a fork of Cavalier.</p>
         <ul>
           <li>Some minor changes!</li>
         </ul>
@@ -117,7 +145,6 @@
       <description>
         <p>First release of Cavasik</p>
         <p>Cavasik is an audio visualizer based on CAVA with customizable LibAdwaita interface.</p>
-        <p>Cavasik is a fork of Cavalier.</p>
         <ul>
           <li>Five normal drawing modes!</li>
           <li>Two circle drawing modes!</li>
@@ -133,14 +160,19 @@
     </release>
   </releases>
   <content_rating type="oars-1.1"/>
+  <update_contact>TheWisker@protonmail.com</update_contact>
+  <requires>
+    <internet>offline-only</internet>
+    <display_length compare="ge">360</display_length>
+  </requires>
+  <recommends>
+    <memory>1024</memory>
+  </recommends>
   <supports>
     <control>pointing</control>
     <control>keyboard</control>
     <control>touch</control>
   </supports>
-  <requires>
-    <display_length compare="ge">360</display_length>
-  </requires>
   <custom>
     <value key="Purism::form_factor">workstation</value>
     <value key="Purism::form_factor">mobile</value>

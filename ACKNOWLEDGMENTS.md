@@ -22,7 +22,7 @@
 
 ## Cavalier [[↑][index]]
 
-**Cavasik** is a fork of **[Cavalier][cavalier]** so we give our acknowledgments.
+**Cavasik** is a fork of the archived **[Cavalier][cavalier]** so we give our acknowledgments.
 
 ## Cava [[↑][index]]
 

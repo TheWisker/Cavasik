@@ -14,7 +14,7 @@
 
 - **Fork Source**: [Fyodor Sobolev](https://github.com/fsobolev)
 
-    - **Owner** of the **Cavalier** repository from which **Cavasik** was forked.
+    - **Owner** of the archived **Cavalier** repository from which **Cavasik** was forked.
 
 **Other contributors** are listed in the [CONTRIBUTORS.md][contributors] file.
 
