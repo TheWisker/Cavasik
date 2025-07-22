@@ -1,6 +1,6 @@
 # Maintainer: Wisker <TheWisker@protonmail.com>
 pkgname=cavasik
-pkgver=v3.0.0
+pkgver=v3.1.0
 pkgrel=1
 pkgdesc="Audio visualizer based on CAVA"
 arch=('any')

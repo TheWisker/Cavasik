@@ -343,3 +343,5 @@ ASALocalRun/
 # Flatpak Builder
 .flatpak-builder/
 .flatpak/
+
+test.sh
