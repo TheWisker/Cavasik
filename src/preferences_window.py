@@ -229,6 +229,26 @@ class CavasikPreferencesWindow(Adw.PreferencesWindow):
         self.dbus_group = Adw.PreferencesGroup.new()
         self.cavasik_page.add(self.dbus_group)
 
+        self.pref_use_startup_colors = Adw.ActionRow.new()
+        self.pref_use_startup_colors.set_title(_('Startup colors'))
+        self.pref_use_startup_colors.set_subtitle( \
+            _('Whether to use colors read from a file on startup (overwrites default profile).'))
+        self.pref_use_startup_colors_switch = Gtk.Switch.new()
+        self.pref_use_startup_colors_switch.set_valign(Gtk.Align.CENTER)
+        self.pref_use_startup_colors.add_suffix(self.pref_use_startup_colors_switch)
+        self.pref_use_startup_colors.set_activatable_widget(self.pref_use_startup_colors_switch)
+        self.dbus_group.add(self.pref_use_startup_colors)
+
+        self.pref_startup_colors_path = Adw.ActionRow.new()
+        self.pref_startup_colors_path.set_title(_('Startup colors file'))
+        self.pref_startup_colors_path.set_subtitle( \
+            _('Path to the file that contains the startup colors.'))
+        self.pref_startup_colors_path_entry = Gtk.Entry.new()
+        self.pref_startup_colors_path_entry.set_valign(Gtk.Align.CENTER)
+        self.pref_startup_colors_path.add_suffix(self.pref_startup_colors_path_entry)
+        self.pref_startup_colors_path.set_activatable_widget(self.pref_startup_colors_path_entry)
+        self.dbus_group.add(self.pref_startup_colors_path)
+
         self.pref_use_dbus_colors = Adw.ActionRow.new()
         self.pref_use_dbus_colors.set_title(_('DBus colors'))
         self.pref_use_dbus_colors.set_subtitle( \
@@ -297,6 +317,16 @@ class CavasikPreferencesWindow(Adw.PreferencesWindow):
         self.pref_autohide_header.set_activatable_widget( \
             self.pref_autohide_header_switch)
         self.window_group.add(self.pref_autohide_header)
+
+        self.pref_shortcutless = Adw.ActionRow.new()
+        self.pref_shortcutless.set_title(_('Shortcutless mode'))
+        self.pref_shortcutless.set_subtitle( \
+            _('Whether to disable keyboard shortcuts. Restart needed to take effect.'))
+        self.pref_shortcutless_switch = Gtk.Switch.new()
+        self.pref_shortcutless_switch.set_valign(Gtk.Align.CENTER)
+        self.pref_shortcutless.add_suffix(self.pref_shortcutless_switch)
+        self.pref_shortcutless.set_activatable_widget(self.pref_shortcutless_switch)
+        self.window_group.add(self.pref_shortcutless)
 
         self.box_import_export = Gtk.Box.new(Gtk.Orientation.HORIZONTAL, 12)
         self.box_import_export.set_halign(Gtk.Align.CENTER)
@@ -559,6 +589,9 @@ class CavasikPreferencesWindow(Adw.PreferencesWindow):
             self.particles_check_btn, self.spine_check_btn, self.bars_check_btn)[ \
             self.settings.get_range('mode')[1].index(self.settings['mode']) \
             ].set_active(True)
+        self.levels_check_btn.set_sensitive(not self.settings['circle'])
+        self.particles_check_btn.set_sensitive(not self.settings['circle'])
+        self.spine_check_btn.set_sensitive(not self.settings['circle'])
         self.mode_variant_stack.set_visible_child_name( \
             'circle' if self.settings['circle'] else 'linear')
         self.mirror_group.set_visible(not self.settings['circle'])
@@ -566,9 +599,13 @@ class CavasikPreferencesWindow(Adw.PreferencesWindow):
             ['none', 'normal', 'inverted', 'overlapping'].index( \
             self.settings['mirror']))
         self.pref_mirror_offset_scale.set_value(self.settings['mirror-offset'])
+        self.pref_mirror_offset_scale.set_sensitive(self.settings['mirror'] == 'normal')
         self.pref_mirror_opacity_scale.set_value(self.settings['mirror-opacity'])
+        self.pref_mirror_opacity_scale.set_sensitive(self.settings['mirror'] == 'normal')
         self.pref_mirror_clones_scale.set_value(self.settings['mirror-clones'])
+        self.pref_mirror_clones_scale.set_sensitive(self.settings['mirror'] == 'overlapping')
         self.pref_mirror_ratio_scale.set_value(self.settings['mirror-ratio'])
+        self.pref_mirror_ratio_scale.set_sensitive(self.settings['mirror'] == 'overlapping')
         self.circle_group.set_visible(self.settings['circle'])
         self.wave_inner_circle_box.set_visible(self.settings['circle'])
         self.wave_inner_circle_switch.set_active( \
@@ -579,13 +616,19 @@ class CavasikPreferencesWindow(Adw.PreferencesWindow):
             self.settings['direction']))
         self.pref_margin_scale.set_value(self.settings['margin'])
         self.pref_offset_scale.set_value(self.settings['items-offset'])
+        self.pref_offset_scale.set_sensitive(self.settings['mode'] in ('levels', 'particles', 'bars'))
         self.pref_roundness_scale.set_value( \
             round(self.settings['items-roundness'] / 50.0, 2))
+        self.pref_roundness_scale.set_sensitive(self.settings['mode'] in ('levels', 'particles', 'spine'))
         self.pref_thickness_scale.set_value(self.settings['line-thickness'])
         self.pref_fill_switch.set_active(self.settings['fill'])
 
+        self.pref_use_startup_colors_switch.set_active(self.settings['startup-colors'])
+        self.pref_startup_colors_path_entry.set_text(self.settings['startup-colors-file'])
+        self.pref_startup_colors_path_entry.set_sensitive(self.settings['startup-colors'])
         self.pref_use_dbus_colors_switch.set_active(self.settings['dbus-colors'])
         self.pref_dbus_opacity_scale.set_value(self.settings['dbus-opacity'])
+        self.pref_dbus_opacity_scale.set_sensitive(self.settings['dbus-colors'])
 
         self.pref_borderless_switch.set_active( \
             self.settings['borderless-window'])
@@ -595,6 +638,8 @@ class CavasikPreferencesWindow(Adw.PreferencesWindow):
             self.settings['window-controls'])
         self.pref_autohide_header_switch.set_active( \
             self.settings['autohide-header'])
+        self.pref_shortcutless_switch.set_active( \
+            self.settings['shortcutless-app'])
 
         self.cava_bars_scale.set_value(self.settings['bars'])
         self.autosens_switch.set_active(self.settings['autosens'])
@@ -639,8 +684,11 @@ class CavasikPreferencesWindow(Adw.PreferencesWindow):
         self.pref_mirror_colors.set_sensitive(not self.settings['mirror-sync'])
         self.pref_color_animation_switch.set_active(self.settings['color-animation'])
         self.pref_color_animation_target.set_selected(self.settings['color-animation-target'])
+        self.pref_color_animation_target.set_sensitive(self.settings['color-animation'])
         self.pref_color_animation_mirror_target.set_selected(self.settings['color-animation-mirror-target'])
+        self.pref_color_animation_mirror_target.set_sensitive(self.settings['color-animation'])
         self.pref_color_animation_length_spin.set_value(self.settings['color-animation-length'])
+        self.pref_color_animation_length_spin.set_sensitive(self.settings['color-animation'])
         self.do_not_update = False
 
     def bind_settings(self):
@@ -694,6 +742,13 @@ class CavasikPreferencesWindow(Adw.PreferencesWindow):
                 'fill', self.pref_fill_switch.get_state()))
         # `notify::state` signal returns additional parameter that
         # we don't need, that's why lambda is used.
+        self.pref_use_startup_colors_switch.connect('notify::state', \
+            lambda *args : self.save_setting(self.pref_use_startup_colors_switch, \
+                'startup-colors', self.pref_use_startup_colors_switch.get_state()))
+        self.pref_startup_colors_path_entry_focus_controller = Gtk.EventControllerFocus()
+        self.pref_startup_colors_path_entry_focus_controller.connect("leave",  self.save_setting, \
+            'startup-colors-file', self.pref_startup_colors_path_entry.get_text)
+        self.pref_startup_colors_path_entry.add_controller(self.pref_startup_colors_path_entry_focus_controller)
         self.pref_use_dbus_colors_switch.connect('notify::state', \
             lambda *args : self.save_setting(self.pref_use_dbus_colors_switch, \
                 'dbus-colors', self.pref_use_dbus_colors_switch.get_state()))
@@ -713,6 +768,9 @@ class CavasikPreferencesWindow(Adw.PreferencesWindow):
         self.pref_autohide_header_switch.connect('notify::state', \
             lambda *args : self.save_setting(self.pref_autohide_header_switch, \
                 'autohide-header', self.pref_autohide_header_switch.get_state()))
+        self.pref_shortcutless_switch.connect('notify::state', \
+            lambda *args : self.save_setting(self.pref_shortcutless_switch, \
+                'shortcutless-app', self.pref_shortcutless_switch.get_state()))
 
         self.cava_bars_scale.connect('value-changed', self.change_bars_count)
         # `notify::state` signal returns additional parameter that
@@ -962,11 +1020,23 @@ class CavasikPreferencesWindow(Adw.PreferencesWindow):
             self.settings['channels'] = 'stereo'
 
     def save_setting(self, obj, key, value):
-        if callable(value):
-            value = value()
-        if type(value) is float and type(self.settings[key]) is int:
-            value = round(value)
-        self.settings[key] = value
+        if isinstance(obj, Gtk.Entry):
+            def _save_setting():
+                try:
+                    _value = value()
+                    if type(_value) is float and type(self.settings[key]) is int:
+                        _value = round(_value)
+                    self.settings[key] = _value
+                except Exception as e:
+                    print(f"[save_setting] idle-add failed: {e}")
+                return False # ensures it runs only once
+            GLib.idle_add(_save_setting)
+        else:
+            if callable(value):
+                    value = value()
+            if type(value) is float and type(self.settings[key]) is int:
+                value = round(value)
+            self.settings[key] = value
 
     def on_settings_changed(self):
         self.load_settings()

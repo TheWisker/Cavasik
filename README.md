@@ -9,17 +9,19 @@
 <h2 align="center">Index</h2>
 
 <div align="center">
-    
+
   [Description][description]
-  
+
   [Features][features]
-  
+
   [Screenshots][screenshots]
-  
+
   [Installation][installation]
-  
+
   [Dependencies][dependencies]
-  
+
+  [Usage][usage]
+
   [Contributions][contributions]
 
   [Translations][translations]
@@ -27,9 +29,9 @@
   [Metrics][metrics]
 
   [License][license]
-  
+
   [Code of Conduct][coc]
-  
+
   [Credits][credits]
 
 </div>
@@ -52,6 +54,7 @@ The visualizer features:
 - Set up a **color animation** that changes the colors gradually in a loop!
 - Configure *smoothing*, *noise reduction* and a few other **CAVA** settings!
 - Change **background** and **foreground** colors through a **DBus interface**!
+- Change **background** and **foreground** colors on startup by **reading them from a file**!
 
 <h2 align="center">Screenshots [<a href="https://github.com/TheWisker/Cavasik#index">↑</a>]</h2>
 
@@ -148,7 +151,7 @@ You can install the **Cavasik** app from [Flathub][flathub] in its [app page][fl
 You can install **Cavasik** from the [AUR][aur] repository:
 
 <a href="https://aur.archlinux.org/packages/cavasik">
-<img src="https://camo.githubusercontent.com/f4b1ed57afad4fc0cc6f7acbfdf76be7bebaa104563e1e756ba7b91095eec461/68747470733a2f2f692e696d6775722e636f6d2f3958416a6330482e706e67" height=48px/>
+<img src="./assets/icons/aurlogo.png" height=48px/>
 </a>
 
 - For information on how to install an [AUR][aur] package read [this][aur-wiki] wiki.
@@ -172,6 +175,132 @@ meson test -C build --print-errorlog
 meson install -C build
 install -Dm644 Cavasik/LICENSE -t "/usr/share/licenses/cavasik"
 ```
+
+<h2 align="center">Usage [<a href="https://github.com/TheWisker/Cavasik#index">↑</a>]</h2>
+
+
+Simply start the application on your PC and enjoy. It will react to any sound your system makes, so play some music or something!
+
+<h3 align="left">Configuration</h3>
+
+The configuration is purely **graphical**.
+To configure Cavasik, simply press <Primary+P>, usually <Ctrl+P>, having it focused or click on the menu button located on the top-left corner of the window and then Preferences.
+Everything is documented there, I believe its pretty straightforward but if you don't understand something or believe it could be explained better open an Issue or a PR!
+
+<h3 align="left">Startup Colors</h3>
+
+To have the colors of Cavasik change on startup, simply enable this option in the settings and specify a **file** to get the colors from.
+The file must contain only **one** color **per line** in **RGB** format, like, for example:
+
+```
+0,0,0
+160,160,160
+255,255,255
+```
+> Changing the colors overwrites default profile.
+
+<h3 align="left">DBus Interface</h3>
+
+Cavasik also provides a DBus Interface to change the colors like we can do on startup but on demand.
+This interface allows us to set the foreground or background colors by sending a signal to Cavasik's DBus interface and specifying a **file** to get the colors from.
+
+> The color file must have the same structure that the startup colors one.
+
+The interface has the following structure:
+
+```xml
+<interface name='io.github.TheWisker.Cavasik'>
+    <method name='set_fg_colors'>
+        <arg type='s' name='path' direction='in'/>
+        <arg type='b' name='state' direction='out'/>
+    </method>
+    <method name='set_bg_colors'>
+        <arg type='s' name='path' direction='in'/>
+        <arg type='b' name='state' direction='out'/>
+    </method>
+</interface>
+```
+
+So, we can use this in a script to dynamically and on demand set Cavasik's colors, like:
+
+```bash
+# Must be called under same user that started Cavasik
+dbus-send \
+--session \
+--type=method_call \
+--dest="io.github.TheWisker.Cavasik" \
+"/io/github/TheWisker/Cavasik" "io.github.TheWisker.Cavasik.set_fg_colors" \ # Use 'set_bg_colors' for background colors
+string:"${HOME}/.cache/wal/colors.rgb"
+```
+
+> Changing the colors overwrites default profile.
+
+<h3 align="left">Command line</h3>
+
+Cavasik also features a **simple command** line:
+
+Usage: cavasik [OPTIONS]
+
+Help with OPTIONS:
+
+--version: Prints the current version.
+
+--set-fg [FILE]: Sets the foreground to the colors read from the **file**.
+
+--set-bg [FILE]: Sets the background to the colors read from the **file**.
+
+--help: Prints this help.
+
+> The color file must have the same structure that the startup colors one.
+
+> Changing the colors overwrites default profile.
+
+<h3 align="left">Pywal Integration</h3>
+
+You can easily make Cavasik follow your [Pywal](https://github.com/dylanaraps/pywal) colorscheme.
+Simply enable startup colors, as to make the colors change on startup, and set the startup colors file to be `~/.cache/wal/colors.rgb`, for example.
+Now, you need to add a Pywal template file that will be used to generate the colorscheme in a way Cavasik understands and using your desired colors.
+For this, simply create a file under `~/.config/wal/templates` with the same name as the one you set under `~/.cache/wal/`, for example, `colors.rgb`.
+Then, write the colors into the file in RGB format, for example:
+
+```bash
+{color1.rgb}
+{color2.rgb}
+{color3.rgb}
+```
+
+These will be substituted when Pywal runs. You can use more or less colors and any of **{color0}** to **{color15}** and **{background}** or **{foreground}**, ending with *.rgb*.
+Now, if you run Pywal before starting Cavasik, it will pick up Pywal's colors. If you also intend to run Pywal when Cavasik is running and don't want to have to restart it, you need to make use of the DBus Interface.
+Simply create a bash script and add inside it:
+
+```bash
+# Must be called under same user that started Cavasik
+dbus-send \
+--session \
+--type=method_call \
+--dest="io.github.TheWisker.Cavasik" \
+"/io/github/TheWisker/Cavasik" "io.github.TheWisker.Cavasik.set_fg_colors" \
+string:"${HOME}/.cache/wal/colors.rgb" # Or whatever you called it
+```
+
+> Don't forget to make it executable: chmod +x /path/to/script
+
+Then, simply when running Pywal use its script execute option, or execute it manually after Pywal:
+
+```bash
+wal -o /path/to/script OTHER_ARGS
+```
+
+Or
+
+```bash
+wal OTHER_ARGS
+/path/to/script
+```
+
+> I recommend you save the script under /.config/wal/scripts.
+
+Now you have set up Cavasik to use Pywal's colors!
 
 <h2 align="center">Dependencies [<a href="https://github.com/TheWisker/Cavasik#index">↑</a>]</h2>
 
@@ -237,7 +366,7 @@ We look forward to your translations!
 <h2 align="center">Credits [<a href="https://github.com/TheWisker/Cavasik#index">↑</a>]</h2>
 
 <div align="center">
-    
+
 | Author | Forked From |
 | ------------- | ------------- |
 | <a href="https://github.com/TheWisker"><img width="200" height="200" src="./assets/profile.png"></img></a>  | <a href="https://github.com/fsobolev"><img width="200" height="200" src="./assets/fork_profile.png"></img></a>  |
@@ -249,6 +378,7 @@ We look forward to your translations!
 [features]: https://github.com/TheWisker/Cavasik#features-
 [screenshots]: https://github.com/TheWisker/Cavasik#screenshots-
 [installation]: https://github.com/TheWisker/Cavasik#installation-
+[usage]: https://github.com/TheWisker/Cavasik#usage-
 [dependencies]: https://github.com/TheWisker/Cavasik#dependencies-
 [contributions]: https://github.com/TheWisker/Cavasik#contributions-
 [translations]: https://github.com/TheWisker/Cavasik#translations-

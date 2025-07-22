@@ -19,6 +19,7 @@
       <li>Set up a color animation that changes the colors gradually in a loop!</li>
       <li>Configure smoothing, noise reduction and a few other CAVA settings!</li>
       <li>Change background and foreground colors through a DBus interface!</li>
+      <li>Change background and foreground colors on startup by reading them from a file!</li>
     </ul>
   </description>
   <launchable type="desktop-id">io.github.TheWisker.Cavasik.desktop</launchable>
@@ -65,6 +66,31 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release type="stable" date="2025-07-22" version="2025.07.22">
+      <description>
+        <p>Third release of Cavasik</p>
+        <p>Cavasik is an audio visualizer based on CAVA with customizable LibAdwaita interface.</p>
+        <p>Cavasik is a fork of Cavalier.</p>
+        <p>Added:</p>
+        <ul>
+          <li>Shorcutless mode related setting.</li>
+          <li>Ability to open multiple instances. As of now they share settings.</li>
+          <li>Startup colors related settings. They allow the colors to be read from a file on startup.</li>
+          <li>Simple command line interface that allows to get custom help (not GTK help), version and specify files for setting foreground and/or background colors on start (more scripting).</li>
+          <li>Startup colors explanations to README.md.</li>
+          <li>DBus Interface explanations to README.md.</li>
+          <li>Command line explanations to README.md.</li>
+        </ul>
+        <p>Changed:</p>
+        <ul>
+          <li>DBus Interface internal workings as to allow the creation of multiple instances.</li>
+          <li>Migrated to GNOME runtime 48.</li>
+          <li>Updated the README.md as to give a brief overview of how settings work.</li>
+          <li>Updated all translations with the new strings.</li>
+          <li>Added modifier (usually control) to monokey global shorcuts.</li>
+        </ul>
+      </description>
+    </release>
     <release type="stable" date="2023-09-03" version="2023.09.03">
       <description>
         <p>Second release of Cavasik</p>

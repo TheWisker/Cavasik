@@ -25,6 +25,21 @@
 			<description>Whether to hide headerbar when main window is not focused.</description>
 			<default>false</default>
 		</key>
+		<key name="shortcutless-app" type="b">
+			<summary>Shortcutless mode</summary>
+			<description>Whether to disable keyboard shortcuts.</description>
+			<default>false</default>
+		</key>
+	  <key name="startup-colors" type="b">
+			<summary>Startup colors</summary>
+			<description>Whether to use colors read from a file on startup (overwrites default profile).</description>
+			<default>false</default>
+		</key>
+	  <key name="startup-colors-file" type="s">
+			<summary>Startup colors file</summary>
+			<description>Path to the file that contains the startup colors.</description>
+			<default>"~/.cache/wal/colors.rgb"</default>
+		</key>
 	  <key name="dbus-colors" type="b">
 			<summary>DBus colors</summary>
 			<description>Whether to use colors received through DBus (overwrites default profile).</description>
