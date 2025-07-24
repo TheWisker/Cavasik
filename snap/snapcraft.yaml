@@ -1,0 +1,92 @@
+name: cavasik
+base: core24
+grade: stable
+confinement: strict
+adopt-info: cavasik
+platforms:
+  all:
+    build-on: [amd64]
+    build-for: [all]
+parts:
+  iniparser:
+    plugin: make
+    source-type: git
+    source: https://github.com/ndevilla/iniparser.git
+    source-commit: deb85ad4936d4ca32cc2260ce43323d47936410d
+    override-build: |
+      make PREFIX="$CRAFT_PART_INSTALL"
+      install -Dm0644 src/iniparser.h $CRAFT_PART_INSTALL/include/iniparser.h
+      install -Dm0644 src/dictionary.h $CRAFT_PART_INSTALL/include/dictionary.h
+      install -Dm0755 libiniparser.so.1 $CRAFT_PART_INSTALL/lib/libiniparser.so.1
+      ln -sf libiniparser.so.1 $CRAFT_PART_INSTALL/lib/libiniparser.so
+    prime:
+      - '-include/**'
+  cava:
+    after:
+      - iniparser
+    plugin: autotools
+    source-type: git
+    source-tag: '0.10.4'
+    source: https://github.com/karlstav/cava.git
+    autotools-configure-parameters:
+      - --prefix=/usr
+    build-packages:
+      - libfftw3-dev
+      - libpulse-dev
+    stage-packages:
+      - libfftw3-double3
+    prime:
+      - -usr/share
+      - usr/bin/cava
+      - usr/lib/*/libfftw3.so.3*
+  cavasik:
+    after:
+      - cava
+      - iniparser
+    plugin: meson
+    source: .
+    build-packages:
+      - gettext
+      - pkg-config
+      - libgtk-4-dev
+      - libxml2-utils
+      - libglib2.0-dev
+      - appstream-util
+      - desktop-file-utils
+    stage-packages:
+      - python3-pydbus
+    parse-info:
+      - usr/share/metainfo/io.github.TheWisker.Cavasik.metainfo.xml
+    build-environment:
+      - PATH: /snap/gnome-46-2404-sdk/current/usr/bin${PATH:+:$PATH}
+      - LD_LIBRARY_PATH: /snap/gnome-46-2404-sdk/current/usr/lib/x86_64-linux-gnu:/snap/gnome-46-2404-sdk/current/usr/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}
+    override-build: |
+      cd "$CRAFT_PART_SRC"
+      meson setup --prefix=/usr --buildtype=release build .
+      meson setup --reconfigure -Dsnap=true build
+      meson compile -C build
+      meson install -C build --destdir "$CRAFT_PART_INSTALL"
+      glib-compile-schemas "${CRAFT_PART_INSTALL}/usr/share/glib-2.0/schemas"
+      gtk4-update-icon-cache -q -t -f "${CRAFT_PART_INSTALL}/usr/share/icons/hicolor"
+      update-desktop-database -q "${CRAFT_PART_INSTALL}/usr/share/applications"
+    prime:
+      - '-usr/share/doc/**'
+      - '-usr/share/lintian/**'
+slots:
+  cavasik:
+    bus: session
+    interface: dbus
+    name: io.github.TheWisker.Cavasik
+apps:
+  cavasik:
+    command: usr/bin/cavasik
+    common-id: io.github.TheWisker.Cavasik
+    desktop: usr/share/applications/io.github.TheWisker.Cavasik.desktop
+    environment:
+      GTK_THEME: ""
+      PATH: $SNAP/usr/bin:$PATH
+      PYTHONPATH: "$SNAP/usr/lib/python3/dist-packages:$PYTHONPATH"
+      LD_LIBRARY_PATH: $SNAP/usr/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH
+    extensions: [ gnome ]
+    plugs:
+      - audio-playback

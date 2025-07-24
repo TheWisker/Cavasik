@@ -5,6 +5,7 @@
   <metadata_license>FSFAP</metadata_license>
   <license>GPL‑3.0‑or‑later</license>
   <name>Cavasik</name>
+  <icon type="stock">io.github.TheWisker.Cavasik</icon>
   <summary>Audio visualizer based on CAVA</summary>
   <description>
     <p>Cavasik is an audio visualizer based on CAVA</p>
@@ -97,9 +98,9 @@
     </screenshot>
   </screenshots>
   <releases>
-    <release type="stable" date="2025-07-22" version="2025.07.22-2">
+    <release type="stable" date="2025-07-22" version="v3.1.0">
       <description>
-        <p>Foruth release of Cavasik</p>
+        <p>V3.1.0 Release of Cavasik</p>
         <p>Cavasik is an audio visualizer based on CAVA with customizable LibAdwaita interface.</p>
         <p>Changed:</p>
         <ul>
@@ -108,9 +109,9 @@
         </ul>
       </description>
     </release>
-    <release type="stable" date="2025-07-22" version="2025.07.22">
+    <release type="stable" date="2025-07-22" version="v3.0.0">
       <description>
-        <p>Third release of Cavasik</p>
+        <p>V3.0.0 Release of Cavasik</p>
         <p>Cavasik is an audio visualizer based on CAVA with customizable LibAdwaita interface.</p>
         <p>Added:</p>
         <ul>
@@ -132,16 +133,16 @@
         </ul>
       </description>
     </release>
-    <release type="stable" date="2023-09-03" version="2023.09.03">
+    <release type="stable" date="2023-09-03" version="v2.0.1">
       <description>
-        <p>Second release of Cavasik</p>
+        <p>V2.0.1 Release of Cavasik</p>
         <p>Cavasik is an audio visualizer based on CAVA with customizable LibAdwaita interface.</p>
         <ul>
           <li>Some minor changes!</li>
         </ul>
       </description>
     </release>
-    <release type="stable" date="2023-06-16" version="2023.06.16">
+    <release type="stable" date="2023-06-16" version="v2.0.0">
       <description>
         <p>First release of Cavasik</p>
         <p>Cavasik is an audio visualizer based on CAVA with customizable LibAdwaita interface.</p>
@@ -174,7 +175,6 @@
     <control>touch</control>
   </supports>
   <custom>
-    <value key="Purism::form_factor">workstation</value>
     <value key="Purism::form_factor">mobile</value>
   </custom>
 </component>

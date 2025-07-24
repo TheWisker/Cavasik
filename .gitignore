@@ -345,3 +345,5 @@ ASALocalRun/
 .flatpak/
 
 test.sh
+build/
+*.snap

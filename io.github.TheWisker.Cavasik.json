@@ -49,8 +49,8 @@
     	    	{
     	    	    "type" : "git",
     	    	    "url" : "https://github.com/karlstav/cava.git",
-    	    	    "tag" : "0.8.3",
-    	    	    "commit" : "746a3b1e6021e383aea9d0000f49d71fb24e1856"
+    	    	    "tag" : "0.10.4",
+    	    	    "commit" : "1800ced16ea38ce630cd6de938295c8f85ccf722"
     	    	}
     	    ]
     	},

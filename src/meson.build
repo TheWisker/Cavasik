@@ -18,9 +18,15 @@ cavasik_sources = [
 ]
 
 conf = configuration_data()
-conf.set('PYTHON', python.find_installation('python3').path())
+
+if get_option('snap')
+  conf.set('PYTHON', '/usr/bin/env python3')
+else
+  conf.set('PYTHON', python.find_installation('python3').full_path())
+endif
+
 conf.set('VERSION', meson.project_version())
-conf.set('localedir', join_paths(get_option('prefix'), get_option('localedir')))
+conf.set('localedir', localedir)
 conf.set('pkgdatadir', pkgdatadir)
 
 install_data(cavasik_sources, install_dir: moduledir)

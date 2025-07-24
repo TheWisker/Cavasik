@@ -140,19 +140,23 @@ The visualizer features:
 
 You can install the **Cavasik** app from [Flathub][flathub] in its [app page][flathub-cavasik].
 
-<a href="https://flathub.org/apps/details/io.github.TheWisker.Cavasik">
-<img src="https://flathub.org/assets/badges/flathub-badge-en.png" height=48px/>
-</a>
+![Flathub Version](https://img.shields.io/flathub/v/io.github.TheWisker.Cavasik?style=for-the-badge&logo=flathub&label=cavasik&color=black)
 
-- For information on how to setup *flatpak* on any distro read [this][flatpak-setup].
+- For information on how to setup a *flatpak* on any distro read [this][flatpak-setup].
+
+<h3>Snap Store</h3>
+
+You can install the **Cavasik** app from [Snap Store][snapstore] in its [app page][snapstore-cavasik].
+
+![Snapstore Version](https://img.shields.io/snapcraft/v/cavasik/latest/stable?style=for-the-badge&logo=snapcraft&label=cavasik&color=orange)
+
+- For information on how to setup a *snap* on any distro read [this][snap-setup].
 
 <h3>Arch Linux</h3>
 
-You can install **Cavasik** from the [AUR][aur] repository:
+You can install **Cavasik** from the [AUR][aur] repository in its [app page][aur-cavasik]:
 
-<a href="https://aur.archlinux.org/packages/cavasik">
-<img src="./assets/icons/aurlogo.png" height=48px/>
-</a>
+![AUR Version](https://img.shields.io/aur/version/cavasik?style=for-the-badge&logo=archlinux&label=cavasik&color=blue)
 
 - For information on how to install an [AUR][aur] package read [this][aur-wiki] wiki.
 
@@ -198,6 +202,21 @@ The file must contain only **one** color **per line** in **RGB** format, like, f
 255,255,255
 ```
 > Changing the colors overwrites default profile.
+
+> ⚠️ **Snap Package Warning**
+> When using the **Snap version** of Cavasik, the app cannot access hidden files in your home directory (like `~/.cache/wal/colors.rgb`) due to Snap confinement.
+>
+> To enable theme coloring at startup, make sure a copy or symbolic link of your color file exists at:
+>
+> - `$XDG_CONFIG_HOME/cavasik/colors.rgb`
+>   (typically `~/.config/cavasik/colors.rgb`)
+>
+> Example:
+>
+> ```sh
+> mkdir -p ~/.config/cavasik
+> ln -s ~/.cache/wal/colors.rgb ~/.config/cavasik/colors.rgb
+> ```
 
 <h3 align="left">DBus Interface</h3>
 
@@ -389,7 +408,11 @@ We look forward to your translations!
 [flathub]: https://flathub.org/
 [flathub-cavasik]: https://flathub.org/apps/io.github.TheWisker.Cavasik
 [flatpak-setup]: https://flatpak.org/setup/
+[snapstore]: https://snapcraft.io/store
+[snapstore-cavasik]: https://snapcraft.io/cavasik
+[snap-setup]: https://snapcraft.io/docs/get-started
 [aur]: https://aur.archlinux.org/
+[aur-cavasik]: https://aur.archlinux.org/packages/cavasik
 [aur-wiki]: https://wiki.archlinux.org/title/Arch_User_Repository
 [releases]: https://github.com/TheWisker/Cavasik/releases/
 [meson]: https://mesonbuild.com/

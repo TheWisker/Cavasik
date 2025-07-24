@@ -1,6 +1,6 @@
 pkgbase = cavasik
 	pkgdesc = Audio visualizer based on CAVA
-	pkgver = v3.1.0
+	pkgver = v3.1.1
 	pkgrel = 1
 	url = https://github.com/TheWisker/Cavasik
 	arch = any
@@ -18,7 +18,7 @@ pkgbase = cavasik
 	depends = hicolor-icon-theme
 	depends = gtk4
 	depends = dconf
-	source = cavasik-v3.1.0::git+https://github.com/TheWisker/Cavasik#tag=v3.1.0
-	sha512sums = 2022dc0ab5b42894114e55fcb12019779c0330a4b01458b6ba90d9b2dc863469f977afb719e6011e229632b8888f5ed92d52a75dcfbd648d77ad252a93f0fbca
+	source = cavasik-v3.1.1::git+https://github.com/TheWisker/Cavasik#tag=v3.1.1
+	sha512sums = SKIP
 
 pkgname = cavasik
