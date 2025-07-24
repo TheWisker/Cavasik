@@ -98,6 +98,21 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release type="stable" date="2025-07-25" version="v3.1.1">
+      <description>
+        <p>V3.1.1 Release of Cavasik</p>
+        <p>Cavasik is an audio visualizer based on CAVA with customizable LibAdwaita interface.</p>
+        <p>Added:</p>
+        <ul>
+          <li>Snapcraft/Snap support!</li>
+        </ul>
+        <p>Changed:</p>
+        <ul>
+          <li>Vastly improved metainfo -> Improved Flathub page</li>
+          <li>Adapted launch script to be compatible with snap environment</li>
+        </ul>
+      </description>
+    </release>
     <release type="stable" date="2025-07-22" version="v3.1.0">
       <description>
         <p>V3.1.0 Release of Cavasik</p>
