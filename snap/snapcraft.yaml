@@ -9,9 +9,9 @@ source-code: https://github.com/TheWisker/Cavasik
 issues: https://github.com/TheWisker/Cavasik/issues
 contact: https://github.com/TheWisker/Cavasik/blob/master/SUPPORT.md#contact-
 platforms:
-  all:
+  amd64:
     build-on: [amd64]
-    build-for: [all]
+    build-for: [amd64]
 parts:
   iniparser:
     plugin: make
@@ -45,7 +45,7 @@ parts:
     prime:
       - -usr/share
       - usr/bin/cava
-      - usr/lib/*/libfftw3.so.3*
+      - usr/lib/x86_64-linux-gnu/libfftw3.so.3*
   cavasik:
     after:
       - cava
@@ -69,6 +69,8 @@ parts:
       - PATH: /snap/gnome-46-2404-sdk/current/usr/bin${PATH:+:$PATH}
       - LD_LIBRARY_PATH: /snap/gnome-46-2404-sdk/current/usr/lib/x86_64-linux-gnu:/snap/gnome-46-2404-sdk/current/usr/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}
     override-build: |
+      echo "CRAFT_ARCH_TRIPLET_BUILD_FOR = $CRAFT_ARCH_TRIPLET_BUILD_FOR"
+      echo "LD_LIBRARY_PATH = $LD_LIBRARY_PATH"
       cd "$CRAFT_PART_SRC"
       meson setup --prefix=/usr --buildtype=release build .
       meson setup --reconfigure -Dsnap=true build
@@ -88,7 +90,6 @@ slots:
 apps:
   cavasik:
     command: usr/bin/cavasik
-    bus-name: io.github.TheWisker.Cavasik
     common-id: io.github.TheWisker.Cavasik
     desktop: usr/share/applications/io.github.TheWisker.Cavasik.desktop
     environment:
@@ -99,3 +100,4 @@ apps:
     extensions: [ gnome ]
     plugs:
       - audio-playback
+      - gsettings
