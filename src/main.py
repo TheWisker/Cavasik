@@ -24,7 +24,7 @@ class CavasikApplication(Adw.Application):
     """The main application singleton class"""
 
     def __init__(self, version, args):
-        super().__init__(flags=Gio.ApplicationFlags.FLAGS_NONE)
+        super().__init__(application_id="io.github.TheWisker.Cavasik", flags=Gio.ApplicationFlags.NON_UNIQUE)
         self.version = version
         self.startup_actions = do_args(version, args)
         if not self.startup_actions:
