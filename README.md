@@ -203,13 +203,12 @@ The file must contain only **one** color **per line** in **RGB** format, like, f
 ```
 > Changing the colors overwrites default profile.
 
-> ⚠️ **Snap Package Warning**
+> ⚠️ **Snap Package Warning**:
 > When using the **Snap version** of Cavasik, the app cannot access hidden files in your home directory (like `~/.cache/wal/colors.rgb`) due to Snap confinement.
 >
-> To enable theme coloring at startup, make sure a copy or symbolic link of your color file exists at:
+> To enable theme coloring at startup, make sure a copy or symbolic link of your color file exists under:
 >
-> - `$XDG_CONFIG_HOME/cavasik/colors.rgb`
->   (typically `~/.config/cavasik/colors.rgb`)
+> - `$XDG_CONFIG_HOME/cavasik` or `~/.config/cavasik`
 >
 > Example:
 >
