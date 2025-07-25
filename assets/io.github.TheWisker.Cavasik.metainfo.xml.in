@@ -63,37 +63,76 @@
   <translation type="gettext" source_locale="en_US">cavasik</translation>
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/waves.png</image>
+        <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/waves.png</image>
+        <caption>Waves mode</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/levels.png</image>
+        <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/levels.png</image>
+        <caption>Levels mode</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/particles.png</image>
+        <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/particles.png</image>
+        <caption>Particles mode</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/spine.png</image>
+        <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/spine.png</image>
+        <caption>Spine mode</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/bars.png</image>
+        <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/bars.png</image>
+        <caption>Bars mode</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/wave_circle.png</image>
+        <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/wave_circle.png</image>
+        <caption>Waves mode + Circle shape</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/bars_circle.png</image>
+        <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/bar_circle.png</image>
+        <caption>Bars mode + Circle shape</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/mirror_normal.png</image>
+        <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/normal_waves.png</image>
+        <caption>Normal mirror + Waves mode</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/mirror_inverted.png</image>
+        <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/normal_bars.png</image>
+        <caption>Normal mirror + Bars mode</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/mirror_overlapping.png</image>
+        <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/normal_levels.png</image>
+        <caption>Normal mirror + Levels mode</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/direction_top.png</image>
+        <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/normal_dripping_waves.png</image>
+        <caption>Normal mirror + Waves mode + No Fill</caption>
+    </screenshot>
+    <screenshot>
+        <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/inverted_waves.png</image>
+        <caption>Inverted mirror + Waves mode</caption>
+    </screenshot>
+    <screenshot>
+        <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/inverted_bars.png</image>
+        <caption>Inverted mirror + Bars mode</caption>
+    </screenshot>
+    <screenshot>
+        <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/inverted_levels.png</image>
+        <caption>Inverted mirror + Levels mode</caption>
+    </screenshot>
+    <screenshot>
+        <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/inverted_dripping_waves.png</image>
+        <caption>Inverted mirror + Waves mode + No Fill</caption>
+    </screenshot>
+    <screenshot>
+        <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/overlapping_waves.png</image>
+        <caption>Overlapping mirror + Waves mode</caption>
+    </screenshot>
+    <screenshot>
+        <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/overlapping_bars.png</image>
+        <caption>Overlapping mirror + Bars mode</caption>
+    </screenshot>
+    <screenshot>
+        <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/dripping_waves.png</image>
+        <caption>Direction top-bottom + Overlapping mirror + Waves mode + No Fill</caption>
     </screenshot>
   </screenshots>
   <releases>

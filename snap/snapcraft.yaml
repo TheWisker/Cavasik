@@ -1,8 +1,13 @@
 name: cavasik
+title: Cavasik
 base: core24
 grade: stable
 confinement: strict
 adopt-info: cavasik
+website: https://github.com/TheWisker/Cavasik
+source-code: https://github.com/TheWisker/Cavasik
+issues: https://github.com/TheWisker/Cavasik/issues
+contact: https://github.com/TheWisker/Cavasik/blob/master/SUPPORT.md#contact-
 platforms:
   all:
     build-on: [amd64]
@@ -10,6 +15,7 @@ platforms:
 parts:
   iniparser:
     plugin: make
+    source-depth: 1
     source-type: git
     source: https://github.com/ndevilla/iniparser.git
     source-commit: deb85ad4936d4ca32cc2260ce43323d47936410d
@@ -25,6 +31,7 @@ parts:
     after:
       - iniparser
     plugin: autotools
+    source-depth: 1
     source-type: git
     source-tag: '0.10.4'
     source: https://github.com/karlstav/cava.git
@@ -45,6 +52,7 @@ parts:
       - iniparser
     plugin: meson
     source: .
+    source-type: local
     build-packages:
       - gettext
       - pkg-config
@@ -80,6 +88,7 @@ slots:
 apps:
   cavasik:
     command: usr/bin/cavasik
+    bus-name: io.github.TheWisker.Cavasik
     common-id: io.github.TheWisker.Cavasik
     desktop: usr/share/applications/io.github.TheWisker.Cavasik.desktop
     environment:

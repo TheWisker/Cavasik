@@ -101,37 +101,74 @@ The visualizer features:
 <h3 align="center">Bars mode + Circle shape</h2>
 
 <div align="center">
-    <img src="./assets/screenshots/bars_circle.png"></img>
+    <img src="./assets/screenshots/bar_circle.png"></img>
 </div>
 
 <h3 align="center">Normal mirror + Waves mode</h2>
 
 <div align="center">
-    <img src="./assets/screenshots/mirror_normal.png"></img>
+    <img src="./assets/screenshots/normal_waves.png"></img>
+</div>
+
+<h3 align="center">Normal mirror + Bars mode</h2>
+
+<div align="center">
+    <img src="./assets/screenshots/normal_bars.png"></img>
+</div>
+
+<h3 align="center">Normal mirror + Levels mode</h2>
+
+<div align="center">
+    <img src="./assets/screenshots/normal_levels.png"></img>
+</div>
+
+<h3 align="center">Normal mirror + Waves mode + No Fill</h2>
+
+<div align="center">
+    <img src="./assets/screenshots/normal_dripping_waves.png"></img>
 </div>
 
 <h3 align="center">Inverted mirror + Waves mode</h2>
 
 <div align="center">
-    <img src="./assets/screenshots/mirror_inverted.png"></img>
+    <img src="./assets/screenshots/inverted_waves.png"></img>
+</div>
+
+<h3 align="center">Inverted mirror + Bars mode</h2>
+
+<div align="center">
+    <img src="./assets/screenshots/inverted_bars.png"></img>
+</div>
+
+<h3 align="center">Inverted mirror + Levels mode</h2>
+
+<div align="center">
+    <img src="./assets/screenshots/inverted_levels.png"></img>
+</div>
+
+
+<h3 align="center">Inverted mirror + Waves mode + No Fill</h2>
+
+<div align="center">
+    <img src="./assets/screenshots/inverted_dripping_waves.png"></img>
 </div>
 
 <h3 align="center">Overlapping mirror + Waves mode</h2>
 
 <div align="center">
-    <img src="./assets/screenshots/mirror_overlapping.png"></img>
+    <img src="./assets/screenshots/overlapping_waves.png"></img>
 </div>
 
-<h3 align="center">Direction top-bottom + Waves mode</h2>
+<h3 align="center">Overlapping mirror + Bars mode</h2>
 
 <div align="center">
-    <img src="./assets/screenshots/direction_top.png"></img>
+    <img src="./assets/screenshots/overlapping_bars.png"></img>
 </div>
 
-<h3 align="center">Normal mirror + Direction left-right + Waves mode</h2>
+<h3 align="center">Direction top-bottom + Overlapping mirror + Waves mode + No Fill</h2>
 
 <div align="center">
-    <img src="./assets/screenshots/mirror_column.png"></img>
+    <img src="./assets/screenshots/dripping_waves.png"></img>
 </div>
 
 <h2 align="center">Installation [<a href="https://github.com/TheWisker/Cavasik#index">↑</a>]</h2>
