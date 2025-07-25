@@ -21,10 +21,10 @@
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="406.45960987126875" height="8" fill="#3572A5"/>
-                    <rect mask="url(#languages-bar)" x="406.45960987126875" y="0" width="28.127775591657766" height="8" fill="#007800"/>
-                    <rect mask="url(#languages-bar)" x="434.5873854629265" y="0" width="22.943110911237284" height="8" fill="#89e051"/>
-                    <rect mask="url(#languages-bar)" x="457.53049637416376" y="0" width="2.469503625836191" height="8" fill="#663399"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="399.1338908669372" height="8" fill="#3572A5"/>
+                    <rect mask="url(#languages-bar)" x="399.1338908669372" y="0" width="30.617151058485828" height="8" fill="#007800"/>
+                    <rect mask="url(#languages-bar)" x="429.75104192542295" y="0" width="27.823962904694874" height="8" fill="#89e051"/>
+                    <rect mask="url(#languages-bar)" x="457.5750048301178" y="0" width="2.4249951698821453" height="8" fill="#663399"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
@@ -38,7 +38,7 @@
                             <small>
                                 <div>1.46k lines</div>
                                 <div>62.8 kB</div>
-                                <div>88.36%</div>
+                                <div>86.77%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -49,9 +49,9 @@
                                 Shell
                             </div>
                             <small>
-                                <div>150 lines</div>
-                                <div>3.55 kB</div>
-                                <div>4.99%</div>
+                                <div>175 lines</div>
+                                <div>4.38 kB</div>
+                                <div>6.05%</div>
                             </small>
                         </div>
                     </section>
@@ -64,9 +64,9 @@
                                 Meson
                             </div>
                             <small>
-                                <div>89 lines</div>
-                                <div>4.35 kB</div>
-                                <div>6.11%</div>
+                                <div>98 lines</div>
+                                <div>4.82 kB</div>
+                                <div>6.66%</div>
                             </small>
                         </div>
                         <div class="field language details">
@@ -79,7 +79,7 @@
                             <small>
                                 <div>17 lines</div>
                                 <div>382 bytes</div>
-                                <div>0.54%</div>
+                                <div>0.53%</div>
                             </small>
                         </div>
                     </section>
