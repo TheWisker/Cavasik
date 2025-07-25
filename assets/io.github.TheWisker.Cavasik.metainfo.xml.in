@@ -3,7 +3,7 @@
 <component type="desktop-application">
   <id>io.github.TheWisker.Cavasik</id>
   <metadata_license>FSFAP</metadata_license>
-  <project_license>GPL‑3.0‑or‑later</project_license>
+  <project_license>GPL-3.0-or-later</project_license>
   <name>Cavasik</name>
   <icon type="cached">io.github.TheWisker.Cavasik</icon>
   <summary>Audio visualizer based on CAVA</summary>
