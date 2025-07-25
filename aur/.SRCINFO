@@ -19,6 +19,6 @@ pkgbase = cavasik
 	depends = gtk4
 	depends = dconf
 	source = cavasik-v3.1.1::git+https://github.com/TheWisker/Cavasik#tag=v3.1.1
-	sha512sums = SKIP
+	sha512sums = 26f6e7abeda064a0cc80ff98142a6ba15307a05f0b079c8f6c78a60a55ddf601ccd81d149e36abb5f34169dc1f03820ac3c8e2fc9ed9dc64bb0ef0bbc27cc94f
 
 pkgname = cavasik

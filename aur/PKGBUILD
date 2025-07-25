@@ -20,7 +20,7 @@ changelog=
 source=("${pkgname}-${pkgver}::git+https://github.com/TheWisker/Cavasik#tag=${pkgver}")
 noextract=()
 validpgpkeys=()
-sha512sums=('SKIP')
+sha512sums=('26f6e7abeda064a0cc80ff98142a6ba15307a05f0b079c8f6c78a60a55ddf601ccd81d149e36abb5f34169dc1f03820ac3c8e2fc9ed9dc64bb0ef0bbc27cc94f')
 
 build() {
     arch-meson "${srcdir}/${pkgname}-${pkgver}" "${srcdir}/${pkgname}-${pkgver}/build"
