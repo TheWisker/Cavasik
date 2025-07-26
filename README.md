@@ -6,6 +6,10 @@
 </div>
 <p align="center">Audio visualizer based on CAVA</p>
 
+<div align="center">
+    <img src="https://img.shields.io/flathub/downloads/io.github.TheWisker.Cavasik?style=for-the-badge&logo=flathub&color=%235b25e6"></img>
+</div>
+
 <h2 align="center">Index</h2>
 
 <div align="center">
@@ -376,6 +380,7 @@ The **Cavasik** application has the following *buildtime* dependencies:
 The **Cavasik** application has the following *runtime* dependencies:
 
 - [cava][cava]
+- [gtk4][gtk4]
 - [libadwaita][libadwaita]
 - [python-gobject][python-gobject]
 - [python-cairo][python-cairo]
@@ -459,6 +464,7 @@ We look forward to your translations!
 [releases]: https://github.com/TheWisker/Cavasik/releases/
 [meson]: https://mesonbuild.com/
 [cava]: https://github.com/karlstav/cava
+[gtk4]: https://docs.gtk.org/gtk4/
 [libadwaita]: https://gitlab.gnome.org/GNOME/libadwaita
 [python-gobject]: https://pygobject.readthedocs.io/en/latest/
 [python-cairo]: https://pycairo.readthedocs.io/en/latest/
