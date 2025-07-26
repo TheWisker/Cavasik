@@ -1,0 +1,13 @@
+{
+  "name": "cavasik",
+  "version": "3.1.2",
+  "description": "Audio visualizer based on CAVA",
+  "homepage": "https://github.com/TheWisker/Cavasik",
+  "bugs": "https://github.com/TheWisker/Cavasik/issues",
+  "license": "GPL-3.0",
+  "author": "TheWisker (https://github.com/TheWisker)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheWisker/Cavasik.git"
+  }
+}
