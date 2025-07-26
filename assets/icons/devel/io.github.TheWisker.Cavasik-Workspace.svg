@@ -5,7 +5,7 @@
    width="128px"
    version="1.1"
    id="svg2633"
-   sodipodi:docname="io.github.fsobolev.Cavasik-Workspace.svg"
+   sodipodi:docname="io.github.TheWisker.Cavasik-Workspace.svg"
    inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
    inkscape:export-filename="../io.github.TheWisker.Cavasik.svg"
    inkscape:export-xdpi="96"
@@ -100,7 +100,7 @@
        x2="56.719852"
        y2="62.125225"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(64.857571,-38.34099)" />
+       gradientTransform="matrix(0.99999321,0,0,1.0028147,64.857742,-38.471768)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient20160"
@@ -172,9 +172,9 @@
      inkscape:pagecheckerboard="1"
      inkscape:deskcolor="#505050"
      showgrid="false"
-     inkscape:zoom="4"
-     inkscape:cx="23.75"
-     inkscape:cy="94"
+     inkscape:zoom="11.313708"
+     inkscape:cx="77.870134"
+     inkscape:cy="42.161242"
      inkscape:window-width="1920"
      inkscape:window-height="1042"
      inkscape:window-x="0"
@@ -217,17 +217,17 @@
        id="stop2602" />
   </linearGradient>
   <rect
-     style="fill:url(#linearGradient5);stroke-width:1;stroke-dasharray:none"
+     style="fill:url(#linearGradient5);stroke-width:1.0014;stroke-dasharray:none"
      id="rect2751-2-5-2"
-     width="31.414213"
-     height="31.325827"
+     width="31.414"
+     height="31.414"
      x="90.163216"
      y="8.1213188"
-     rx="4"
-     ry="4"
-     inkscape:export-filename="../io.github.TheWisker.Cavasik.png"
-     inkscape:export-xdpi="2444.7532"
-     inkscape:export-ydpi="2444.7532" />
+     rx="3.9999728"
+     ry="4.0112591"
+     inkscape:export-filename="../io.github.TheWisker.Cavasik.svg"
+     inkscape:export-xdpi="1564.6526"
+     inkscape:export-ydpi="1564.6526" />
   <rect
      style="fill:#1b082e;fill-opacity:1;stroke-width:1;stroke-dasharray:none;paint-order:markers fill stroke"
      id="rect2751-2"
