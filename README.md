@@ -177,7 +177,9 @@ The visualizer features:
 
 You can install the **Cavasik** app from [Flathub][flathub] in its [app page][flathub-cavasik].
 
-![Flathub Version](https://img.shields.io/flathub/v/io.github.TheWisker.Cavasik?style=for-the-badge&logo=flathub&label=cavasik&color=black)
+<a href="https://flathub.org/apps/io.github.TheWisker.Cavasik">
+    <img src="https://img.shields.io/flathub/v/io.github.TheWisker.Cavasik?style=for-the-badge&logo=flathub&label=cavasik&color=black"></img>
+</a>
 
 - For information on how to setup a *flatpak* on any distro read [this][flatpak-setup].
 
@@ -185,7 +187,9 @@ You can install the **Cavasik** app from [Flathub][flathub] in its [app page][fl
 
 You can install the **Cavasik** app from [Snap Store][snapstore] in its [app page][snapstore-cavasik].
 
-![Snapstore Version](https://img.shields.io/snapcraft/v/cavasik/latest/stable?style=for-the-badge&logo=snapcraft&label=cavasik&color=orange)
+<a href="https://snapcraft.io/cavasik">
+    <img src="https://img.shields.io/snapcraft/v/cavasik/latest/stable?style=for-the-badge&logo=snapcraft&label=cavasik&color=orange"></img>
+</a>
 
 - For information on how to setup a *snap* on any distro read [this][snap-setup].
 
@@ -193,7 +197,9 @@ You can install the **Cavasik** app from [Snap Store][snapstore] in its [app pag
 
 You can install **Cavasik** from the [AUR][aur] repository in its [app page][aur-cavasik]:
 
-![AUR Version](https://img.shields.io/aur/version/cavasik?style=for-the-badge&logo=archlinux&label=cavasik&color=blue)
+<a href="https://aur.archlinux.org/packages/cavasik">
+    <img src="https://img.shields.io/aur/version/cavasik?style=for-the-badge&logo=archlinux&label=cavasik&color=blue"></img>
+</a>
 
 - For information on how to install an [AUR][aur] package read [this][aur-wiki] wiki.
 
