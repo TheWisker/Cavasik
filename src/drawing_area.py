@@ -158,37 +158,104 @@ class CavasikDrawingArea(Gtk.DrawingArea):
                     width, height = height, width
 
                 if not self.circle and not self.draw_mode == 'spine':
-                    if self.mirror == 'normal':
-                        cr.scale(1, -0.5*(1-self.mirror_offset/2))
-                        cr.translate(0, (1/(-0.5*(1-self.mirror_offset/2)))*height+(self.mirror_offset*(1/(-0.5*(1-self.mirror_offset/2)))*height/10))
-                        prev_colors = [c for c in self.colors]
-                        self.colors = [c for c in self.mirror_colors]
-                        if not self.mirror_opacity == 1:
-                            for c,color in enumerate(self.colors):
-                                self.colors[c] = (self.colors[c][0], self.colors[c][1], self.colors[c][2], self.mirror_opacity)
-                        self.draw_func(area, cr, width, height, _, True)
-                        self.colors = prev_colors
-                        cr.scale(1, -1)
-                        cr.translate(0, (1/(-0.5*(1-self.mirror_offset/2)))*height+(self.mirror_offset*(1/(-0.5*(1-self.mirror_offset/2)))*height/5)+1)
-                    elif self.mirror == 'inverted':
-                        cr.scale(1, -0.5)
-                        cr.translate(0, -height)
-                        prev_colors = [c for c in self.colors]
-                        self.colors = [c for c in self.mirror_colors]
-                        self.draw_func(area, cr, width, height, _, True)
-                        self.colors = prev_colors
-                        cr.scale(1, -1)
-                    elif self.mirror == 'overlapping':
-                        self.draw_func(area, cr, width, height, _, True)
-                        for i in range(1, self.mirror_clones+1):
-                            cr.scale(1, self.mirror_ratio**i)
-                            cr.translate(0, (1 - self.mirror_ratio**i)/(self.mirror_ratio**i) * height)
-                            if i % 2 == 1:
-                                prev_colors = [c for c in self.colors]
-                                self.colors = [c for c in self.mirror_colors]
+                    match self.mirror:
+                        case 'normal':
+                            cr.scale(1, -0.5*(1-self.mirror_offset/2))
+                            cr.translate(0, (1/(-0.5*(1-self.mirror_offset/2)))*height+(self.mirror_offset*(1/(-0.5*(1-self.mirror_offset/2)))*height/10))
+                            prev_colors = [c for c in self.colors]
+                            self.colors = [c for c in self.mirror_colors]
+                            if not self.mirror_opacity == 1:
+                                for c,color in enumerate(self.colors):
+                                    self.colors[c] = (self.colors[c][0], self.colors[c][1], self.colors[c][2], self.mirror_opacity)
                             self.draw_func(area, cr, width, height, _, True)
-                            if i % 2 == 1:
-                                self.colors = prev_colors
+                            self.colors = prev_colors
+                            cr.scale(1, -1)
+                            cr.translate(0, (1/(-0.5*(1-self.mirror_offset/2)))*height+(self.mirror_offset*(1/(-0.5*(1-self.mirror_offset/2)))*height/5)+1)
+                        case 'inverted':
+                            cr.scale(1, -0.5)
+                            cr.translate(0, -height)
+                            prev_colors = [c for c in self.colors]
+                            self.colors = [c for c in self.mirror_colors]
+                            self.draw_func(area, cr, width, height, _, True)
+                            self.colors = prev_colors
+                            cr.scale(1, -1)
+                        case 'overlapping':
+                            self.draw_func(area, cr, width, height, _, True)
+                            for i in range(1, self.mirror_clones+1):
+                                cr.scale(1, self.mirror_ratio**i)
+                                cr.translate(0, (1 - self.mirror_ratio**i)/(self.mirror_ratio**i) * height)
+                                if i % 2 == 1:
+                                    prev_colors = [c for c in self.colors]
+                                    self.colors = [c for c in self.mirror_colors]
+                                self.draw_func(area, cr, width, height, _, True)
+                                if i % 2 == 1:
+                                    self.colors = prev_colors
+                        case 'normal+overlapping':
+                            cr.scale(1, -0.5*(1-self.mirror_offset/2))
+                            cr.translate(0, (1/(-0.5*(1-self.mirror_offset/2)))*height+(self.mirror_offset*(1/(-0.5*(1-self.mirror_offset/2)))*height/10))
+                            n_prev_colors = [c for c in self.colors]
+                            m_prev_colors = [c for c in self.mirror_colors]
+                            if not self.mirror_opacity == 1:
+                                for c,color in enumerate(self.colors):
+                                    self.colors[c] = (self.colors[c][0], self.colors[c][1], self.colors[c][2], self.mirror_opacity)
+                                for c,color in enumerate(self.mirror_colors):
+                                    self.mirror_colors[c] = (self.mirror_colors[c][0], self.mirror_colors[c][1], self.mirror_colors[c][2], self.mirror_opacity)
+                            self.draw_func(area, cr, width, height, _, True)
+                            for i in range(1, self.mirror_clones+1):
+                                cr.scale(1, self.mirror_ratio**i)
+                                cr.translate(0, (1 - self.mirror_ratio**i)/(self.mirror_ratio**i) * height)
+                                if i % 2 == 1:
+                                    prev_colors = [c for c in self.colors]
+                                    self.colors = [c for c in self.mirror_colors]
+                                self.draw_func(area, cr, width, height, _, True)
+                                if i % 2 == 1:
+                                    self.colors = prev_colors
+                            self.colors = n_prev_colors
+                            self.mirror_colors = m_prev_colors
+                            cr.scale(1, -1) # Flip
+                            # Normalize position
+                            for i in range(1, self.mirror_clones+1):
+                                cr.translate(0, (1 - self.mirror_ratio**i)/(self.mirror_ratio**i) * height)
+                                cr.scale(1, (1/(self.mirror_ratio**i)))
+                            cr.translate(0, (1/(-0.5*(1-self.mirror_offset/2)))*height+(self.mirror_offset*(1/(-0.5*(1-self.mirror_offset/2)))*height/5)+1)
+                            self.draw_func(area, cr, width, height, _, True)
+                            for i in range(1, self.mirror_clones+1):
+                                cr.scale(1, self.mirror_ratio**i)
+                                cr.translate(0, (1 - self.mirror_ratio**i)/(self.mirror_ratio**i) * height)
+                                if i % 2 == 1:
+                                    prev_colors = [c for c in self.colors]
+                                    self.colors = [c for c in self.mirror_colors]
+                                self.draw_func(area, cr, width, height, _, True)
+                                if i % 2 == 1:
+                                    self.colors = prev_colors
+                        case 'inverted+overlapping':
+                            cr.scale(1, -0.5)
+                            cr.translate(0, -height)
+                            self.draw_func(area, cr, width, height, _, True)
+                            for i in range(1, self.mirror_clones+1):
+                                cr.scale(1, self.mirror_ratio**i)
+                                cr.translate(0, (1 - self.mirror_ratio**i)/(self.mirror_ratio**i) * height)
+                                if i % 2 == 1:
+                                    prev_colors = [c for c in self.colors]
+                                    self.colors = [c for c in self.mirror_colors]
+                                self.draw_func(area, cr, width, height, _, True)
+                                if i % 2 == 1:
+                                    self.colors = prev_colors
+                            cr.scale(1, -1) # Flip
+                            # Normalize position
+                            for i in range(1, self.mirror_clones+1):
+                                cr.translate(0, (1 - self.mirror_ratio**i)/(self.mirror_ratio**i) * height)
+                                cr.scale(1, (1/(self.mirror_ratio**i)))
+                            self.draw_func(area, cr, width, height, _, True)
+                            for i in range(1, self.mirror_clones+1):
+                                cr.scale(1, self.mirror_ratio**i)
+                                cr.translate(0, (1 - self.mirror_ratio**i)/(self.mirror_ratio**i) * height)
+                                if i % 2 == 1:
+                                    prev_colors = [c for c in self.colors]
+                                    self.colors = [c for c in self.mirror_colors]
+                                self.draw_func(area, cr, width, height, _, True)
+                                if i % 2 == 1:
+                                    self.colors = prev_colors
 
             if self.draw_mode == 'wave':
                 if self.circle:
@@ -205,8 +272,8 @@ class CavasikDrawingArea(Gtk.DrawingArea):
                 particles(self.cava_sample, cr, width, height, self.colors, \
                     self.offset, self.roundness, self.fill, self.thickness)
             elif self.draw_mode == 'spine':
-                    spine(self.cava_sample, cr, width, height, self.colors, \
-                        self.offset, self.roundness, self.fill, self.thickness)
+                spine(self.cava_sample, cr, width, height, self.colors, \
+                    self.offset, self.roundness, self.fill, self.thickness)
             elif self.draw_mode == 'bars':
                 if self.circle:
                     bars_circle(self.cava_sample, cr, width, height, \
@@ -215,7 +282,6 @@ class CavasikDrawingArea(Gtk.DrawingArea):
                 else:
                     bars(self.cava_sample, cr, width, height, self.colors, \
                         self.offset, self.fill, self.thickness)
-
 
     def redraw(self):
         self.cava_sample = self.cava.sample

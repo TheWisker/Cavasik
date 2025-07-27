@@ -79,7 +79,9 @@
 				<choice value="none"/>
 				<choice value="normal"/>
 				<choice value="inverted"/>
-			  <choice value="overlapping"/>
+			  	<choice value="overlapping"/>
+				<choice value="normal+overlapping"/>
+				<choice value="inverted+overlapping"/>
 			</choices>
 			<default>"none"</default>
 		</key>

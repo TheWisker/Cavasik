@@ -96,7 +96,8 @@ class CavasikPreferencesWindow(Adw.PreferencesWindow):
         self.pref_mirror.set_title(_('Mirror Mode'));
         self.pref_mirror.set_model(Gtk.StringList.new( \
             [_('None'), _('Normal'), \
-            _('Inverse'), _('Overlapping')]))
+            _('Inverse'), _('Overlapping'), \
+            _('Normal+Overlapping'), _('Inverse+Overlapping')]))
         self.mirror_group.add(self.pref_mirror)
         self.pref_mirror_offset = Adw.ActionRow.new()
         self.pref_mirror_offset.set_title(_('Mirror Offset'))
@@ -596,16 +597,16 @@ class CavasikPreferencesWindow(Adw.PreferencesWindow):
             'circle' if self.settings['circle'] else 'linear')
         self.mirror_group.set_visible(not self.settings['circle'])
         self.pref_mirror.set_selected( \
-            ['none', 'normal', 'inverted', 'overlapping'].index( \
+            ['none', 'normal', 'inverted', 'overlapping', 'normal+overlapping', 'inverted+overlapping'].index( \
             self.settings['mirror']))
         self.pref_mirror_offset_scale.set_value(self.settings['mirror-offset'])
-        self.pref_mirror_offset_scale.set_sensitive(self.settings['mirror'] == 'normal')
+        self.pref_mirror_offset_scale.set_sensitive(self.settings['mirror'].startswith('normal'))
         self.pref_mirror_opacity_scale.set_value(self.settings['mirror-opacity'])
-        self.pref_mirror_opacity_scale.set_sensitive(self.settings['mirror'] == 'normal')
+        self.pref_mirror_opacity_scale.set_sensitive(self.settings['mirror'].startswith('normal'))
         self.pref_mirror_clones_scale.set_value(self.settings['mirror-clones'])
-        self.pref_mirror_clones_scale.set_sensitive(self.settings['mirror'] == 'overlapping')
+        self.pref_mirror_clones_scale.set_sensitive(self.settings['mirror'].endswith('overlapping'))
         self.pref_mirror_ratio_scale.set_value(self.settings['mirror-ratio'])
-        self.pref_mirror_ratio_scale.set_sensitive(self.settings['mirror'] == 'overlapping')
+        self.pref_mirror_ratio_scale.set_sensitive(self.settings['mirror'].endswith('overlapping'))
         self.circle_group.set_visible(self.settings['circle'])
         self.wave_inner_circle_box.set_visible(self.settings['circle'])
         self.wave_inner_circle_switch.set_active( \
@@ -621,7 +622,9 @@ class CavasikPreferencesWindow(Adw.PreferencesWindow):
             round(self.settings['items-roundness'] / 50.0, 2))
         self.pref_roundness_scale.set_sensitive(self.settings['mode'] in ('levels', 'particles', 'spine'))
         self.pref_thickness_scale.set_value(self.settings['line-thickness'])
+        self.pref_thickness_scale.set_sensitive(not self.settings['fill'])
         self.pref_fill_switch.set_active(self.settings['fill'])
+        self.pref_fill_switch.set_sensitive(self.settings['mode'] in ('wave', 'spine', 'bars'))
 
         self.pref_use_startup_colors_switch.set_active(self.settings['startup-colors'])
         self.pref_startup_colors_path_entry.set_text(self.settings['startup-colors-file'])
@@ -706,7 +709,7 @@ class CavasikPreferencesWindow(Adw.PreferencesWindow):
         self.pref_mirror.connect('notify::selected-item', \
             lambda *args: self.save_setting(self.pref_mirror, \
                 'mirror', ['none', 'normal', 'inverted', \
-                'overlapping'][self.pref_mirror.get_selected()]))
+                'overlapping', 'normal+overlapping', 'inverted+overlapping'][self.pref_mirror.get_selected()]))
         self.pref_mirror_offset_scale.connect('value-changed', self.save_setting, \
             'mirror-offset', self.pref_mirror_offset_scale.get_value)
         self.pref_mirror_opacity_scale.connect('value-changed', self.save_setting, \
