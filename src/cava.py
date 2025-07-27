@@ -81,7 +81,7 @@ class Cava:
                 'bit_format = 8bit',
                 '[smoothing]',
                 f'monstercat = {self.monstercat}',
-                f'noise_reduction = {self.noise_reduction}'
+                f'noise_reduction = {self.noise_reduction*100}'
             ])
             print(conf)
             f.write(conf)

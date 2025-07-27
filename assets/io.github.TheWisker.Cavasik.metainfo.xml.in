@@ -50,8 +50,8 @@
   <url type="contribute">https://github.com/TheWisker/Cavasik/blob/master/CONTRIBUTING.md</url>
   <launchable type="desktop-id">io.github.TheWisker.Cavasik.desktop</launchable>
   <branding>
-    <color type="primary" scheme_preference="light">#829ebd</color>
-    <color type="primary" scheme_preference="dark">#2b3845</color>
+    <color type="primary" scheme_preference="light">#A072FC</color>
+    <color type="primary" scheme_preference="dark">#173744</color>
   </branding>
   <provides>
     <binary>cavasik</binary>
@@ -136,6 +136,20 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release type="stable" date="2025-07-27" version="v3.1.3">
+      <description>
+        <p>V3.1.3 Release of Cavasik</p>
+        <p>Cavasik is an audio visualizer based on CAVA with customizable LibAdwaita interface.</p>
+        <p>Changed:</p>
+        <ul>
+          <li>Flathub branding colors</li>
+        </ul>
+        <p>Fixed:</p>
+        <ul>
+          <li>Fixed smoothness bug due to Cava's new range -> Now animations aren't erratic</li>
+        </ul>
+      </description>
+    </release>
     <release type="stable" date="2025-07-25" version="v3.1.2">
       <description>
         <p>V3.1.2 Release of Cavasik</p>
