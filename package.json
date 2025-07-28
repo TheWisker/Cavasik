@@ -10,6 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/TheWisker/Cavasik.git"
   },
-  "devDependencies": {},
-  "dependencies": {}
+  "dependencies": {
+    "chalk": "^5.4.1"
+  }
 }
