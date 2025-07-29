@@ -29,7 +29,7 @@ Here are the **steps** involved when making a contribution:
 - **Clone** the fork locally
 - Make the **changes and additions** desired to the cloned fork
 - **Modify** the [CHANGELOG.md][changelog] file, following its structure.
-- **Modify** the [meson.build][meson], [package.json][packagejson] and [CITATION.cff][citation] file, updating their **version number** using [Semantic Versioning](https://semver.org/spec/v2.0.0.html)
+- **Modify** the [meson.build][meson] and [CITATION.cff][citation] file, updating their **version number** using [Semantic Versioning](https://semver.org/spec/v2.0.0.html)
 - Add the following **header** to newly added code files:
 
 ```
@@ -67,7 +67,6 @@ You can even contribute by adding new enhancement and improvement **ideas** to t
 [index]: https://github.com/TheWisker/Cavasik/blob/master/CONTRIBUTING.md#contributing-index
 [changelog]: ./CHANGELOG.md
 [meson]: ./meson.build
-[packagejson]: ./package.json
 [citation]: ./CITATION.cff
 [contributors]: ./CONTRIBUTORS.md
 [new-features-hook]: https://github.com/TheWisker/Cavasik/blob/master/CONTRIBUTING.md#adding-new-features-
