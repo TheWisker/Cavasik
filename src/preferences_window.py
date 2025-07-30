@@ -690,6 +690,7 @@ class CavasikPreferencesWindow(Adw.PreferencesWindow):
         self.pref_color_animation_target.set_sensitive(self.settings['color-animation'])
         self.pref_color_animation_mirror_target.set_selected(self.settings['color-animation-mirror-target'])
         self.pref_color_animation_mirror_target.set_sensitive(self.settings['color-animation'])
+        self.pref_color_animation_length.set_sensitive(self.settings['color-animation'])
         self.pref_color_animation_length_spin.set_value(self.settings['color-animation-length'])
         self.pref_color_animation_length_spin.set_sensitive(self.settings['color-animation'])
         self.do_not_update = False
