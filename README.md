@@ -20,6 +20,8 @@
 
   [Screenshots][screenshots]
 
+  [Videos][videos]
+
   [Installation][installation]
 
   [Dependencies][dependencies]
@@ -197,6 +199,26 @@ The visualizer features:
 <div align="center">
     <img src="./assets/screenshots/dripping_waves.png"></img>
 </div>
+
+<h2 align="center">Videos [<a href="https://github.com/TheWisker/Cavasik#index">↑</a>]</h2>
+
+https://github.com/user-attachments/assets/baa70104-322b-4712-867c-dd14efbd93c8
+
+https://github.com/user-attachments/assets/e4615c5d-0267-4f8c-b20a-bcd974b282dc
+
+https://github.com/user-attachments/assets/d219c28f-99de-4c72-8fdd-aaaae9d94d97
+
+https://github.com/user-attachments/assets/098dfd5e-0ac0-4f46-a914-a441b476549b
+
+https://github.com/user-attachments/assets/57bdb7cd-1dad-48cf-bc8e-5080a0f75d60
+
+https://github.com/user-attachments/assets/60bb6732-8792-4fec-90f5-e7ad8288b9c1
+
+https://github.com/user-attachments/assets/7c6e9ab7-704a-4118-b35b-63f1cf9caf41
+
+https://github.com/user-attachments/assets/d72f859f-c0f4-4bdb-bef3-ebf67cf45767
+
+https://github.com/user-attachments/assets/4703e0fc-1455-498b-93d3-76eea3f286af
 
 <h2 align="center">Installation [<a href="https://github.com/TheWisker/Cavasik#index">↑</a>]</h2>
 
@@ -466,6 +488,7 @@ We look forward to your translations!
 [description]: https://github.com/TheWisker/Cavasik#description-
 [features]: https://github.com/TheWisker/Cavasik#features-
 [screenshots]: https://github.com/TheWisker/Cavasik#screenshots-
+[videos]: https://github.com/TheWisker/Cavasik#videos-
 [installation]: https://github.com/TheWisker/Cavasik#installation-
 [usage]: https://github.com/TheWisker/Cavasik#usage-
 [dependencies]: https://github.com/TheWisker/Cavasik#dependencies-
