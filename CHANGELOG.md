@@ -21,7 +21,7 @@ Minor update for **Cavasik**
 - Two new mirror modes: Normal+Overlapping and Reverse+Overlapping
 
 ### Changed
-- No changes
+- Extended conditionality in settings
 
 ### Fixed
 - No fixes
