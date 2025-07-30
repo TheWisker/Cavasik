@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: cavasik\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-17 15:13+0200\n"
-"PO-Revision-Date: 2025-07-21 17:39+0200\n"
+"PO-Revision-Date: 2025-07-28 23:58+0200\n"
 "Last-Translator: TheWisker <TheWisker@protonmail.com>\n"
 "Language-Team: Japanese <LL@li.org>\n"
 "Language: jp\n"
@@ -43,39 +43,39 @@ msgid "Whether main window is maximized or not"
 msgstr "メインウィンドウが最大化されているかどうか"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:4
-#: ../src/preferences_window.py:279
+#: ../src/preferences_window.py:280
 msgid "Borderless window"
 msgstr "フチなしウィンドウ"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:5
-#: ../src/preferences_window.py:281
+#: ../src/preferences_window.py:282
 msgid "Whether to disable window shadow and borders."
 msgstr "ウィンドウの影と境界線を無効にするかどうか。"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:6
-#: ../src/preferences_window.py:300
+#: ../src/preferences_window.py:301
 msgid "Window controls"
 msgstr "ウィンドウコントロール"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:7
-#: ../src/preferences_window.py:302
+#: ../src/preferences_window.py:303
 msgid "Whether to show window control buttons."
 msgstr "ウィンドウコントロールボタンを表示するかどうか。"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:8
-#: ../src/preferences_window.py:311
+#: ../src/preferences_window.py:312
 msgid "Autohide headerbar"
 msgstr "ヘッダーバーを自動非表示にする"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:9
-#: ../src/preferences_window.py:313
+#: ../src/preferences_window.py:314
 msgid "Whether to hide headerbar when main window is not focused."
 msgstr ""
 "メインウィンドウがフォーカスされていないときにヘッダーバーを非表示にするかど"
 "うか。"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:10
-#: ../src/preferences_window.py:322
+#: ../src/preferences_window.py:323
 msgid "Shortcutless mode"
 msgstr "ショートカットレスモード"
 
@@ -84,12 +84,12 @@ msgid "Whether to disable keyboard shortcuts."
 msgstr "キーボードショートカットを無効にするかどうか。"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:12
-#: ../src/preferences_window.py:233
+#: ../src/preferences_window.py:234
 msgid "Startup colors"
 msgstr "スタートアップカラー"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:13
-#: ../src/preferences_window.py:235
+#: ../src/preferences_window.py:236
 msgid ""
 "Whether to use colors read from a file on startup (overwrites default "
 "profile)."
@@ -98,22 +98,22 @@ msgstr ""
 "を上書きします)。"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:14
-#: ../src/preferences_window.py:243
+#: ../src/preferences_window.py:244
 msgid "Startup colors file"
 msgstr "スタートアップカラーファイル"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:15
-#: ../src/preferences_window.py:245
+#: ../src/preferences_window.py:246
 msgid "Path to the file that contains the startup colors."
 msgstr "起動時の色が含まれるファイルへのパス。"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:16
-#: ../src/preferences_window.py:253
+#: ../src/preferences_window.py:254
 msgid "DBus colors"
 msgstr "DBusの色"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:17
-#: ../src/preferences_window.py:255
+#: ../src/preferences_window.py:256
 msgid ""
 "Whether to use colors received through DBus (overwrites default profile)."
 msgstr ""
@@ -121,12 +121,12 @@ msgstr ""
 "す)。"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:18
-#: ../src/preferences_window.py:263
+#: ../src/preferences_window.py:264
 msgid "DBus opacity"
 msgstr "DBus の不透明度"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:19
-#: ../src/preferences_window.py:265
+#: ../src/preferences_window.py:266
 msgid "Opacity for the colors received through DBus."
 msgstr "DBus を通じて受信した色の不透明度。"
 
@@ -139,7 +139,7 @@ msgid "Defines what the visualizer looks like."
 msgstr "ビジュアライザーの外観を定義します。"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:22
-#: ../src/preferences_window.py:164
+#: ../src/preferences_window.py:165
 msgid "Drawing direction"
 msgstr "描画方向"
 
@@ -152,7 +152,7 @@ msgid "Mirror offset"
 msgstr "ミラーオフセット"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:25
-#: ../src/preferences_window.py:103
+#: ../src/preferences_window.py:104
 msgid "Offset between mirrored images in normal mode"
 msgstr "通常モードでのミラーイメージ間のオフセット"
 
@@ -161,7 +161,7 @@ msgid "Mirror opacity"
 msgstr "ミラーの不透明度"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:27
-#: ../src/preferences_window.py:113
+#: ../src/preferences_window.py:114
 msgid "Opacity of the mirrored image in normal mode"
 msgstr "通常モードでの鏡像の不透明度"
 
@@ -170,12 +170,12 @@ msgid "Mirror colors"
 msgstr "ミラーの色"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:29
-#: ../src/preferences_window.py:552
+#: ../src/preferences_window.py:553
 msgid "Color profile for mirrored images"
 msgstr "鏡像のカラープロファイル"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:30
-#: ../src/preferences_window.py:544
+#: ../src/preferences_window.py:545
 msgid "Sync mirror"
 msgstr "シンクロミラー"
 
@@ -188,7 +188,7 @@ msgid "Mirror clones"
 msgstr "ミラークローン"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:33
-#: ../src/preferences_window.py:123
+#: ../src/preferences_window.py:124
 msgid "Clones to make in the overlapping mode"
 msgstr "オーバーラップモードで作成するクローン"
 
@@ -197,12 +197,12 @@ msgid "Mirror ratio"
 msgstr "ミラー比"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:35
-#: ../src/preferences_window.py:133
+#: ../src/preferences_window.py:134
 msgid "Scale ratio between overlapping clones"
 msgstr "重複するクローン間のスケール比"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:36
-#: ../src/preferences_window.py:144
+#: ../src/preferences_window.py:145
 msgid "Circle"
 msgstr "丸"
 
@@ -221,32 +221,32 @@ msgstr ""
 "か。"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:40
-#: ../src/preferences_window.py:146
+#: ../src/preferences_window.py:147
 msgid "Radius"
 msgstr "半径"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:41
-#: ../src/preferences_window.py:147
+#: ../src/preferences_window.py:148
 msgid "Radius of base circle (in percent)"
 msgstr "基礎円の半径 (パーセント)"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:42
-#: ../src/preferences_window.py:171
+#: ../src/preferences_window.py:172
 msgid "Drawing area margin"
 msgstr "描画領域の余白"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:43
-#: ../src/preferences_window.py:173
+#: ../src/preferences_window.py:174
 msgid "Size of gaps around drawing area (in pixels)."
 msgstr "描画領域周囲のギャップのサイズ (ピクセル単位)。"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:44
-#: ../src/preferences_window.py:183
+#: ../src/preferences_window.py:184
 msgid "Offset between items"
 msgstr "項目間のオフセット"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:45
-#: ../src/preferences_window.py:185
+#: ../src/preferences_window.py:186
 msgid ""
 "The size of spaces between elements in \"levels\", \"particles\" and "
 "\"bars\" modes (in percent)."
@@ -255,7 +255,7 @@ msgstr ""
 "セント単位)。"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:46
-#: ../src/preferences_window.py:195
+#: ../src/preferences_window.py:196
 msgid "Roundness of items"
 msgstr "アイテムの丸み"
 
@@ -266,22 +266,22 @@ msgstr ""
 "す。"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:48
-#: ../src/preferences_window.py:218
+#: ../src/preferences_window.py:219
 msgid "Thickness of lines"
 msgstr "線の太さ"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:49
-#: ../src/preferences_window.py:220
+#: ../src/preferences_window.py:221
 msgid "Thickness of lines when filling is off (in pixels)."
 msgstr "塗りつぶしがオフの​​ときの線の太さ (ピクセル単位)。"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:50
-#: ../src/preferences_window.py:207
+#: ../src/preferences_window.py:208
 msgid "Filling"
 msgstr "充填"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:51
-#: ../src/preferences_window.py:209
+#: ../src/preferences_window.py:210
 msgid "Whether shapes should be filled or outlined."
 msgstr "図形を塗りつぶすか輪郭を描くか。"
 
@@ -294,29 +294,29 @@ msgid "Number of bars in CAVA config"
 msgstr "CAVA 構成のバーの数"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:54
-#: ../src/preferences_window.py:367
+#: ../src/preferences_window.py:368
 msgid "Automatic sensitivity"
 msgstr "自動感度"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:55
-#: ../src/preferences_window.py:369
+#: ../src/preferences_window.py:370
 msgid "Attempt to decrease sensitivity if the bars peak."
 msgstr "バーがピークに達した場合は、感度を下げてみてください。"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:56
-#: ../src/preferences_window.py:377
+#: ../src/preferences_window.py:378
 msgid "Sensitivity"
 msgstr "感度"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:57
-#: ../src/preferences_window.py:379
+#: ../src/preferences_window.py:380
 msgid ""
 "Manual sensitivity. If automatic sensitivity is enabled, this will only be "
 "the initial value."
 msgstr "手動感度。自動感度が有効になっている場合、これは初期値です。"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:58
-#: ../src/preferences_window.py:388
+#: ../src/preferences_window.py:389
 msgid "Channels"
 msgstr "チャンネル"
 
@@ -325,7 +325,7 @@ msgid "Mono or stereo"
 msgstr "モノラルまたはステレオ"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:60
-#: ../src/preferences_window.py:400
+#: ../src/preferences_window.py:401
 msgid "Smoothing"
 msgstr "スムージング"
 
@@ -342,32 +342,32 @@ msgstr ""
 "1 は非常に遅くスムーズです。0 は高速ですが、ノイズが多くなります。"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:63
-#: ../src/preferences_window.py:418
+#: ../src/preferences_window.py:419
 msgid "Reverse order"
 msgstr "逆順"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:64
-#: ../src/preferences_window.py:426
+#: ../src/preferences_window.py:427
 msgid "Frames per Second"
 msgstr "1 秒あたりのフレーム数"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:65
-#: ../src/preferences_window.py:446
+#: ../src/preferences_window.py:447
 msgid "Widgets style"
 msgstr "ウィジェットのスタイル"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:66
-#: ../src/preferences_window.py:447
+#: ../src/preferences_window.py:448
 msgid "Style used by Adwaita widgets."
 msgstr "Adwaita ウィジェットで使用されるスタイル。"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:67
-#: ../src/preferences_window.py:289
+#: ../src/preferences_window.py:290
 msgid "Sharp corners"
 msgstr "鋭い角"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:68
-#: ../src/preferences_window.py:291
+#: ../src/preferences_window.py:292
 msgid "Whether the main window corners should be sharp."
 msgstr "鋭い角。"
 
@@ -380,7 +380,7 @@ msgid "Index of active color profile"
 msgstr "アクティブなカラープロファイルのインデックス"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:71
-#: ../src/preferences_window.py:559
+#: ../src/preferences_window.py:560
 msgid "Color animation"
 msgstr "カラーアニメーション"
 
@@ -393,7 +393,7 @@ msgid "Color animation target"
 msgstr "カラーアニメーションターゲット"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:74
-#: ../src/preferences_window.py:567
+#: ../src/preferences_window.py:568
 msgid "The target color profile to fade in and out of"
 msgstr "フェードインおよびフェードアウトするターゲット カラー プロファイル"
 
@@ -402,7 +402,7 @@ msgid "Color animation mirror target"
 msgstr "カラーアニメーションミラーターゲット"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:76
-#: ../src/preferences_window.py:572
+#: ../src/preferences_window.py:573
 msgid "The target color profile to fade in and out of for the mirrored image"
 msgstr ""
 "鏡像のフェードインおよびフェードアウトするターゲット カラー プロファイル"
@@ -412,11 +412,11 @@ msgid "Color animation length"
 msgstr "カラーアニメーションの長さ"
 
 #: ../assets/io.github.TheWisker.Cavasik.gschema.xml.h:78
-#: ../src/preferences_window.py:577
+#: ../src/preferences_window.py:578
 msgid "The length in seconds of the color animation"
 msgstr "カラーアニメーションの長さ（秒）"
 
-#: ../src/main.py:57 ../src/main.py:59
+#: ../src/main.py:70 ../src/main.py:72
 msgid "TheWisker"
 msgstr "TheWisker"
 
@@ -460,7 +460,7 @@ msgstr "粒子"
 msgid "Spine"
 msgstr "脊椎"
 
-#: ../src/preferences_window.py:82 ../src/preferences_window.py:356
+#: ../src/preferences_window.py:82 ../src/preferences_window.py:357
 msgid "Bars"
 msgstr "バー"
 
@@ -488,39 +488,47 @@ msgstr "逆数"
 msgid "Overlapping"
 msgstr "重複"
 
-#: ../src/preferences_window.py:102
+#: ../src/preferences_window.py:100
+msgid "Normal+Overlapping"
+msgstr "通常+重なり"
+
+#: ../src/preferences_window.py:100
+msgid "Inverse+Overlapping"
+msgstr "逆+重複"
+
+#: ../src/preferences_window.py:103
 msgid "Mirror Offset"
 msgstr "ミラーオフセット"
 
-#: ../src/preferences_window.py:112
+#: ../src/preferences_window.py:113
 msgid "Mirror Opacity"
 msgstr "ミラーの不透明度"
 
-#: ../src/preferences_window.py:122
+#: ../src/preferences_window.py:123
 msgid "Mirror Clones"
 msgstr "ミラークローン"
 
-#: ../src/preferences_window.py:132
+#: ../src/preferences_window.py:133
 msgid "Mirror Ratio"
 msgstr "ミラー比"
 
-#: ../src/preferences_window.py:166
+#: ../src/preferences_window.py:167
 msgid "Bottom to Top"
 msgstr "下から上へ"
 
-#: ../src/preferences_window.py:166
+#: ../src/preferences_window.py:167
 msgid "Top to Bottom"
 msgstr "上から下へ"
 
-#: ../src/preferences_window.py:167
+#: ../src/preferences_window.py:168
 msgid "Left to Right"
 msgstr "左から右へ"
 
-#: ../src/preferences_window.py:167
+#: ../src/preferences_window.py:168
 msgid "Right to Left"
 msgstr "右から左に"
 
-#: ../src/preferences_window.py:197
+#: ../src/preferences_window.py:198
 msgid ""
 "This setting affects \"levels\", \"particles\" and \"spine\" modes.\n"
 "0 - square, 1 - round"
@@ -529,154 +537,154 @@ msgstr ""
 "す。\n"
 "0 - 正方形、1 - 円形"
 
-#: ../src/preferences_window.py:324
+#: ../src/preferences_window.py:325
 msgid "Whether to disable keyboard shortcuts. Restart needed to take effect."
 msgstr ""
 "キーボードショートカットを無効にするかどうか。有効にするには再起動が必要で"
 "す。"
 
-#: ../src/preferences_window.py:336
+#: ../src/preferences_window.py:337
 msgid "Import"
 msgstr "輸入"
 
-#: ../src/preferences_window.py:341
+#: ../src/preferences_window.py:342
 msgid "Export"
 msgstr "輸出"
 
-#: ../src/preferences_window.py:394
+#: ../src/preferences_window.py:395
 msgid "Mono"
 msgstr "単核症"
 
-#: ../src/preferences_window.py:396
+#: ../src/preferences_window.py:397
 msgid "Stereo"
 msgstr "ステレオ"
 
-#: ../src/preferences_window.py:402
+#: ../src/preferences_window.py:403
 msgid "Off"
 msgstr "オフ"
 
-#: ../src/preferences_window.py:402
+#: ../src/preferences_window.py:403
 msgid "Monstercat"
 msgstr "モンスターキャット"
 
-#: ../src/preferences_window.py:405
+#: ../src/preferences_window.py:406
 msgid "Noise Reduction"
 msgstr "ノイズ減少"
 
-#: ../src/preferences_window.py:406
+#: ../src/preferences_window.py:407
 msgid "0 - noisy, 1 - smooth"
 msgstr "0 - ノイズが多い、1 - スムーズ"
 
-#: ../src/preferences_window.py:427
+#: ../src/preferences_window.py:428
 msgid ""
 "Frames per Second for the visualizer (requires app restart to take effect)."
 msgstr ""
 "ビジュアライザーの 1 秒あたりのフレーム数 (有効にするにはアプリの再起動が必要"
 "です)。"
 
-#: ../src/preferences_window.py:438 ../src/preferences_window.py:459
+#: ../src/preferences_window.py:439 ../src/preferences_window.py:460
 msgid "Colors"
 msgstr "色"
 
-#: ../src/preferences_window.py:452
+#: ../src/preferences_window.py:453
 msgid "Light"
 msgstr "ライト"
 
-#: ../src/preferences_window.py:454
+#: ../src/preferences_window.py:455
 msgid "Dark"
 msgstr "暗い"
 
-#: ../src/preferences_window.py:465
+#: ../src/preferences_window.py:466
 msgid "Profile:"
 msgstr "プロフィール："
 
-#: ../src/preferences_window.py:473
+#: ../src/preferences_window.py:474
 msgid "Add new profile"
 msgstr "新しいプロフィールを追加"
 
-#: ../src/preferences_window.py:485
+#: ../src/preferences_window.py:486
 msgid "Type a name for a new profile"
 msgstr "新しいプロファイルの名前を入力します"
 
-#: ../src/preferences_window.py:487 ../src/preferences_window.py:857
-#: ../src/preferences_window.py:900
+#: ../src/preferences_window.py:488 ../src/preferences_window.py:860
+#: ../src/preferences_window.py:903
 msgid "Add"
 msgstr "追加"
 
-#: ../src/preferences_window.py:492 ../src/preferences_window.py:944
+#: ../src/preferences_window.py:493 ../src/preferences_window.py:947
 msgid "The new profile will be a copy of the active profile."
 msgstr "新しいプロファイルは、アクティブなプロファイルのコピーになります。"
 
-#: ../src/preferences_window.py:497
+#: ../src/preferences_window.py:498
 msgid "Remove profile"
 msgstr "プロファイルを削除する"
 
-#: ../src/preferences_window.py:504
+#: ../src/preferences_window.py:505
 msgid "Are you sure you want to remove this profile?"
 msgstr "このプロファイルを削除してもよろしいですか?"
 
-#: ../src/preferences_window.py:511
+#: ../src/preferences_window.py:512
 msgid "Remove"
 msgstr "削除"
 
-#: ../src/preferences_window.py:518
+#: ../src/preferences_window.py:519
 msgid "Cancel"
 msgstr "キャンセル"
 
-#: ../src/preferences_window.py:528
+#: ../src/preferences_window.py:529
 msgid "<b>Foreground</b>"
 msgstr "<b>前景</b>"
 
-#: ../src/preferences_window.py:533
+#: ../src/preferences_window.py:534
 msgid "<b>Background</b>"
 msgstr "<b>背景</b>"
 
-#: ../src/preferences_window.py:551
+#: ../src/preferences_window.py:552
 msgid "Mirror Color"
 msgstr "ミラーカラー"
 
-#: ../src/preferences_window.py:566
+#: ../src/preferences_window.py:567
 msgid "Color Animation Target"
 msgstr "カラーアニメーションターゲット"
 
-#: ../src/preferences_window.py:571
+#: ../src/preferences_window.py:572
 msgid "Color Animation Mirror Target"
 msgstr "カラーアニメーションミラーターゲット"
 
-#: ../src/preferences_window.py:576
+#: ../src/preferences_window.py:577
 msgid "Color Animation Length"
 msgstr "カラーアニメーションの長さ"
 
-#: ../src/preferences_window.py:839 ../src/preferences_window.py:864
-#: ../src/preferences_window.py:884 ../src/preferences_window.py:907
+#: ../src/preferences_window.py:842 ../src/preferences_window.py:867
+#: ../src/preferences_window.py:887 ../src/preferences_window.py:910
 msgid "Select color"
 msgstr "色を選択してください"
 
-#: ../src/preferences_window.py:845 ../src/preferences_window.py:890
+#: ../src/preferences_window.py:848 ../src/preferences_window.py:893
 msgid "Remove color"
 msgstr "色を削除する"
 
-#: ../src/preferences_window.py:868 ../src/preferences_window.py:911
+#: ../src/preferences_window.py:871 ../src/preferences_window.py:914
 msgid "Add color"
 msgstr "色を追加する"
 
-#: ../src/preferences_window.py:937
+#: ../src/preferences_window.py:940
 msgid "This name is already in use."
 msgstr "この名前は既に使用されています。"
 
-#: ../src/preferences_window.py:1054
+#: ../src/preferences_window.py:1057
 msgid "Import Settings"
 msgstr "インポート設定"
 
-#: ../src/preferences_window.py:1058 ../src/preferences_window.py:1083
+#: ../src/preferences_window.py:1061 ../src/preferences_window.py:1086
 msgid "Cavasik Settings File (*.cavasik)"
 msgstr "キャバリア設定ファイル (*.cavasik)"
 
-#: ../src/preferences_window.py:1061
+#: ../src/preferences_window.py:1064
 msgid "All Files"
 msgstr "すべてのファイル"
 
-#: ../src/preferences_window.py:1079
+#: ../src/preferences_window.py:1082
 msgid "Export Settings"
 msgstr "設定のエクスポート"
 

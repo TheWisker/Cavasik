@@ -8,6 +8,8 @@
         "--share=ipc",
         "--socket=wayland",
         "--socket=fallback-x11",
+		"--filesystem=xdg-config/cavasik",
+		"--own-name=io.github.TheWisker.Cavasik",
         "--socket=pulseaudio",
         "--device=dri"
     ],

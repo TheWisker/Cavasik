@@ -50,7 +50,7 @@ The visualizer features:
 
 - Five **normal** drawing modes!
 - Two **circle** drawing modes!
-- Three **mirror** drawing modes!
+- Five **mirror** drawing modes!
 - Four drawing **directions**!
 - Customizable **LibAdwaita** interface!
 - Set a single color or up to a 10 color linear gradient for **background** and **foreground**!
@@ -150,7 +150,6 @@ The visualizer features:
     <img src="./assets/screenshots/inverted_levels.png"></img>
 </div>
 
-
 <h3 align="center">Inverted mirror + Waves mode + No Fill</h2>
 
 <div align="center">
@@ -167,6 +166,30 @@ The visualizer features:
 
 <div align="center">
     <img src="./assets/screenshots/overlapping_bars.png"></img>
+</div>
+
+<h3 align="center">Overlapping+Normal mirror + Waves mode</h2>
+
+<div align="center">
+    <img src="./assets/screenshots/overlapping_normal_waves.png"></img>
+</div>
+
+<h3 align="center">Overlapping+Normal mirror + Bars mode</h2>
+
+<div align="center">
+    <img src="./assets/screenshots/overlapping_normal_bars.png"></img>
+</div>
+
+<h3 align="center">Overlapping+Reverse mirror + Waves mode</h2>
+
+<div align="center">
+    <img src="./assets/screenshots/overlapping_reverse_waves.png"></img>
+</div>
+
+<h3 align="center">Overlapping+Reverse mirror + Bars mode</h2>
+
+<div align="center">
+    <img src="./assets/screenshots/overlapping_reverse_bars.png"></img>
 </div>
 
 <h3 align="center">Direction top-bottom + Overlapping mirror + Waves mode + No Fill</h2>

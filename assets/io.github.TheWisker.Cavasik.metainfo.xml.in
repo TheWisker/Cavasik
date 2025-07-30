@@ -131,11 +131,37 @@
         <caption>Overlapping mirror + Bars mode</caption>
     </screenshot>
     <screenshot>
+        <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/overlapping_normal_waves.png</image>
+        <caption>Overlapping+Normal mirror + Waves mode</caption>
+    </screenshot>
+    <screenshot>
+        <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/overlapping_normal_bars.png</image>
+        <caption>Overlapping+Normal mirror + Bars mode</caption>
+    </screenshot>
+    <screenshot>
+        <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/overlapping_reverse_waves.png</image>
+        <caption>Overlapping+Reverse mirror + Waves mode</caption>
+    </screenshot>
+    <screenshot>
+        <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/overlapping_reverse_bars.png</image>
+        <caption>Overlapping+Reverse mirror + Bars mode</caption>
+    </screenshot>
+    <screenshot>
         <image>https://raw.githubusercontent.com/TheWisker/Cavasik/master/assets/screenshots/dripping_waves.png</image>
         <caption>Direction top-bottom + Overlapping mirror + Waves mode + No Fill</caption>
     </screenshot>
   </screenshots>
   <releases>
+    <release type="stable" date="2025-07-30" version="v3.2.0">
+      <description>
+        <p>V3.2.0 Release of Cavasik</p>
+        <p>Cavasik is an audio visualizer based on CAVA with customizable LibAdwaita interface.</p>
+        <p>Added:</p>
+        <ul>
+          <li>Two new mirror modes: Normal+Overlapping and Reverse+Overlapping</li>
+        </ul>
+      </description>
+    </release>
     <release type="stable" date="2025-07-27" version="v3.1.3">
       <description>
         <p>V3.1.3 Release of Cavasik</p>
