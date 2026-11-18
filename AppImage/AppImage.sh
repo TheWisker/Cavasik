@@ -16,8 +16,6 @@ export ICON=/usr/share/icons/hicolor/scalable/apps/io.github.TheWisker.Cavasik.s
 export DESKTOP=/usr/share/applications/io.github.TheWisker.Cavasik.desktop
 export PATH_MAPPING='/usr/share/cavasik:${SHARUN_DIR}/share/cavasik'
 export DEPLOY_PYTHON=1
-export DEPLOY_OPENGL=1
-export DEPLOY_VULKAN=1
 
 #Remove leftovers
 rm -rf AppDir dist
@@ -32,8 +30,7 @@ chmod +x ./quick-sharun ./get-debloated-pkgs
 
 # Deploy dependencies
 ./quick-sharun \
-	/usr/bin/cavasik \
-	/usr/share/cavasik/cavasik.gresource
+	/usr/bin/cavasik
 
 # Turn AppDir into AppImage
 ./quick-sharun --make-appimage

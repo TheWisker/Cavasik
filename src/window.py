@@ -19,7 +19,7 @@ class CavasikWindow(Adw.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.set_wmclass('cavasik', 'Cavasik')
+        self.set_wmclass('Cavasik', 'Cavasik')
 
         self.settings = CavasikSettings.new(self.on_settings_changed)
         self.cava_sample = []
@@ -173,4 +173,3 @@ class CavasikWindow(Adw.ApplicationWindow):
             self.header.set_show_end_title_buttons( \
                 self.settings['window-controls'])
             self.menu_button.set_visible(True)
-
