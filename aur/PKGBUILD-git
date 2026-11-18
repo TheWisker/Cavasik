@@ -1,10 +1,10 @@
 # Maintainer: Wisker <TheWisker@protonmail.com>
 pkgname=cavasik-git
-pkgver=3.2.0.r0.gbf97e60
+pkgver=3.2.0.r402.gbf97e60
 pkgrel=1
 pkgdesc="Audio visualizer based on CAVA"
 arch=('any')
-url="https://github.com/twig6943/Cavasik"
+url="https://github.com/TheWisker/Cavasik"
 license=('GPL-3.0-or-later')
 depends=('cava' 'libadwaita' 'python' 'python-gobject' 'python-cairo' 'python-pydbus' 'glib2' 'hicolor-icon-theme' 'gtk4' 'dconf')
 makedepends=('git' 'meson')
@@ -17,7 +17,7 @@ backup=()
 options=()
 install=
 changelog=
-source=("${pkgname%-git}::git+https://github.com/twig6943/Cavasik.git")
+source=("${pkgname%-git}::git+https://github.com/TheWisker/Cavasik.git")
 noextract=()
 validpgpkeys=()
 sha512sums=('SKIP')

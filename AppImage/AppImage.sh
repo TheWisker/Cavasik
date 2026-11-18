@@ -30,6 +30,7 @@ chmod +x ./quick-sharun ./get-debloated-pkgs
 
 # Deploy dependencies
 ./quick-sharun \
+	/usr/bin/cava \
 	/usr/bin/cavasik
 
 # Turn AppDir into AppImage
