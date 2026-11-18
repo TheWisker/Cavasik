@@ -10,7 +10,7 @@
     <img src="https://img.shields.io/flathub/downloads/io.github.TheWisker.Cavasik?style=for-the-badge&logo=flathub&color=%235b25e6"></img>
 </div>
 
-<h2 align="center">Index</h2>
+### Index
 
 <div align="center">
 
@@ -42,11 +42,11 @@
 
 </div>
 
-<h2 align="center">Description [<a href="https://github.com/TheWisker/Cavasik#index">↑</a>]</h2>
+### Description
 
 <p align="center">This is an audio visualizer based on <b>CAVA</b> with extended capabilities.</p>
 
-<h2 align="center">Features [<a href="https://github.com/TheWisker/Cavasik#index">↑</a>]</h2>
+### Features
 
 The visualizer features:
 
@@ -62,145 +62,145 @@ The visualizer features:
 - Change **background** and **foreground** colors through a **DBus interface**!
 - Change **background** and **foreground** colors on startup by **reading them from a file**!
 
-<h2 align="center">Screenshots [<a href="https://github.com/TheWisker/Cavasik#index">↑</a>]</h2>
+### Screenshots
 
 <div align="center">
     <img src="./assets/screenshots/main.png"></img>
 </div>
 
-<h3 align="center">Waves mode</h2>
+#### Waves mode
 
 <div align="center">
     <img src="./assets/screenshots/waves.png"></img>
 </div>
 
-<h3 align="center">Levels mode</h2>
+#### Levels mode
 
 <div align="center">
     <img src="./assets/screenshots/levels.png"></img>
 </div>
 
-<h3 align="center">Particles mode</h2>
+#### Particles mode
 
 <div align="center">
     <img src="./assets/screenshots/particles.png"></img>
 </div>
 
-<h3 align="center">Spine mode</h2>
+#### Spine mode
 
 <div align="center">
     <img src="./assets/screenshots/spine.png"></img>
 </div>
 
-<h3 align="center">Bars mode</h2>
+#### Bars mode
 
 <div align="center">
     <img src="./assets/screenshots/bars.png"></img>
 </div>
 
-<h3 align="center">Waves mode + Circle shape</h2>
+#### Waves mode + Circle shape
 
 <div align="center">
     <img src="./assets/screenshots/wave_circle.png"></img>
 </div>
 
-<h3 align="center">Bars mode + Circle shape</h2>
+#### Bars mode + Circle shape
 
 <div align="center">
     <img src="./assets/screenshots/bar_circle.png"></img>
 </div>
 
-<h3 align="center">Normal mirror + Waves mode</h2>
+#### Normal mirror + Waves mode
 
 <div align="center">
     <img src="./assets/screenshots/normal_waves.png"></img>
 </div>
 
-<h3 align="center">Normal mirror + Bars mode</h2>
+#### Normal mirror + Bars mode
 
 <div align="center">
     <img src="./assets/screenshots/normal_bars.png"></img>
 </div>
 
-<h3 align="center">Normal mirror + Levels mode</h2>
+#### Normal mirror + Levels mode
 
 <div align="center">
     <img src="./assets/screenshots/normal_levels.png"></img>
 </div>
 
-<h3 align="center">Normal mirror + Waves mode + No Fill</h2>
+#### Normal mirror + Waves mode + No Fill
 
 <div align="center">
     <img src="./assets/screenshots/normal_dripping_waves.png"></img>
 </div>
 
-<h3 align="center">Inverted mirror + Waves mode</h2>
+#### Inverted mirror + Waves mode
 
 <div align="center">
     <img src="./assets/screenshots/inverted_waves.png"></img>
 </div>
 
-<h3 align="center">Inverted mirror + Bars mode</h2>
+#### Inverted mirror + Bars mode
 
 <div align="center">
     <img src="./assets/screenshots/inverted_bars.png"></img>
 </div>
 
-<h3 align="center">Inverted mirror + Levels mode</h2>
+#### Inverted mirror + Levels mode
 
 <div align="center">
     <img src="./assets/screenshots/inverted_levels.png"></img>
 </div>
 
-<h3 align="center">Inverted mirror + Waves mode + No Fill</h2>
+#### Inverted mirror + Waves mode + No Fill
 
 <div align="center">
     <img src="./assets/screenshots/inverted_dripping_waves.png"></img>
 </div>
 
-<h3 align="center">Overlapping mirror + Waves mode</h2>
+#### Overlapping mirror + Waves mode
 
 <div align="center">
     <img src="./assets/screenshots/overlapping_waves.png"></img>
 </div>
 
-<h3 align="center">Overlapping mirror + Bars mode</h2>
+#### Overlapping mirror + Bars mode
 
 <div align="center">
     <img src="./assets/screenshots/overlapping_bars.png"></img>
 </div>
 
-<h3 align="center">Overlapping+Normal mirror + Waves mode</h2>
+#### Overlapping+Normal mirror + Waves mode
 
 <div align="center">
     <img src="./assets/screenshots/overlapping_normal_waves.png"></img>
 </div>
 
-<h3 align="center">Overlapping+Normal mirror + Bars mode</h2>
+#### Overlapping+Normal mirror + Bars mode
 
 <div align="center">
     <img src="./assets/screenshots/overlapping_normal_bars.png"></img>
 </div>
 
-<h3 align="center">Overlapping+Reverse mirror + Waves mode</h2>
+#### Overlapping+Reverse mirror + Waves mode
 
 <div align="center">
     <img src="./assets/screenshots/overlapping_reverse_waves.png"></img>
 </div>
 
-<h3 align="center">Overlapping+Reverse mirror + Bars mode</h2>
+#### Overlapping+Reverse mirror + Bars mode
 
 <div align="center">
     <img src="./assets/screenshots/overlapping_reverse_bars.png"></img>
 </div>
 
-<h3 align="center">Direction top-bottom + Overlapping mirror + Waves mode + No Fill</h2>
+#### Direction top-bottom + Overlapping mirror + Waves mode + No Fill
 
 <div align="center">
     <img src="./assets/screenshots/dripping_waves.png"></img>
 </div>
 
-<h2 align="center">Videos [<a href="https://github.com/TheWisker/Cavasik#index">↑</a>]</h2>
+### Videos
 
 https://github.com/user-attachments/assets/baa70104-322b-4712-867c-dd14efbd93c8
 
@@ -220,9 +220,9 @@ https://github.com/user-attachments/assets/d72f859f-c0f4-4bdb-bef3-ebf67cf45767
 
 https://github.com/user-attachments/assets/4703e0fc-1455-498b-93d3-76eea3f286af
 
-<h2 align="center">Installation [<a href="https://github.com/TheWisker/Cavasik#index">↑</a>]</h2>
+### Installation
 
-<h3>Flathub</h3>
+#### Flathub
 
 You can install the **Cavasik** app from [Flathub][flathub] in its [app page][flathub-cavasik].
 
@@ -232,7 +232,7 @@ You can install the **Cavasik** app from [Flathub][flathub] in its [app page][fl
 
 - For information on how to setup a *flatpak* on any distro read [this][flatpak-setup].
 
-<h3>Snap Store</h3>
+#### Snap Store
 
 You can install the **Cavasik** app from [Snap Store][snapstore] in its [app page][snapstore-cavasik].
 
@@ -242,7 +242,7 @@ You can install the **Cavasik** app from [Snap Store][snapstore] in its [app pag
 
 - For information on how to setup a *snap* on any distro read [this][snap-setup].
 
-<h3>Arch Linux</h3>
+#### Arch Linux
 
 You can install **Cavasik** from the [AUR][aur] repository in its [app page][aur-cavasik]:
 
@@ -252,7 +252,7 @@ You can install **Cavasik** from the [AUR][aur] repository in its [app page][aur
 
 - For information on how to install an [AUR][aur] package read [this][aur-wiki] wiki.
 
-<h3>Manually</h3>
+#### Manually
 
 To manually install **Cavasik** start by **downloading** a [release][releases].
 Then, **uncompress** the downloaded release into a resulting folder.
@@ -261,7 +261,7 @@ Then, proceed to **run** the following commands:
 
 ```
 #BUILD
-arch-meson Cavasik build
+arch-meson . build
 meson compile -C build
 
 #TEST
@@ -272,18 +272,18 @@ meson install -C build
 install -Dm644 Cavasik/LICENSE -t "/usr/share/licenses/cavasik"
 ```
 
-<h2 align="center">Usage [<a href="https://github.com/TheWisker/Cavasik#index">↑</a>]</h2>
+### Usage
 
 
 Simply start the application on your PC and enjoy. It will react to any sound your system makes, so play some music or something!
 
-<h3 align="left">Configuration</h3>
+#### Configuration
 
 The configuration is purely **graphical**.
 To configure Cavasik, simply press <Primary+P>, usually <Ctrl+P>, having it focused or click on the menu button located on the top-left corner of the window and then Preferences.
 Everything is documented there, I believe its pretty straightforward but if you don't understand something or believe it could be explained better open an Issue or a PR!
 
-<h3 align="left">Startup Colors</h3>
+#### Startup Colors
 
 To have the colors of Cavasik change on startup, simply enable this option in the settings and specify a **file** to get the colors from.
 The file must contain only **one** color **per line** in **RGB** format, like, for example:
@@ -309,7 +309,7 @@ The file must contain only **one** color **per line** in **RGB** format, like, f
 > ln -s ~/.cache/wal/colors.rgb ~/.config/cavasik/colors.rgb
 > ```
 
-<h3 align="left">DBus Interface</h3>
+#### DBus Interface
 
 Cavasik also provides a DBus Interface to change the colors like we can do on startup but on demand.
 This interface allows us to set the foreground or background colors by sending a signal to Cavasik's DBus interface and specifying a **file** to get the colors from.
@@ -345,7 +345,7 @@ string:"${HOME}/.cache/wal/colors.rgb"
 
 > Changing the colors overwrites default profile.
 
-<h3 align="left">Command line</h3>
+#### Command line
 
 Cavasik also features a **simple command** line:
 
@@ -365,7 +365,7 @@ Help with OPTIONS:
 
 > Changing the colors overwrites default profile.
 
-<h3 align="left">Pywal Integration</h3>
+#### Pywal Integration
 
 You can easily make Cavasik follow your [Pywal](https://github.com/dylanaraps/pywal) colorscheme.
 Simply enable startup colors, as to make the colors change on startup, and set the startup colors file to be `~/.cache/wal/colors.rgb`, for example.
@@ -412,15 +412,15 @@ wal OTHER_ARGS
 
 Now you have set up Cavasik to use Pywal's colors!
 
-<h2 align="center">Dependencies [<a href="https://github.com/TheWisker/Cavasik#index">↑</a>]</h2>
+### Dependencies
 
-<h3 align="left">Buildtime</h3>
+#### Buildtime
 
 The **Cavasik** application has the following *buildtime* dependencies:
 
 - [meson][meson]
 
-<h3 align="left">Runtime</h3>
+#### Runtime
 
 The **Cavasik** application has the following *runtime* dependencies:
 
@@ -431,15 +431,15 @@ The **Cavasik** application has the following *runtime* dependencies:
 - [python-cairo][python-cairo]
 - [python-pydbus][python-pydbus]
 
-<h2 align="center">Contributions [<a href="https://github.com/TheWisker/Cavasik#index">↑</a>]</h2>
+### Contributions
 
 First and foremost, all contributions are welcome!
-The **steps** involved when making a contribution are **explained** in the [CONTRIBUTING.md][contributing] file.
+The **steps** involved when making a contribution are **explained** in the [CONTRIBUTING.md](./CONTRIBUTING.md) file.
 We look forward to your contributions!
 
-- The **contributors** list is located [here][contributors].
+- The **contributors** list is located [here](./CONTRIBUTORS.md).
 
-<h2 align="center">Translations [<a href="https://github.com/TheWisker/Cavasik#index">↑</a>]</h2>
+### Translations
 
 Secondly, all translations are also welcome!
 The **steps** involved when making a translation are **explained** in the [CONTRIBUTING.md][contributing] file.
@@ -448,7 +448,7 @@ We look forward to your translations!
 
 - The **credits** of the translators are located [here][translator-credits].
 
-<h2 align="center">Metrics [<a href="https://github.com/TheWisker/Cavasik#index">↑</a>]</h2>
+### Metrics
 
 <div align="center">
   <picture>
@@ -462,7 +462,7 @@ We look forward to your translations!
   </picture>
 </div>
 
-<h2 align="center">License [<a href="https://github.com/TheWisker/Cavasik#index">↑</a>]</h2>
+### License
 
 <div align="center">
   <picture>
@@ -470,11 +470,11 @@ We look forward to your translations!
   </picture>
 </div>
 
-<h2 align="center">Code of Conduct [<a href="https://github.com/TheWisker/Cavasik#index">↑</a>]</h2>
+### Code of Conduct
 
 <p align="center"> This project follows the <a href="./.github/CODE_OF_CONDUCT.md"><b>Contributor Covenant Code of Conduct</b></a>.</p>
 
-<h2 align="center">Credits [<a href="https://github.com/TheWisker/Cavasik#index">↑</a>]</h2>
+### Credits
 
 <div align="center">
 
@@ -485,22 +485,23 @@ We look forward to your translations!
 
 </div>
 
-[description]: https://github.com/TheWisker/Cavasik#description-
-[features]: https://github.com/TheWisker/Cavasik#features-
-[screenshots]: https://github.com/TheWisker/Cavasik#screenshots-
-[videos]: https://github.com/TheWisker/Cavasik#videos-
-[installation]: https://github.com/TheWisker/Cavasik#installation-
-[usage]: https://github.com/TheWisker/Cavasik#usage-
-[dependencies]: https://github.com/TheWisker/Cavasik#dependencies-
-[contributions]: https://github.com/TheWisker/Cavasik#contributions-
-[translations]: https://github.com/TheWisker/Cavasik#translations-
-[metrics]: https://github.com/TheWisker/Cavasik#metrics-
-[license]: https://github.com/TheWisker/Cavasik#license-
-[coc]: https://github.com/TheWisker/Cavasik#code-of-conduct-
-[credits]: https://github.com/TheWisker/Cavasik#credits-
+[description]: #description
+[features]: #features
+[screenshots]: #screenshots
+[videos]: #videos
+[installation]: #installation
+[usage]: #usage
+[dependencies]: #dependencies
+[contributions]: #contributions
+[translations]: #translations
+[metrics]: #metrics
+[license]: #license
+[coc]: #code-of-conduct
+[credits]: #credits
 [flathub]: https://flathub.org/
 [flathub-cavasik]: https://flathub.org/apps/io.github.TheWisker.Cavasik
 [flatpak-setup]: https://flatpak.org/setup/
+[appimage](./AppImage)
 [snapstore]: https://snapcraft.io/store
 [snapstore-cavasik]: https://snapcraft.io/cavasik
 [snap-setup]: https://snapcraft.io/docs/get-started

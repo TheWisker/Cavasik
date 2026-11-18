@@ -340,6 +340,9 @@ ASALocalRun/
 #Resources
 *.Designer.cs
 
+# Kate
+*.kate-swp
+
 # Flatpak Builder
 .flatpak-builder/
 .flatpak/
@@ -350,3 +353,15 @@ build/
 repo/
 *.flatpak
 builddir/
+
+aur/cavasik*
+aur/pkg
+
+# AppImage
+AppDir/
+dist/
+
+*.tar.zst
+
+quick-sharun*
+get-debloated-pkgs*

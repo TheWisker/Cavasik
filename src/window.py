@@ -171,4 +171,3 @@ class CavasikWindow(Adw.ApplicationWindow):
             self.header.set_show_end_title_buttons( \
                 self.settings['window-controls'])
             self.menu_button.set_visible(True)
-
