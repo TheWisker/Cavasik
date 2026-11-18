@@ -7,3 +7,4 @@ Terminal=false
 Type=Application
 Categories=Audio;Monitor;Graphics;Amusement;2DGraphics;DataVisualization;
 StartupNotify=true
+StartupWMClass=Cavasik
