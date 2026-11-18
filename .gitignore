@@ -354,7 +354,7 @@ repo/
 *.flatpak
 builddir/
 
-aur/cavasik
+aur/cavasik*
 aur/pkg
 
 # AppImage

@@ -19,8 +19,6 @@ class CavasikWindow(Adw.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.set_wmclass('Cavasik', 'Cavasik')
-
         self.settings = CavasikSettings.new(self.on_settings_changed)
         self.cava_sample = []
 
